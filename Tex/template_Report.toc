@@ -13,17 +13,21 @@
 \contentsline {subsection}{\numberline {3.4.6}Implementacja na platformie iOS}{4}
 \contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{5}
 \contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{5}
+\contentsline {paragraph}{}{5}
 \contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{5}
+\contentsline {paragraph}{}{5}
 \contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{5}
+\contentsline {paragraph}{}{5}
 \contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{5}
-\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{5}
-\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{5}
-\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{5}
-\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{5}
-\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{5}
-\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{5}
-\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{5}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{5}
-\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{5}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{5}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{6}
+\contentsline {paragraph}{}{5}
+\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{6}
+\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{6}
+\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{6}
+\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{6}
+\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{6}
+\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{6}
+\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{6}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{6}
+\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{6}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{6}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{7}

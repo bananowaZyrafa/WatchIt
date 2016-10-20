@@ -13,7 +13,9 @@ post_install do |installer|
 end
 
 target 'WatchIt' do
-    pod 'RxSwift'
-    pod 'RxCocoa'
-    pod 'Moya/RxSwift'
+  pod 'RxCocoa', '3.0.0-beta.1'
+  pod 'RxSwift', '3.0.0-beta.1'
+  pod 'Moya', '8.0.0-beta.2'
+  #pod "Moya/RxSwift", :git => "https://github.com/Moya/Moya", :branch => "swift-3.0"
+
 end
