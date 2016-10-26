@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  18 OCT 2016 11:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  26 OCT 2016 18:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -454,33 +454,39 @@ Rozdzia\PlPrIeC {\l } 2.
 Rozdzia\PlPrIeC {\l } 3.
 [4
 
-]
+] [5]
 Rozdzia\PlPrIeC {\l } 4.
-[5
+[6
 
-] [6]
+] [7] [8
+
+]
 Rozdzia\PlPrIeC {\l } 5.
-[7
+[9
 
 ] (./template_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 791 strings out of 493014
- 8585 string characters out of 6133350
- 62911 words of memory out of 5000000
- 4361 multiletter control sequences out of 15000+600000
- 15283 words of font info for 42 fonts, out of 8000000 for 9000
+ 795 strings out of 493014
+ 8637 string characters out of 6133350
+ 63911 words of memory out of 5000000
+ 4364 multiletter control sequences out of 15000+600000
+ 15819 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,6n,24p,530b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,8n,24p,706b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/
-pl/plrm.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plbx10.pf
-b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/pl/plr17.pfb>
-Output written on template_Report.pdf (8 pages, 57215 bytes).
+pl/plit.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plbx10.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive/2016/texmf-dis
+t/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/pl/plr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/p
+l/plr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr7.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/pl/plti10.pfb>
+Output written on template_Report.pdf (10 pages, 86454 bytes).
 PDF statistics:
- 52 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 75 PDF objects out of 1000 (max. 8388607)
+ 53 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

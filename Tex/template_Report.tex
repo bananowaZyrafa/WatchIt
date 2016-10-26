@@ -14,7 +14,20 @@
 \chapter{CEL I ZAKRES PRACY}
 \chapter{ŹRÓDŁA I DEFINICJE}
 \section{Historia systemu iOS}
-\section{Historia języka Swift}
+\section{Historia i charakterystyka języka Swift}
+\paragraph{}Swift to kompilowany, hybrydowy język programowania stworzony przez firmę Apple Inc. Jego premiera odbyła się podczas Worldwide Developers Conference w czerwcu 2014 roku.\cite{swiftHistory} 
+\paragraph{}Jeden z twórców \footnote{Chris Lattner - inżynier Apple} opisuje Swifta jako narzędzie czerpiące idee z wielu innych języków t.j. Objective-C, Rust, Haskell, Ruby, Python, C\#, CLU i wielu innych. 
+\paragraph{}Swift został stworzony jako nowoczesny następca Objective-C na platformy MacOS i iOS, ale w grudniu 2015 roku stał się językiem open source. Oznacza to, że została stworzona społeczność przy użyciu serwisu Swift.org a oprócz tego udostępniono publiczne repozytorium Gita. Ponadto uwolniono narzędzia takie jak kompilator LLVM, biblioteki standardowe czy menedżer zależności projektu. Dodatkowo Swift otrzymał wsparcie na platformę Linux.\cite{swiftOpensource}
+\paragraph{Główne różnice między Swiftem a Objective-C}
+ Swift jako język mający na celu zastąpienie leciwego już Objective-C oferuje wiele nowych mechanizmów. \\
+ \textbf{Wartości opcjonalne - } pozwalają funkcjom, które nie zawsze zwrócą konkretną wartość lub obiekt na zwrócenie obiektu enkapsulowanego w wartość opcjonalną bądź wartość nil. W języku C i Objective-C funkcje mogą zwrócić wartość pustą (nil) nawet jeżeli spodziewana wartość jest typu stuktury lub klasy. W Objective-C zwrócenie przez funkcję wartości pustej (pomimo innej spodziewanej) nie powoduje błędów kompilacji ani błędów w czasie działania. W Swficie zaś w takiej sytuacji mielibyśmy do czynienia z błędem kompilacji lub błędem krytycznym w czasie działania co chroni nas przed niespodziewanymi zachowaniami. \\
+ \textbf{Wnioskowanie typów - } kompilator języka Swift jest w stanie wywnioskować typ tworzonej zmiennej. Ponadto zmienna o zadeklarowanym (wywnioskowanym) typie nie może go zmienić.\\
+ \textbf{Krotki - } Swift wspiera obiekty krotkowe, czyli takie, które mogą przechowywać na raz kilka wartości różnych typów. Dzięki temu możliwe jest zwracanie przez funkcji wielu wartości. \\
+ \textbf{Guard - } wyrażenie warunkowe w składni Swifta. Zapewnia weryfikacje poprawności oczekiwanego typu zmiennej a w razie błędu, może spowodować wcześniejsze wyjście z funkcji. \\
+ \textbf{Elementy programowania funkcyjnego - } Swift posiada możliwość programowania funkcyjnego co niejednokrotnie jest dużo bardziej czytelne i wydajne od tradycyjnego podejścia. Z tego powodu oferuje on operatory funkcyjne typu \textbf{map} czy \textbf{filter}. \\       
+ \textbf{Enumeratory - } W Swficie, podejście do enumeratorów zostało bardzo rozbudowane. Mogą one zawierać metody i być przekazywane przez wartość. \\
+ \textbf{Podejście do funkcji - } Każda funkcja w Swifcie posiada typ, który składa się z typów parametrów oraz typu zwracanego. To oznacza, że można przypisywać funkcje do zmiennych a nawet przesyłać je jako parametry innych funkcji.\\
+ \textbf{Słowo kluczowe "do" - } pozwala na utworzenie nowego zakresu w kodzie a ponadto może zawierać mechanizm obsłusgi błędów, znany z innych jęzków t.j. "try catch". \cite{swiftObjcDiff}
 \section{Paragydmat funkcyjny}
 \section{Paragydmat reaktywny}
 \subsection{Idea programowania reaktywnego}
@@ -43,6 +56,14 @@ Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. J
 \subsection{Opis użytych bibliotek i frameworków}
 \subsection{Implementacja aplikacji mobilnej - zastosowana architektura}
 \subsection{Prezentacja aplikacji}
+\begin{thebibliography}{50}
+\bibitem{swiftHistory} https://developer.apple.com/swift/blog/?id=14
+\emph{- historia języka Swift}
+\bibitem{swiftOpensource} https://developer.apple.com/swift/blog/?id=34
+\emph{- Swift jako język opensource}
+\bibitem{swiftObjcDiff} https://redwerk.com/blog/10-differences-objective-c-swift
+\emph{- Różnice między Swiftem a Objective - C}
+\end{thebibliography}
 \chapter{PODSUMOWANIE}
 
 \end{document}          
