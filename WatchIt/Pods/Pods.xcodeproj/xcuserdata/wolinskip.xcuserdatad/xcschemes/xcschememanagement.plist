@@ -9,6 +9,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ModelMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Moya-ModelMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Moya.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -29,6 +39,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxOptional.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>RxSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +52,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3DF0F92E60A51C6B2EB10693902E558C</key>
+		<key>0C985031D258A722C5AAFA636C0CB5DD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,7 +62,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>53EE8731D068D87D23A96194D95FEB4A</key>
+		<key>4A1CE866E4400DDDEA129B4AD2B4CF45</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>604933126078CCAAB461F18F0706F7E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +77,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8075179EA89ED02AE49DB1192612E0CE</key>
+		<key>8AD9D21FDE9BD3D6EC621069864A3B4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>BCD39353ED60BAC3EA68AF316CAD1009</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA14FC28396A2328190AD7474F24B197</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D4D3CDBCF0975E71ECA339D6957F5905</key>
 		<dict>
 			<key>primary</key>
 			<true/>
