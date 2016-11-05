@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		93EA46F384FF56A86DD4D83B /* Pods_WatchIt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68022D992ECFD20BFFC2BDD /* Pods_WatchIt.framework */; };
+		C65AEE041DCE4B6800D10FC3 /* OMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65AEE031DCE4B6800D10FC3 /* OMDBEndpoint.swift */; };
 		C68EBBCB1DB11744008E882F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68EBBCA1DB11744008E882F /* AppDelegate.swift */; };
 		C68EBBCD1DB11744008E882F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68EBBCC1DB11744008E882F /* ViewController.swift */; };
 		C68EBBD01DB11744008E882F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68EBBCE1DB11744008E882F /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		937570F320FC332354D9CD1E /* Pods-WatchIt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchIt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WatchIt/Pods-WatchIt.debug.xcconfig"; sourceTree = "<group>"; };
+		C65AEE031DCE4B6800D10FC3 /* OMDBEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBEndpoint.swift; sourceTree = "<group>"; };
 		C68022D992ECFD20BFFC2BDD /* Pods_WatchIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68EBBC71DB11744008E882F /* WatchIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68EBBCA1DB11744008E882F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +61,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C65AEE011DCE4B3A00D10FC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		C65AEE021DCE4B4A00D10FC3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C65AEE031DCE4B6800D10FC3 /* OMDBEndpoint.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
 		C68EBBBE1DB11743008E882F = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +97,8 @@
 		C68EBBC91DB11744008E882F /* WatchIt */ = {
 			isa = PBXGroup;
 			children = (
+				C65AEE021DCE4B4A00D10FC3 /* API */,
+				C65AEE011DCE4B3A00D10FC3 /* Models */,
 				C68EBBCA1DB11744008E882F /* AppDelegate.swift */,
 				C68EBBCC1DB11744008E882F /* ViewController.swift */,
 				C68EBBCE1DB11744008E882F /* Main.storyboard */,
@@ -215,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65AEE041DCE4B6800D10FC3 /* OMDBEndpoint.swift in Sources */,
 				C68EBBD31DB11744008E882F /* WatchIt.xcdatamodeld in Sources */,
 				C68EBBCD1DB11744008E882F /* ViewController.swift in Sources */,
 				C68EBBCB1DB11744008E882F /* AppDelegate.swift in Sources */,

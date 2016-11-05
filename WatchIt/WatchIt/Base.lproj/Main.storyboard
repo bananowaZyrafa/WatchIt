@@ -21,20 +21,29 @@
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="378-z6-KlA">
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Lug-Ke-0Yw">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Lug-Ke-0Yw" secondAttribute="bottom" id="1eE-bH-eOf"/>
                             <constraint firstItem="378-z6-KlA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="3F2-x3-r8g"/>
-                            <constraint firstItem="378-z6-KlA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Rp-Br-aT2"/>
+                            <constraint firstItem="378-z6-KlA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="3Rp-Br-aT2"/>
+                            <constraint firstAttribute="trailing" secondItem="Lug-Ke-0Yw" secondAttribute="trailing" id="9TW-b4-MDP"/>
+                            <constraint firstItem="Lug-Ke-0Yw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FRK-v3-XHJ"/>
                             <constraint firstAttribute="trailing" secondItem="378-z6-KlA" secondAttribute="trailing" id="VwZ-1J-g1v"/>
+                            <constraint firstItem="Lug-Ke-0Yw" firstAttribute="top" secondItem="378-z6-KlA" secondAttribute="bottom" id="tMi-Vd-hys"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="378-z6-KlA" id="svE-Gh-9NJ"/>
+                        <outlet property="tableView" destination="Lug-Ke-0Yw" id="sfI-dI-ms0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

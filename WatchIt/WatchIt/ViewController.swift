@@ -11,29 +11,23 @@ import RxCocoa
 import RxSwift
 import Moya
 import RxOptional
-class Repository {
-    
-}
 
 class ViewController: UIViewController {
-
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var tableView: UITableView!
+
+    let disposeBag = DisposeBag()
+    var provider: MoyaProvider<OMDB>!
+    var latestTitle: Observable<String?> {
+        return searchBar.rx.text.throttle(0.5, scheduler: MainScheduler.instance).distinctUntilChanged()
+//                .throttle(0.5, scheduler: MainScheduler.instance)
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let searchResults = searchBar.rx.text
-            .throttle(0.3, scheduler: MainScheduler.instance)
-            .distinctUntilChanged()
-            .do(onNext: { (query) in
-                print(query)
-                }, onError: { (error) in
-                    print("error : \(error)")
-                }, onCompleted: nil, onSubscribe: nil, onDispose: nil)
-            .observeOn(MainScheduler.instance)
-        // Do any additional setup after loading the view, typically from a nib.
-        searchResults.subscribe { (query) in
-            print(query)
-        }
+        setupRx()
     }
 
     override func didReceiveMemoryWarning() {
@@ -41,6 +35,8 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    func setupRx() {
+        
+    }
 }
 
