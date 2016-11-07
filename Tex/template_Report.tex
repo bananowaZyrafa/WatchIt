@@ -16,25 +16,34 @@
 \section{Historia i charakterystyka systemu iOS}
 \paragraph{}iOS to mobilny system operacyjny stworzony przez firmę Apple Inc. na urządzenia iPod, iPhone i iPad. Został zaprezentowany w styczniu 2007 roku na konferencji Macworld. Jest jednym z dwóch\footnote{dane firmy Gartner Inc. za rok 2015: urządzenia mobilne z systemem android - 1,3 mld \\ urządzenia z systemem iOS - 297 milionów} najpopularniejszych systemów mobilnych. 
 \paragraph{Specyfikacje techniczne}
-System iOS oparty jest na jądrze Darwin. \\Darwin to unixowy system operacyjny typu open-source wypuszczony przez Apple Inc. w 2000 roku. Zbudowany jest w oparciu o projekty firm Apple, NeXTSTEP, BSD, Mach i kilka innych. System działa na architekturach PowerPC, Intel x86 i ARM.\cite{pureDarwin}\cite{openGroup} 
+\subparagraph{}System iOS oparty jest na jądrze systemu Darwin. Jest to unixowy system operacyjny typu open-source wypuszczony przez Apple Inc. w 2000 roku. Zbudowany jest w oparciu o projekty firm Apple, NeXTSTEP, BSD, Mach i kilka innych. System działa na architekturach PowerPC, Intel x86 i ARM.\cite{pureDarwin}\cite{openGroup} 
 Jądrem systemu Darwin jest XNU. Jest to hybrodowe jądro łączące w swojej implementacji Mach 3 microkernel i elementy BSD t.j. stos sieciowy czy wirtualny system plików.\cite{XNUkernel}
 \paragraph{Wersje systemu iOS}
-\textbf{iPhone OS - } pierwsza iteracja mobilnego systemu Apple. Nie nadano żadnej oficjalnej nazwy. Jedyne co utrzymywano to, że iPhone korzysta z jednej z desktopowych wersji systemu OSX.\cite{iphoneOSX} 
-W marcu 2008 roku wypuszczono zestaw narzędzi do programowania tę platformę: iPhone SDK
+\subparagraph{iPhone OS -}pierwsza iteracja mobilnego systemu Apple. Nie nadano żadnej oficjalnej nazwy. Jedyne co utrzymywano to, że iPhone korzysta z jednej z desktopowych wersji systemu OSX.\cite{iphoneOSX} 
+W marcu 2008 roku wypuszczono zestaw narzędzi do programowania na tę platformę: iPhone SDK \cite{iphoneSDK}
+\subparagraph{iPhone OS 2.0 -}w lipcu 2008 roku, wraz z premierą urządzenia iPhone 3G, miała miejsce premiera systemu iPhone OS 2.0. Najistotniejszą usługą jaką wprowadzał ten system był sklep App Store. Dzięki niemu programiści mogli rozpocząć rozprowadzanie swoich aplikacji na urządzenia iPhone i iPod Touch. \cite{iphone3GappStore}
+\subparagraph{iPhone OS 3.0 -}Odświeżony smartfon Apple iPhone3GS został wypuszczony wraz z nowym systemem - iPhone OS 3.0. Jego najbardziej rozpoznawalną cechą było wprowadzenie czegoś co dziś w każdym systemie mobilnym musi być i jest oczywiste. Chodzi o funkcje kopiowania i wklejania, bez których nie wyobrażamy sobie systemu operacyjnego. Ponadto dostarczał funkcjonalności takich jak: Spotlight Search, klawiatura w układzie horyzontalnym i możliwość wysyłania wiadomości MMS.\cite{iphoneOS3}
+\subparagraph{iOS 4 -}Pierwszy system o tej nazwie, wprowadzony na rynek w kwietniu 2010 roku. Wówczas Apple zaprezentowało urządzenie iPhone 4 oraz zrezygnowało ze wsparcia urządzeń iPhone i iPod Touch. Wraz z premierą nowego systemu, firma oddała do dyspozycji około 1500 API dla programistów. Najistotniejszym z nich było to obłusugujące multitasking, wprowadzony po raz pierwszy w mobilnych systemach Apple. Multitasking pozwalał użytkownikom na m.in. przełączanie się między aplikacjami działającymi w tyle za pomocą podwójnego kliknięcia przycisku home. Poprzednie urządzenia ze względu na swoją architekturę nie pozwalały na to.\cite{ios4}
+\subparagraph{iOS 5 -}W październiku 2011 swoją premierę miał iPhone 4s - urządzenie z dwurdzeniowym procesorem - a wraz z nim system iOS 5. Nowy system oferował takie usługi jak Siri (asystent głosowy), iMessage (system wiadomości oparty o połączenie internetowe), synchronizacja z iCloud czy Notification Center. Bardzo istostny z punktu widzenia programistów, ponieważ oferuje on możliwość tworzenia i wysyłania powiadomień od aplikacji do systemu i wyświetlania ich w górnym pasku.\cite{ios5}
+\subparagraph{iOS 6 -}Po raz pierwszy zaprezentowany w czerwcu 2012 roku. Wraz z nowym urządzeniem - iPhonem 5 - miał wprowadzać kilka udogodnień. Były to między innymi: kompletnie odświeżona aplikacja map i nawigacji GPS, która uwzględniała ruch uliczny. Ponadto dostarczono pełną integrację z systemem Facebook oraz usługę FaceTime - wideorozmowy za pośrednictwem telefonii komórkowej.\cite{ios6}
+\subparagraph{iOS 7 -}Najbardziej znaczący update systemu iOS wg Craiga Federighi'ego.\footnote{Wiceprzewodniczący działu inżynierii oprogramowania Apple} Zaprezentowany w czerwcu 2013 roku. System zaprezentował kompletnie odświeżony interfejs użytkownika. Najważniejszą funkcjonalnością był Control Center czyli zestaw najczęściej używanych opcji obsługiwany przez wysunięcie za pomocą paska od dołu ekranu. Ponadto wszelkie notyfikacje systemu były wyświetlane również na zablokowanym ekranie urządzenia. Oprócz tego nowy system dostarczył wiele nowych API dla programistów, w tym ulepszony multitasking, dzięki któremu aplikacje mogły wykonywać wiele operacji w tle. Poza powyższymi, iOS 7 wprowadził jeszcze jedną istotną usługę - AirDrop czyli nowy sposób przesyłania danych między użytkownikami w sposób zaszyfrowany, korzystając z połączenia typu peer-to-peer.\cite{ios7}
+\subparagraph{iOS 8 -}Największy dotychczasowy zestaw 4000 nowych API został zaprezentowany wraz z systemem iOS 8 w czerwcu 2014 roku. Zestaw ten obejmował całkowicie nowy język programowania na platformę jakim jest Swift. iOS 8 wprowadzał następujące nowości: widgety Notification Center, klawiatury dostępne z poziomu zewnętrznych aplikacji, HealthKit - system zdrowotny pomagający użytkownikowi w przechowywaniu i analizowaniu parametrów stanu zdrowia, HomeKit - aplikacja do integracji z systemami typu smart house. Wraz z prezentacją urządzenia iPhone 6 z procesorem A7, pojawił się również nowy silnik graficzny - Metal, w pełni wykorzystujący nową architekturę urządzenia do tworzenia gier i animacji.\cite{ios8}
+\subparagraph{iOS 9 -}Czerwiec 2015 roku był datą pierwszej publicznej prezentacji systemu iOS 9. Na urządzeniach iPad wprowadzono funkcję używania dwóch aplikacji jednocześnie w trybie side-by-side i Picture-in-Picture. Ponadto, ulepszono Mapy uwzględniając nawigację przy użyciu publicznego transportu. Oprócz tego system wprowadził kilka optymalizacji pozwalających na dłuższy czas pracy na baterii. Jeśli chodzi o narzędzia dla programistów to stworzono nowy framework do produkcji gier - GameKit. Wprowadzono również usługę CarPlay, bardzo istotną dla producentów samochodów. Dzięki niej możliwe jest sparowanie urządzenia z systemem pojazdu i wywoływania funkcji. Ponadto swoją premierę miała druga implementacja języka Swift czyli Swift 2.0 oraz stał się projektem open source.\cite{ios9}
+\subparagraph{iOS 10 -}Ostatnia opisywana przeze mnie iteracja systemu iOS ujrzała światło dzienne w czerwcu 2016 roku. Według Craiga Federighi'ego jest to największe i najbardziej znaczące wydanie iOS'a. Istotne nowości wprowadzone przez system to m.in. otwarcie API wiadomości dla programistów, otwarcie API Siri, kompletny redesign aplikacji Mapy, nowy design Apple Music, obsługa 3D touch dla urządzeń iPhone 6 i nowszych. W tym samym roku premierę ma kolejna implementacja języka Swift - Swift 3.0 będąca bardziej kompatybilną wstecznie z językiem Objective-C.\cite{compatibility}\cite{ios10}
 \section{Historia i charakterystyka języka Swift}
 \paragraph{}Swift to kompilowany, hybrydowy język programowania stworzony przez firmę Apple Inc. Jego premiera odbyła się podczas Worldwide Developers Conference w czerwcu 2014 roku.\cite{swiftHistory} 
 \paragraph{}Jeden z twórców \footnote{Chris Lattner - inżynier Apple} opisuje Swifta jako narzędzie czerpiące idee z wielu innych języków t.j. Objective-C, Rust, Haskell, Ruby, Python, C\#, CLU i wielu innych. 
 \paragraph{}Swift został stworzony jako nowoczesny następca Objective-C na platformy MacOS i iOS, ale w grudniu 2015 roku stał się językiem open source. Oznacza to, że została stworzona społeczność przy użyciu serwisu Swift.org a oprócz tego udostępniono publiczne repozytorium Gita. Ponadto uwolniono narzędzia takie jak kompilator LLVM, biblioteki standardowe czy menedżer zależności projektu. Dodatkowo Swift otrzymał wsparcie na platformę Linux.\cite{swiftOpensource}
 \paragraph{Główne różnice między Swiftem a Objective-C}
- Swift jako język mający na celu zastąpienie leciwego już Objective-C oferuje wiele nowych mechanizmów. \\
- \textbf{Wartości opcjonalne - } pozwalają funkcjom, które nie zawsze zwrócą konkretną wartość lub obiekt na zwrócenie obiektu enkapsulowanego w wartość opcjonalną bądź wartość nil. W języku C i Objective-C funkcje mogą zwrócić wartość pustą (nil) nawet jeżeli spodziewana wartość jest typu stuktury lub klasy. W Objective-C zwrócenie przez funkcję wartości pustej (pomimo innej spodziewanej) nie powoduje błędów kompilacji ani błędów w czasie działania. W Swficie zaś w takiej sytuacji mielibyśmy do czynienia z błędem kompilacji lub błędem krytycznym w czasie działania co chroni nas przed niespodziewanymi zachowaniami. \\
- \textbf{Wnioskowanie typów - } kompilator języka Swift jest w stanie wywnioskować typ tworzonej zmiennej. Ponadto zmienna o zadeklarowanym (wywnioskowanym) typie nie może go zmienić.\\
- \textbf{Krotki - } Swift wspiera obiekty krotkowe, czyli takie, które mogą przechowywać na raz kilka wartości różnych typów. Dzięki temu możliwe jest zwracanie przez funkcji wielu wartości. \\
- \textbf{Guard - } wyrażenie warunkowe w składni Swifta. Zapewnia weryfikacje poprawności oczekiwanego typu zmiennej a w razie błędu, może spowodować wcześniejsze wyjście z funkcji. \\
- \textbf{Elementy programowania funkcyjnego - } Swift posiada możliwość programowania funkcyjnego co niejednokrotnie jest dużo bardziej czytelne i wydajne od tradycyjnego podejścia. Z tego powodu oferuje on operatory funkcyjne typu \textbf{map} czy \textbf{filter}. \\       
- \textbf{Enumeratory - } W Swficie, podejście do enumeratorów zostało bardzo rozbudowane. Mogą one zawierać metody i być przekazywane przez wartość. \\
- \textbf{Podejście do funkcji - } Każda funkcja w Swifcie posiada typ, który składa się z typów parametrów oraz typu zwracanego. To oznacza, że można przypisywać funkcje do zmiennych a nawet przesyłać je jako parametry innych funkcji.\\
- \textbf{Słowo kluczowe "do" - } pozwala na utworzenie nowego zakresu w kodzie a ponadto może zawierać mechanizm obsłusgi błędów, znany z innych jęzków t.j. "try catch". \cite{swiftObjcDiff}
+\subparagraph{}Swift jako język mający na celu zastąpienie leciwego już Objective-C, oferuje wiele nowych mechanizmów.
+\subparagraph{Wartości opcjonalne - } pozwalają funkcjom, które nie zawsze zwrócą konkretną wartość lub obiekt na zwrócenie obiektu enkapsulowanego w wartość opcjonalną bądź wartość nil. W języku C i Objective-C funkcje mogą zwrócić wartość pustą (nil) nawet jeżeli spodziewana wartość jest typu stuktury lub klasy. W Objective-C zwrócenie przez funkcję wartości pustej (pomimo innej spodziewanej) nie powoduje błędów kompilacji ani błędów w czasie działania. W Swficie zaś w takiej sytuacji mielibyśmy do czynienia z błędem kompilacji lub błędem krytycznym w czasie działania co chroni nas przed niespodziewanymi zachowaniami.
+\subparagraph{Wnioskowanie typów - } kompilator języka Swift jest w stanie wywnioskować typ tworzonej zmiennej. Ponadto zmienna o zadeklarowanym (wywnioskowanym) typie nie może go zmienić.
+\subparagraph{Krotki - } Swift wspiera obiekty krotkowe, czyli takie, które mogą przechowywać na raz kilka wartości różnych typów. Dzięki temu możliwe jest zwracanie przez funkcji wielu wartości.
+\subparagraph{Guard - } wyrażenie warunkowe w składni Swifta. Zapewnia weryfikacje poprawności oczekiwanego typu zmiennej a w razie błędu, może spowodować wcześniejsze wyjście z funkcji.
+\subparagraph{Elementy programowania funkcyjnego - } Swift posiada możliwość programowania funkcyjnego co niejednokrotnie jest dużo bardziej czytelne i wydajne od tradycyjnego podejścia. Z tego powodu oferuje on operatory funkcyjne typu \textbf{map} czy \textbf{filter}.       
+\subparagraph{Enumeratory - } W Swficie, podejście do enumeratorów zostało bardzo rozbudowane. Mogą one zawierać metody i być przekazywane przez wartość.
+\subparagraph{Podejście do funkcji - } Każda funkcja w Swifcie posiada typ, który składa się z typów parametrów oraz typu zwracanego. To oznacza, że można przypisywać funkcje do zmiennych a nawet przesyłać je jako parametry innych funkcji.
+\subparagraph{Słowo kluczowe "do" - } pozwala na utworzenie nowego zakresu w kodzie a ponadto może zawierać mechanizm obsłusgi błędów, znany z innych jęzków t.j. "try catch". \cite{swiftObjcDiff}
 \section{Paragydmat funkcyjny}
 \section{Paragydmat reaktywny}
 \subsection{Idea programowania reaktywnego}
@@ -77,6 +86,28 @@ Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. J
 %\emph{ - opis jądra systemu MacOS i iOS}
 %\bibitem{iphoneOSX} https://web.archive.org/web/20071006005308/http://www.apple.com/iphone/features/index.html#macosx
 %\emph{ - informacje o pierwszym systemie na iPhone}
+\bibitem{iphoneSDK} https://web.archive.org/web/20071020040652/http://www.apple.com/hotnews
+\emph{ - informacja o stworzeniu i udostępnieniu iPhone SDK}
+\bibitem{iphone3GappStore} http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sale-Tomorrow.html
+\emph{ - informacje o iPhone 3G i powstaniu usługi App Store}
+\bibitem{iphoneOS3} http://www.apple.com/pr/library/2009/06/08Apple-Announces-the-New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html
+\emph{ - system iPhone 3.0 i implementacja podstawowych funkcjonalności}
+\bibitem{ios4}http://www.apple.com/pr/library/2010/04/08Apple-Previews-iPhone-OS-4.html
+\emph{ - informacje o systemie iOS 4}
+\bibitem{ios5}http://www.apple.com/pr/library/2011/10/04Apple-Launches-iPhone-4S-iOS-5-iCloud.html
+\emph{ - informacje o systemie iOS 5}
+\bibitem{ios6}http://www.apple.com/pr/library/2012/06/11Apple-Previews-iOS-6-With-All-New-Maps-Siri-Features-Facebook-Integration-Shared-Photo-Streams-New-Passbook-App.html
+\emph{ - informacje o systemie iOS 6}
+\bibitem{ios7}http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iOS-7.html
+\emph{ - informacje o systemie iOS 7}
+\bibitem{ios8}http://www.apple.com/pr/library/2014/06/02Apple-Releases-iOS-8-SDK-With-Over-4-000-New-APIs.html
+\emph{ - informacje o systemie iOS 8}
+\bibitem{ios9}http://www.apple.com/pr/library/2015/06/08Apple-Previews-iOS-9.html
+\emph{ - informacje o systemie iOS 9}
+\bibitem{compatibility}https://github.com/apple/swift-evolution/blob/master/proposals/0005-objective-c-name-translation.md
+\emph{ - informacje o poprawieniu kompatybilności Swift z Objective-C}
+\bibitem{ios10}http://www.apple.com/pr/library/2016/06/13Apple-Previews-iOS-10-The-Biggest-iOS-Release-Ever.html
+\emph{ - informacje o systemie iOS 10}
 \end{thebibliography}
 \chapter{PODSUMOWANIE}
 

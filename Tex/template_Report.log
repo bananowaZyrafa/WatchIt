@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  31 OCT 2016 17:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  7 NOV 2016 23:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,15 +460,86 @@ LaTeX Warning: Citation `iphoneOSX' on page 4 undefined on input line 22.
 
 [4
 
-] [5] [6]
+] [5] [6] [7] [8]
 Rozdzia\PlPrIeC {\l } 4.
-[7
+[9
 
-] [8] [9
+] [10]
+Overfull \hbox (20.44527pt too wide) in paragraph at lines 89--91
+[]\OT4/cmr/m/n/10 https://web.archive.org/web/20071020040652/http://www.apple.c
+om/hotnews
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 91--93
+[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sale-
+ []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 91--93
+\OT4/cmr/m/n/10 Tomorrow.html  \OT4/cmr/m/it/10 - in-for-ma-cje o iPho-ne 3G i 
+po-wsta-niu usªu-gi App
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--95
+[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2009/06/08Apple-Announces-the
+-New-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2010/04/08Apple-Previews-iPho
+ne-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
+[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2011/10/04Apple-Launches-iPho
+ne-4S-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2012/06/11Apple-Previews-iOS-
+6-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
+\OT4/cmr/m/n/10 With-All-New-Maps-Siri-Features-Facebook-Integration-Shared-Pho
+to-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 103--105
+[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2014/06/02Apple-Releases-iOS-
+8-SDK-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 105--107
+[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2015/06/08Apple-Previews-iOS-
+9.html
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+[]\OT4/cmr/m/n/10 https://github.com/apple/swift-evolution/blob/master/proposal
+s/0005-
+ []
+
+[11
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
+[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2016/06/13Apple-Previews-iOS-
+10-
+ []
+
+[12]
 Rozdzia\PlPrIeC {\l } 5.
-[10
+[13
 
 ] (./template_Report.aux)
 
@@ -476,13 +547,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 800 strings out of 493014
- 8697 string characters out of 6133350
- 63911 words of memory out of 5000000
- 4369 multiletter control sequences out of 15000+600000
+ 811 strings out of 493014
+ 8795 string characters out of 6133350
+ 62911 words of memory out of 5000000
+ 4380 multiletter control sequences out of 15000+600000
  15819 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,8n,24p,706b,188s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,8n,24p,965b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/local/t
 exlive/2016/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/pl/plbx10.pfb></usr/local/texlive/2016/texmf-dist/fo
@@ -493,10 +564,10 @@ usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/public/pl/plti10.pfb>
-Output written on template_Report.pdf (11 pages, 95107 bytes).
+Output written on template_Report.pdf (14 pages, 107127 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
