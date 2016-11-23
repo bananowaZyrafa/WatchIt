@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7B1FA3A633E61103321E5EBC /* Pods_WatchItSwift2_3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DFEB0780DE922CEA55B67C /* Pods_WatchItSwift2_3.framework */; };
+		C65BFB171DE5DD9D007011C8 /* OMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65BFB161DE5DD9D007011C8 /* OMDBEndpoint.swift */; };
+		C65BFB1A1DE5E2FD007011C8 /* Watchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65BFB191DE5E2FD007011C8 /* Watchable.swift */; };
+		C65BFB1C1DE6252D007011C8 /* MovieFinderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65BFB1B1DE6252D007011C8 /* MovieFinderModel.swift */; };
 		C6C9A70E1DDDFA5700A91274 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C9A70D1DDDFA5700A91274 /* AppDelegate.swift */; };
 		C6C9A7101DDDFA5700A91274 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6C9A70F1DDDFA5700A91274 /* ViewController.swift */; };
 		C6C9A7131DDDFA5700A91274 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6C9A7111DDDFA5700A91274 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* Begin PBXFileReference section */
 		4D92A28BE207A9C96AB8A96F /* Pods-WatchItSwift2.3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchItSwift2.3.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchItSwift2.3/Pods-WatchItSwift2.3.release.xcconfig"; sourceTree = "<group>"; };
 		61DFEB0780DE922CEA55B67C /* Pods_WatchItSwift2_3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchItSwift2_3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C65BFB161DE5DD9D007011C8 /* OMDBEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBEndpoint.swift; sourceTree = "<group>"; };
+		C65BFB191DE5E2FD007011C8 /* Watchable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Watchable.swift; sourceTree = "<group>"; };
+		C65BFB1B1DE6252D007011C8 /* MovieFinderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieFinderModel.swift; sourceTree = "<group>"; };
 		C6C9A70A1DDDFA5700A91274 /* WatchItSwift2.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchItSwift2.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6C9A70D1DDDFA5700A91274 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C6C9A70F1DDDFA5700A91274 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +65,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		C65BFB151DE5DD88007011C8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				C65BFB161DE5DD9D007011C8 /* OMDBEndpoint.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		C65BFB181DE5DDAC007011C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C65BFB191DE5E2FD007011C8 /* Watchable.swift */,
+				C65BFB1B1DE6252D007011C8 /* MovieFinderModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		C6C9A7011DDDFA5700A91274 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +103,8 @@
 		C6C9A70C1DDDFA5700A91274 /* WatchItSwift2.3 */ = {
 			isa = PBXGroup;
 			children = (
+				C65BFB181DE5DDAC007011C8 /* Models */,
+				C65BFB151DE5DD88007011C8 /* API */,
 				C6C9A70D1DDDFA5700A91274 /* AppDelegate.swift */,
 				C6C9A70F1DDDFA5700A91274 /* ViewController.swift */,
 				C6C9A7111DDDFA5700A91274 /* Main.storyboard */,
@@ -231,6 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65BFB171DE5DD9D007011C8 /* OMDBEndpoint.swift in Sources */,
+				C65BFB1A1DE5E2FD007011C8 /* Watchable.swift in Sources */,
+				C65BFB1C1DE6252D007011C8 /* MovieFinderModel.swift in Sources */,
 				C6C9A7101DDDFA5700A91274 /* ViewController.swift in Sources */,
 				C6C9A7161DDDFA5700A91274 /* WatchItSwift2_3.xcdatamodeld in Sources */,
 				C6C9A70E1DDDFA5700A91274 /* AppDelegate.swift in Sources */,

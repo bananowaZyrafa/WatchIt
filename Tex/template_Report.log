@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  7 NOV 2016 23:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  22 NOV 2016 17:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -8,8 +8,8 @@ LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@chapter=\count80
@@ -431,115 +431,132 @@ LaTeX Font Info:    External font `plex10' loaded for size
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./template_Report.toc
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 4.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 4.
-LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 4.
+(Font)              <10.95> on input line 6.
 )
 \tf@toc=\write3
 \openout3 = `template_Report.toc'.
 
- [1
+ [2
 
 ]
 Rozdzia\PlPrIeC {\l } 1.
-[2
-
-]
-Rozdzia\PlPrIeC {\l } 2.
 [3
 
 ]
-Rozdzia\PlPrIeC {\l } 3.
-
-LaTeX Warning: Citation `XNUkernel' on page 4 undefined on input line 20.
-
-
-LaTeX Warning: Citation `iphoneOSX' on page 4 undefined on input line 22.
-
+Rozdzia\PlPrIeC {\l } 2.
 [4
 
-] [5] [6] [7] [8]
+]
+Rozdzia\PlPrIeC {\l } 3.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <9> on input line 42.
+LaTeX Font Info:    External font `plex10' loaded for size
+(Font)              <5> on input line 42.
+
+LaTeX Warning: Citation `XNUkernel' on page 5 undefined on input line 45.
+
+
+LaTeX Warning: Citation `iphoneOSX' on page 5 undefined on input line 47.
+
+[5
+
+] [6] [7] [8] [9]
 Rozdzia\PlPrIeC {\l } 4.
-[9
+[10
 
-] [10]
-Overfull \hbox (20.44527pt too wide) in paragraph at lines 89--91
-[]\OT4/cmr/m/n/10 https://web.archive.org/web/20071020040652/http://www.apple.c
-om/hotnews
+] [11]
+Underfull \hbox (badness 3907) in paragraph at lines 105--107
+[]\OT4/cmr/m/n/10.95 https://developer.apple.com/swift/blog/?id=34 \OT4/cmr/m/i
+t/10.95 - Swift ja-ko j¦-zyk
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sale-
+Underfull \hbox (badness 5878) in paragraph at lines 107--109
+[]\OT4/cmr/m/n/10.95 https://redwerk.com/blog/10-differences-objective-c-swift 
+\OT4/cmr/m/it/10.95 - Ró»-ni-ce
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 91--93
-\OT4/cmr/m/n/10 Tomorrow.html  \OT4/cmr/m/it/10 - in-for-ma-cje o iPho-ne 3G i 
-po-wsta-niu usªu-gi App
+Overfull \hbox (40.1621pt too wide) in paragraph at lines 116--118
+[]\OT4/cmr/m/n/10.95 https://web.archive.org/web/20071020040652/http://www.appl
+e.com/hotnews
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 93--95
-[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2009/06/08Apple-Announces-the
--New-
+Underfull \hbox (badness 10000) in paragraph at lines 118--120
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sal
+e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--97
-[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2010/04/08Apple-Previews-iPho
-ne-
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2009/06/08Apple-Announces-
+the-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--99
-[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2011/10/04Apple-Launches-iPho
-ne-4S-
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+\OT4/cmr/m/n/10.95 New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html  \O
+T4/cmr/m/it/10.95 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
-[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2012/06/11Apple-Previews-iOS-
-6-
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2010/04/08Apple-Previews-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
-\OT4/cmr/m/n/10 With-All-New-Maps-Siri-Features-Facebook-Integration-Shared-Pho
-to-
+Underfull \hbox (badness 10000) in paragraph at lines 124--126
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2011/10/04Apple-Launches-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
-[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2014/06/02Apple-Releases-iOS-
-8-SDK-
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2012/06/11Apple-Previews-i
+OS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
-[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2015/06/08Apple-Previews-iOS-
-9.html
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
+\OT4/cmr/m/n/10.95 6-With-All-New-Maps-Siri-Features-Facebook-Integration-Share
+d-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--109
-[]\OT4/cmr/m/n/10 https://github.com/apple/swift-evolution/blob/master/proposal
-s/0005-
+Underfull \hbox (badness 10000) in paragraph at lines 128--130
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iO
+S-
  []
 
-[11
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--132
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2014/06/02Apple-Releases-i
+OS-8-
+ []
+
+[12
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 109--111
-[]\OT4/cmr/m/n/10 http://www.apple.com/pr/library/2016/06/13Apple-Previews-iOS-
-10-
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2015/06/08Apple-Previews-i
+OS-
  []
 
-[12]
+
+Overfull \hbox (6.58212pt too wide) in paragraph at lines 134--136
+[]\OT4/cmr/m/n/10.95 https://github.com/apple/swift-evolution/blob/master/propo
+sals/0005-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--138
+[]\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2016/06/13Apple-Previews-i
+OS-
+ []
+
+[13]
 Rozdzia\PlPrIeC {\l } 5.
-[13
+[14
 
 ] (./template_Report.aux)
 
@@ -547,13 +564,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 811 strings out of 493014
- 8795 string characters out of 6133350
- 62911 words of memory out of 5000000
- 4380 multiletter control sequences out of 15000+600000
- 15819 words of font info for 43 fonts, out of 8000000 for 9000
+ 813 strings out of 493014
+ 8843 string characters out of 6133350
+ 63995 words of memory out of 5000000
+ 4382 multiletter control sequences out of 15000+600000
+ 16115 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,8n,24p,965b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 23i,8n,24p,1028b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/local/t
 exlive/2016/texmf-dist/fonts/enc/dvips/pl/plrm.enc}</usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/pl/plbx10.pfb></usr/local/texlive/2016/texmf-dist/fo
@@ -561,10 +578,10 @@ nts/type1/public/pl/plbx12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/
 public/pl/plr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/p
 lr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr17.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texlive/2016/texmf-dist/fo
+xlive/2016/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texlive/2016/t
+exmf-dist/fonts/type1/public/pl/plr9.pfb></usr/local/texlive/2016/texmf-dist/fo
 nts/type1/public/pl/plti10.pfb>
-Output written on template_Report.pdf (14 pages, 107127 bytes).
+Output written on template_Report.pdf (14 pages, 109417 bytes).
 PDF statistics:
  88 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
