@@ -13,7 +13,9 @@ struct MovieFinderModel {
     
 //        return self.provider.request(OMDB.Movie(title: movieOrSeries.title)).debug().mapArrayOptional(Watchable.self)
 //        return self.provider.request(.Movie(title: movieOrSeries.title)).debug().mapArrayOptional(Watchable.self)
-        
+        return self.provider.request(.Movie(title: movieOrSeries.title), completion: { (result) in
+            return result
+        }).mapArrayOptional(Watchable.self)
         
     }
     
