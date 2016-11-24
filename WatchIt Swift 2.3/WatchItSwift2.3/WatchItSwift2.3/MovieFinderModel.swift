@@ -9,14 +9,8 @@ struct MovieFinderModel {
     let provider: MoyaProvider<OMDB>
     let repositoryName: Observable<String>
     
-    internal func findWatchables(movieOrSeries: Watchable) -> Observable<[Watchable]?> {
-    
-//        return self.provider.request(OMDB.Movie(title: movieOrSeries.title)).debug().mapArrayOptional(Watchable.self)
-//        return self.provider.request(.Movie(title: movieOrSeries.title)).debug().mapArrayOptional(Watchable.self)
-        return self.provider.request(.Movie(title: movieOrSeries.title), completion: { (result) in
-            return result
-        }).mapArrayOptional(Watchable.self)
-        
+    internal func findWatchables(movieOrSeries: Watchable)  {
+
     }
     
 }

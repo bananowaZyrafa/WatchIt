@@ -7,54 +7,36 @@ import RxSwift
 
 struct WatchableFinderModel {
     
-    let provider: MoyaProvider<OMDB>
+    let provider: RxMoyaProvider<OMDB>
     let watchableName: Observable<String>
-    
-    func findWatchable(title: String) -> Observable<[Watchable]?> {
+
+    func findWatchable() -> Observable<[Production]> {
         
-        return provider.request(OMDB.Movie(title: title), completion: { (result) in
-            print("result: \(result)")
-        }) as! Observable<[Watchable]?>
-        
-    }
-    
-    func observerWatchable() -> Observable<[Watchable]> {
         return watchableName
             .observeOn(MainScheduler.instance)
-            .flatMapLatest({ (name) -> Observable<[Watchable]?> in
-                print("Title: \(name)")
-                return self.findWatchable(title: name)
-            })
-            .flatMapLatest{ watchable -> Observable<[Watchable]?> in
-                guard let watchable = watchable else {return Observable.just(nil)}
-                print("Watchable: \(watchable)")
-                return self.findWatchable(title: watchable[0].title)
-        }.replaceNilWith([])
-    }
+            .flatMapLatest({ (title) -> Observable<[Production]> in
+                print("title: \(title)")
+                return self
+                    .findProductionInOMDB(title: "Matrix")
+                    .debug()
+                    .flatMapLatest({ (production) -> Observable<[Production]?> in
+                        guard let prod = production else {return Observable.just(nil)}
+                        return Observable.just([prod])
+                    })
+                    .replaceNilWith([])
 
+            })
+
+
+        
+    }
     
-//    func searchForWatchable(_ title: String) {
-//        _ = provider.request(.Movie(title: title)) { result in
-//            switch result {
-//            case let .success(response):
-//                do {
-//                    if let json = try response.mapJSON() as? NSArray {
-//                        // Presumably, you'd parse the JSON into a model object. This is just a demo, so we'll keep it as-is.
-//                        mapArray(OMDB.self)
-//                    } else {
-//                        print("gowno 29")
-//                    }
-//                } catch {
-//                    print("gowno 32")
-//                }
-//                print("success")
-//            case let .failure(error):
-//                guard let error = error as? CustomStringConvertible else {
-//                    break
-//                }
-//                print("gowno 39")
-//            }
-//        }
-//    }
+    private func findProductionInOMDB(title:String) -> Observable<Production?> {
+        return self.provider.request(.productions(title: title))
+            .debug()
+            .mapObjectOptional(type: Production.self)
+        
+    }
+    
     
 }

@@ -1,19 +1,26 @@
 import Mapper
 
-struct Watchable: Mappable {
+protocol Watchable: Mappable {
+    var mapTitle: String {get}
+    var runtime: String {get}
+    var poster: URL {get}
+    var imdbRating: String {get}
+}
+
+struct Production: Watchable {
     
-    let title: String
+    let mapTitle: String
     let runtime: String
     let poster: URL
-    let imdbRating: Double
-    //let genre: String
+    let imdbRating: String
     
     init(map: Mapper) throws {
-        try title = map.from("Title")
+        try mapTitle = map.from("Title")
         try runtime = map.from("Runtime")
         try poster = map.from("Poster")
         try imdbRating = map.from("imdbRating")
     }
     
-    
 }
+
+

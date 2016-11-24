@@ -9,20 +9,17 @@ private extension String {
 
 
 enum OMDB {
-    case Movie(title: String)
-    case Series(title: String)
+    case productions(title:String)
 }
 
 extension OMDB: TargetType {
  
-    var baseURL: URL {return URL(string: "http://www.omdbapi.com/")! }
+    var baseURL: URL {return URL(string: "http://www.omdbapi.com/?t=Matrix")! }
     var path: String {
         switch self {
-        case .Movie(let title):
-            return "?t=\(title.URLEscapedString)"
+        case .productions(let prodTitle):
+            return ""
         
-        case .Series(let title):
-            return "?t=\(title.URLEscapedString)"
         }
     }
     var method: Moya.Method {
@@ -39,12 +36,11 @@ extension OMDB: TargetType {
     
     var sampleData: Data {
         switch self {
-        case .Movie(let name):
-            return "{\"Title\": \"\(name)\", \"Runtime\": \"136 min\", \"Poster\" : \"https://images-na.ssl-images-amazon.com/images/M/MV5BMDMyMmQ5YzgtYWMxOC00OTU0LWIwZjEtZWUwYTY5MjVkZjhhXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg\", \"imdbRating\" : \"8.7\"}".data(using: .utf8)!
-        case .Series(let name):
-            return "{\"Title\": \"\(name)\", \"Runtime\": 136 min, \"Poster\" : \"https://images-na.ssl-images-amazon.com/images/M/MV5BMDMyMmQ5YzgtYWMxOC00OTU0LWIwZjEtZWUwYTY5MjVkZjhhXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg\", \"imdbRating\" : \"8.7\"}".data(using: .utf8)!
+        case .productions(_):
+            return "{{\"Title\": \"Matrix\", \"Runtime\": \"136 min\", \"Poster\" : \"https://images-na.ssl-images-amazon.com/images/M/MV5BMDMyMmQ5YzgtYWMxOC00OTU0LWIwZjEtZWUwYTY5MjVkZjhhXkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_SX300.jpg\", \"imdbRating\" : \"8.7\"}}".data(using: .utf8)!
+
         }
     }
     
-    
+   
 }
