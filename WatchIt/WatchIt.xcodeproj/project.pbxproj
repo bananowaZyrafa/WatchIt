@@ -12,7 +12,7 @@
 		C62D3CD51DD3A8C00035C8D8 /* WatchableFinderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62D3CD41DD3A8C00035C8D8 /* WatchableFinderModel.swift */; };
 		C65AEE041DCE4B6800D10FC3 /* OMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65AEE031DCE4B6800D10FC3 /* OMDBEndpoint.swift */; };
 		C68EBBCB1DB11744008E882F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68EBBCA1DB11744008E882F /* AppDelegate.swift */; };
-		C68EBBCD1DB11744008E882F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68EBBCC1DB11744008E882F /* ViewController.swift */; };
+		C68EBBCD1DB11744008E882F /* SearchForMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68EBBCC1DB11744008E882F /* SearchForMovieViewController.swift */; };
 		C68EBBD01DB11744008E882F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68EBBCE1DB11744008E882F /* Main.storyboard */; };
 		C68EBBD31DB11744008E882F /* WatchIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C68EBBD11DB11744008E882F /* WatchIt.xcdatamodeld */; };
 		C68EBBD51DB11744008E882F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68EBBD41DB11744008E882F /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 		C68022D992ECFD20BFFC2BDD /* Pods_WatchIt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WatchIt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68EBBC71DB11744008E882F /* WatchIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68EBBCA1DB11744008E882F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C68EBBCC1DB11744008E882F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C68EBBCC1DB11744008E882F /* SearchForMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForMovieViewController.swift; sourceTree = "<group>"; };
 		C68EBBCF1DB11744008E882F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C68EBBD21DB11744008E882F /* WatchIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WatchIt.xcdatamodel; sourceTree = "<group>"; };
 		C68EBBD41DB11744008E882F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +63,14 @@
 				C68022D992ECFD20BFFC2BDD /* Pods_WatchIt.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C65202091DE8A49000A09555 /* ViewConrollers */ = {
+			isa = PBXGroup;
+			children = (
+				C68EBBCC1DB11744008E882F /* SearchForMovieViewController.swift */,
+			);
+			name = ViewConrollers;
 			sourceTree = "<group>";
 		};
 		C65AEE011DCE4B3A00D10FC3 /* Models */ = {
@@ -103,10 +111,10 @@
 		C68EBBC91DB11744008E882F /* WatchIt */ = {
 			isa = PBXGroup;
 			children = (
+				C65202091DE8A49000A09555 /* ViewConrollers */,
 				C65AEE021DCE4B4A00D10FC3 /* API */,
 				C65AEE011DCE4B3A00D10FC3 /* Models */,
 				C68EBBCA1DB11744008E882F /* AppDelegate.swift */,
-				C68EBBCC1DB11744008E882F /* ViewController.swift */,
 				C68EBBCE1DB11744008E882F /* Main.storyboard */,
 				C68EBBD41DB11744008E882F /* Assets.xcassets */,
 				C68EBBD61DB11744008E882F /* LaunchScreen.storyboard */,
@@ -244,7 +252,7 @@
 				C62D3CD51DD3A8C00035C8D8 /* WatchableFinderModel.swift in Sources */,
 				C62D3CD31DD3A6290035C8D8 /* Watchable.swift in Sources */,
 				C68EBBD31DB11744008E882F /* WatchIt.xcdatamodeld in Sources */,
-				C68EBBCD1DB11744008E882F /* ViewController.swift in Sources */,
+				C68EBBCD1DB11744008E882F /* SearchForMovieViewController.swift in Sources */,
 				C68EBBCB1DB11744008E882F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

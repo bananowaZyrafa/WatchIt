@@ -17,7 +17,7 @@ struct WatchableFinderModel {
             .flatMapLatest({ (title) -> Observable<[Production]> in
                 print("title: \(title)")
                 return self
-                    .findProductionInOMDB(title: "Matrix")
+                    .findProductionInOMDB(title: title)
                     .debug()
                     .flatMapLatest({ (production) -> Observable<[Production]?> in
                         guard let prod = production else {return Observable.just(nil)}

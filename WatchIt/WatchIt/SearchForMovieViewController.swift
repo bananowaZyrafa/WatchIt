@@ -6,7 +6,7 @@ import RxCocoa
 import RxSwift
 
 
-class ViewController: UIViewController {
+class SearchForMovieViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
 
