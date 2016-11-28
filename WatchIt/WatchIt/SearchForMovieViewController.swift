@@ -34,15 +34,16 @@ class SearchForMovieViewController: UIViewController {
     func setupRx() {
         provider = RxMoyaProvider<OMDB>()
         watchableFinderModel = WatchableFinderModel(provider: provider, watchableName: latestTitle)
+        configureTableDataSource()
         watchableFinderModel
             .findWatchable()
             .bindTo(tableView.rx.items) { (tableView, row, item) in
-                let cell = tableView.dequeueReusableCell(withIdentifier: "watchableCell", for: IndexPath(row: row, section: 0))
-                cell.textLabel?.text = item.mapTitle
-                
+                let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultCell", for: IndexPath(row: row, section: 0)) as! SearchResultCell
+                cell.configureForSearchResult(watchable: item)
                 return cell
-        }
+            }
         .addDisposableTo(disposeBag)
+        
         
         
         tableView
@@ -57,6 +58,12 @@ class SearchForMovieViewController: UIViewController {
     
     func url(_ route: TargetType) -> String {
         return route.baseURL.appendingPathComponent(route.path).absoluteString
+    }
+    
+    func configureTableDataSource() {
+        tableView.register(UINib(nibName: "SearchResultCell", bundle: nil), forCellReuseIdentifier: "SearchResultCell")
+        tableView.rowHeight = 190
+        
     }
 
 }

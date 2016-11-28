@@ -1,21 +1,21 @@
 import Mapper
 
 protocol Watchable: Mappable {
-    var mapTitle: String {get}
+    var title: String {get}
     var runtime: String {get}
-    var poster: URL {get}
+    var poster: String {get}
     var imdbRating: String {get}
 }
 
 struct Production: Watchable {
     
-    let mapTitle: String
+    let title: String
     let runtime: String
-    let poster: URL
+    let poster: String
     let imdbRating: String
     
     init(map: Mapper) throws {
-        try mapTitle = map.from("Title")
+        try title = map.from("Title")
         try runtime = map.from("Runtime")
         try poster = map.from("Poster")
         try imdbRating = map.from("imdbRating")

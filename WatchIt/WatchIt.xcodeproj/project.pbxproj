@@ -17,6 +17,9 @@
 		C68EBBD31DB11744008E882F /* WatchIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C68EBBD11DB11744008E882F /* WatchIt.xcdatamodeld */; };
 		C68EBBD51DB11744008E882F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C68EBBD41DB11744008E882F /* Assets.xcassets */; };
 		C68EBBD81DB11744008E882F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C68EBBD61DB11744008E882F /* LaunchScreen.storyboard */; };
+		C6935CEB1DEC493C00CE9DEF /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6935CEA1DEC493C00CE9DEF /* SearchResultCell.xib */; };
+		C6935CED1DEC4AD800CE9DEF /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6935CEC1DEC4AD800CE9DEF /* SearchResultCell.swift */; };
+		C6935CEF1DEC4D2600CE9DEF /* UIIMageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6935CEE1DEC4D2600CE9DEF /* UIIMageView+DownloadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		C68EBBD41DB11744008E882F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C68EBBD71DB11744008E882F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C68EBBD91DB11744008E882F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6935CEA1DEC493C00CE9DEF /* SearchResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		C6935CEC1DEC4AD800CE9DEF /* SearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		C6935CEE1DEC4D2600CE9DEF /* UIIMageView+DownloadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIIMageView+DownloadImage.swift"; sourceTree = "<group>"; };
 		E7219C813115289A79C3719A /* Pods-WatchIt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WatchIt.release.xcconfig"; path = "Pods/Target Support Files/Pods-WatchIt/Pods-WatchIt.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +84,7 @@
 			children = (
 				C62D3CD21DD3A6290035C8D8 /* Watchable.swift */,
 				C62D3CD41DD3A8C00035C8D8 /* WatchableFinderModel.swift */,
+				C6935CEE1DEC4D2600CE9DEF /* UIIMageView+DownloadImage.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -111,17 +118,27 @@
 		C68EBBC91DB11744008E882F /* WatchIt */ = {
 			isa = PBXGroup;
 			children = (
+				C6935CE91DEC491600CE9DEF /* Views */,
 				C65202091DE8A49000A09555 /* ViewConrollers */,
 				C65AEE021DCE4B4A00D10FC3 /* API */,
 				C65AEE011DCE4B3A00D10FC3 /* Models */,
 				C68EBBCA1DB11744008E882F /* AppDelegate.swift */,
-				C68EBBCE1DB11744008E882F /* Main.storyboard */,
 				C68EBBD41DB11744008E882F /* Assets.xcassets */,
-				C68EBBD61DB11744008E882F /* LaunchScreen.storyboard */,
 				C68EBBD91DB11744008E882F /* Info.plist */,
 				C68EBBD11DB11744008E882F /* WatchIt.xcdatamodeld */,
 			);
 			path = WatchIt;
+			sourceTree = "<group>";
+		};
+		C6935CE91DEC491600CE9DEF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C68EBBCE1DB11744008E882F /* Main.storyboard */,
+				C68EBBD61DB11744008E882F /* LaunchScreen.storyboard */,
+				C6935CEA1DEC493C00CE9DEF /* SearchResultCell.xib */,
+				C6935CEC1DEC4AD800CE9DEF /* SearchResultCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +206,7 @@
 			files = (
 				C68EBBD81DB11744008E882F /* LaunchScreen.storyboard in Resources */,
 				C68EBBD51DB11744008E882F /* Assets.xcassets in Resources */,
+				C6935CEB1DEC493C00CE9DEF /* SearchResultCell.xib in Resources */,
 				C68EBBD01DB11744008E882F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,9 +266,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6935CED1DEC4AD800CE9DEF /* SearchResultCell.swift in Sources */,
 				C65AEE041DCE4B6800D10FC3 /* OMDBEndpoint.swift in Sources */,
 				C62D3CD51DD3A8C00035C8D8 /* WatchableFinderModel.swift in Sources */,
 				C62D3CD31DD3A6290035C8D8 /* Watchable.swift in Sources */,
+				C6935CEF1DEC4D2600CE9DEF /* UIIMageView+DownloadImage.swift in Sources */,
 				C68EBBD31DB11744008E882F /* WatchIt.xcdatamodeld in Sources */,
 				C68EBBCD1DB11744008E882F /* SearchForMovieViewController.swift in Sources */,
 				C68EBBCB1DB11744008E882F /* AppDelegate.swift in Sources */,
