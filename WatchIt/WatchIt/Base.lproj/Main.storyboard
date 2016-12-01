@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="RsB-T5-cW7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3uw-zk-32Z">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -47,6 +47,91 @@
             </objects>
             <point key="canvasLocation" x="3082.4000000000001" y="-272.11394302848578"/>
         </scene>
+        <!--Movie Details Controller-->
+        <scene sceneID="rbh-rD-2Ww">
+            <objects>
+                <viewController id="3uw-zk-32Z" customClass="MovieDetailsController" customModule="WatchIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BJ5-gX-ncl"/>
+                        <viewControllerLayoutGuide type="bottom" id="bz8-5h-m7t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Fg-t2-IDi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MoviePosterPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="PUu-Ly-wHb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="271" id="Hds-7d-4Ie"/>
+                                    <constraint firstAttribute="height" constant="186" id="W3A-Tl-jwE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMDB Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imS-T8-htT">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Aa3-hx-AAo"/>
+                                    <constraint firstAttribute="width" constant="100" id="dWc-fX-vdN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzk-YJ-Np9">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="TpF-iq-ZCq"/>
+                                    <constraint firstAttribute="width" constant="95" id="USJ-Sl-exs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPn-42-Ozt">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HZk-oF-JZN"/>
+                                    <constraint firstAttribute="width" constant="135" id="NVS-14-h3V"/>
+                                </constraints>
+                                <state key="normal" title="Mark as watched"/>
+                                <connections>
+                                    <action selector="markAsWatched:" destination="3uw-zk-32Z" eventType="touchUpInside" id="1OX-4c-yVD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62z-dZ-hA9">
+                                <color key="backgroundColor" red="0.54886371150000002" green="0.080012118849999994" blue="0.75367708330000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="209" id="cXQ-2N-43Y"/>
+                                    <constraint firstAttribute="height" constant="89" id="wi4-64-FPy"/>
+                                </constraints>
+                                <state key="normal" title="ADD TO MY BASE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addToBase:" destination="3uw-zk-32Z" eventType="touchUpInside" id="RsK-Px-Cnj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pzk-YJ-Np9" secondAttribute="trailing" constant="52" id="2IF-F8-sAs"/>
+                            <constraint firstItem="bz8-5h-m7t" firstAttribute="top" secondItem="aPn-42-Ozt" secondAttribute="bottom" constant="53" id="6Rr-Lh-Vea"/>
+                            <constraint firstItem="pzk-YJ-Np9" firstAttribute="top" secondItem="PUu-Ly-wHb" secondAttribute="bottom" constant="15" id="7vn-hB-PP1"/>
+                            <constraint firstItem="imS-T8-htT" firstAttribute="top" secondItem="PUu-Ly-wHb" secondAttribute="bottom" constant="41" id="99P-I0-cGh"/>
+                            <constraint firstItem="62z-dZ-hA9" firstAttribute="top" secondItem="pzk-YJ-Np9" secondAttribute="bottom" constant="63" id="HH3-aL-qXT"/>
+                            <constraint firstItem="62z-dZ-hA9" firstAttribute="centerX" secondItem="2Fg-t2-IDi" secondAttribute="centerX" id="JhA-M5-DVC"/>
+                            <constraint firstItem="PUu-Ly-wHb" firstAttribute="centerX" secondItem="2Fg-t2-IDi" secondAttribute="centerX" id="PDv-Sc-cLg"/>
+                            <constraint firstItem="imS-T8-htT" firstAttribute="leading" secondItem="2Fg-t2-IDi" secondAttribute="leading" constant="52" id="Tgc-oq-aWa"/>
+                            <constraint firstItem="PUu-Ly-wHb" firstAttribute="top" secondItem="BJ5-gX-ncl" secondAttribute="bottom" constant="56" id="WGc-4I-YTP"/>
+                            <constraint firstItem="aPn-42-Ozt" firstAttribute="centerX" secondItem="2Fg-t2-IDi" secondAttribute="centerX" id="qCL-bu-os5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="62z-dZ-hA9" id="sTQ-qv-DF9"/>
+                        <outlet property="posterImage" destination="PUu-Ly-wHb" id="pUx-Gz-BPW"/>
+                        <outlet property="ratingLabel" destination="pzk-YJ-Np9" id="Jii-ok-m5J"/>
+                        <outlet property="watchedButton" destination="aPn-42-Ozt" id="30B-1m-Ore"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Zz-WK-sFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4175.1999999999998" y="-272.11394302848578"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SPj-6I-L85">
             <objects>
@@ -86,4 +171,7 @@
             <point key="canvasLocation" x="2143.1999999999998" y="-272.11394302848578"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MoviePosterPlaceholder" width="750" height="750"/>
+    </resources>
 </document>

@@ -30,7 +30,7 @@ class SearchResultCell: UITableViewCell {
     func configureForSearchResult(watchable:Watchable) {
         movieTitle.text = watchable.title
         posterImage.image = UIImage(named: "Placeholder")
-        if let url = URL(string: watchable.poster){
+        if let url = URL(string: watchable.posterURL){
             downloadTask = posterImage.loadImageWith(url: url)
         }
     }
