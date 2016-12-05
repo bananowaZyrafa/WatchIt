@@ -2,61 +2,64 @@
 \contentsline {paragraph}{}{3}
 \contentsline {subparagraph}{}{3}
 \contentsline {chapter}{\numberline {2}CEL I ZAKRES PRACY}{4}
-\contentsline {chapter}{\numberline {3}\IeC {\'Z}R\IeC {\'O}D\IeC {\L }A I DEFINICJE}{5}
-\contentsline {section}{\numberline {3.1}Historia i charakterystyka systemu iOS}{5}
-\contentsline {paragraph}{}{5}
-\contentsline {paragraph}{Specyfikacje techniczne}{5}
-\contentsline {subparagraph}{}{5}
-\contentsline {paragraph}{Wersje systemu iOS}{5}
-\contentsline {subparagraph}{iPhone OS -}{5}
-\contentsline {subparagraph}{iPhone OS 2.0 -}{6}
-\contentsline {subparagraph}{iPhone OS 3.0 -}{6}
-\contentsline {subparagraph}{iOS 4 -}{6}
-\contentsline {subparagraph}{iOS 5 -}{6}
-\contentsline {subparagraph}{iOS 6 -}{6}
-\contentsline {subparagraph}{iOS 7 -}{6}
-\contentsline {subparagraph}{iOS 8 -}{7}
-\contentsline {subparagraph}{iOS 9 -}{7}
-\contentsline {subparagraph}{iOS 10 -}{7}
-\contentsline {section}{\numberline {3.2}Historia i charakterystyka j\IeC {\k e}zyka Swift}{8}
-\contentsline {paragraph}{}{8}
-\contentsline {paragraph}{}{8}
-\contentsline {paragraph}{}{8}
-\contentsline {paragraph}{G\IeC {\l }\IeC {\'o}wne r\IeC {\'o}\IeC {\.z}nice mi\IeC {\k e}dzy Swiftem a Objective-C}{8}
-\contentsline {subparagraph}{}{8}
-\contentsline {subparagraph}{Warto\IeC {\'s}ci opcjonalne - }{8}
-\contentsline {subparagraph}{Wnioskowanie typ\IeC {\'o}w - }{8}
-\contentsline {subparagraph}{Krotki - }{8}
-\contentsline {subparagraph}{Guard - }{9}
-\contentsline {subparagraph}{Elementy programowania funkcyjnego - }{9}
-\contentsline {subparagraph}{Enumeratory - }{9}
-\contentsline {subparagraph}{Podej\IeC {\'s}cie do funkcji - }{9}
-\contentsline {subparagraph}{S\IeC {\l }owo kluczowe "do" - }{9}
-\contentsline {section}{\numberline {3.3}Paragydmat funkcyjny}{9}
-\contentsline {section}{\numberline {3.4}Paragydmat reaktywny}{9}
-\contentsline {subsection}{\numberline {3.4.1}Idea programowania reaktywnego}{9}
-\contentsline {subsection}{\numberline {3.4.2}Podej\IeC {\'s}cie reaktywne w praktyce}{9}
-\contentsline {subsection}{\numberline {3.4.3}Operatory reaktywne}{9}
-\contentsline {subsection}{\numberline {3.4.4}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{9}
-\contentsline {subsection}{\numberline {3.4.5}Wady i zalety podej\IeC {\'s}cia reaktywnego}{9}
-\contentsline {subsection}{\numberline {3.4.6}Implementacja na platformie iOS}{9}
-\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{10}
-\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{11}
-\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{11}
-\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{11}
-\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{11}
-\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{11}
-\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{11}
-\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{11}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{11}
-\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{11}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{11}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{14}
+\contentsline {paragraph}{}{4}
+\contentsline {subparagraph}{Cz\IeC {\k e}\IeC {\'s}\IeC {\'c} teoretyczna:}{4}
+\contentsline {subparagraph}{Cz\IeC {\k e}\IeC {\'s}\IeC {\'c} opisuj\IeC {\k a}ca prac\IeC {\k e} w\IeC {\l }asn\IeC {\k a}:}{4}
+\contentsline {chapter}{\numberline {3}\IeC {\'Z}R\IeC {\'O}D\IeC {\L }A I DEFINICJE}{6}
+\contentsline {section}{\numberline {3.1}Historia i charakterystyka systemu iOS}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{Specyfikacje techniczne}{6}
+\contentsline {subparagraph}{}{6}
+\contentsline {paragraph}{Wersje systemu iOS}{6}
+\contentsline {subparagraph}{iPhone OS -}{6}
+\contentsline {subparagraph}{iPhone OS 2.0 -}{7}
+\contentsline {subparagraph}{iPhone OS 3.0 -}{7}
+\contentsline {subparagraph}{iOS 4 -}{7}
+\contentsline {subparagraph}{iOS 5 -}{7}
+\contentsline {subparagraph}{iOS 6 -}{7}
+\contentsline {subparagraph}{iOS 7 -}{7}
+\contentsline {subparagraph}{iOS 8 -}{8}
+\contentsline {subparagraph}{iOS 9 -}{8}
+\contentsline {subparagraph}{iOS 10 -}{8}
+\contentsline {section}{\numberline {3.2}Historia i charakterystyka j\IeC {\k e}zyka Swift}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{G\IeC {\l }\IeC {\'o}wne r\IeC {\'o}\IeC {\.z}nice mi\IeC {\k e}dzy Swiftem a Objective-C}{9}
+\contentsline {subparagraph}{}{9}
+\contentsline {subparagraph}{Warto\IeC {\'s}ci opcjonalne - }{9}
+\contentsline {subparagraph}{Wnioskowanie typ\IeC {\'o}w - }{9}
+\contentsline {subparagraph}{Krotki - }{9}
+\contentsline {subparagraph}{Guard - }{10}
+\contentsline {subparagraph}{Elementy programowania funkcyjnego - }{10}
+\contentsline {subparagraph}{Enumeratory - }{10}
+\contentsline {subparagraph}{Podej\IeC {\'s}cie do funkcji - }{10}
+\contentsline {subparagraph}{S\IeC {\l }owo kluczowe "do" - }{10}
+\contentsline {section}{\numberline {3.3}Paragydmat funkcyjny}{10}
+\contentsline {section}{\numberline {3.4}Paragydmat reaktywny}{10}
+\contentsline {subsection}{\numberline {3.4.1}Idea programowania reaktywnego}{10}
+\contentsline {subsection}{\numberline {3.4.2}Podej\IeC {\'s}cie reaktywne w praktyce}{10}
+\contentsline {subsection}{\numberline {3.4.3}Operatory reaktywne}{10}
+\contentsline {subsection}{\numberline {3.4.4}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{10}
+\contentsline {subsection}{\numberline {3.4.5}Wady i zalety podej\IeC {\'s}cia reaktywnego}{10}
+\contentsline {subsection}{\numberline {3.4.6}Implementacja na platformie iOS}{10}
+\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{11}
+\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{11}
+\contentsline {paragraph}{}{11}
+\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{12}
+\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{12}
+\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{12}
+\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{12}
+\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{12}
+\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{12}
+\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{12}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{12}
+\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{12}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{12}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{15}

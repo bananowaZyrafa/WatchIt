@@ -16,26 +16,24 @@
 Używany termin programowanie reaktywne odnosi się do programowania reaktywnego funkcyjnego jako, że te dwa pojęcia są ze sobą nierozerwalnie związane.
 \subparagraph{}Celem programowania reaktywnego jest przede wszystkim bardziej efektywne podejście do celu i sensu działania aplikacji w ogólnym ujęciu a nie skrupulatne skupienie się na tym w jaki sposób konkretne zadania powinny być realizowane. Na takie podejście można sobie pozwolić, jako że programowanie reaktywne wymusza na systemie jego bezstanowość. Jest to możliwe m.in. dzięki temu, że programując w sposób reaktywny, działamy na strumieniach niezmiennych i niemodyfikowalnych danych w czasie a nie na pojedynczych zdarzeniach. Ponadto takie podejście pozwala oszczędzić dużo kodu i rozważań nad sensownością wydarzeń w czasie m.in dlatego, że zdarzenia synchroniczne jak i asynchroniczne traktowane są w ten sam sposób co znacząco ułatwia tworzenie logiki programu. Podstawą paradygmatu reaktywnego jest wzorzec obserwatora czyli wzorzec obiektu obserwowanego (nadawcy zdarzeń) i obiektu obserwującego (reagującego na odebrane zdarzenia).
 \chapter{CEL I ZAKRES PRACY}
+\paragraph{}Niniejsza praca dyplomowa składa się z dwóch zasadniczych części.\\Pierwsza z nich ma na celu podejście od strony teoretycznej do treści tematu. Rozumiem przez to objaśnienie idei paradygmatu reaktywnego i pojęć z nim związanych.\\Druga część pracy ma za zadanie przedstawienie praktycznego podejścia do tematu i zaprezentowanie sposobu użycia paradygmatu reaktywnego na przykładzie aplikacji mobilnej. Zadaniem tej aplikacji jest umożliwienie użytkownikowi wyszukania filmu lub serialu przy użyciu internetu i publicznego API OMDB. Znaleziony film lub serial może zostać zapisany w lokalnej bazie aplikacji. Projekt ma na celu ułatwienie decyzji użytkownikowi na temat tego co ma obejrzeć posiadając zadaną ilość czasu. Z pośród zapisanych filmów i seriali zaproponowane zostaną te spełniające wymagania czasowe. Po obejrzeniu danej produkcji, użytkownik będzie mógł ją ocenić a ocena ta również będzie zapisywana w lokalnej bazie.\\
+Podsumowując powyższe stwierdzenia, przedstawiam zagadnienia opisane w obu częściach ninejszej pracy:
+\subparagraph{Część teoretyczna:}
+\begin{itemize}
+	\item Krótka historia systemu iOS
+	\item Użyty język programowania
+	\item Istotne zagadnienia z tematu programowania funkcyjnego
+	\item Opis zagadnień związanych z paradygmatem reaktywnym, t.j.: operatory reaktywne; współbieżność; wady i zalety tego podejścia
+\end{itemize}
+\subparagraph{Część opisująca pracę własną:}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+\begin{itemize}
+	\item Opis czynności przygotowawczych
+	\item Zdefiniowanie wymagań funkcjonalnych i niefunkcjonalnych
+	\item Opis modelu bazodanowego i zależności między klasami
+	\item Charakterystyka użytych bibliotek i frameworków
+	\item Implementacja aplikacji w środowisku XCode z wykorzystaniem języka Swift i opisem zastosowanej architektury
+\end{itemize}
 
 \chapter{ŹRÓDŁA I DEFINICJE}
 \section{Historia i charakterystyka systemu iOS}
