@@ -18,14 +18,7 @@ class SearchResultCell: UITableViewCell {
     {
         super.setSelected(selected, animated: animated)
     }
-    
-//    override func prepareForReuse() {
-//        super.prepareForReuse()
-//        downloadTask?.cancel()
-//        downloadTask = nil
-//        movieTitle = nil
-//        posterImage = nil
-//    }
+ 
     
     func configureForSearchResult(watchable:Watchable) {
         movieTitle.text = watchable.title

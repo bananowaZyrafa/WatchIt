@@ -9,10 +9,12 @@ protocol MovieDetailsViewModelType {
     //output
     var addButtonEnabled: Driver<Bool> {get}
     var watchedButtonEnabled: Driver<Bool> {get}
-    var posterImage: Variable<UIImage?> {get} //no idea what im doin
+    var posterImage: Driver<UIImage?> {get} //no idea what im doin
     var rateValue: Driver<String> {get}
     var presentRateMovieViewModel: Driver<RateMovieViewModelType> {get}
     
+    //model update
+    func downloadImage()
 }
 
 
@@ -30,27 +32,25 @@ struct MovieDetailsViewModel: MovieDetailsViewModelType {
     //output
     let addButtonEnabled: Driver<Bool>
     let watchedButtonEnabled: Driver<Bool>
-    let posterImage: Variable<UIImage?>
+    let posterImage: Driver<UIImage?>
     let rateValue: Driver<String>
     let presentRateMovieViewModel: Driver<RateMovieViewModelType>
     
     //private
     private let disposeBag = DisposeBag()
     private let watchable: Watchable
+    public let observableImage: PublishSubject = PublishSubject<UIImage?>()
     
-    func loadImageFromWatchable(watchable:Watchable) -> UIImage? {
-        
-        return nil
-        
+    func loadImageFromWatchable(watchable:Watchable, completion:((_ image:UIImage) -> Void)) {
+        completion(UIImage())
     }
     
     init(watchable:Watchable) {
         
         self.watchable = watchable
-        self.addedToBase = Variable(false)
+        self.addedToBase = Variable(true)
         self.seen = Variable(false)
         self.rateFromWatchable = Variable("10.0")
-        
         self.addButtonEnabled = self.addedToBase.asDriver()
             .map({ _ in //performing database search
                     return true
@@ -60,7 +60,7 @@ struct MovieDetailsViewModel: MovieDetailsViewModelType {
                 return true
             })
         
-        self.posterImage = Variable(self.loadImageFromWatchable(watchable: watchable)) //better if image was returned in completion block ofc
+        self.posterImage = self.observableImage.asDriver(onErrorJustReturn: nil)
         self.rateValue = self.rateFromWatchable.asDriver().map({ rate in
             return rate
         })
@@ -69,6 +69,33 @@ struct MovieDetailsViewModel: MovieDetailsViewModelType {
         
     }
     
-    
+    func downloadImage() {
+        guard let fromURL = URL(string: self.watchable.posterURL) else { return }
+        let session = URLSession.shared
+        var image: UIImage?
+        
+        let downloadTask = session.downloadTask(with: fromURL, completionHandler:
+            {
+                url, response, error in
+                
+                if error == nil, let url = url
+                {
+                    do {
+                        let data = try Data(contentsOf: url)
+                        image = UIImage(data: data) ?? nil
+                        self.observableImage.onNext(image)
+                    }
+                    catch {
+                        print("no data")
+                    }
+                    
+                    
+                    
+                }
+            })
+        
+        downloadTask.resume()
+
+    }
     
 }

@@ -13,7 +13,7 @@ class SearchForMovieViewController: UIViewController {
     let disposeBag = DisposeBag()
     var provider: RxMoyaProvider<OMDB>!
     var watchableFinderModel: WatchableFinderModel!
-    
+    var latestProduction: Production?
     var latestTitle: Observable<String> {
         return searchBar.rx.text
                 .filterNil()
@@ -38,6 +38,7 @@ class SearchForMovieViewController: UIViewController {
         watchableFinderModel
             .findWatchable()
             .bindTo(tableView.rx.items) { (tableView, row, item) in
+                self.latestProduction = item
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultCell", for: IndexPath(row: row, section: 0)) as! SearchResultCell
                 cell.configureForSearchResult(watchable: item)
                 return cell
@@ -48,10 +49,13 @@ class SearchForMovieViewController: UIViewController {
         
         tableView
             .rx.itemSelected
-            .subscribe { indexPath in
-                if self.searchBar.isFirstResponder == true {
-                    self.view.endEditing(true)
-                }
+            .subscribe { [weak self] indexPath in
+                guard let safeSelf = self else {return}
+                guard let prod = safeSelf.latestProduction else {return}
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let controller = storyboard.instantiateViewController(withIdentifier: "movieDetailsVC") as! MovieDetailsController
+                controller.viewModel = MovieDetailsViewModel(watchable: prod)
+                safeSelf.present(controller, animated: true, completion: nil)
             }
             .addDisposableTo(disposeBag)
     }
