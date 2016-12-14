@@ -1,5 +1,6 @@
 import RxCocoa
 import RxSwift
+import CoreData
 
 protocol MovieDetailsViewModelType {
     //input
@@ -9,7 +10,7 @@ protocol MovieDetailsViewModelType {
     //output
     var addButtonEnabled: Driver<Bool> {get}
     var watchedButtonEnabled: Driver<Bool> {get}
-    var posterImage: Driver<UIImage?> {get} //no idea what im doin
+    var posterImage: Driver<UIImage?> {get}
     var rateValue: Driver<String> {get}
     var presentRateMovieViewModel: Driver<RateMovieViewModelType> {get}
     
@@ -97,5 +98,32 @@ struct MovieDetailsViewModel: MovieDetailsViewModelType {
         downloadTask.resume()
 
     }
+    
+    @available(iOS 10.0, *)
+    func checkIfWatchableAlreadyInDB(watchable:Watchable) -> Variable<Bool> {
+        var returnValue = Variable(false)
+        let fetchRequest:NSFetchRequest<WatchableEntity> = WatchableEntity.fetchRequest()
+        do {
+            let searchResults = try CoreDataStack.getContext().fetch(fetchRequest)
+            print("number of results: \(searchResults.count)")
+            for result in searchResults as [WatchableEntity] {
+                if result.title == watchable.title {
+                    returnValue = Variable(true)
+                } else {
+                    returnValue = Variable(false)
+                }
+            }
+        } catch {
+            print("error: \(error)")
+            returnValue = Variable(false)
+        }
+        
+        return returnValue
+    }
+    
+    
+    
+    
+    
     
 }

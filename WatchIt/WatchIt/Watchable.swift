@@ -1,5 +1,9 @@
 import Mapper
 
+protocol WatchableEntityType: Watchable {
+    
+}
+
 protocol Watchable: Mappable {
     var title: String {get}
     var runtime: String {get}

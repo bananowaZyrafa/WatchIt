@@ -14,8 +14,9 @@ class MovieDetailsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configure(viewModel)
+        
+        
     }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
