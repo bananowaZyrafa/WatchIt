@@ -1,7 +1,8 @@
 \documentclass[11pt,twoside,a4paper]{report}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
-
+\usepackage{graphicx}
+\usepackage{wrapfig}
 
 % Title Page
 \title{Użycie języka Swift i elementów paradygmatu reaktywnego na przykładzie aplikacji mobilnej do polecania filmów i seriali}
@@ -69,7 +70,25 @@ W marcu 2008 roku wypuszczono zestaw narzędzi do programowania na tę platform�
 \subparagraph{Słowo kluczowe "do" - } pozwala na utworzenie nowego zakresu w kodzie a ponadto może zawierać mechanizm obsłusgi błędów, znany z innych jęzków t.j. "try catch". \cite{swiftObjcDiff}
 \section{Paragydmat funkcyjny}
 \section{Paragydmat reaktywny}
+\paragraph{}Programowanie reaktywne funkcyjne ma swoje początki już w roku 1997\cite{beginningOfRx} lecz popularne stało się za sprawą firmy Microsoft i biblioteki Reactive Extensions dla platformy .NET z 2009 roku\cite{rxMicrosoftYear}.
 \subsection{Idea programowania reaktywnego}
+\paragraph{}Podstawowym założeniem podejścia reaktywnego jest programowanie oparte o asynchroniczne strumienie (sygnały) niemodyfikowalnych danych.\\
+Źródłem sygnałów mogą być dowolne zdarzenia w czasie takie jak: modyfikacja zmiennych, interakcja użytkownika, pozycja kursora, struktury danych, zapytania sieciowe, operacje bazodanowe itp. Dane otrzymywane ze strumienia są przetwarzane przez obserwatora i na tej podstawie podejmowane są decyzje i skutki uboczne.\\
+Strumienie danych mogą reprezentować najczęściej trzy stany:
+\begin{itemize}
+	\item onNext: argumentem jest tutaj dana przesyłana jako kolejne zdarzenie w ciągu
+	\item onError: nastąpiło przerwanie sygnału spowodowane błędem
+	\item onCompleted: sygnał zakończył przesyłanie sekwencji zdarzeń
+\end{itemize}
+%\begin{wrapfigure}{r}{13cm}
+%\begin{center}
+%	\vspace{-300pt}
+%	\includegraphics[width=1.2\textwidth]{sygnalRx}
+%\end{center} 
+%\end{wrapfigure}
+Jak widać na powyższym obrazku, sygnał jest ciągiem poszeregowanych zdarzeń w czasie. Przechwytywanie powyższych zdarzeń odbywa się asynchronicznie a każdy z wymienionych stanów sygnału musi być obsłużony przez zdefiniowane w tym celu funkcje. \\
+Nasłuchiwanie na ciągu zdarzeń nosi nazwę subskrypcji do sygnału. Definiowane funkcje to obserwatorzy a strumień jest obiektem obserwowanym. 
+
 \subsection{Podejście reaktywne w praktyce}
 \subsection{Operatory reaktywne}
 \subsection{Współbieżność}
@@ -133,6 +152,11 @@ Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. J
 \emph{ - informacje o poprawieniu kompatybilności Swift z Objective-C}
 \bibitem{ios10}http://www.apple.com/pr/library/2016/06/13Apple-Previews-iOS-10-The-Biggest-iOS-Release-Ever.html
 \emph{ - informacje o systemie iOS 10}
+\bibitem{beginningOfRx} Czaplicki, Evan (Apr 2012), Elm: Concurrent FRP for Functional GUIs (PDF) (thesis), Harvard
+\emph{ - pierwsze wzmianki o programowaniu reaktywnym}
+\bibitem{rxMicrosoftYear} http://www.introtorx.com/content/v1.0.10621.0/00foreword.html
+\emph{ - wypuszczenie biblioteki Reactive Extensions}
+
 \end{thebibliography}
 \chapter{PODSUMOWANIE}
 
