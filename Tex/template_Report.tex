@@ -70,24 +70,29 @@ W marcu 2008 roku wypuszczono zestaw narzędzi do programowania na tę platform�
 \subparagraph{Słowo kluczowe "do" - } pozwala na utworzenie nowego zakresu w kodzie a ponadto może zawierać mechanizm obsłusgi błędów, znany z innych jęzków t.j. "try catch". \cite{swiftObjcDiff}
 \section{Paragydmat funkcyjny}
 \section{Paragydmat reaktywny}
-\paragraph{}Programowanie reaktywne funkcyjne ma swoje początki już w roku 1997\cite{beginningOfRx} lecz popularne stało się za sprawą firmy Microsoft i biblioteki Reactive Extensions dla platformy .NET z 2009 roku\cite{rxMicrosoftYear}.
+\paragraph{}Programowanie reaktywne funkcyjne ma swoje początki już w roku 1997\cite{beginningOfRx} lecz popularne stało się za sprawą firmy Microsoft i biblioteki Reactive Extensions dla platformy .NET z 2009 roku\cite{rxMicrosoftYear}.\\
+Najczęściej podczas tworzenia programu, oczekuje się, że instrukcje będą wykonywane stopniowo, po jednej na raz, w kolejności w jakiej zostały napisane. W przypadku programowania reaktywnego, wiele instrukcji może wykonywać się współbieżnie a ich wyniki przechwytywane są w późniejszym czasie, w losowej kolejności przez tak zwanych obserwatorów (ang. observer). Zamiast wywoływania metody, defniuje się mechanizm odszukiwania i przekształcania danych, w formie tak zwanego obiektu obserowanego (ang. observable) a następnie zasubskrybowuje się (rozpoczyna nasłuchiwanie) obserwatora do tego obiektu. Na tym etapie uprzednio zdefiniowany mechanizm rozpoczyna działanie z obserwatorem będącym swego rodzaju strażnikiem, gotowym na przechwycenie i odpowiedź na emitowane zdarzenia.\\
+Niewątpliwą zaletą takiego podejścia jest możliwe współbieżne wykonywanie wielu niezależnych od siebie zadań. W ten sposób czas wykonania wszystkich tych zadań będzie mniej więcej równy czasowi wykonania najdłuższego z nich.
 \subsection{Idea programowania reaktywnego}
 \paragraph{}Podstawowym założeniem podejścia reaktywnego jest programowanie oparte o asynchroniczne strumienie (sygnały) niemodyfikowalnych danych.\\
 Źródłem sygnałów mogą być dowolne zdarzenia w czasie takie jak: modyfikacja zmiennych, interakcja użytkownika, pozycja kursora, struktury danych, zapytania sieciowe, operacje bazodanowe itp. Dane otrzymywane ze strumienia są przetwarzane przez obserwatora i na tej podstawie podejmowane są decyzje i skutki uboczne.\\
-Strumienie danych mogą reprezentować najczęściej trzy stany:
+Sygnały w programowaniu reaktywnym mogą zostać scharakteryzowane ze względu na sposób działania, na dwie grupy: sygnały "zimne" i sygnały "gorące".
+\subparagraph{Sygnał gorący} zużywa zasoby i emituje zdarzenia bez względu na to czy istnieje zasubskrybowany do niego obserwator. Zdarzeniami są tutaj najczęściej dane o informujące o modyfikacji zmiennych lub obiektów, koordynaty kliknięć lub kursora myszy, informacje o kliknięciach w kontrolki UI, bieżący czas, itp. Jak widać są to raczej sygnały ciągłe i posiadające zwykle więcej niż jedną daną w sekwencji. Nie ma zatem sensu mówienie o końcu ciągu zdarzeń w tym sygnale. Ponadto kolejno emitowane dane powielane są do wszystkich nasłuchujących.
+\subparagraph{Sygnał zimny} nie zużywa zasoboów ani nie emituje zdarzeń dopóki obserwator nie zacznie nasłuchiwać na zmiany. Zdarzeniami najczęściej są tutaj operacje asynchroniczne, połączenia HTTP, połączenia TCP, połączenia strumieniowane. Zwykle w swojej sekwencji zawiera jedno zdarzenie będące np. wynikiem odpytania sieciowego. Ponadto wyemitowany wynik najczęściej kierowany jest to jednego obserwującego.
+\subparagraph{Subskrybcja -}za pomocą operatora subskrybcji, w programowaniu reaktywnym, łączony jest obiekt obserwowany i obserwator. Aby obiekt nasłuchujący mógł odbierać nadawane sygnały lub odebrać nadany błąd, musi najpierw zasubskrybować się do obiektu obserwowanego. Typowa implementacja operatora subskrybcji operuje na poniższych trzech metodach:
 \begin{itemize}
-	\item onNext: argumentem jest tutaj dana przesyłana jako kolejne zdarzenie w ciągu
-	\item onError: nastąpiło przerwanie sygnału spowodowane błędem
-	\item onCompleted: sygnał zakończył przesyłanie sekwencji zdarzeń
+	\item onNext: nasłuchiway obiekt wywołuje tę metodę, gdy tylko wyemituje zdarzenie. Parametrem tej metody jest emitowane zdarzenie.
+	\item onError: obserwowany obiekt wywołuje tę metodę, aby powiadomić o niepowodzeniu przy generowaniu oczekiwanych danych lub o napotkaniu innego błędu. Zatrzymuje to działanie obserwowanego i przerywa kolejne wywołania metody onNext lub onCompleted. Metoda onError, jako parametr, powinna przyjmować obiekt reprezentujący napotkany błąd.
+	\item onCompleted: obserwowany wywołuje tę metodę po ostatnim wywołaniu metody onNext, jeżeli nie napotkano błędu.
 \end{itemize}
-%\begin{wrapfigure}{r}{13cm}
-%\begin{center}
-%	\vspace{-300pt}
-%	\includegraphics[width=1.2\textwidth]{sygnalRx}
-%\end{center} 
-%\end{wrapfigure}
+\begin{figure}[ht!]
+\centering
+\includegraphics{sygnalRx}
+\end{figure}
 Jak widać na powyższym obrazku, sygnał jest ciągiem poszeregowanych zdarzeń w czasie. Przechwytywanie powyższych zdarzeń odbywa się asynchronicznie a każdy z wymienionych stanów sygnału musi być obsłużony przez zdefiniowane w tym celu funkcje. \\
-Nasłuchiwanie na ciągu zdarzeń nosi nazwę subskrypcji do sygnału. Definiowane funkcje to obserwatorzy a strumień jest obiektem obserwowanym. 
+\subparagraph{Obiekty Subject -} stanowią w programowaniu reaktywnym swego rodzaju most, w większości implementacji podejścia reaktywnego, ponieważ zachowują się jednocześnie jak obiekty obserwowane i obserwujące. Jako obserwatorzy, mogą zasubskrybować się do jednego lub więcej obserwowanych obiektów. Jako obserwowani mogą emitować i reemitować zdarzenia do obiektów obserwujących.\\
+Rozróżnia się cztery rodzaje obiektów Subject zaprojektowanych pod konkretne przypadki.  
+http://reactivex.io/documentation/subject.html
 
 \subsection{Podejście reaktywne w praktyce}
 \subsection{Operatory reaktywne}
