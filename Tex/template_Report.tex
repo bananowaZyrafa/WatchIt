@@ -87,13 +87,72 @@ Sygnały w programowaniu reaktywnym mogą zostać scharakteryzowane ze względu 
 \end{itemize}
 \begin{figure}[ht!]
 \centering
-\includegraphics{sygnalRx}
+\includegraphics[width=10cm]{sygnalRx}
+\caption{Schemat emitowanych danych w sygnale}
+\label{sygnalRx}
 \end{figure}
 Jak widać na powyższym obrazku, sygnał jest ciągiem poszeregowanych zdarzeń w czasie. Przechwytywanie powyższych zdarzeń odbywa się asynchronicznie a każdy z wymienionych stanów sygnału musi być obsłużony przez zdefiniowane w tym celu funkcje. \\
 \subparagraph{Obiekty Subject -} stanowią w programowaniu reaktywnym swego rodzaju most, w większości implementacji podejścia reaktywnego, ponieważ zachowują się jednocześnie jak obiekty obserwowane i obserwujące. Jako obserwatorzy, mogą zasubskrybować się do jednego lub więcej obserwowanych obiektów. Jako obserwowani mogą emitować i reemitować zdarzenia do obiektów obserwujących.\\
 Rozróżnia się cztery rodzaje obiektów Subject zaprojektowanych pod konkretne przypadki.  
-http://reactivex.io/documentation/subject.html
+\subparagraph{AsyncSubject -} emituje ostatnią (i tylko ostatnią) wartość wyemitowaną przez źródołwy sygnał i tylko, gdy źródłowy sygnał zakończy się poprawnie. Jeśli źródłowy obiekt obserwowany zakończy się nie emitując żadnych wartości, obiekt AsyncSubject również zakończy się nie emitując żadnych wartości.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=10cm]{asyncSubject}
+	\caption{Schemat poprawnie zakończonego działania obiektu AsyncSubject}
+	\label{asyncSubject}
+\end{figure}
+\\
+\\
 
+Jeśli zaś źródłowy sygnał zakończy się błędem, obiekt AsyncSubject nie wyemituje żadnych wartości lecz informacje o błędzie od sygnału źródłowego.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=10cm]{asyncSubjectFailed}
+	\caption{Schemat działania obiektu AsyncSubject w przypadku błędu}
+	\label{asyncSubjectFailed}
+\end{figure}
+\subparagraph{BehaviorSubject -}gdy obserwator zasubskrybuje się do obiektu BehaviorSubject, rozpoczyna on emitowanie zdarzeń rozpoczynając od ostatniego uprzednio wyemitowanego przez źródłowy sygnał a następnie kontynuuje emitowanie kolejnych zdarzeń sygnału źródłowego.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=10cm]{behaviorSubject}
+	\caption{Schemat działania obiektu BehaviorSubject}
+	\label{behaviorSubject}
+\end{figure}
+\\
+\\
+\\
+Jeśli zaś źródłowy sygnał zakończy się błędem, obiekt BehaviorSubject nie wyemituje żadnych danych do kolejnych obserwatorów, lecz prześle informacje o błędzie z obiektu źródłowego.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=10cm]{behaviorSubjectFailed}
+	\caption{Schemat działania obiektu BehaviorSubject w przyadku błędu}
+	\label{behaviorSubjectFailed}
+\end{figure}
+\subparagraph{PublishSubject -}emituje do obserwatora wszystkie dane wyemitowane od momentu subskrypcji. Obiekt PublishSubject może rozpocząć emitowanie danych bezpośrednio po utworzeniu. Istnieje zatem ryzyko, że jedno lub więcej wyemitowanych zdarzeń może zostać zgubiona od czasu powstania obiektu Subject i obserwatora subskrybującego się do niego. Aby temu zapobiec, można przekształcić sygnał w "zimny" przez manualne użycie funkcji Create i upewnienie się, że zdarzenia nie są emitowane dopóki wszyscy obserwatorzy sie nie zasubskrybują. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=10cm]{publishSubject}
+	\caption{Schemat działania obiektu PublishSubject}
+	\label{publishSubject}
+\end{figure}
+\\
+\\
+Jeśli zaś źródłowy sygnał zakończy się błędem, obiekt PublishSubject nie wyemituje danych, lecz prześle informacje o błędzie z obiektu źródłowego.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=10cm]{publishSubjectFailed}
+	\caption{Schemat działania obiektu PublishSubject w przypadku błędu}
+	\label{publishSubjectFailed}
+\end{figure}
+\subparagraph{ReplaySubject -}emituje do obserwatorów wszystkie zdarzenia wyemitowane przez sygnał źródłowy, bez względu na moment subskrypcji. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=10cm]{replaySubject}
+	\caption{Schemat działania obiektu ReaplySubject}
+	\label{replaySubject}
+\end{figure}\\
+Możliwa jest implementacja obiektu ReplaySubject, której działanie będzie polegało na odrzuceniu starych zdarzeń, czyli obostrzonych rozmiarem bufora bądź upływem zadanej ilości czasu.\\
+Obiekt ReplaySubject używany jako obserwator, dba o to by jego metoda onNext (lub inne metody on) nie były wywoływane z różnych wątków. Może to doprowadzić do powielania już raz wyemitowanych zdarzeń i niejednoznaczności, co stoi w sprzeczności z wytycznymi projektowymi paradgymatu reaktywnego.\cite{rxDesignGuideline} 
 \subsection{Podejście reaktywne w praktyce}
 \subsection{Operatory reaktywne}
 \subsection{Współbieżność}
@@ -161,7 +220,8 @@ Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. J
 \emph{ - pierwsze wzmianki o programowaniu reaktywnym}
 \bibitem{rxMicrosoftYear} http://www.introtorx.com/content/v1.0.10621.0/00foreword.html
 \emph{ - wypuszczenie biblioteki Reactive Extensions}
-
+\bibitem{rxDesignGuideline} https://go.microsoft.com/fwlink/?LinkID=205219
+\emph{ - wytyczne projektowe paradygmatu reaktywnego}
 \end{thebibliography}
 \chapter{PODSUMOWANIE}
 
