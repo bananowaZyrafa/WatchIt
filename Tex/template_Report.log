@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  27 DEC 2016 19:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  28 DEC 2016 12:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -658,110 +658,131 @@ File: replaySubject.png Graphic file (type png)
 Package pdftex.def Info: replaySubject.png used on input line 150.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
 
-[15 <./publishSubject.png> <./publishSubjectFailed.png>] [16 <./replaySubject.p
-ng>]
-Rozdzia\PlPrIeC {\l } 4.
-[17
+[15 <./publishSubject.png> <./publishSubjectFailed.png>]
+<create.png, id=75, 642.4pt x 200.75pt>
+File: create.png Graphic file (type png)
+ <use create.png>
+Package pdftex.def Info: create.png used on input line 165.
+(pdftex.def)             Requested size: 170.71652pt x 53.34859pt.
 
-] [18]
-Underfull \hbox (badness 3907) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 162--169
+
+ []
+
+[16 <./replaySubject.png>] <defer.png, id=80, 642.4pt x 341.275pt>
+File: defer.png Graphic file (type png)
+
+<use defer.png>
+Package pdftex.def Info: defer.png used on input line 172.
+(pdftex.def)             Requested size: 170.71652pt x 90.6926pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--176
+
+ []
+
+[17 <./create.png> <./defer.png>]
+Rozdzia\PlPrIeC {\l } 4.
+[18
+
+] [19]
+Underfull \hbox (badness 3907) in paragraph at lines 204--206
 []\OT4/cmr/m/n/10.95 https://developer.apple.com/swift/blog/?id=34 \OT4/cmr/m/i
 t/10.95 - Swift ja-ko j¦-zyk
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 188--190
+Underfull \hbox (badness 5878) in paragraph at lines 206--208
 []\OT4/cmr/m/n/10.95 https://redwerk.com/blog/10-differences-objective-c-swift 
 \OT4/cmr/m/it/10.95 - Ró»-ni-ce
  []
 
 
-Overfull \hbox (40.1621pt too wide) in paragraph at lines 197--199
+Overfull \hbox (40.1621pt too wide) in paragraph at lines 215--217
 []\OT4/cmr/m/n/10.95 https://web.archive.org/web/20071020040652/http://www.appl
 e.com/hotnews
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 199--201
+Underfull \hbox (badness 10000) in paragraph at lines 217--219
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sal
 e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2009/06/08Apple-Announces-
 the-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--203
+Underfull \hbox (badness 10000) in paragraph at lines 219--221
 \OT4/cmr/m/n/10.95 New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html  \O
 T4/cmr/m/it/10.95 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 203--205
+Underfull \hbox (badness 10000) in paragraph at lines 221--223
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2010/04/08Apple-Previews-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 205--207
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2011/10/04Apple-Launches-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2012/06/11Apple-Previews-i
 OS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
+Underfull \hbox (badness 10000) in paragraph at lines 225--227
 \OT4/cmr/m/n/10.95 6-With-All-New-Maps-Siri-Features-Facebook-Integration-Share
 d-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--211
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iO
 S-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 211--213
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2014/06/02Apple-Releases-i
 OS-8-
  []
 
-[19
+[20
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+Underfull \hbox (badness 10000) in paragraph at lines 231--233
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2015/06/08Apple-Previews-i
 OS-
  []
 
 
-Overfull \hbox (6.58212pt too wide) in paragraph at lines 215--217
+Overfull \hbox (6.58212pt too wide) in paragraph at lines 233--235
 []\OT4/cmr/m/n/10.95 https://github.com/apple/swift-evolution/blob/master/propo
 sals/0005-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--219
+Underfull \hbox (badness 10000) in paragraph at lines 235--237
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2016/06/13Apple-Previews-i
 OS-
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 221--223
+Underfull \hbox (badness 3701) in paragraph at lines 239--241
 []\OT4/cmr/m/n/10.95 http://www.introtorx.com/content/v1.0.10621.0/00foreword.h
 tml  \OT4/cmr/m/it/10.95 -
  []
 
-[20]
+[21]
 Rozdzia\PlPrIeC {\l } 5.
-[21
+[22
 
 ] (./template_Report.aux)
 
@@ -769,10 +790,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2201 strings out of 493014
- 30046 string characters out of 6133350
- 90301 words of memory out of 5000000
- 5690 multiletter control sequences out of 15000+600000
+ 2213 strings out of 493014
+ 30194 string characters out of 6133350
+ 90324 words of memory out of 5000000
+ 5700 multiletter control sequences out of 15000+600000
  16372 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,8n,24p,1031b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -787,10 +808,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/pl/plr9.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/pl/plti10.pfb>
-Output written on template_Report.pdf (21 pages, 917525 bytes).
+Output written on template_Report.pdf (22 pages, 1107492 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
- 81 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

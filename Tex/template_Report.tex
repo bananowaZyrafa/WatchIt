@@ -155,6 +155,24 @@ Możliwa jest implementacja obiektu ReplaySubject, której działanie będzie po
 Obiekt ReplaySubject używany jako obserwator, dba o to by jego metoda onNext (lub inne metody on) nie były wywoływane z różnych wątków. Może to doprowadzić do powielania już raz wyemitowanych zdarzeń i niejednoznaczności, co stoi w sprzeczności z wytycznymi projektowymi paradgymatu reaktywnego.\cite{rxDesignGuideline} 
 \subsection{Podejście reaktywne w praktyce}
 \subsection{Operatory reaktywne}
+\paragraph{}Znaczna część operatorów reaktywnych została zaczerpnięta z podejścia funkcyjnego. Mają na celu umożliwienie tworzenia sygnałów, przekształcania w inne, filtrowania, łączenia, obsługi błędów, itp.\\
+Większość operatorów programowania reaktywnego działa na obiekcie typu Observable a wynikiem działania jest obiekt typu Observable. Dlatego stosowane jest podejście łączenia operacji w całe łańcuchy działań na sygnałach. Należy tu jednak podkreślić, że kolejne operatory łańcucha nie działają na oryginalnym obiekcie Observable niezależnie. Operują one kolejno na wynikach poprzednich działań w łańcuchu czyli na kolejnych obiektach Observable. \\
+W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stosowane operatory reaktywne.
+\paragraph{Operatory tworzenia sygnałów}
+\subparagraph{Create -}tworzy od podstaw obiekt Observable. Do operatora podawana jest funkcja przyjmująca w argumencie obiekt obserwującego. Tworzy się za jej pomocą obiekt obserwowany, przez zdefniowanie działań funkcji onNext, onError i onCompleted. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{create}
+	\caption{Schemat działania operatora Create}
+	\label{create}
+\end{figure}\\
+\subparagraph{Defer -}tworzy obiekt Observable, ale dopiero gdy obserwator się do niego zasubskrybuje. Działanie to jest powielane dla każdego subskrybenta, dlatego, pomimo iż wszyscy nasłuchują z tego samego sygnału, otrzymują indywidualne sekwencje zdarzeń. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{defer}
+	\caption{Schemat działania operatora Defer}
+	\label{defer}
+\end{figure}\\
 \subsection{Współbieżność}
 \subsection{Wady i zalety podejścia reaktywnego} 
 \subsection{Implementacja na platformie iOS}
