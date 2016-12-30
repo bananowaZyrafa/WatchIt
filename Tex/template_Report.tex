@@ -173,6 +173,101 @@ W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stoso
 	\caption{Schemat działania operatora Defer}
 	\label{defer}
 \end{figure}\\
+\paragraph{Operatory przekształcania sygnałów}
+\subparagraph{Buffer -}cyklicznie zbiera generowane przez obiekt Observable zdarzenia i emituje w postaci pakietów zdarzeń. W przypadku napotkania błędu przez obiekt obserwowany, operator Buffer wyemituje zdarzenie informujące o błędzie bez wytworzenia pakietu danych.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{buffer}
+	\caption{Schemat działania operatora Buffer}
+	\label{buffer}
+\end{figure}\\
+\subparagraph{FlatMap -}przekształca obiekt Observable przez zastosowanie funkcji zdefiniowanej dla każdego wyemitowanego zdarzenia przez źródłowy obiekt obserwowany, gdzie funkcja ta zwraca obiekt Observble emitujący własne zdarzenia. Nastepnie operator flatMap scala emisje wynikowych obiektów Observable w jedną sekwencję danych.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{flatmap}
+	\caption{Schemat działania operatora FlatMap}
+	\label{flatmap}
+\end{figure}\\
+\subparagraph{Map -}stosuje zdefiniowaną funkcję do każdego wyemitowanego przez źródłowy obiekt Observable zdarzenia a następnie zwraca obiekt Observable emitujący przekształcone tą funkcją zdarzenia.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{map}
+	\caption{Schemat działania operatora Map}
+	\label{map}
+\end{figure}\\
+\subparagraph{Scan -}stosuje zdefiniowaną funkcję do pierwszego wyemitowanego przez źródło zdarzenia a następnie emituje to przekształcone zdarzenie jako swoje pierwsze. Wynik tego zdarzenia podawany jest spowrotem to funkcji wraz z kolejnym zdarzeniem z obiektu źródłowego i emitowany.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{scan}
+	\caption{Schemat działania operatora Scan}
+	\label{scan}
+\end{figure}\\
+\\
+\\
+\\
+\\
+\\
+\\
+\paragraph{Operatory filtrowania sygnałów}
+\subparagraph{Debounce -}emituje zdarzenie z obiektu Observable tylko po upływie zadanego interwału czasowego bez emisji zdarzenia.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{debounce}
+	\caption{Schemat działania operatora Debounce}
+	\label{debounce}
+\end{figure}\\
+\subparagraph{Distinct -}ignoruje wartości już raz wyemitowane.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{distinct}
+	\caption{Schemat działania operatora Distinct}
+	\label{distinct}
+\end{figure}\\
+\subparagraph{Filter -}odfiltrowuje zdarzenia emitowane przez obiekt Observable, spełniające wymagania zadanej funkcji lub predykatu.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{filter}
+	\caption{Schemat działania operatora Filter}
+	\label{filter}
+\end{figure}
+\subparagraph{Skip -}ignoruje n wygenerowanych przez obiekt Observable zdarzeń, gdzie n jest liczbą naturalną, będącą parametrem.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{skip}
+	\caption{Schemat działania operatora Skip}
+	\label{skip}
+\end{figure}
+\subparagraph{Take -}emituje pierwsze n wydarzeń wygenerowanych przez obiekt Observable, gdzie n jest liczbą naturalną, będącą parametrem.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{take}
+	\caption{Schemat działania operatora Take}
+	\label{take}
+\end{figure}
+\paragraph{Operatory łączenia}
+\subparagraph{CombineLatest -}łączy ostatnie wyemitowane zdarzenia zadaną funkcją (strategią) z dwóch lub więcej źródeł i emituje nowe zdarzenie będące wynikiem powyższych. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{combinelatest}
+	\caption{Schemat działania operatora CombineLatest}
+	\label{combinelatest}
+\end{figure}\\
+\subparagraph{Merge -}łączy zdarzenia emitowane z wielu sygnałów w jeden ciągły sygnał zdarzeń
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{merge}
+	\caption{Schemat działania operatora Merge}
+	\label{merge}
+\end{figure}\\
+\subparagraph{Zip -}łączy zdarzenia emitowane z dwóch lub więcej sygnałów w pojedyncze zdarzenia reprezentowane krotką. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{zip}
+	\caption{Schemat działania operatora Zip}
+	\label{zip}
+\end{figure}\\
+\\
+\\
 \subsection{Współbieżność}
 \subsection{Wady i zalety podejścia reaktywnego} 
 \subsection{Implementacja na platformie iOS}
