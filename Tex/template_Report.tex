@@ -144,7 +144,7 @@ Jeśli zaś źródłowy sygnał zakończy się błędem, obiekt PublishSubject n
 	\caption{Schemat działania obiektu PublishSubject w przypadku błędu}
 	\label{publishSubjectFailed}
 \end{figure}
-\subparagraph{ReplaySubject -}emituje do obserwatorów wszystkie zdarzenia wyemitowane przez sygnał źródłowy, bez względu na moment subskrypcji. 
+\subparagraph{ReplaySubject -}emituje do obserwatorów wszystkie zdarzenia wyemitowane przez sygnał źródłowy, bez względu na moment subskrybcji. 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=10cm]{replaySubject}
@@ -268,6 +268,61 @@ W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stoso
 \end{figure}\\
 \\
 \\
+\\
+\\
+\\
+\\
+\paragraph{Operatory obsługi błędów}
+\subparagraph{Catch -}operator ten przechwytuje zdarzenie onError od obiektu Observable i zamiast propagować błąd do obserwujących, podmienia zdarzenie na inne dane lub inny zestaw danych, co pozwala zakończyć się wynikowemu obiektowi Observable w normalny sposób (onCompleted) lub nie zakończyć się w cale.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{catch}
+	\caption{Schemat działania operatora Catch}
+	\label{catch}
+\end{figure}\\
+\subparagraph{Retry -}w przypadku odebrania od obiektu Observable zdarzenia onError, operator Retry nie propaguje błędu do obiektów obserwujących. Zamiast tego wykonywana jest resubskrybcja do źródłowego sygnału. Operator Retry zawsze przekazuje zdarzenie onNext do swoich obserwatorów, nawet z ciągów kończących się błędem. Może to powodować zduplikowanie wyemitowania zdarzenia.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{retry}
+	\caption{Schemat działania operatora Retry}
+	\label{retry}
+\end{figure}\\\\\\
+\paragraph{Operatory działań na obiektach Observable}
+\subparagraph{Materialize -}konwertuje sekwencje emitowanych z obiektu Observable zdarzeń, na sekwencję zdarzeń reprezentowanych przez wywołania metod onNext i ostatecznie onCompleted lub onError.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{materialize}
+	\caption{Schemat działania operatora Materialize}
+	\label{materialize}
+\end{figure}\\
+\subparagraph{ObserveOn -}w środowisku wielowątkowym, określa wątek, na którym obserwatorzy będą nasłuchiwali na generowane zdarzenia. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{observeOn}
+	\caption{Schemat działania operatora ObserveOn}
+	\label{observeOn}
+\end{figure}\\
+Należy ponadto zauważyć, że ObserveOn prześle zdarzenie onError niezwłocznie, gdy je otrzyma. Oznacza to, że jeśli istnieje zasubskrybowany obserwator, wolniej przetwarzający otrzymywane zdarzenia, to możliwe jest, iż zdarzenie onError przeskoczy na miejsce przed zdarzeniami jeszcze nieprzetworzonymi przez ten obserwator. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{observeOnError}
+	\caption{Schemat działania operatora ObserveOnError}
+	\label{observeOnError}
+\end{figure}\\
+\subparagraph{SubscribeOn -}w środowisku wielowątkowym, określa wątek, na którym obiekt Observable będzie wykonywał pracę. Domyślnie obiekt Observable jak i ciąg zastosowanych operatorów reaktywnych, będą działały i powiadamiały obserwatorów o zdarzeniach, na tym samym wątku, na którym wywołano metodą Subscribe. Operator SubscribeOn zmienia to zachowanie, przez określenie wątku, na którym obiekt Observable będzie działał. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{subscribeOn}
+	\caption{Schemat działania operatora SubscribeOn}
+	\label{subscribeOn}
+\end{figure}\\
+\subparagraph{Serialize -}z racji tego, że obiekt Observable może wywoływać swoje metody asynchronicznie, na różnych wątkach, możliwe jest, że będzie próbował przesłać zdarzenie onCompleted lub onError przed jakimś innym zdarzeniem onNext lub nawet przesłać kilka różnych zdarzeń onNext z różnych wątków, współbieżnie. Takie zachowania narusza wspomniane wcześniej zalecenia odnośnie projektowania zadań w paradygmacie reaktywnym. Operator Serialize zmusza obiekt Observable do emitowania zdarzeń w sposób synchroniczny.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=8cm]{serialize}
+	\caption{Schemat działania operatora Serialize}
+	\label{serialize}
+\end{figure}\\
 \subsection{Współbieżność}
 \subsection{Wady i zalety podejścia reaktywnego} 
 \subsection{Implementacja na platformie iOS}

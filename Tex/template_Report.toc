@@ -69,26 +69,34 @@
 \contentsline {subparagraph}{CombineLatest -}{20}
 \contentsline {subparagraph}{Merge -}{21}
 \contentsline {subparagraph}{Zip -}{21}
-\contentsline {subsection}{\numberline {3.4.4}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{22}
-\contentsline {subsection}{\numberline {3.4.5}Wady i zalety podej\IeC {\'s}cia reaktywnego}{22}
-\contentsline {subsection}{\numberline {3.4.6}Implementacja na platformie iOS}{22}
-\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{23}
-\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{23}
-\contentsline {paragraph}{}{23}
-\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{24}
-\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{24}
-\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{24}
-\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{24}
-\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{24}
-\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{24}
-\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{24}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{24}
-\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{24}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{24}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{27}
+\contentsline {paragraph}{Operatory obs\IeC {\l }ugi b\IeC {\l }\IeC {\k e}d\IeC {\'o}w}{22}
+\contentsline {subparagraph}{Catch -}{22}
+\contentsline {subparagraph}{Retry -}{22}
+\contentsline {paragraph}{Operatory dzia\IeC {\l }a\IeC {\'n} na obiektach Observable}{23}
+\contentsline {subparagraph}{Materialize -}{23}
+\contentsline {subparagraph}{ObserveOn -}{23}
+\contentsline {subparagraph}{SubscribeOn -}{24}
+\contentsline {subparagraph}{Serialize -}{24}
+\contentsline {subsection}{\numberline {3.4.4}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{25}
+\contentsline {subsection}{\numberline {3.4.5}Wady i zalety podej\IeC {\'s}cia reaktywnego}{25}
+\contentsline {subsection}{\numberline {3.4.6}Implementacja na platformie iOS}{25}
+\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{26}
+\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{26}
+\contentsline {paragraph}{}{26}
+\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{26}
+\contentsline {paragraph}{}{26}
+\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{26}
+\contentsline {paragraph}{}{26}
+\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{26}
+\contentsline {paragraph}{}{26}
+\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{27}
+\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{27}
+\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{27}
+\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{27}
+\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{27}
+\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{27}
+\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{27}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{27}
+\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{27}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{27}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{30}

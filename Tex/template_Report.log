@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  29 DEC 2016 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  2 JAN 2017 21:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -824,126 +824,228 @@ File: zip.png Graphic file (type png)
 Package pdftex.def Info: zip.png used on input line 265.
 (pdftex.def)             Requested size: 227.62204pt x 134.76799pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--271
+Underfull \hbox (badness 10000) in paragraph at lines 262--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--271
+Underfull \hbox (badness 10000) in paragraph at lines 262--275
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--271
+Underfull \hbox (badness 10000) in paragraph at lines 262--275
 
  []
 
 
-Underfull \vbox (badness 3884) has occurred while \output is active []
+Underfull \hbox (badness 10000) in paragraph at lines 262--275
 
- [21 <./combinelatest.png> <./merge.png>] [22 <./zip.png>]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--275
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 262--275
+
+ []
+
+[21 <./combinelatest.png> <./merge.png>]
+<catch.png, id=122, 642.4pt x 311.1625pt>
+File: catch.png Graphic file (type png)
+ <use catch.png>
+Package pdftex.def Info: catch.png used on input line 279.
+(pdftex.def)             Requested size: 227.62204pt x 110.25217pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--283
+
+ []
+
+<retry.png, id=123, 642.4pt x 316.18124pt>
+File: retry.png Graphic file (type png)
+ <use retry.png>
+Package pdftex.def Info: retry.png used on input line 286.
+(pdftex.def)             Requested size: 227.62204pt x 112.03043pt.
+
+Overfull \hbox (1.68948pt too wide) in paragraph at lines 283--290
+ \OT4/cmr/bx/n/10.95 Re-try -[] \OT4/cmr/m/n/10.95 w przy-pad-ku ode-bra-nia od
+ obiek-tu Ob-se-rva-ble zda-rze-nia onEr-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--290
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 283--290
+
+ []
+
+[22 <./zip.png> <./catch.png>]
+<materialize.png, id=129, 642.4pt x 316.18124pt>
+File: materialize.png Graphic file (type png)
+ <use materialize.png>
+Package pdftex.def Info: materialize.png used on input line 294.
+(pdftex.def)             Requested size: 227.62204pt x 112.03043pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--298
+
+ []
+
+<observeOn.png, id=130, 642.4pt x 309.155pt>
+File: observeOn.png Graphic file (type png)
+ <use observeOn.png>
+Package pdftex.def Info: observeOn.png used on input line 301.
+(pdftex.def)             Requested size: 227.62204pt x 109.54086pt.
+
+<observeOnError.png, id=131, 642.4pt x 309.155pt>
+File: observeOnError.png Graphic file (type png)
+ <use observeOnError.png>
+Package pdftex.def Info: observeOnError.png used on input line 308.
+(pdftex.def)             Requested size: 227.62204pt x 109.54086pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--312
+
+ []
+
+[23 <./retry.png> <./materialize.png> <./observeOn.png>]
+<subscribeOn.png, id=138, 642.4pt x 306.14375pt>
+File: subscribeOn.png Graphic file (type png)
+ <use subscribeOn.png>
+Package pdftex.def Info: subscribeOn.png used on input line 315.
+(pdftex.def)             Requested size: 227.62204pt x 108.4739pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--319
+
+ []
+
+<serialize.png, id=139, 642.4pt x 401.5pt>
+File: serialize.png Graphic file (type png)
+ <use serialize.png>
+Package pdftex.def Info: serialize.png used on input line 322.
+(pdftex.def)             Requested size: 227.62204pt x 142.26086pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
+
+ []
+
+[24 <./observeOnError.png> <./subscribeOn.png>] [25 <./serialize.png>]
 Rozdzia\PlPrIeC {\l } 4.
-[23
+[26
 
-] [24]
-Underfull \hbox (badness 3907) in paragraph at lines 299--301
+] [27]
+Underfull \hbox (badness 3907) in paragraph at lines 354--356
 []\OT4/cmr/m/n/10.95 https://developer.apple.com/swift/blog/?id=34 \OT4/cmr/m/i
 t/10.95 - Swift ja-ko j¦-zyk
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 301--303
+Underfull \hbox (badness 5878) in paragraph at lines 356--358
 []\OT4/cmr/m/n/10.95 https://redwerk.com/blog/10-differences-objective-c-swift 
 \OT4/cmr/m/it/10.95 - Ró»-ni-ce
  []
 
 
-Overfull \hbox (40.1621pt too wide) in paragraph at lines 310--312
+Overfull \hbox (40.1621pt too wide) in paragraph at lines 365--367
 []\OT4/cmr/m/n/10.95 https://web.archive.org/web/20071020040652/http://www.appl
 e.com/hotnews
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--314
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sal
 e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--316
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2009/06/08Apple-Announces-
 the-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 314--316
+Underfull \hbox (badness 10000) in paragraph at lines 369--371
 \OT4/cmr/m/n/10.95 New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html  \O
 T4/cmr/m/it/10.95 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--318
+Underfull \hbox (badness 10000) in paragraph at lines 371--373
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2010/04/08Apple-Previews-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--320
+Underfull \hbox (badness 10000) in paragraph at lines 373--375
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2011/10/04Apple-Launches-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2012/06/11Apple-Previews-i
 OS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 320--322
+Underfull \hbox (badness 10000) in paragraph at lines 375--377
 \OT4/cmr/m/n/10.95 6-With-All-New-Maps-Siri-Features-Facebook-Integration-Share
 d-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--324
+Underfull \hbox (badness 10000) in paragraph at lines 377--379
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iO
 S-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 324--326
+Underfull \hbox (badness 10000) in paragraph at lines 379--381
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2014/06/02Apple-Releases-i
 OS-8-
  []
 
-[25
+[28
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 326--328
+Underfull \hbox (badness 10000) in paragraph at lines 381--383
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2015/06/08Apple-Previews-i
 OS-
  []
 
 
-Overfull \hbox (6.58212pt too wide) in paragraph at lines 328--330
+Overfull \hbox (6.58212pt too wide) in paragraph at lines 383--385
 []\OT4/cmr/m/n/10.95 https://github.com/apple/swift-evolution/blob/master/propo
 sals/0005-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 330--332
+Underfull \hbox (badness 10000) in paragraph at lines 385--387
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2016/06/13Apple-Previews-i
 OS-
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 334--336
+Underfull \hbox (badness 3701) in paragraph at lines 389--391
 []\OT4/cmr/m/n/10.95 http://www.introtorx.com/content/v1.0.10621.0/00foreword.h
 tml  \OT4/cmr/m/it/10.95 -
  []
 
-[26]
+[29]
 Rozdzia\PlPrIeC {\l } 5.
-[27
+[30
 
 ] (./template_Report.aux)
 
@@ -951,10 +1053,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2284 strings out of 493014
- 31108 string characters out of 6133350
- 90468 words of memory out of 5000000
- 5760 multiletter control sequences out of 15000+600000
+ 2326 strings out of 493014
+ 31779 string characters out of 6133350
+ 90552 words of memory out of 5000000
+ 5795 multiletter control sequences out of 15000+600000
  16372 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,8n,24p,1031b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -969,10 +1071,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/pl/plr9.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/pl/plti10.pfb>
-Output written on template_Report.pdf (27 pages, 1908695 bytes).
+Output written on template_Report.pdf (30 pages, 2826795 bytes).
 PDF statistics:
- 178 PDF objects out of 1000 (max. 8388607)
- 94 compressed objects within 1 object stream
+ 201 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
