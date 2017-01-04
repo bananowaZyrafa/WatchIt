@@ -48,8 +48,7 @@
 \contentsline {subparagraph}{BehaviorSubject -}{13}
 \contentsline {subparagraph}{PublishSubject -}{14}
 \contentsline {subparagraph}{ReplaySubject -}{15}
-\contentsline {subsection}{\numberline {3.4.2}Podej\IeC {\'s}cie reaktywne w praktyce}{16}
-\contentsline {subsection}{\numberline {3.4.3}Operatory reaktywne}{16}
+\contentsline {subsection}{\numberline {3.4.2}Operatory reaktywne}{16}
 \contentsline {paragraph}{}{16}
 \contentsline {paragraph}{Operatory tworzenia sygna\IeC {\l }\IeC {\'o}w}{16}
 \contentsline {subparagraph}{Create -}{16}
@@ -77,26 +76,29 @@
 \contentsline {subparagraph}{ObserveOn -}{23}
 \contentsline {subparagraph}{SubscribeOn -}{24}
 \contentsline {subparagraph}{Serialize -}{24}
-\contentsline {subsection}{\numberline {3.4.4}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{25}
-\contentsline {subsection}{\numberline {3.4.5}Wady i zalety podej\IeC {\'s}cia reaktywnego}{25}
-\contentsline {subsection}{\numberline {3.4.6}Implementacja na platformie iOS}{25}
-\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{26}
-\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{26}
-\contentsline {paragraph}{}{26}
-\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{26}
-\contentsline {paragraph}{}{26}
-\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{26}
-\contentsline {paragraph}{}{26}
-\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{26}
-\contentsline {paragraph}{}{26}
-\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{27}
-\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{27}
-\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{27}
-\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{27}
-\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{27}
-\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{27}
-\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{27}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{27}
-\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{27}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{27}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{30}
+\contentsline {subsection}{\numberline {3.4.3}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{25}
+\contentsline {paragraph}{}{25}
+\contentsline {subparagraph}{Plani\IeC {\'s}ci (Schedulers)}{25}
+\contentsline {subparagraph}{Rodzaje planist\IeC {\'o}w}{26}
+\contentsline {subsection}{\numberline {3.4.4}Wady i zalety podej\IeC {\'s}cia reaktywnego}{26}
+\contentsline {subsection}{\numberline {3.4.5}Podej\IeC {\'s}cie praktyczne w implementacji na platformie iOS}{26}
+\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{27}
+\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{27}
+\contentsline {paragraph}{}{27}
+\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{28}
+\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{28}
+\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{28}
+\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{28}
+\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{28}
+\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{28}
+\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{28}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{28}
+\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{28}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{28}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{31}

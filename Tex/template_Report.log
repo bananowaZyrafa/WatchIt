@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  2 JAN 2017 21:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  5 JAN 2017 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -662,10 +662,10 @@ Package pdftex.def Info: replaySubject.png used on input line 150.
 <create.png, id=75, 642.4pt x 200.75pt>
 File: create.png Graphic file (type png)
  <use create.png>
-Package pdftex.def Info: create.png used on input line 165.
+Package pdftex.def Info: create.png used on input line 164.
 (pdftex.def)             Requested size: 170.71652pt x 53.34859pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--169
+Underfull \hbox (badness 10000) in paragraph at lines 161--168
 
  []
 
@@ -673,30 +673,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--169
 File: defer.png Graphic file (type png)
 
 <use defer.png>
-Package pdftex.def Info: defer.png used on input line 172.
+Package pdftex.def Info: defer.png used on input line 171.
 (pdftex.def)             Requested size: 170.71652pt x 90.6926pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 169--176
+Underfull \hbox (badness 10000) in paragraph at lines 168--175
 
  []
 
 <buffer.png, id=81, 642.4pt x 321.2pt>
 File: buffer.png Graphic file (type png)
  <use buffer.png>
-Package pdftex.def Info: buffer.png used on input line 180.
+Package pdftex.def Info: buffer.png used on input line 179.
 (pdftex.def)             Requested size: 170.71652pt x 85.35774pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 177--184
+Underfull \hbox (badness 10000) in paragraph at lines 176--183
 
  []
 
 <flatmap.png, id=82, 642.4pt x 311.1625pt>
 File: flatmap.png Graphic file (type png)
  <use flatmap.png>
-Package pdftex.def Info: flatmap.png used on input line 187.
+Package pdftex.def Info: flatmap.png used on input line 186.
 (pdftex.def)             Requested size: 170.71652pt x 82.6903pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 184--191
+Underfull \hbox (badness 10000) in paragraph at lines 183--190
 
  []
 
@@ -704,56 +704,56 @@ Underfull \hbox (badness 10000) in paragraph at lines 184--191
 <map.png, id=89, 584.1825pt x 294.09875pt>
 File: map.png Graphic file (type png)
  <use map.png>
-Package pdftex.def Info: map.png used on input line 194.
+Package pdftex.def Info: map.png used on input line 193.
 (pdftex.def)             Requested size: 170.71652pt x 85.94612pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 191--198
+Underfull \hbox (badness 10000) in paragraph at lines 190--197
 
  []
 
 <scan.png, id=90, 584.1825pt x 294.09875pt>
 File: scan.png Graphic file (type png)
  <use scan.png>
-Package pdftex.def Info: scan.png used on input line 201.
+Package pdftex.def Info: scan.png used on input line 200.
 (pdftex.def)             Requested size: 170.71652pt x 85.94612pt.
 
-Overfull \hbox (5.36977pt too wide) in paragraph at lines 198--211
+Overfull \hbox (5.36977pt too wide) in paragraph at lines 197--210
  \OT4/cmr/bx/n/10.95 Scan -[] \OT4/cmr/m/n/10.95 sto-su-je zde-fi-nio-wa-n¡ fun
 k-cj¦ do pierw-sze-go wy-emi-to-wa-ne-go przez
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--211
+Underfull \hbox (badness 10000) in paragraph at lines 197--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--211
+Underfull \hbox (badness 10000) in paragraph at lines 197--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--211
+Underfull \hbox (badness 10000) in paragraph at lines 197--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--211
+Underfull \hbox (badness 10000) in paragraph at lines 197--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--211
+Underfull \hbox (badness 10000) in paragraph at lines 197--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--211
+Underfull \hbox (badness 10000) in paragraph at lines 197--210
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 198--211
+Underfull \hbox (badness 10000) in paragraph at lines 197--210
 
  []
 
@@ -761,49 +761,49 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--211
 <debounce.png, id=96, 480.79625pt x 293.095pt>
 File: debounce.png Graphic file (type png)
  <use debounce.png>
-Package pdftex.def Info: debounce.png used on input line 215.
+Package pdftex.def Info: debounce.png used on input line 214.
 (pdftex.def)             Requested size: 170.71652pt x 104.06956pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--219
+Underfull \hbox (badness 10000) in paragraph at lines 211--218
 
  []
 
 <distinct.png, id=97, 481.8pt x 290.08376pt>
 File: distinct.png Graphic file (type png)
  <use distinct.png>
-Package pdftex.def Info: distinct.png used on input line 222.
+Package pdftex.def Info: distinct.png used on input line 221.
 (pdftex.def)             Requested size: 170.71652pt x 102.78348pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--226
+Underfull \hbox (badness 10000) in paragraph at lines 218--225
 
  []
 
 <filter.png, id=98, 480.79625pt x 290.08376pt>
 File: filter.png Graphic file (type png)
  <use filter.png>
-Package pdftex.def Info: filter.png used on input line 229.
+Package pdftex.def Info: filter.png used on input line 228.
 (pdftex.def)             Requested size: 170.71652pt x 103.00037pt.
 
 <skip.png, id=99, 482.80376pt x 292.09125pt>
 File: skip.png Graphic file (type png)
  <use skip.png>
-Package pdftex.def Info: skip.png used on input line 236.
+Package pdftex.def Info: skip.png used on input line 235.
 (pdftex.def)             Requested size: 170.71652pt x 103.28084pt.
  [19 <./scan.png> <./debounce.png> <./distinct.png>] <take.png, id=107, 484.811
 25pt x 293.095pt>
 File: take.png Graphic file (type png)
 
 <use take.png>
-Package pdftex.def Info: take.png used on input line 243.
+Package pdftex.def Info: take.png used on input line 242.
 (pdftex.def)             Requested size: 170.71652pt x 103.20642pt.
  <combinelatest.png, id=108, 659.46375pt x 378.41376pt>
 File: combinelatest.png Graphic file (type png)
 
 <use combinelatest.png>
-Package pdftex.def Info: combinelatest.png used on input line 251.
+Package pdftex.def Info: combinelatest.png used on input line 250.
 (pdftex.def)             Requested size: 227.62204pt x 130.61063pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--255
+Underfull \hbox (badness 10000) in paragraph at lines 247--254
 
  []
 
@@ -811,50 +811,50 @@ Underfull \hbox (badness 10000) in paragraph at lines 248--255
 <merge.png, id=115, 657.45625pt x 392.46625pt>
 File: merge.png Graphic file (type png)
  <use merge.png>
-Package pdftex.def Info: merge.png used on input line 258.
+Package pdftex.def Info: merge.png used on input line 257.
 (pdftex.def)             Requested size: 227.62204pt x 135.87408pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--262
+Underfull \hbox (badness 10000) in paragraph at lines 254--261
 
  []
 
 <zip.png, id=116, 659.46375pt x 390.45876pt>
 File: zip.png Graphic file (type png)
  <use zip.png>
-Package pdftex.def Info: zip.png used on input line 265.
+Package pdftex.def Info: zip.png used on input line 264.
 (pdftex.def)             Requested size: 227.62204pt x 134.76799pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--275
+Underfull \hbox (badness 10000) in paragraph at lines 261--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--275
+Underfull \hbox (badness 10000) in paragraph at lines 261--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--275
+Underfull \hbox (badness 10000) in paragraph at lines 261--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--275
+Underfull \hbox (badness 10000) in paragraph at lines 261--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--275
+Underfull \hbox (badness 10000) in paragraph at lines 261--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--275
+Underfull \hbox (badness 10000) in paragraph at lines 261--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--275
+Underfull \hbox (badness 10000) in paragraph at lines 261--274
 
  []
 
@@ -862,36 +862,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 262--275
 <catch.png, id=122, 642.4pt x 311.1625pt>
 File: catch.png Graphic file (type png)
  <use catch.png>
-Package pdftex.def Info: catch.png used on input line 279.
+Package pdftex.def Info: catch.png used on input line 278.
 (pdftex.def)             Requested size: 227.62204pt x 110.25217pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 276--283
+Underfull \hbox (badness 10000) in paragraph at lines 275--282
 
  []
 
 <retry.png, id=123, 642.4pt x 316.18124pt>
 File: retry.png Graphic file (type png)
  <use retry.png>
-Package pdftex.def Info: retry.png used on input line 286.
+Package pdftex.def Info: retry.png used on input line 285.
 (pdftex.def)             Requested size: 227.62204pt x 112.03043pt.
 
-Overfull \hbox (1.68948pt too wide) in paragraph at lines 283--290
+Overfull \hbox (1.68948pt too wide) in paragraph at lines 282--289
  \OT4/cmr/bx/n/10.95 Re-try -[] \OT4/cmr/m/n/10.95 w przy-pad-ku ode-bra-nia od
  obiek-tu Ob-se-rva-ble zda-rze-nia onEr-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--290
+Underfull \hbox (badness 10000) in paragraph at lines 282--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--290
+Underfull \hbox (badness 10000) in paragraph at lines 282--289
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--290
+Underfull \hbox (badness 10000) in paragraph at lines 282--289
 
  []
 
@@ -899,26 +899,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--290
 <materialize.png, id=129, 642.4pt x 316.18124pt>
 File: materialize.png Graphic file (type png)
  <use materialize.png>
-Package pdftex.def Info: materialize.png used on input line 294.
+Package pdftex.def Info: materialize.png used on input line 293.
 (pdftex.def)             Requested size: 227.62204pt x 112.03043pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--298
+Underfull \hbox (badness 10000) in paragraph at lines 290--297
 
  []
 
 <observeOn.png, id=130, 642.4pt x 309.155pt>
 File: observeOn.png Graphic file (type png)
  <use observeOn.png>
-Package pdftex.def Info: observeOn.png used on input line 301.
+Package pdftex.def Info: observeOn.png used on input line 300.
 (pdftex.def)             Requested size: 227.62204pt x 109.54086pt.
 
 <observeOnError.png, id=131, 642.4pt x 309.155pt>
 File: observeOnError.png Graphic file (type png)
  <use observeOnError.png>
-Package pdftex.def Info: observeOnError.png used on input line 308.
+Package pdftex.def Info: observeOnError.png used on input line 307.
 (pdftex.def)             Requested size: 227.62204pt x 109.54086pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 298--312
+Underfull \hbox (badness 10000) in paragraph at lines 297--311
 
  []
 
@@ -926,126 +926,143 @@ Underfull \hbox (badness 10000) in paragraph at lines 298--312
 <subscribeOn.png, id=138, 642.4pt x 306.14375pt>
 File: subscribeOn.png Graphic file (type png)
  <use subscribeOn.png>
-Package pdftex.def Info: subscribeOn.png used on input line 315.
+Package pdftex.def Info: subscribeOn.png used on input line 314.
 (pdftex.def)             Requested size: 227.62204pt x 108.4739pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--319
+Underfull \hbox (badness 10000) in paragraph at lines 311--318
 
  []
 
 <serialize.png, id=139, 642.4pt x 401.5pt>
 File: serialize.png Graphic file (type png)
  <use serialize.png>
-Package pdftex.def Info: serialize.png used on input line 322.
+Package pdftex.def Info: serialize.png used on input line 321.
 (pdftex.def)             Requested size: 227.62204pt x 142.26086pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--326
+Underfull \hbox (badness 10000) in paragraph at lines 318--325
 
  []
 
-[24 <./observeOnError.png> <./subscribeOn.png>] [25 <./serialize.png>]
-Rozdzia\PlPrIeC {\l } 4.
-[26
+[24 <./observeOnError.png> <./subscribeOn.png>]
+<schedulers.png, id=145, 642.4pt x 803.0pt>
+File: schedulers.png Graphic file (type png)
+ <use schedulers.png>
+Package pdftex.def Info: schedulers.png used on input line 335.
+(pdftex.def)             Requested size: 284.52756pt x 355.66138pt.
 
-] [27]
-Underfull \hbox (badness 3907) in paragraph at lines 354--356
+Overfull \hbox (6.1868pt too wide) in paragraph at lines 328--339
+\OT4/cmr/m/n/10.95 se-rva-ble. Ope-ra-tor Ob-se-rve-On za±, okre-±la pla-ni-st¦
+ (sche-du-ler), któ-re-go obiekt
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--339
+
+ []
+
+[25 <./serialize.png>] [26 <./schedulers.png>]
+Rozdzia\PlPrIeC {\l } 4.
+[27
+
+] [28]
+Underfull \hbox (badness 3907) in paragraph at lines 367--369
 []\OT4/cmr/m/n/10.95 https://developer.apple.com/swift/blog/?id=34 \OT4/cmr/m/i
 t/10.95 - Swift ja-ko j¦-zyk
  []
 
 
-Underfull \hbox (badness 5878) in paragraph at lines 356--358
+Underfull \hbox (badness 5878) in paragraph at lines 369--371
 []\OT4/cmr/m/n/10.95 https://redwerk.com/blog/10-differences-objective-c-swift 
 \OT4/cmr/m/it/10.95 - Ró»-ni-ce
  []
 
 
-Overfull \hbox (40.1621pt too wide) in paragraph at lines 365--367
+Overfull \hbox (40.1621pt too wide) in paragraph at lines 378--380
 []\OT4/cmr/m/n/10.95 https://web.archive.org/web/20071020040652/http://www.appl
 e.com/hotnews
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 367--369
+Underfull \hbox (badness 10000) in paragraph at lines 380--382
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sal
 e-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--371
+Underfull \hbox (badness 10000) in paragraph at lines 382--384
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2009/06/08Apple-Announces-
 the-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--371
+Underfull \hbox (badness 10000) in paragraph at lines 382--384
 \OT4/cmr/m/n/10.95 New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html  \O
 T4/cmr/m/it/10.95 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 371--373
+Underfull \hbox (badness 10000) in paragraph at lines 384--386
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2010/04/08Apple-Previews-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--375
+Underfull \hbox (badness 10000) in paragraph at lines 386--388
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2011/10/04Apple-Launches-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--377
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2012/06/11Apple-Previews-i
 OS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 375--377
+Underfull \hbox (badness 10000) in paragraph at lines 388--390
 \OT4/cmr/m/n/10.95 6-With-All-New-Maps-Siri-Features-Facebook-Integration-Share
 d-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 377--379
+Underfull \hbox (badness 10000) in paragraph at lines 390--392
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iO
 S-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 379--381
+Underfull \hbox (badness 10000) in paragraph at lines 392--394
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2014/06/02Apple-Releases-i
 OS-8-
  []
 
-[28
+[29
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 381--383
+Underfull \hbox (badness 10000) in paragraph at lines 394--396
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2015/06/08Apple-Previews-i
 OS-
  []
 
 
-Overfull \hbox (6.58212pt too wide) in paragraph at lines 383--385
+Overfull \hbox (6.58212pt too wide) in paragraph at lines 396--398
 []\OT4/cmr/m/n/10.95 https://github.com/apple/swift-evolution/blob/master/propo
 sals/0005-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 385--387
+Underfull \hbox (badness 10000) in paragraph at lines 398--400
 []\OT4/cmr/m/n/10.95 http://www.apple.com/pr/library/2016/06/13Apple-Previews-i
 OS-
  []
 
 
-Underfull \hbox (badness 3701) in paragraph at lines 389--391
+Underfull \hbox (badness 3701) in paragraph at lines 402--404
 []\OT4/cmr/m/n/10.95 http://www.introtorx.com/content/v1.0.10621.0/00foreword.h
 tml  \OT4/cmr/m/it/10.95 -
  []
 
-[29]
+[30]
 Rozdzia\PlPrIeC {\l } 5.
-[30
+[31
 
 ] (./template_Report.aux)
 
@@ -1053,10 +1070,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2326 strings out of 493014
- 31779 string characters out of 6133350
- 90552 words of memory out of 5000000
- 5795 multiletter control sequences out of 15000+600000
+ 2332 strings out of 493014
+ 31880 string characters out of 6133350
+ 90564 words of memory out of 5000000
+ 5800 multiletter control sequences out of 15000+600000
  16372 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,8n,24p,1031b,231s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1071,10 +1088,10 @@ sr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr6.pfb></usr/local/tex
 live/2016/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/pl/plr9.pfb></usr/local/texlive/2016/texmf-dist/fon
 ts/type1/public/pl/plti10.pfb>
-Output written on template_Report.pdf (30 pages, 2826795 bytes).
+Output written on template_Report.pdf (31 pages, 3121790 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 208 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

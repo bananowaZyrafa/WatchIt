@@ -153,7 +153,6 @@ Jeśli zaś źródłowy sygnał zakończy się błędem, obiekt PublishSubject n
 \end{figure}\\
 Możliwa jest implementacja obiektu ReplaySubject, której działanie będzie polegało na odrzuceniu starych zdarzeń, czyli obostrzonych rozmiarem bufora bądź upływem zadanej ilości czasu.\\
 Obiekt ReplaySubject używany jako obserwator, dba o to by jego metoda onNext (lub inne metody on) nie były wywoływane z różnych wątków. Może to doprowadzić do powielania już raz wyemitowanych zdarzeń i niejednoznaczności, co stoi w sprzeczności z wytycznymi projektowymi paradgymatu reaktywnego.\cite{rxDesignGuideline} 
-\subsection{Podejście reaktywne w praktyce}
 \subsection{Operatory reaktywne}
 \paragraph{}Znaczna część operatorów reaktywnych została zaczerpnięta z podejścia funkcyjnego. Mają na celu umożliwienie tworzenia sygnałów, przekształcania w inne, filtrowania, łączenia, obsługi błędów, itp.\\
 Większość operatorów programowania reaktywnego działa na obiekcie typu Observable a wynikiem działania jest obiekt typu Observable. Dlatego stosowane jest podejście łączenia operacji w całe łańcuchy działań na sygnałach. Należy tu jednak podkreślić, że kolejne operatory łańcucha nie działają na oryginalnym obiekcie Observable niezależnie. Operują one kolejno na wynikach poprzednich działań w łańcuchu czyli na kolejnych obiektach Observable. \\
@@ -324,8 +323,22 @@ Należy ponadto zauważyć, że ObserveOn prześle zdarzenie onError niezwłoczn
 	\label{serialize}
 \end{figure}\\
 \subsection{Współbieżność}
+\paragraph{}Podstawowym założeniem podejścia reaktywnego jest przetwarzanie danych w sposób asynchroniczny. Aby zapewnić efektywny poziom asynchroniczności wykonywanych działań, wymagany jest pewien poziom współbieżności, czyli przetwarzania danych w oparciu o współistnienie wielu wątków lub procesów.
+\subparagraph{Planiści (Schedulers)}
+Narzędziem do zaimplementowania wielowątkowości podczas tworzenia łańcuchów sygnałów połączonych operatorami reaktywnymi, są tzw. planiści (ang. schedulers).\\
+Niektóre operatory reaktywne, jako parametr przyjmują planistę, obiekt Scheduler, reprezentujący wątek, na którym ma być wykonywana praca.\\
+Domyślnie, obiekt Observable i zastosowany do niego łańcuch operatorów, wykonują pracę i informują obserwatorów na tym samym wątku, na którym wywołano subskrybcję (metoda Subscribe).\\
+Jak opisano wcześniej, operator SubscribeOn zmienia to zachowanie, przez określenie innego planisty (schedulera), na którym ma operować obiekt Observable. Operator ObserveOn zaś, określa planistę (scheduler), którego obiekt Observable ma użyć do wysyłania zdarzeń do swoich obserwatorów.\\
+Jak pokazano na poniższej ilustracji, operator SubscribeOn określa wątek, na którym obiekt Observable rozpocznie swoje działanie, bez względu na to, w którym miejscu łańcucha operatorów zostanie on wywołany. Z drugiej zaś strony, operator ObserveOn, określa wątek, na którym ma działać obiekt Observable od momentu wywołania tego operatora. Z tego powodu, operator ObserveOn można wywoływać wielokrotnie i w różnych miejscach łańcucha, aby sterować używanymi przez Observable wątkami. 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=10cm]{schedulers}
+	\caption{Schemat ukazujący sposób przełączania między wątkami w środowisku reaktywnym}
+	\label{schedulers}
+\end{figure}\\
+\subparagraph{Rodzaje planistów}
 \subsection{Wady i zalety podejścia reaktywnego} 
-\subsection{Implementacja na platformie iOS}
+\subsection{Podejście praktyczne w implementacji na platformie iOS}
 \chapter{PRACA WŁASNA}
 \section{Czynności przygotowawcze}		
 \paragraph{}Stworzenie aplikacji mobilnej było możliwe dzięki wykonaniu uprzednio czynności przygotowawczych. Do czynności tych należało: wybór środowiska programistycznego, instalacja bibliotek i frameworków, wstępna konfiguracja projektu oraz stworzenie repozytorium.
