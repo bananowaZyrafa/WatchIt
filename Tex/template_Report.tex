@@ -1,9 +1,9 @@
-\documentclass[11pt,twoside,a4paper]{report}
+\documentclass[12pt,oneside,a4paper]{report}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{wrapfig}
-
+%jabrew pod maca poszukac albo innego menedzera bibliografii
 % Title Page
 \title{Użycie języka Swift i elementów paradygmatu reaktywnego na przykładzie aplikacji mobilnej do polecania filmów i seriali}
 \author{Bartosz Woliński}
@@ -13,7 +13,7 @@
 \tableofcontents
 \chapter{WSTĘP}
 
-\paragraph{}Motywacją do powstania pracy inżynierskiej o tej tematyce, była chęć poznania i zrozumienia idei paradygmatu reaktywnego w programowaniu na platformę mobilną. W mojej pracy postaram się pokazać, że podejście reaktywne jest dobrym pomysłem szczególnie w środowiskach oferujących niewielkie zasoby. Co prawda dzisiejsze smartfony posiadają coraz wydajniejsze procesory i coraz szybsze pamięci RAM, jednakże nadal nie są to komponenty tak sprawne jak te używane w komputerach klasy PC. Z tego powodu uważam, że zrównoleglanie procesów i obliczeń ma sens na platformach mobilnych a w tym celu warto pochylić się nad paradygmatem reaktywnym.\\ Po raz pierwszy ideę programowania reaktywnego zaproponowała firma Microsoft tworząc framework Reactive Extensions na platformę .NET i opierając go głównie o popularny wzorzec obserwatora.\cite{MicrosoftRx} 
+\paragraph{}Motywacją do powstania pracy inżynierskiej o tej tematyce, była chęć poznania i zrozumienia idei paradygmatu reaktywnego w programowaniu na platformę mobilną. W mojej pracy postaram się pokazać, że podejście reaktywne jest dobrym pomysłem szczególnie w środowiskach oferujących niewielkie zasoby. Co prawda dzisiejsze smartfony posiadają coraz wydajniejsze procesory i coraz szybsze pamięci RAM, jednakże nadal nie są to komponenty tak sprawne jak te używane w komputerach klasy PC. Z tego powodu uważam, że zrównoleglanie procesów i obliczeń ma sens na platformach mobilnych a w tym celu warto pochylić się nad paradygmatem reaktywnym.\\ Po raz pierwszy idea programowania reaktywnego została wdrożona przez firmę Microsoft, która stworzyła framework Reactive Extensions na platformę .NET i oparła go głównie o popularny wzorzec obserwatora.\cite{MicrosoftRx} 
 Używany termin programowanie reaktywne odnosi się do programowania reaktywnego funkcyjnego jako, że te dwa pojęcia są ze sobą nierozerwalnie związane.
 \subparagraph{}Celem programowania reaktywnego jest przede wszystkim bardziej efektywne podejście do celu i sensu działania aplikacji w ogólnym ujęciu a nie skrupulatne skupienie się na tym w jaki sposób konkretne zadania powinny być realizowane. Na takie podejście można sobie pozwolić, jako że programowanie reaktywne wymusza na systemie jego bezstanowość. Jest to możliwe m.in. dzięki temu, że programując w sposób reaktywny, działamy na strumieniach niezmiennych i niemodyfikowalnych danych w czasie a nie na pojedynczych zdarzeniach. Ponadto takie podejście pozwala oszczędzić dużo kodu i rozważań nad sensownością wydarzeń w czasie m.in dlatego, że zdarzenia synchroniczne jak i asynchroniczne traktowane są w ten sam sposób co znacząco ułatwia tworzenie logiki programu. Podstawą paradygmatu reaktywnego jest wzorzec obserwatora czyli wzorzec obiektu obserwowanego (nadawcy zdarzeń) i obiektu obserwującego (reagującego na odebrane zdarzenia).
 \chapter{CEL I ZAKRES PRACY}
@@ -83,18 +83,20 @@ Sygnały w programowaniu reaktywnym mogą zostać scharakteryzowane ze względu 
 \begin{itemize}
 	\item onNext: nasłuchiway obiekt wywołuje tę metodę, gdy tylko wyemituje zdarzenie. Parametrem tej metody jest emitowane zdarzenie.
 	\item onError: obserwowany obiekt wywołuje tę metodę, aby powiadomić o niepowodzeniu przy generowaniu oczekiwanych danych lub o napotkaniu innego błędu. Zatrzymuje to działanie obserwowanego i przerywa kolejne wywołania metody onNext lub onCompleted. Metoda onError, jako parametr, powinna przyjmować obiekt reprezentujący napotkany błąd.
-	\item onCompleted: obserwowany wywołuje tę metodę po ostatnim wywołaniu metody onNext, jeżeli nie napotkano błędu.
+	\item onCompleted: obserwowany wywołuje tę metodę po ostatnim wywołaniu metody onNext, jeżeli nie napotkano błędu.\\
 \end{itemize}
+
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=10cm]{sygnalRx}
 \caption{Schemat emitowanych danych w sygnale}
 \label{sygnalRx}
 \end{figure}
+
 Jak widać na powyższym obrazku, sygnał jest ciągiem poszeregowanych zdarzeń w czasie. Przechwytywanie powyższych zdarzeń odbywa się asynchronicznie a każdy z wymienionych stanów sygnału musi być obsłużony przez zdefiniowane w tym celu funkcje. \\
-\subparagraph{Obiekty Subject -} stanowią w programowaniu reaktywnym swego rodzaju most, w większości implementacji podejścia reaktywnego, ponieważ zachowują się jednocześnie jak obiekty obserwowane i obserwujące. Jako obserwatorzy, mogą zasubskrybować się do jednego lub więcej obserwowanych obiektów. Jako obserwowani mogą emitować i reemitować zdarzenia do obiektów obserwujących.\\
+\subparagraph{Obiekty Subject -}stanowią w programowaniu reaktywnym swego rodzaju most, w większości implementacji podejścia reaktywnego, ponieważ zachowują się jednocześnie jak obiekty obserwowane i obserwujące. Jako obserwatorzy, mogą zasubskrybować się do jednego lub więcej obserwowanych obiektów. Jako obserwowani mogą emitować i reemitować zdarzenia do obiektów obserwujących.\\
 Rozróżnia się cztery rodzaje obiektów Subject zaprojektowanych pod konkretne przypadki.  
-\subparagraph{AsyncSubject -} emituje ostatnią (i tylko ostatnią) wartość wyemitowaną przez źródołwy sygnał i tylko, gdy źródłowy sygnał zakończy się poprawnie. Jeśli źródłowy obiekt obserwowany zakończy się nie emitując żadnych wartości, obiekt AsyncSubject również zakończy się nie emitując żadnych wartości.
+\subparagraph{AsyncSubject -}emituje ostatnią (i tylko ostatnią) wartość wyemitowaną przez źródołwy sygnał i tylko, gdy źródłowy sygnał zakończy się poprawnie. Jeśli źródłowy obiekt obserwowany zakończy się nie emitując żadnych wartości, obiekt AsyncSubject również zakończy się nie emitując żadnych wartości.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=10cm]{asyncSubject}
@@ -102,13 +104,11 @@ Rozróżnia się cztery rodzaje obiektów Subject zaprojektowanych pod konkretn
 	\label{asyncSubject}
 \end{figure}
 \\
-\\
-
 Jeśli zaś źródłowy sygnał zakończy się błędem, obiekt AsyncSubject nie wyemituje żadnych wartości lecz informacje o błędzie od sygnału źródłowego.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=10cm]{asyncSubjectFailed}
-	\caption{Schemat działania obiektu AsyncSubject w przypadku błędu}
+	\caption{Schemat działania obiektu AsyncSubject w przypadku błędu, \textit{źródło: http://reactivex.io/documentation/subject.html}}
 	\label{asyncSubjectFailed}
 \end{figure}
 \subparagraph{BehaviorSubject -}gdy obserwator zasubskrybuje się do obiektu BehaviorSubject, rozpoczyna on emitowanie zdarzeń rozpoczynając od ostatniego uprzednio wyemitowanego przez źródłowy sygnał a następnie kontynuuje emitowanie kolejnych zdarzeń sygnału źródłowego.
@@ -324,7 +324,7 @@ Należy ponadto zauważyć, że ObserveOn prześle zdarzenie onError niezwłoczn
 \end{figure}\\
 \subsection{Współbieżność}
 \paragraph{}Podstawowym założeniem podejścia reaktywnego jest przetwarzanie danych w sposób asynchroniczny. Aby zapewnić efektywny poziom asynchroniczności wykonywanych działań, wymagany jest pewien poziom współbieżności, czyli przetwarzania danych w oparciu o współistnienie wielu wątków lub procesów.
-\subparagraph{Planiści (Schedulers)}
+\paragraph{Planiści (Schedulers)}
 Narzędziem do zaimplementowania wielowątkowości podczas tworzenia łańcuchów sygnałów połączonych operatorami reaktywnymi, są tzw. planiści (ang. schedulers).\\
 Niektóre operatory reaktywne, jako parametr przyjmują planistę, obiekt Scheduler, reprezentujący wątek, na którym ma być wykonywana praca.\\
 Domyślnie, obiekt Observable i zastosowany do niego łańcuch operatorów, wykonują pracę i informują obserwatorów na tym samym wątku, na którym wywołano subskrybcję (metoda Subscribe).\\
@@ -336,7 +336,24 @@ Jak pokazano na poniższej ilustracji, operator SubscribeOn określa wątek, na 
 	\caption{Schemat ukazujący sposób przełączania między wątkami w środowisku reaktywnym}
 	\label{schedulers}
 \end{figure}\\
-\subparagraph{Rodzaje planistów}
+\paragraph{Rodzaje planistów w implementacji RxSwift}
+\subparagraph{CurrentThreadScheduler (Serial scheduler)}
+Jednostka zadania, zaplanowywana jest do wykonania na bieżącym wątku. Czasami nazywany planistą trampolinowym. \\
+Jeśli metoda CurrentThreadScheduler.instance.schedule(state) \{ \} jest wywoływana po raz pierwszy na jakimś wątku, to planowane zadanie zostanie wykonane natychmiastowo i zostanie utworzona ukryta kolejka, w której wszystkie rekursywnie zaplanowane zadania zostaną tymczasowo umieszczone.
+\subparagraph{MainScheduler (Serial scheduler)}
+Odsyła pracę do wykonania na główny wątek (MainThread). W przypadku, gdy metody zaplanowujące, wywoływane są już na głównym wątku to zadanie zostane wykonane natychmiastowo, bez planowania.\\
+Najczęściej ten planista używany jest do wykonywania pracy związanej z interfejsem użytkownika (UI).
+\subparagraph{SerialDispatchQueueScheduler (Serial scheduler)}
+Odsyła pracę, która ma być wykonana z użyciem konkretnej szeregowej kolejki zadań typu dispatch\_queue\_t. Zapewnia, że nawet jeżeli w argumencie zostanie przesłana kolejka współbieżnych zadań to zostanie ona przekształcona do szeregowej kolejki zadań.\\
+Planiści kolejkowi stosują pewne optymalizacje do metody observeOn.\\
+Planista główny (Main Scheduler) jest instancją typu SerialDispatchQueueScheduler.
+\subparagraph{ConcurrentDispatchQueueScheduler (Concurrent scheduler)}
+Odsyłą pracę, która ma być wykonana z użyciem konkretnej współbieżnej kolejki  typu dispatch\_queue\_t. Można w argumencie przesłać również kolejkę typu szeregowego i nie powinno stanowić to problemu.\\
+Ten planista jest odpowiedni, gdy jakaś praca powinna być wykonana w tle.
+\subparagraph{OperationQueueScheduler (Concurrent scheduler)}
+Odsyła pracę która ma być wykonana z użyciem konkretnej kolejki typu NSOperationQueue.\\
+Ten planista jest odpowiedni do przypadków, gdzie musi zostać wykonana większa, bardziej wymagająca praca, w tle a użytkownik chce dostroić przebieg współbieżnych procesów używając do tego stałej maxConcurrentOperationCount.
+
 \subsection{Wady i zalety podejścia reaktywnego} 
 \subsection{Podejście praktyczne w implementacji na platformie iOS}
 \chapter{PRACA WŁASNA}
