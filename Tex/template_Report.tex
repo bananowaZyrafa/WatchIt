@@ -185,7 +185,7 @@ W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stoso
 	\includegraphics[width=6cm]{flatmap}
 	\caption{Schemat działania operatora FlatMap}
 	\label{flatmap}
-\end{figure}\\
+\end{figure}\\\\\\\\\\\\\\
 \subparagraph{Map -}stosuje zdefiniowaną funkcję do każdego wyemitowanego przez źródłowy obiekt Observable zdarzenia a następnie zwraca obiekt Observable emitujący przekształcone tą funkcją zdarzenia.
 \begin{figure}[ht!]
 	\centering
@@ -199,13 +199,8 @@ W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stoso
 	\includegraphics[width=6cm]{scan}
 	\caption{Schemat działania operatora Scan}
 	\label{scan}
-\end{figure}\\
-\\
-\\
-\\
-\\
-\\
-\\
+\end{figure}
+\pagebreak
 \paragraph{Operatory filtrowania sygnałów}
 \subparagraph{Debounce -}emituje zdarzenie z obiektu Observable tylko po upływie zadanego interwału czasowego bez emisji zdarzenia.
 \begin{figure}[ht!]
@@ -228,6 +223,7 @@ W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stoso
 	\caption{Schemat działania operatora Filter}
 	\label{filter}
 \end{figure}
+\\\\\\\\\\\\\\\\\\
 \subparagraph{Skip -}ignoruje n wygenerowanych przez obiekt Observable zdarzeń, gdzie n jest liczbą naturalną, będącą parametrem.
 \begin{figure}[ht!]
 	\centering
@@ -242,6 +238,7 @@ W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stoso
 	\caption{Schemat działania operatora Take}
 	\label{take}
 \end{figure}
+\pagebreak
 \paragraph{Operatory łączenia}
 \subparagraph{CombineLatest -}łączy ostatnie wyemitowane zdarzenia zadaną funkcją (strategią) z dwóch lub więcej źródeł i emituje nowe zdarzenie będące wynikiem powyższych. 
 \begin{figure}[ht!]
@@ -264,12 +261,7 @@ W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stoso
 	\caption{Schemat działania operatora Zip}
 	\label{zip}
 \end{figure}\\
-\\
-\\
-\\
-\\
-\\
-\\
+
 \paragraph{Operatory obsługi błędów}
 \subparagraph{Catch -}operator ten przechwytuje zdarzenie onError od obiektu Observable i zamiast propagować błąd do obserwujących, podmienia zdarzenie na inne dane lub inny zestaw danych, co pozwala zakończyć się wynikowemu obiektowi Observable w normalny sposób (onCompleted) lub nie zakończyć się w cale.
 \begin{figure}[ht!]
@@ -284,7 +276,7 @@ W dalszej części tego paragrafu zostaną scharakteryzowane najczęściej stoso
 	\includegraphics[width=8cm]{retry}
 	\caption{Schemat działania operatora Retry}
 	\label{retry}
-\end{figure}\\\\\\
+\end{figure}\\
 \paragraph{Operatory działań na obiektach Observable}
 \subparagraph{Materialize -}konwertuje sekwencje emitowanych z obiektu Observable zdarzeń, na sekwencję zdarzeń reprezentowanych przez wywołania metod onNext i ostatecznie onCompleted lub onError.
 \begin{figure}[ht!]
@@ -334,7 +326,8 @@ Jak pokazano na poniższej ilustracji, operator SubscribeOn określa wątek, na 
 	\includegraphics[width=10cm]{schedulers}
 	\caption{Schemat ukazujący sposób przełączania między wątkami w środowisku reaktywnym}
 	\label{schedulers}
-\end{figure}\\
+\end{figure}
+\pagebreak
 \paragraph{Rodzaje planistów w implementacji RxSwift}
 \subparagraph{CurrentThreadScheduler (Serial scheduler)}
 Jednostka zadania, zaplanowywana jest do wykonania na bieżącym wątku. Czasami nazywany planistą trampolinowym. \\
@@ -368,6 +361,53 @@ Korzyść ta jest szczególnie widoczna w przypadku nowoczesnych aplikacji webow
 \subparagraph{Zarządzanie pamięcią } Większość implementacji paradygmatu reaktywne oferuje automatyczne mechanizmy zarządzania pamięcią. Niekiedy jednak użytkownik sam musi zadbać o taki aspekt jak dealokowanie obiektu Observable. W przypadku implementacji na platformie iOS przykładem może być obiekt TabBarController, który trzyma referencje do wszystkich kontrolerów reprezentujących zakładki. W związku z tym nie zostaną one zdealokowane nigdy w czasie działania programu. Należy zatem zadbać o to, by sygnały używane w projekcie nie zajmowały niepotrzebnie zasobów jeśli zdarzenia od nich nie są w danym momencie przetwarzane.
 \subparagraph{Debugowanie } Działanie wielu sygnałów na różnych wątkach może utrudniać debugowanie w razie błędów. W przypadku wycieków pamięci niezbędne jest szczegółowe zbadanie podejrzanego sygnału i jego pracy na każdym z używanych wątków.
 \subsection{Podejście praktyczne w implementacji na platformie iOS}
+\paragraph{}Na podstawie przykładów\cite{examples} w tym paragrafie, ukazane zostało praktyczne podejście do tematu programowania reaktywnego, poprzez ich realizację w implementacji RxSwift.
+\paragraph{Przykład 1 - stan przejściowy}
+\subparagraph{}W czasie tworzenia programów działających asynchronicznie, można napotkać wiele problemów z przejściowymi stanami. Typowym przykładem jest tutaj pole wyszukiwania z autouzupełnianiem.\\
+Chcąc stworzyć obiekt pola wyszukiwania z autouzupełnianiem, pierwszym problemem jaki zostanie napotkany to sytuacja, gdy użytkownik chcący wyszukać wyniki dla frazy "abc", wpisze literę "c" w polu wyszukiwania, podczas gdy zapytanie sieciowe dla treści "ab" jest już oczekujące i musi zostać anulowane. Co prawda bez użycia podejścia reaktywnego, problem nie jest trudny do rozwiązania. Wystarczy stworzyć dodatkową zmienną utrzymującą referencję do oczekującego zapytania sieciowego.\\
+Kolejną sytuacją, którą trzeba obsłużyć to potencjalny błąd w procesie zapytania sieciowego. Należy wówczas zastosować często zagmatwaną logikę do powtórzenia całego procesu.\\
+Ponadto idealną sytuacją byłoby, gdyby program zaczekał pewien czas zanim zapytanie sieciowe byłoby rzeczywiście realizowane. W końcu, nie jest porządanym, aby serwer był odpytywany za każdym razem, gdy użytkownik wpisze znak w polu wyszukiwania. Można próbować w tej sytuacji zastosować dodatkowy licznik czasu weryfikujący liczbę zapytań w czasie, tak aby nie przeciążyć serwera.\\
+Pozostaje jeszcze kwestia, co powinno być wyświetlane w czasie wykonywania zapytania oraz co powinno być wyświetlone w przypadku błędu i to pomimo kilku prób.\\
+Zaprogramowanie powyższego przykładu jest oczywiście możliwe bez podejścia reaktywnego, ale może wprowadzać niepotrzebne zawiłości.
+O to jak powyższa logika może zostać zrealizowana przy użyciu RxSwift:
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=15cm]{transientState}
+	\caption{Przykładowy program realizujący powyższy przykład 1. 
+	 \textit{źródło: https://github.com/ReactiveX/RxSwift/blob/master/Documentation/Why.md}}
+	\label{transientState}
+\end{figure}
+\\\\\\\\\\\\\\
+Jak widać na powyższym listingu, niepotrzebne są żadne dodatkowe flagi ani stany.
+\paragraph{Przykład 2 - częściowe anulowanie}
+\subparagraph{}Scenariuszem tego przykładu będzie następujący ciąg działań: ma nastąpić pobranie zestawu zdjęć z zewnętrznego adresu URL, następnie zdjęcia mają zostać zdekodowane i obłożone filtrem rozmywającym. Na koniec wyświetlane są w komórkach tabeli TableView.\\
+Założenia: 
+\begin{itemize}
+	\item Całość procesu powinna być anulowana dla komórki wychodzącej z obszaru widoczności, tak aby nie zużywać pasma internetowego i czasu procesora na nakładanie filtru, jako że są to operacje kosztowne.
+	\item Całość procesu nie powinna się rozpoczynać bezpośrednio w chwili, gdy komórka wejdzie obszar widoczności. Użytkownik może przewijać widok tabeli bardzo szybko, co powodowałoby uruchamianie wielu zapytań sieciowych, które natychmiastowo musiałyby zostać anulowane.
+	\item Dobrą praktyką byłoby ograniczenie liczby współbieżnych operacji nakładania filtru na zdjęcia, bo jest to operacja kosztowna.
+\end{itemize}
+Oto w jaki sposób można zrealizować powyższą logikę z użyciem podejścia reaktynwego w RxSwift: 
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=12cm]{compositionalDisposal}
+	\caption{Przykładowy program realizujący przykład 2. 
+		\textit{źródło: https://github.com/ReactiveX/RxSwift/blob/master/Documentation/Why.md}}
+	\label{compositionalDisposal}
+\end{figure}\\
+Powyższy listing ukazuje kod, który zrealizuje założenia oraz gdy obiekt imageSubscription zostanie zdealokowany, zapewni że wszystkie zależne od niego asynchroniczne operacje zostaną anulowane, i że żadne błędne obrazy nie będą połączone z interfejsem użytkownika.
+\pagebreak
+\paragraph{Przykład 3 - agregowanie zapytań sieciowych}
+\subparagraph{}W tym przykładzie zostanie pokazana sytuacja, w której potrzebne jest zrealizowanie dwóch niezależnych zapytań sieciowych i zagregowanie ich wyników, gdy oba się zakończą. W tym celu, użyty zostanie operator \textbf{zip}.\\
+W poniższym listingu można dostrzeć, że obsłużona została częsta sytuacja, w której odpowiedzi od API obsługiwane są na wątku w tle a binding tych odpowiedzi do interfejsu użytkownika powininen odbyć się na wątku głównym. Ten problem, rozwiązany został przy użyciu operatora \textbf{observeOn}.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=14cm]{aggregatingNetworkRequests}
+	\caption{Przykładowy program realizujący przykład 3. 
+		\textit{źródło: https://github.com/ReactiveX/RxSwift/blob/master/Documentation/Why.md}}
+	\label{aggregatingNetworkRequests}
+\end{figure}
+
 \chapter{PRACA WŁASNA}
 \section{Czynności przygotowawcze}		
 \paragraph{}Stworzenie aplikacji mobilnej było możliwe dzięki wykonaniu uprzednio czynności przygotowawczych. Do czynności tych należało: wybór środowiska programistycznego, instalacja bibliotek i frameworków, wstępna konfiguracja projektu oraz stworzenie repozytorium.
@@ -432,6 +472,8 @@ Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. J
 \emph{ - wypuszczenie biblioteki Reactive Extensions}
 \bibitem{rxDesignGuideline} https://go.microsoft.com/fwlink/?LinkID=205219
 \emph{ - wytyczne projektowe paradygmatu reaktywnego}
+\bibitem{examples}https://github.com/ReactiveX/RxSwift/blob/master/Documentation/Why.md
+\emph{ - przykłady użycia RxSwift}
 \end{thebibliography}
 \chapter{PODSUMOWANIE}
 
