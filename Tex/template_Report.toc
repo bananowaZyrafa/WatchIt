@@ -1,125 +1,126 @@
-\contentsline {chapter}{\numberline {1}WST\IeC {\k E}P}{3}
-\contentsline {paragraph}{}{3}
-\contentsline {paragraph}{}{3}
-\contentsline {chapter}{\numberline {2}CEL I ZAKRES PRACY}{5}
-\contentsline {paragraph}{}{5}
-\contentsline {subparagraph}{Cz\IeC {\k e}\IeC {\'s}\IeC {\'c} teoretyczna:}{5}
-\contentsline {subparagraph}{Cz\IeC {\k e}\IeC {\'s}\IeC {\'c} opisuj\IeC {\k a}ca prac\IeC {\k e} w\IeC {\l }asn\IeC {\k a}:}{6}
-\contentsline {chapter}{\numberline {3}\IeC {\'Z}R\IeC {\'O}D\IeC {\L }A I DEFINICJE}{7}
-\contentsline {section}{\numberline {3.1}Historia i charakterystyka systemu iOS}{7}
-\contentsline {paragraph}{}{7}
-\contentsline {paragraph}{Specyfikacje techniczne}{7}
-\contentsline {subparagraph}{}{7}
-\contentsline {paragraph}{Wersje systemu iOS}{7}
-\contentsline {subparagraph}{iPhone OS -}{7}
-\contentsline {subparagraph}{iPhone OS 2.0 -}{8}
-\contentsline {subparagraph}{iPhone OS 3.0 -}{8}
-\contentsline {subparagraph}{iOS 4 -}{8}
-\contentsline {subparagraph}{iOS 5 -}{8}
-\contentsline {subparagraph}{iOS 6 -}{8}
-\contentsline {subparagraph}{iOS 7 -}{9}
-\contentsline {subparagraph}{iOS 8 -}{9}
-\contentsline {subparagraph}{iOS 9 -}{9}
-\contentsline {subparagraph}{iOS 10 -}{9}
-\contentsline {section}{\numberline {3.2}Historia i charakterystyka j\IeC {\k e}zyka Swift}{10}
+\contentsline {chapter}{\numberline {1}WST\IeC {\k E}P}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {chapter}{\numberline {2}CEL I ZAKRES PRACY}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subparagraph}{Cz\IeC {\k e}\IeC {\'s}\IeC {\'c} teoretyczna:}{4}
+\contentsline {subparagraph}{Cz\IeC {\k e}\IeC {\'s}\IeC {\'c} opisuj\IeC {\k a}ca prac\IeC {\k e} w\IeC {\l }asn\IeC {\k a}:}{5}
+\contentsline {chapter}{\numberline {3}\IeC {\'Z}R\IeC {\'O}D\IeC {\L }A I DEFINICJE}{6}
+\contentsline {section}{\numberline {3.1}Historia i charakterystyka systemu iOS}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {paragraph}{Specyfikacje techniczne}{6}
+\contentsline {subparagraph}{}{6}
+\contentsline {paragraph}{Wersje systemu iOS}{6}
+\contentsline {subparagraph}{iPhone OS -}{6}
+\contentsline {subparagraph}{iPhone OS 2.0 -}{7}
+\contentsline {subparagraph}{iPhone OS 3.0 -}{7}
+\contentsline {subparagraph}{iOS 4 -}{7}
+\contentsline {subparagraph}{iOS 5 -}{7}
+\contentsline {subparagraph}{iOS 6 -}{7}
+\contentsline {subparagraph}{iOS 7 -}{8}
+\contentsline {subparagraph}{iOS 8 -}{8}
+\contentsline {subparagraph}{iOS 9 -}{8}
+\contentsline {subparagraph}{iOS 10 -}{8}
+\contentsline {section}{\numberline {3.2}Historia i charakterystyka j\IeC {\k e}zyka Swift}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{}{9}
+\contentsline {paragraph}{G\IeC {\l }\IeC {\'o}wne r\IeC {\'o}\IeC {\.z}nice mi\IeC {\k e}dzy Swiftem a Objective-C}{9}
+\contentsline {subparagraph}{}{9}
+\contentsline {subparagraph}{Warto\IeC {\'s}ci opcjonalne - }{9}
+\contentsline {subparagraph}{Wnioskowanie typ\IeC {\'o}w - }{10}
+\contentsline {subparagraph}{Krotki - }{10}
+\contentsline {subparagraph}{Guard - }{10}
+\contentsline {subparagraph}{Elementy programowania funkcyjnego - }{10}
+\contentsline {subparagraph}{Enumeratory - }{10}
+\contentsline {subparagraph}{Podej\IeC {\'s}cie do funkcji - }{10}
+\contentsline {subparagraph}{S\IeC {\l }owo kluczowe "do" - }{10}
+\contentsline {section}{\numberline {3.3}Paragydmat reaktywny}{10}
 \contentsline {paragraph}{}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {paragraph}{}{10}
-\contentsline {paragraph}{G\IeC {\l }\IeC {\'o}wne r\IeC {\'o}\IeC {\.z}nice mi\IeC {\k e}dzy Swiftem a Objective-C}{10}
-\contentsline {subparagraph}{}{10}
-\contentsline {subparagraph}{Warto\IeC {\'s}ci opcjonalne - }{10}
-\contentsline {subparagraph}{Wnioskowanie typ\IeC {\'o}w - }{11}
-\contentsline {subparagraph}{Krotki - }{11}
-\contentsline {subparagraph}{Guard - }{11}
-\contentsline {subparagraph}{Elementy programowania funkcyjnego - }{11}
-\contentsline {subparagraph}{Enumeratory - }{11}
-\contentsline {subparagraph}{Podej\IeC {\'s}cie do funkcji - }{11}
-\contentsline {subparagraph}{S\IeC {\l }owo kluczowe "do" - }{11}
-\contentsline {section}{\numberline {3.3}Paragydmat reaktywny}{11}
+\contentsline {subsection}{\numberline {3.3.1}Idea programowania reaktywnego}{11}
 \contentsline {paragraph}{}{11}
-\contentsline {subsection}{\numberline {3.3.1}Idea programowania reaktywnego}{12}
-\contentsline {paragraph}{}{12}
-\contentsline {subparagraph}{Sygna\IeC {\l } gor\IeC {\k a}cy}{12}
-\contentsline {subparagraph}{Sygna\IeC {\l } zimny}{12}
-\contentsline {subparagraph}{Subskrybcja -}{13}
-\contentsline {subparagraph}{Obiekty Subject -}{13}
-\contentsline {subparagraph}{AsyncSubject -}{14}
-\contentsline {subparagraph}{BehaviorSubject -}{14}
-\contentsline {subparagraph}{PublishSubject -}{15}
-\contentsline {subparagraph}{ReplaySubject -}{16}
-\contentsline {subsection}{\numberline {3.3.2}Operatory reaktywne}{18}
-\contentsline {paragraph}{}{18}
-\contentsline {paragraph}{Operatory tworzenia sygna\IeC {\l }\IeC {\'o}w}{18}
-\contentsline {subparagraph}{Create -}{18}
-\contentsline {subparagraph}{Defer -}{18}
-\contentsline {paragraph}{Operatory przekszta\IeC {\l }cania sygna\IeC {\l }\IeC {\'o}w}{19}
-\contentsline {subparagraph}{Buffer -}{19}
-\contentsline {subparagraph}{FlatMap -}{19}
-\contentsline {subparagraph}{Map -}{20}
-\contentsline {subparagraph}{Scan -}{20}
-\contentsline {paragraph}{Operatory filtrowania sygna\IeC {\l }\IeC {\'o}w}{21}
-\contentsline {subparagraph}{Debounce -}{21}
-\contentsline {subparagraph}{Distinct -}{21}
-\contentsline {subparagraph}{Filter -}{21}
-\contentsline {subparagraph}{Skip -}{22}
-\contentsline {subparagraph}{Take -}{22}
-\contentsline {paragraph}{Operatory \IeC {\l }\IeC {\k a}czenia}{23}
-\contentsline {subparagraph}{CombineLatest -}{23}
-\contentsline {subparagraph}{Merge -}{23}
-\contentsline {subparagraph}{Zip -}{23}
-\contentsline {paragraph}{Operatory obs\IeC {\l }ugi b\IeC {\l }\IeC {\k e}d\IeC {\'o}w}{24}
-\contentsline {subparagraph}{Catch -}{24}
-\contentsline {subparagraph}{Retry -}{24}
-\contentsline {paragraph}{Operatory dzia\IeC {\l }a\IeC {\'n} na obiektach Observable}{25}
-\contentsline {subparagraph}{Materialize -}{25}
-\contentsline {subparagraph}{ObserveOn -}{25}
-\contentsline {subparagraph}{SubscribeOn -}{25}
-\contentsline {subparagraph}{Serialize -}{26}
-\contentsline {subsection}{\numberline {3.3.3}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{27}
-\contentsline {paragraph}{}{27}
-\contentsline {paragraph}{Plani\IeC {\'s}ci (Schedulers)}{27}
-\contentsline {paragraph}{Rodzaje planist\IeC {\'o}w w implementacji RxSwift}{29}
-\contentsline {subparagraph}{CurrentThreadScheduler (Serial scheduler)}{29}
-\contentsline {subparagraph}{MainScheduler (Serial scheduler)}{29}
-\contentsline {subparagraph}{SerialDispatchQueueScheduler (Serial scheduler)}{29}
-\contentsline {subparagraph}{ConcurrentDispatchQueueScheduler (Concurrent scheduler)}{29}
-\contentsline {subparagraph}{OperationQueueScheduler (Concurrent scheduler)}{29}
-\contentsline {subsection}{\numberline {3.3.4}Zalety i wady podej\IeC {\'s}cia reaktywnego}{30}
-\contentsline {paragraph}{Korzy\IeC {\'s}ci z u\IeC {\.z}ycia RxSwift (iOS)}{30}
-\contentsline {subparagraph}{Bindowanie }{30}
-\contentsline {subparagraph}{Powt\IeC {\'o}rzenia }{30}
-\contentsline {subparagraph}{Delegaty }{30}
-\contentsline {subparagraph}{Anulowanie }{30}
-\contentsline {subparagraph}{Agregowanie zapyta\IeC {\'n} sieciowych }{31}
-\contentsline {paragraph}{Wady podej\IeC {\'s}cia reaktywnego}{31}
-\contentsline {subparagraph}{Wysoki pr\IeC {\'o}g wej\IeC {\'s}cia }{31}
-\contentsline {subparagraph}{Zarz\IeC {\k a}dzanie pami\IeC {\k e}ci\IeC {\k a} }{31}
-\contentsline {subparagraph}{Debugowanie }{31}
-\contentsline {subsection}{\numberline {3.3.5}Podej\IeC {\'s}cie praktyczne w implementacji na platformie iOS}{32}
-\contentsline {paragraph}{}{32}
-\contentsline {paragraph}{Przyk\IeC {\l }ad 1 - stan przej\IeC {\'s}ciowy}{32}
+\contentsline {subparagraph}{Sygna\IeC {\l } gor\IeC {\k a}cy}{11}
+\contentsline {subparagraph}{Sygna\IeC {\l } zimny}{11}
+\contentsline {subparagraph}{Subskrybcja -}{12}
+\contentsline {subparagraph}{Obiekty Subject -}{12}
+\contentsline {subparagraph}{AsyncSubject -}{13}
+\contentsline {subparagraph}{BehaviorSubject -}{13}
+\contentsline {subparagraph}{PublishSubject -}{14}
+\contentsline {subparagraph}{ReplaySubject -}{15}
+\contentsline {subsection}{\numberline {3.3.2}Operatory reaktywne}{17}
+\contentsline {paragraph}{}{17}
+\contentsline {paragraph}{Operatory tworzenia sygna\IeC {\l }\IeC {\'o}w}{17}
+\contentsline {subparagraph}{Create -}{17}
+\contentsline {subparagraph}{Defer -}{17}
+\contentsline {paragraph}{Operatory przekszta\IeC {\l }cania sygna\IeC {\l }\IeC {\'o}w}{18}
+\contentsline {subparagraph}{Buffer -}{18}
+\contentsline {subparagraph}{FlatMap -}{18}
+\contentsline {subparagraph}{Map -}{19}
+\contentsline {subparagraph}{Scan -}{19}
+\contentsline {paragraph}{Operatory filtrowania sygna\IeC {\l }\IeC {\'o}w}{20}
+\contentsline {subparagraph}{Debounce -}{20}
+\contentsline {subparagraph}{Distinct -}{20}
+\contentsline {subparagraph}{Filter -}{20}
+\contentsline {subparagraph}{Skip -}{21}
+\contentsline {subparagraph}{Take -}{21}
+\contentsline {paragraph}{Operatory \IeC {\l }\IeC {\k a}czenia}{22}
+\contentsline {subparagraph}{CombineLatest -}{22}
+\contentsline {subparagraph}{Merge -}{22}
+\contentsline {subparagraph}{Zip -}{22}
+\contentsline {paragraph}{Operatory obs\IeC {\l }ugi b\IeC {\l }\IeC {\k e}d\IeC {\'o}w}{23}
+\contentsline {subparagraph}{Catch -}{23}
+\contentsline {subparagraph}{Retry -}{23}
+\contentsline {paragraph}{Operatory dzia\IeC {\l }a\IeC {\'n} na obiektach Observable}{24}
+\contentsline {subparagraph}{Materialize -}{24}
+\contentsline {subparagraph}{ObserveOn -}{24}
+\contentsline {subparagraph}{SubscribeOn -}{24}
+\contentsline {subparagraph}{Serialize -}{25}
+\contentsline {subsection}{\numberline {3.3.3}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{26}
+\contentsline {paragraph}{}{26}
+\contentsline {paragraph}{Plani\IeC {\'s}ci (Schedulers)}{26}
+\contentsline {paragraph}{Rodzaje planist\IeC {\'o}w w implementacji RxSwift}{28}
+\contentsline {subparagraph}{CurrentThreadScheduler (Serial scheduler)}{28}
+\contentsline {subparagraph}{MainScheduler (Serial scheduler)}{28}
+\contentsline {subparagraph}{SerialDispatchQueueScheduler (Serial scheduler)}{28}
+\contentsline {subparagraph}{ConcurrentDispatchQueueScheduler (Concurrent scheduler)}{28}
+\contentsline {subparagraph}{OperationQueueScheduler (Concurrent scheduler)}{28}
+\contentsline {subsection}{\numberline {3.3.4}Zalety i wady podej\IeC {\'s}cia reaktywnego}{29}
+\contentsline {paragraph}{Korzy\IeC {\'s}ci z u\IeC {\.z}ycia RxSwift (iOS)}{29}
+\contentsline {subparagraph}{Bindowanie }{29}
+\contentsline {subparagraph}{Powt\IeC {\'o}rzenia }{29}
+\contentsline {subparagraph}{Delegaty }{29}
+\contentsline {subparagraph}{Anulowanie }{29}
+\contentsline {subparagraph}{Agregowanie zapyta\IeC {\'n} sieciowych }{30}
+\contentsline {paragraph}{Wady podej\IeC {\'s}cia reaktywnego}{30}
+\contentsline {subparagraph}{Wysoki pr\IeC {\'o}g wej\IeC {\'s}cia }{30}
+\contentsline {subparagraph}{Zarz\IeC {\k a}dzanie pami\IeC {\k e}ci\IeC {\k a} }{30}
+\contentsline {subparagraph}{Debugowanie }{30}
+\contentsline {subsection}{\numberline {3.3.5}Podej\IeC {\'s}cie praktyczne w implementacji na platformie iOS}{31}
+\contentsline {paragraph}{}{31}
+\contentsline {paragraph}{Przyk\IeC {\l }ad 1 - stan przej\IeC {\'s}ciowy}{31}
+\contentsline {subparagraph}{}{31}
+\contentsline {paragraph}{Przyk\IeC {\l }ad 2 - cz\IeC {\k e}\IeC {\'s}ciowe anulowanie}{32}
 \contentsline {subparagraph}{}{32}
-\contentsline {paragraph}{Przyk\IeC {\l }ad 2 - cz\IeC {\k e}\IeC {\'s}ciowe anulowanie}{33}
-\contentsline {subparagraph}{}{33}
-\contentsline {paragraph}{Przyk\IeC {\l }ad 3 - agregowanie zapyta\IeC {\'n} sieciowych}{35}
-\contentsline {subparagraph}{}{35}
-\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{36}
-\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{36}
+\contentsline {paragraph}{Przyk\IeC {\l }ad 3 - agregowanie zapyta\IeC {\'n} sieciowych}{34}
+\contentsline {subparagraph}{}{34}
+\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{35}
+\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{35}
+\contentsline {paragraph}{}{35}
+\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{36}
 \contentsline {paragraph}{}{36}
-\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{36}
-\contentsline {paragraph}{}{36}
-\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{36}
-\contentsline {paragraph}{}{36}
-\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{37}
-\contentsline {paragraph}{}{37}
 \contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{37}
+\contentsline {paragraph}{}{37}
 \contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{37}
 \contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{37}
-\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{37}
-\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{37}
-\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{37}
-\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{37}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{37}
-\contentsline {subsection}{\numberline {4.2.8}Implementacja aplikacji mobilnej - zastosowana architektura}{37}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{37}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{40}
+\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{38}
+\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{38}
+\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{38}
+\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{38}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{38}
+\contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{38}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{38}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{41}

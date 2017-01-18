@@ -418,15 +418,41 @@ Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. J
 \paragraph{}Podczas konfigurowania projektu w środowisku XCode istotne jest abyśmy stworzyli go z użyciem CoreData. Jest to baza danych środowiska iOS i może stanowić integralną część aplikacji.   
 \subsection{Stworzenie repozytorium}
 \paragraph{}Dostępnych jest wiele systemów kontroli wersji, ale najpopularniejszym z nich jest GIT. Zdecydowałem się na jego wykorzystanie, ponieważ jest dosyć prosty w użyciu a większość serwerów GITa jest darmowa. Użycie systemu typu GIT pozwoli mi na kontrolę postępów mojej pracy jak i na dokumentowanie jej. Oprócz tego użycia GITa powoduje, że błąd popełniony przeze mnie na dalszym etapie mogę odwrócić przywracając poprzedni stan projektu.
+\pagebreak
 \section{Budowa aplikacji właściwej}
+\paragraph{}Ninejszy projekt powstawał w oparciu o niektóre elementy modelu kaskadowego\cite{modelKaskadowy} cyklu życia oprogramowania. Model ten stosowany jest często w praktyce do projektów o niewielkiej złożoności. Obejmuje następujące etapy:
+\begin{itemize}
+	\item Określenie wymagań
+	\item Projektowanie systemu
+	\item Implementacja i testowanie modułów
+	\item Testowanie połączeń modułów i całości systemu 
+	\item Użytkowanie i pielęgnacja
+\end{itemize}
 \subsection{Wymagania funkcjonalne}
+\begin{itemize}
+	\item Nawigacja pomiędzy zakładkami
+	\item Wyszukiwanie filmu lub serialu i wyświetlenie wyniku w tabeli
+	\item Podgląd szczegółów dot. filmu lub serialu tj. oceny użytkowników serwisu filmowego IMDB czy plakatu
+	\item Możliwość dodania filmu bądź serialu do swojej bazy
+	\item Możliwość oznaczenia filmu bądź serialu jako obejrzany i wystawienie mu oceny w swojej bazie
+	\item Podgląd wszystkich dotychczas zapisanych filmów i seriali wraz z ocenami jeśli zostały nadane
+	\item Możliwość wyświetlenia propozycji do obejrzenia z bazy zapisanych filmów i seriali w zależności od wprowadzonego przez użytkownika czasu 
+\end{itemize}
+
 \subsection{Wymagania niefunkcjonalne}
+\begin{itemize}
+	\item Spójność danych - dane podczas przesyłania nie mogą ulec zniekształceniu
+	\item Szybkość transmisji - wszystkie operacje muszę odbywać się w czasie umożliwiającym płynne działanie aplikacji
+	\item Stabilność połączenia - aplikacja, do prawidłowego działania, wymaga stabilnego połączenia internetowego 
+	\item Ograniczenie liczby zapytań API do minimum
+	\item Brak zasobożerności aplikacji pomimo używania przez niej wielu wątków 
+\end{itemize}
 \subsection{Diagram przypadków użycia aplikacji}
 \subsection{Zależności w bazie danych}
 \subsection{Diagram klas}
 \subsection{Opis wybranych klas}
 \subsection{Opis użytych bibliotek i frameworków}
-\subsection{Implementacja aplikacji mobilnej - zastosowana architektura}
+\subsection{Zastosowana architektura}
 \subsection{Prezentacja aplikacji}
 \begin{thebibliography}{50}
 \bibitem{MicrosoftRx} https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).aspx
@@ -474,6 +500,8 @@ Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. J
 \emph{ - wytyczne projektowe paradygmatu reaktywnego}
 \bibitem{examples}https://github.com/ReactiveX/RxSwift/blob/master/Documentation/Why.md
 \emph{ - przykłady użycia RxSwift}
+\bibitem{modelKaskadowy} http://zasoby.open.agh.edu.pl/\~10sdczerner/page/model\_kaskadowy.html
+\emph{ - model kaskadowy cyklu życia oprogramowania}
 \end{thebibliography}
 \chapter{PODSUMOWANIE}
 
