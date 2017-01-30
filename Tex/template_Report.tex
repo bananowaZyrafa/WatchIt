@@ -412,8 +412,8 @@ W poniższym listingu można dostrzeć, że obsłużona została częsta sytuacj
 \section{Czynności przygotowawcze}		
 \paragraph{}Stworzenie aplikacji mobilnej było możliwe dzięki wykonaniu uprzednio czynności przygotowawczych. Do czynności tych należało: wybór środowiska programistycznego, instalacja bibliotek i frameworków, wstępna konfiguracja projektu oraz stworzenie repozytorium.
 \subsection{Instalacja narzędzi}
-\paragraph{}Program XCode jest jednym z niewielu dostępnych środowisk programistycznych na platformę iOS. Jest on darmowy i dostarczany wraz systemem MacOS. XCode posiada wbudowany kompilator LLVM oraz szereg przydatnych narzędzi tj. interface builder - graficzny edytor do tworzenia elementów interfejsu, dynamiczną kontrolę składni czy menedżer systemu kontroli wersji. Ze względu na powyższe właściwości zdecydowałem się użyć właśnie tego środowiska programistycznego.
-Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. Jest ono bardzo przydatne szczególnie przy instalacji bibliotek i frameworków do projektu.  
+\paragraph{}Program XCode jest jednym z niewielu dostępnych środowisk programistycznych na platformę iOS. Jest on darmowy i dostarczany wraz systemem MacOS. XCode posiada wbudowany kompilator LLVM oraz szereg przydatnych narzędzi tj. interface builder - graficzny edytor do tworzenia elementów interfejsu, dynamiczną kontrolę składni czy menedżer systemu kontroli wersji. Ze względu na powyższe właściwości użyto właśnie tego środowiska programistycznego.
+Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono bardzo przydatne szczególnie przy instalacji bibliotek i frameworków do projektu.  
 \subsection{Wstępna konfiguracja projektu}
 \paragraph{}Podczas konfigurowania projektu w środowisku XCode istotne jest abyśmy stworzyli go z użyciem CoreData. Jest to baza danych środowiska iOS i może stanowić integralną część aplikacji.   
 \subsection{Stworzenie repozytorium}
@@ -448,60 +448,142 @@ Ponadto użyłem także narzędzia do rozwiązywania zależności - CocoaPods. J
 	\item Brak zasobożerności aplikacji pomimo używania przez niej wielu wątków 
 \end{itemize}
 \subsection{Diagram przypadków użycia aplikacji}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=17cm]{useCase'y}
+	\caption{Schemat przypadków użycia 
+		\textit{źródło:własne }}
+	\label{useCase'y}
+\end{figure}
+\subparagraph{}Powyższy schemat przedstawia ogólne przypadki użycia aplikacji mobilnej. Użytkownik może wykonywać nastepujące czynności:
+\begin{itemize}
+	\item Wyświetlić ekran wyszukiwania
+	\item Wyszukać film lub serial
+	\item Wyświetlić szczegóły dot. znalezionego filmu lub serialu
+	\item Wystawić ocenę znalezionemu filmowi lub serialowi
+	\item Zapisać w bazie znaleziony film lub serial
+	\item Wyświetlić ekran propozycji
+	\item Wyświetlić proponowane pozycje do obejrzenia przy uwzględnieniu czasu wprowadzonego przez użytkownika
+	\item Wyświetlić ekran zapisanych pozycji
+	\item Ocenienić zapisane pozycje
+\end{itemize}
 \subsection{Zależności w bazie danych}
 \subsection{Diagram klas}
 \subsection{Opis wybranych klas}
 \subsection{Opis użytych bibliotek i frameworków}
+\paragraph{}Stworzenie projektu aplikacji mobilnej wymagało zastosowania niezbędnych bibliotek. Zgodnie z tematem pracy, aplikacja powinna opierać się o paradygmat reaktywny, który został zaimplementowany dzięki stworzonym do tego, zewnętrznym modułom i bibliotekom. \\
+Poniżej, zostały przedstawione użyte moduły i ich krótka charakterystyka:
+\begin{itemize}
+	\item  \textbf{CocoaPods} - menedżer zależności w projektach XCode. Dzięki niemu, możliwe jest określenie zależności w projekcie dzięki prostemu plikowi textowemu \textbf{Podfile}. CocoaPods rekursywnie rozwiązuje zależności pomiędzy użytymi bibliotekami, wyszukuje kod źródłowy dla wszystkich zależności oraz tworzy i utrzymuje obszar roboczy w celu budowania projektu XCode (plik .xcworkspace).\cite{cocoaPods}
+	\item  \textbf{UIKit} - dostarcza niezbędnej infrastruktury potrzebnej do skonstruowania i zarządzania aplikacją na platformie iOS i tvOS. Jest to framework zapewniający architekturę okna i widoku do zarządzania interfejsem użytkownika w aplikacji. Ponadto służy do obsługi zdarzeń potrzebnych do odpowiedzi na reakcje użytkownika oraz dostarcza modelu aplikacji odpowiedzialnego za działanie pętli głównej programu i interakcji z systemem.\cite{UIKit}
+	\item  \textbf{CoreData} - graf obiektów\cite{objectGraph} i framework warstwy modelu zapewniający trwałość tych obiektów.
+	Pozwala, aby dane zorganizowane w model relacyjny encja-atrybut, były serializowane do postaci XML, binarnej lub zasobów SQLite.
+	Danymi można zarządzać używając wysokopoziomowych obiektów reprezentujących encje i ich relacje. CoreData zarządza wersjami zserializowanymi, zapewniając cykl życia obiektu i możliwość zarządzania grafem obiektów włączając w to trwałość tych obiektów.\\
+	CoreData jest bezpośrednim interfejsem SQLite izolującym programistę od działającego "pod spodem" języka SQL.
+	
+	\item  \textbf{RxSwift} - implementacja biblioteki .NET Reactive Extensions w języku Swift na platformę iOS/macOS. Jest to próba przeportowania tak wielu konceptów z oryginalnej biblioteki Rx jak to tylko możliwe. Głównym zamierzeniem RxSwift jest umożliwienie łatwej kompozycji asynchronicznych operacji i strumieni zdarzenie/dane.
+	
+	\item  \textbf{RxCocoa} - nakładka na frameworki Cocoa i Cocoa Touch, rozszerzająca możliwości dostarczane przez nie (obiekty UI i ich obłsuga) o reaktywne zachowanie w oparciu o framework RxSwift.  
+	\item  \textbf{RxOptional} - rozszerzenie RxSwift dla obiektów opcjonalnych w Swift, pozwalające na ich reprezentację w podejściu reaktywnym.
+	\item  \textbf{Moya} - biblioteka stanowiąca nakładkę reaktywną na framework Alamofire\cite{alamofire} umożliwiający izolację logiki odpowiedzialnej za wszelkie operacje sieciowe. Dzięki jej użyciu możliwe jest przekształcenie architektury obsługi operacji sieciowych zgodnie z poniższym schematem:
+	\begin{figure}[ht!]
+		\centering
+		\includegraphics[width=13cm]{moyaDiagram}
+		\caption{Przekształcenie logiki zapytań sieciowych dzięki Moya 
+			\textit{źródło:https://github.com/Moya/Moya/blob/master/web/diagram.png}}
+		\label{moyaDiagram}
+	\end{figure}
+	\newpage
+	\item  \textbf{Moya\_ModelMapper} - biblioteka stanowiąca nakładkę dla frameworku Mapper\cite{mapper} ułatwiającego konwersję JSON do silnie typowanych obiektów Swift. Moya\_ModelMapper dostarcza potrzebnych bindingów do biblioteki Moya do łatwiejszej serializacji obiektów JSON przy użyciu RxSwift.
+\end{itemize}
 \subsection{Zastosowana architektura}
 \subsection{Prezentacja aplikacji}
 \begin{thebibliography}{50}
 \bibitem{MicrosoftRx} https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).aspx
 \emph{- informacje na temat Reactive Extensions od Microsoft}
+
 \bibitem{swiftHistory} https://developer.apple.com/swift/blog/?id=14
 \emph{- historia języka Swift}
+
 \bibitem{swiftOpensource} https://developer.apple.com/swift/blog/?id=34
 \emph{- Swift jako język opensource}
+
 \bibitem{swiftObjcDiff} https://redwerk.com/blog/10-differences-objective-c-swift
 \emph{- Różnice między Swiftem a Objective - C}
+
 \bibitem{pureDarwin} www.puredarwin.com 
 \emph{ - informacje o systemie Darwin}
+
 \bibitem{openGroup} www.opengroup.org \emph{ - informacje o systemach unixowych}
-%\bibitem{XNUkernel} https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/OSX_Technology_Overview/SystemTechnology/SystemTechnology.html#//apple_ref/doc/uid/TP40001067-CH207-BCICAIFJ
-%\emph{ - opis jądra systemu MacOS i iOS}
-%\bibitem{iphoneOSX} https://web.archive.org/web/20071006005308/http://www.apple.com/iphone/features/index.html#macosx
-%\emph{ - informacje o pierwszym systemie na iPhone}
+
+\bibitem{XNUkernel} https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/OSX\_Technology\_Overview/SystemTechnology/SystemTechnology.html\#//apple\_ref/doc/uid/TP40001067-CH207-BCICAIFJ
+\emph{ - opis jądra systemu MacOS i iOS}
+
+\bibitem{iphoneOSX} https://web.archive.org/web/20071006005308/http://www.apple.com/iphone/features/index.html\#macosx
+\emph{ - informacje o pierwszym systemie na iPhone}
+
 \bibitem{iphoneSDK} https://web.archive.org/web/20071020040652/http://www.apple.com/hotnews
 \emph{ - informacja o stworzeniu i udostępnieniu iPhone SDK}
+
 \bibitem{iphone3GappStore} http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sale-Tomorrow.html
 \emph{ - informacje o iPhone 3G i powstaniu usługi App Store}
+
 \bibitem{iphoneOS3} http://www.apple.com/pr/library/2009/06/08Apple-Announces-the-New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html
 \emph{ - system iPhone 3.0 i implementacja podstawowych funkcjonalności}
+
 \bibitem{ios4}http://www.apple.com/pr/library/2010/04/08Apple-Previews-iPhone-OS-4.html
 \emph{ - informacje o systemie iOS 4}
+
 \bibitem{ios5}http://www.apple.com/pr/library/2011/10/04Apple-Launches-iPhone-4S-iOS-5-iCloud.html
 \emph{ - informacje o systemie iOS 5}
+
 \bibitem{ios6}http://www.apple.com/pr/library/2012/06/11Apple-Previews-iOS-6-With-All-New-Maps-Siri-Features-Facebook-Integration-Shared-Photo-Streams-New-Passbook-App.html
 \emph{ - informacje o systemie iOS 6}
+
 \bibitem{ios7}http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iOS-7.html
 \emph{ - informacje o systemie iOS 7}
+
 \bibitem{ios8}http://www.apple.com/pr/library/2014/06/02Apple-Releases-iOS-8-SDK-With-Over-4-000-New-APIs.html
 \emph{ - informacje o systemie iOS 8}
+
 \bibitem{ios9}http://www.apple.com/pr/library/2015/06/08Apple-Previews-iOS-9.html
 \emph{ - informacje o systemie iOS 9}
+
 \bibitem{compatibility}https://github.com/apple/swift-evolution/blob/master/proposals/0005-objective-c-name-translation.md
 \emph{ - informacje o poprawieniu kompatybilności Swift z Objective-C}
+
 \bibitem{ios10}http://www.apple.com/pr/library/2016/06/13Apple-Previews-iOS-10-The-Biggest-iOS-Release-Ever.html
 \emph{ - informacje o systemie iOS 10}
+
 \bibitem{beginningOfRx} Czaplicki, Evan (Apr 2012), Elm: Concurrent FRP for Functional GUIs (PDF) (thesis), Harvard
 \emph{ - pierwsze wzmianki o programowaniu reaktywnym}
+
 \bibitem{rxMicrosoftYear} http://www.introtorx.com/content/v1.0.10621.0/00foreword.html
 \emph{ - wypuszczenie biblioteki Reactive Extensions}
+
 \bibitem{rxDesignGuideline} https://go.microsoft.com/fwlink/?LinkID=205219
 \emph{ - wytyczne projektowe paradygmatu reaktywnego}
+
 \bibitem{examples}https://github.com/ReactiveX/RxSwift/blob/master/Documentation/Why.md
 \emph{ - przykłady użycia RxSwift}
+
 \bibitem{modelKaskadowy} http://zasoby.open.agh.edu.pl/\~10sdczerner/page/model\_kaskadowy.html
 \emph{ - model kaskadowy cyklu życia oprogramowania}
+
+\bibitem{cocoaPods} https://github.com/CocoaPods/CocoaPods
+\emph{ - opis menedżera zależności CocoaPods}
+
+\bibitem{UIKit}https://developer.apple.com/reference/uikit
+\emph{ - opis frameworku UIKit}
+
+\bibitem{objectGraph} https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/ObjectGraph.html
+\emph{ - definicja grafu obiektów}
+
+\bibitem{alamofire}https://github.com/Alamofire/Alamofire
+\emph{ - dokumentacja i repozytorium frameworku Alamofire}
+
+\bibitem{mapper}https://github.com/lyft/mapper
+\emph{ - dokumentacja i repozytorium frameworku Mapper}
 \end{thebibliography}
 \chapter{PODSUMOWANIE}
 

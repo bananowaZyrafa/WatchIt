@@ -117,10 +117,12 @@
 \contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{37}
 \contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{37}
 \contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{38}
-\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{38}
-\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{38}
-\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{38}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{38}
-\contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{38}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{38}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{41}
+\contentsline {subparagraph}{}{38}
+\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{39}
+\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{39}
+\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{39}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{39}
+\contentsline {paragraph}{}{39}
+\contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{41}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{41}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{45}
