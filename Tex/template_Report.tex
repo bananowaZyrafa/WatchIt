@@ -497,6 +497,28 @@ Poniżej, zostały przedstawione użyte moduły i ich krótka charakterystyka:
 	\item  \textbf{Moya\_ModelMapper} - biblioteka stanowiąca nakładkę dla frameworku Mapper\cite{mapper} ułatwiającego konwersję JSON do silnie typowanych obiektów Swift. Moya\_ModelMapper dostarcza potrzebnych bindingów do biblioteki Moya do łatwiejszej serializacji obiektów JSON przy użyciu RxSwift.
 \end{itemize}
 \subsection{Zastosowana architektura}
+\paragraph{}Wybranie właściwej architektury w projekcie było niezbędne, aby w pełni ukazać co oferuje programowanie reaktywne w języku Swift. 
+\paragraph{MVC}czyli Model View Controller jest najczęściej stosowanym podejściem jeśli chodzi o aplikacje na iOS lecz nie zawsze jest to podejście właściwe. \\
+Typowo, architektura ta powinna się sprowadzać do poniższego schematu:
+	\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=13cm]{MVC}
+	\caption{architektura MVC
+		\textit{źródło:https://cocoacasts.com/what-is-wrong-with-model-view-controller/}}
+	\label{MVC}
+\end{figure}\\
+Niestety, role poszczególnych komponentów w tej architekturze nie zawsze są jasno określone i tak np. typowe zadanie formatowania daty nie pasuje jako rola widoku ani tym bardziej modelu, dlatego staje się wówczas odpowiedzialnością kontrolera. Wiele tego typu zadań zostaje rozwiązywane właśnie w obszarze kontrolera co powoduje poważne konsekwencje takie jak rozrost kontrolerów, trudności w testowaniu czy niemożność ich ponownego użycia w innych częściach aplikacji.
+\paragraph{}Z powyższych powodów, architekturą wybraną do zaprojektowania ninejszej aplikacji został \textbf{MVVM}, czyli \textbf{Model-View-ViewModel}, który w środowisku iOS można sprowadzić do poniższego schematu:
+  	\begin{figure}[ht!]
+  	\centering
+  	\includegraphics[width=13cm]{rxMVVM}
+  	\caption{architektura MVVM
+  		\textit{źródło:https://medium.cobeisfresh.com/implementing-mvvm-in-ios-with-rxswift-updated-for-swift-2-51cc3ef7edb3\#.47mux55lq}}
+  	\label{rxMVVM}
+  \end{figure}
+\subparagraph{}W powyższej architekturze ViewModel stoi pomiędzy modelem a kontrolerem i dostarcza danych kontrolerowi, które powinien wyświetlić w widoku. Dzięki temu ViewController nie ma już bezpośredniego dostępu do modelu. Poprzednio rozpatrywane, typowe zadanie formatowania daty zostanie zlecone właśnie do ViewModelu, który przygotuje odpowiednio dane i już sformatowane, poda dalej do kontrolera.
+\\Nie należy jednak oczekiwać od ViewModelu, aby wiedział w jaki sposób dane są wyświetlane przez ViewController. 
+\subparagraph{}Z racji, że w powyżej przedstawionej architekturze, ViewModel "nie wie" nic o kontrolerze, komunikacja między tymi komponentami odbywa się na zasadzie nasłuchiwania. Kontroler przy pomocy reaktywnych bindingów obserwuje zmiany w ViewModelu i na tej podstawie reaguje, wyświetlając odpowiednie elementy interfejsu użytkownika, wykorzystując w ten sposób potencjał programowania reaktywnego. 
 \subsection{Prezentacja aplikacji}
 \begin{thebibliography}{50}
 \bibitem{MicrosoftRx} https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).aspx

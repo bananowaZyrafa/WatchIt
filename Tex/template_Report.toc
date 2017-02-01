@@ -124,5 +124,10 @@
 \contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{39}
 \contentsline {paragraph}{}{39}
 \contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{41}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{41}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{45}
+\contentsline {paragraph}{}{41}
+\contentsline {paragraph}{MVC}{41}
+\contentsline {paragraph}{}{42}
+\contentsline {subparagraph}{}{42}
+\contentsline {subparagraph}{}{42}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{42}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{46}
