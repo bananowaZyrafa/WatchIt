@@ -118,16 +118,18 @@
 \contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{37}
 \contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{38}
 \contentsline {subparagraph}{}{38}
-\contentsline {subsection}{\numberline {4.2.4}Zale\IeC {\.z}no\IeC {\'s}ci w bazie danych}{39}
-\contentsline {subsection}{\numberline {4.2.5}Diagram klas}{39}
-\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{39}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{39}
+\contentsline {subsection}{\numberline {4.2.4}Baza danych}{39}
 \contentsline {paragraph}{}{39}
-\contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{41}
-\contentsline {paragraph}{}{41}
-\contentsline {paragraph}{MVC}{41}
+\contentsline {subparagraph}{}{39}
+\contentsline {subsection}{\numberline {4.2.5}Diagram wybranych klas}{40}
+\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{40}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{42}
 \contentsline {paragraph}{}{42}
-\contentsline {subparagraph}{}{42}
-\contentsline {subparagraph}{}{42}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{42}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{46}
+\contentsline {paragraph}{MVC}{42}
+\contentsline {paragraph}{}{43}
+\contentsline {subparagraph}{}{44}
+\contentsline {subparagraph}{}{44}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{44}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{48}

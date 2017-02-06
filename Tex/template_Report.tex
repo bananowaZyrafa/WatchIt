@@ -465,11 +465,32 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 	\item Wyświetlić ekran propozycji
 	\item Wyświetlić proponowane pozycje do obejrzenia przy uwzględnieniu czasu wprowadzonego przez użytkownika
 	\item Wyświetlić ekran zapisanych pozycji
-	\item Ocenienić zapisane pozycje
+	\item Ocenić zapisane pozycje
 \end{itemize}
-\subsection{Zależności w bazie danych}
-\subsection{Diagram klas}
+\subsection{Baza danych}
+\paragraph{}W bazie danych przetrzymywane są informacje o zapisanych przez użytkownika pozycjach reprezentujących film lub serial, które użytkownik chciałby obejrzeć. Baza ta nie jest skomplikowana i nie w wymaga więcej niż modelu jednej encji. Encja ta wystarcza do przechowywania żądanych informacji i nie istnieją relacje z innymi encjami.
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=7cm]{watchableEntity}
+	\caption{Diagram bazy danych 
+		\textit{źródło:własne }}
+	\label{watchableEntity}
+\end{figure}
+\subparagraph{}Na diagramie, można zobaczyć encję posiadającą następujące atrybuty:
+\begin{itemize}
+	\item \textbf{imdbRating} - reprezentuje ocenę użytkowników serwisu IMDB
+	\item \textbf{isSeen} - binarna wartość typu Bool, określająca czy użytkownik obejrzał już daną pozycję  
+	\item \textbf{posterURL} - zewnętrzny adres URL informujący o tym skąd można pobrać grafikę dla danego filmu lub serialu
+	\item \textbf{runtime} - reprezentuje czas trwania filmu lub serialu, brany pod uwagę przy mechanizmie proponowania
+	\item \textbf{title} - reprezntuje tytuł pozycji
+	\item \textbf{userRating} - ocena pozycji, wystawiona przez użytkownika aplikacji 
+\end{itemize}
+\subsection{Diagram wybranych klas}
 \subsection{Opis wybranych klas}
+\begin{itemize}
+	\item Klasa \textbf{AppDelegate} - główna klasa programu, tworzona automatycznie. Implementuje metody interfejsu UIApplicationDelegate, który jest odpowiedzialny za obsługe metod wywoływanych przez singleton UIApplication w odpowiedzi na ważne zdarzenia w cyklu życia aplikacji. Te ważne zdarzenia to m. in. zmiany stanu aplikacji takie jak przejście aplikacji w background, przejście w foreground, obsługa notyfikacji, interakcja z innymi aplikacjami w systemie czy interakcja z samym systemem iOS.
+	\item Klasa \textbf{text}
+\end{itemize}
 \subsection{Opis użytych bibliotek i frameworków}
 \paragraph{}Stworzenie projektu aplikacji mobilnej wymagało zastosowania niezbędnych bibliotek. Zgodnie z tematem pracy, aplikacja powinna opierać się o paradygmat reaktywny, który został zaimplementowany dzięki stworzonym do tego, zewnętrznym modułom i bibliotekom. \\
 Poniżej, zostały przedstawione użyte moduły i ich krótka charakterystyka:
