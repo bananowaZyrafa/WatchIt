@@ -33,10 +33,12 @@ class SearchForMovieViewController: UIViewController {
 
     func setupRx() {
         provider = RxMoyaProvider<OMDB>()
+        
         watchableFinderModel = WatchableFinderModel(provider: provider, watchableName: latestTitle)
         configureTableDataSource()
         watchableFinderModel
             .findWatchable()
+            .replaceNilWith([])
             .bindTo(tableView.rx.items) { (tableView, row, item) in
                 self.latestProduction = item
                 let cell = tableView.dequeueReusableCell(withIdentifier: "SearchResultCell", for: IndexPath(row: row, section: 0)) as! SearchResultCell

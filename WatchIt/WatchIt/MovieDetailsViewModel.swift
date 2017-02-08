@@ -22,7 +22,7 @@ protocol MovieDetailsViewModelType {
 struct MovieDetailsViewModel: MovieDetailsViewModelType {
     
     // 2-Way Binding
-    var addedToBase: Variable<Bool?>
+    var addedToBase: Variable<Bool>
     var seen: Variable<Bool?>
     var rateFromWatchable: Variable<String>
     
@@ -49,13 +49,11 @@ struct MovieDetailsViewModel: MovieDetailsViewModelType {
     init(watchable:Watchable) {
         
         self.watchable = watchable
-        self.addedToBase = Variable(true)
         self.seen = Variable(false)
-        self.rateFromWatchable = Variable("10.0")
-        self.addButtonEnabled = self.addedToBase.asDriver()
-            .map({ _ in //performing database search
-                    return true
-            })
+        self.rateFromWatchable = Variable(watchable.imdbRating)
+        self.addedToBase = Variable(false)
+        self.addButtonEnabled = self.addedToBase.asDriver().startWith(true)
+        
         self.watchedButtonEnabled = self.seen.asDriver()
             .map({ _ in //performing database search
                 return true
@@ -67,7 +65,6 @@ struct MovieDetailsViewModel: MovieDetailsViewModelType {
         })
         let presentRatingViewModel: Observable<RateMovieViewModelType> = self.watchedButtonDidTap.map{RateMovieViewModel()}
         self.presentRateMovieViewModel = presentRatingViewModel.asDriver(onErrorDriveWith: .empty())
-        
     }
     
     func downloadImage() {
@@ -99,29 +96,43 @@ struct MovieDetailsViewModel: MovieDetailsViewModelType {
 
     }
     
-    @available(iOS 10.0, *)
-    func checkIfWatchableAlreadyInDB(watchable:Watchable) -> Variable<Bool> {
-        var returnValue = Variable(false)
+    mutating func checkIfWatchableAlreadyInDB() {
+        let watchable = self.watchable
         let fetchRequest:NSFetchRequest<WatchableEntity> = WatchableEntity.fetchRequest()
         do {
             let searchResults = try CoreDataStack.getContext().fetch(fetchRequest)
             print("number of results: \(searchResults.count)")
             for result in searchResults as [WatchableEntity] {
                 if result.title == watchable.title {
-                    returnValue = Variable(true)
+                    self.addedToBase = Variable(true)
                 } else {
-                    returnValue = Variable(false)
+                    self.addedToBase = Variable(false)
                 }
             }
         } catch {
             print("error: \(error)")
-            returnValue = Variable(false)
         }
         
-        return returnValue
     }
     
-    
+    mutating func saveWatchableInDB() {
+        let watchable = self.watchable
+        let managedContext = CoreDataStack.getContext()
+        let entity = NSEntityDescription.entity(forEntityName: "WatchableEntity", in: managedContext)!
+        let watch = NSManagedObject(entity: entity, insertInto: managedContext)
+        watch.setValue(watchable.title, forKeyPath: "title")
+        watch.setValue(watchable.runtime, forKeyPath: "runtime")
+        watch.setValue(watchable.posterURL, forKeyPath: "posterURL")
+        watch.setValue(watchable.imdbRating, forKeyPath: "imdbRating")
+        watch.setValue(false, forKeyPath: "isSeen")
+        do{
+            try managedContext.save()
+        } catch let error as NSError {
+            print("couldn't save to DB: \(error)")
+        }
+        
+        self.addedToBase = Variable(true) //zwracam false mimo ze dodane do bazy bo źle obsługiwany driver do przycisku u góry
+    }
     
     
     

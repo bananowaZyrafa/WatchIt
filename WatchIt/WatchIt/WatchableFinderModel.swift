@@ -10,11 +10,12 @@ struct WatchableFinderModel {
     let provider: RxMoyaProvider<OMDB>
     let watchableName: Observable<String>
 
-    func findWatchable() -> Observable<[Production]> {
+    func findWatchable() -> Observable<[Production]?> {
         
         return watchableName
             .observeOn(MainScheduler.instance)
-            .flatMapLatest({ (title) -> Observable<[Production]> in
+            
+            .flatMapLatest({ (title) -> Observable<[Production]?> in
                 print("title: \(title)")
                 return self
                     .findProductionInOMDB(title: title)
@@ -23,7 +24,6 @@ struct WatchableFinderModel {
                         guard let prod = production else {return Observable.just(nil)}
                         return Observable.just([prod])
                     })
-                    .replaceNilWith([])
 
             })
 

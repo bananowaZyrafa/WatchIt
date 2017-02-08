@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,6 +42,7 @@
                     <connections>
                         <outlet property="searchBar" destination="378-z6-KlA" id="svE-Gh-9NJ"/>
                         <outlet property="tableView" destination="Lug-Ke-0Yw" id="sfI-dI-ms0"/>
+                        <segue destination="3uw-zk-32Z" kind="show" identifier="showDetails" id="2KH-Cd-i49"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -89,9 +91,6 @@
                                     <constraint firstAttribute="width" constant="135" id="NVS-14-h3V"/>
                                 </constraints>
                                 <state key="normal" title="Mark as watched"/>
-                                <connections>
-                                    <action selector="markAsWatched:" destination="3uw-zk-32Z" eventType="touchUpInside" id="1OX-4c-yVD"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62z-dZ-hA9">
                                 <color key="backgroundColor" red="0.54886371150000002" green="0.080012118849999994" blue="0.75367708330000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -102,8 +101,15 @@
                                 <state key="normal" title="ADD TO MY BASE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgP-TG-8bV">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0jE-ax-gBj"/>
+                                    <constraint firstAttribute="width" constant="46" id="KyM-uw-PGw"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
                                 <connections>
-                                    <action selector="addToBase:" destination="3uw-zk-32Z" eventType="touchUpInside" id="RsK-Px-Cnj"/>
+                                    <action selector="backButtonClicked:" destination="3uw-zk-32Z" eventType="touchUpInside" id="yZu-bq-wu8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,11 +124,14 @@
                             <constraint firstItem="PUu-Ly-wHb" firstAttribute="centerX" secondItem="2Fg-t2-IDi" secondAttribute="centerX" id="PDv-Sc-cLg"/>
                             <constraint firstItem="imS-T8-htT" firstAttribute="leading" secondItem="2Fg-t2-IDi" secondAttribute="leading" constant="52" id="Tgc-oq-aWa"/>
                             <constraint firstItem="PUu-Ly-wHb" firstAttribute="top" secondItem="BJ5-gX-ncl" secondAttribute="bottom" constant="56" id="WGc-4I-YTP"/>
+                            <constraint firstItem="pgP-TG-8bV" firstAttribute="top" secondItem="BJ5-gX-ncl" secondAttribute="bottom" id="WjX-u2-KGi"/>
                             <constraint firstItem="aPn-42-Ozt" firstAttribute="centerX" secondItem="2Fg-t2-IDi" secondAttribute="centerX" id="qCL-bu-os5"/>
+                            <constraint firstItem="pgP-TG-8bV" firstAttribute="leading" secondItem="2Fg-t2-IDi" secondAttribute="leading" id="xD1-YN-sEq"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="addButton" destination="62z-dZ-hA9" id="sTQ-qv-DF9"/>
+                        <outlet property="backButton" destination="pgP-TG-8bV" id="A11-i8-cGJ"/>
                         <outlet property="posterImage" destination="PUu-Ly-wHb" id="pUx-Gz-BPW"/>
                         <outlet property="ratingLabel" destination="pzk-YJ-Np9" id="Jii-ok-m5J"/>
                         <outlet property="watchedButton" destination="aPn-42-Ozt" id="30B-1m-Ore"/>
@@ -144,6 +153,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="C2g-hN-Cjo" kind="relationship" relationship="viewControllers" id="qnr-89-q6c"/>
+                        <segue destination="ddh-ZJ-cE1" kind="relationship" relationship="viewControllers" id="8VF-4U-dCE"/>
+                        <segue destination="52U-0O-PfV" kind="relationship" relationship="viewControllers" id="5XN-Ni-9As"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78b-nQ-JrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,6 +180,199 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxL-9p-RsU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2143.1999999999998" y="-272.11394302848578"/>
+        </scene>
+        <!--Proposition View Controller-->
+        <scene sceneID="pYf-2A-bBM">
+            <objects>
+                <viewController id="6QS-ew-dTJ" customClass="PropositionViewController" customModule="WatchIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="v3O-Cb-0Hu"/>
+                        <viewControllerLayoutGuide type="bottom" id="GqH-Ln-oGc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3hT-AO-7Sw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How much time do you have" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhk-T9-pJ9">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="217" id="3W2-62-yD3"/>
+                                    <constraint firstAttribute="height" constant="21" id="bMG-eM-Yla"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="30" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jZ6-6I-HE1">
+                                <color key="backgroundColor" red="0.089810450989999999" green="0.055156671380000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3f1-F6-ZIf"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="30 min">
+                                    <color key="titleColor" red="0.029769051211094077" green="0.013331842230299595" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="timeButtonClicked:" destination="6QS-ew-dTJ" eventType="touchUpInside" id="1LO-x5-PRY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="45" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lyo-Xp-Hya">
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="45 min">
+                                    <color key="titleColor" red="0.029769051210000001" green="0.01333184223" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="timeButtonClicked:" destination="6QS-ew-dTJ" eventType="touchUpInside" id="AHb-5A-kG4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="60" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hd4-PH-VDP">
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="60 min">
+                                    <color key="titleColor" red="0.029769051210000001" green="0.01333184223" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="timeButtonClicked:" destination="6QS-ew-dTJ" eventType="touchUpInside" id="G6x-hO-CrQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQX-kT-x4U">
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="over 60 min">
+                                    <color key="titleColor" red="0.029769051210000001" green="0.01333184223" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="timeButtonClicked:" destination="6QS-ew-dTJ" eventType="touchUpInside" id="lhB-dp-k99"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIE-Ee-ymD">
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.4549019608" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="273" id="1tI-HQ-hiL"/>
+                                    <constraint firstAttribute="height" constant="108" id="hZ0-vk-2x3"/>
+                                </constraints>
+                                <state key="normal" title="Give me a proposition"/>
+                                <connections>
+                                    <action selector="givePropositionClicked:" destination="6QS-ew-dTJ" eventType="touchUpInside" id="jm9-Fd-kDd"/>
+                                    <segue destination="bTa-DA-xmm" kind="show" id="D47-fu-ZIa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jZ6-6I-HE1" firstAttribute="leading" secondItem="3hT-AO-7Sw" secondAttribute="leading" id="382-Hl-kRh"/>
+                            <constraint firstItem="Lyo-Xp-Hya" firstAttribute="leading" secondItem="jZ6-6I-HE1" secondAttribute="trailing" id="5rU-Cd-6XA"/>
+                            <constraint firstAttribute="trailing" secondItem="cQX-kT-x4U" secondAttribute="trailing" id="6Vy-F6-gcy"/>
+                            <constraint firstItem="Lyo-Xp-Hya" firstAttribute="leading" secondItem="jZ6-6I-HE1" secondAttribute="trailing" id="AK5-N2-txM"/>
+                            <constraint firstItem="Hd4-PH-VDP" firstAttribute="leading" secondItem="Lyo-Xp-Hya" secondAttribute="trailing" id="EK0-Tm-9yD"/>
+                            <constraint firstItem="uhk-T9-pJ9" firstAttribute="leading" secondItem="3hT-AO-7Sw" secondAttribute="leadingMargin" constant="63" id="FLY-CP-etp"/>
+                            <constraint firstItem="Lyo-Xp-Hya" firstAttribute="width" secondItem="jZ6-6I-HE1" secondAttribute="width" id="KUP-oQ-dac"/>
+                            <constraint firstItem="Lyo-Xp-Hya" firstAttribute="height" secondItem="jZ6-6I-HE1" secondAttribute="height" id="O2T-cj-XAc"/>
+                            <constraint firstItem="Lyo-Xp-Hya" firstAttribute="centerY" secondItem="jZ6-6I-HE1" secondAttribute="centerY" id="Tt4-hB-k6R"/>
+                            <constraint firstItem="uhk-T9-pJ9" firstAttribute="top" secondItem="v3O-Cb-0Hu" secondAttribute="bottom" constant="33" id="V5h-z5-E3e"/>
+                            <constraint firstItem="jZ6-6I-HE1" firstAttribute="top" secondItem="uhk-T9-pJ9" secondAttribute="bottom" constant="200" id="W44-5B-C75"/>
+                            <constraint firstItem="cQX-kT-x4U" firstAttribute="leading" secondItem="Hd4-PH-VDP" secondAttribute="trailing" id="XVl-hF-Ewe"/>
+                            <constraint firstItem="cQX-kT-x4U" firstAttribute="height" secondItem="jZ6-6I-HE1" secondAttribute="height" id="gd7-8w-k6O"/>
+                            <constraint firstItem="iIE-Ee-ymD" firstAttribute="centerX" secondItem="3hT-AO-7Sw" secondAttribute="centerX" id="k9B-MJ-JrP"/>
+                            <constraint firstItem="Hd4-PH-VDP" firstAttribute="width" secondItem="jZ6-6I-HE1" secondAttribute="width" id="lSD-UO-5dJ"/>
+                            <constraint firstItem="cQX-kT-x4U" firstAttribute="centerY" secondItem="jZ6-6I-HE1" secondAttribute="centerY" id="m58-p4-2Pb"/>
+                            <constraint firstItem="Hd4-PH-VDP" firstAttribute="height" secondItem="jZ6-6I-HE1" secondAttribute="height" id="nSa-Wq-1WA"/>
+                            <constraint firstItem="Hd4-PH-VDP" firstAttribute="centerY" secondItem="jZ6-6I-HE1" secondAttribute="centerY" id="nob-AD-n7O"/>
+                            <constraint firstItem="cQX-kT-x4U" firstAttribute="width" secondItem="jZ6-6I-HE1" secondAttribute="width" id="oEZ-gu-tCx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uhk-T9-pJ9" secondAttribute="trailing" constant="63" id="piV-eE-7LS"/>
+                            <constraint firstItem="GqH-Ln-oGc" firstAttribute="top" secondItem="iIE-Ee-ymD" secondAttribute="bottom" constant="110" id="ucs-M4-GrB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iUC-Av-qEJ"/>
+                    <connections>
+                        <outletCollection property="timeButtons" destination="jZ6-6I-HE1" collectionClass="NSMutableArray" id="JLQ-Lk-QVT"/>
+                        <outletCollection property="timeButtons" destination="Lyo-Xp-Hya" collectionClass="NSMutableArray" id="38U-Ft-K46"/>
+                        <outletCollection property="timeButtons" destination="Hd4-PH-VDP" collectionClass="NSMutableArray" id="eH9-07-Atg"/>
+                        <outletCollection property="timeButtons" destination="cQX-kT-x4U" collectionClass="NSMutableArray" id="3rY-ed-sIG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gZP-TI-9py" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3080.8000000000002" y="473.6131934032984"/>
+        </scene>
+        <!--Propositions-->
+        <scene sceneID="Agf-km-9QH">
+            <objects>
+                <tableViewController title="Propositions" id="bTa-DA-xmm" customClass="ProposedPositionsTableViewController" customModule="WatchIt" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="xPx-3W-74G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="8HC-8k-ZlE">
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8HC-8k-ZlE" id="D7G-OB-bBO">
+                                    <frame key="frameInset" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <edgeInsets key="layoutMargins" top="20" left="8" bottom="8" right="8"/>
+                                </tableViewCellContentView>
+                                <edgeInsets key="layoutMargins" top="20" left="8" bottom="8" right="8"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="bTa-DA-xmm" id="gj2-fj-oGu"/>
+                            <outlet property="delegate" destination="bTa-DA-xmm" id="yX1-eC-iqO"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iew-7k-RwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4023.1999999999998" y="468.21589205397305"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="CkS-gb-H9D">
+            <objects>
+                <viewController id="52U-0O-PfV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qDw-Lg-Ez9"/>
+                        <viewControllerLayoutGuide type="bottom" id="NFy-vy-JUE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EHm-Uu-UiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="VfE-Vv-GTc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FzV-KZ-nyU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2143" y="1166"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="XX6-UP-bgH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ddh-ZJ-cE1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6Ka-69-6xR"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9nN-b8-XbN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6QS-ew-dTJ" kind="relationship" relationship="rootViewController" id="yNU-w6-Cdl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tIL-CL-acH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141.5999999999999" y="473.6131934032984"/>
         </scene>
     </scenes>
     <resources>
