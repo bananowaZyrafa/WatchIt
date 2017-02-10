@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  6 FEB 2017 15:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  10 FEB 2017 17:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1104,176 +1104,187 @@ File: watchableEntity.png Graphic file (type png)
 <use watchableEntity.png>
 Package pdftex.def Info: watchableEntity.png used on input line 474.
 (pdftex.def)             Requested size: 199.16928pt x 187.31898pt.
- [39 <./watchableEntity.png>] [40]
-Overfull \hbox (1.0911pt too wide) in paragraph at lines 508--509
+ <diagramKlas.png, id=204, 1333.98375pt x 566.115pt>
+File: diagramKlas.png Graphic file (type png)
+
+<use diagramKlas.png>
+Package pdftex.def Info: diagramKlas.png used on input line 491.
+(pdftex.def)             Requested size: 483.69684pt x 205.26973pt.
+
+Overfull \hbox (93.69684pt too wide) in paragraph at lines 491--493
+ [][] 
+ []
+
+[39 <./watchableEntity.png>] [40 <./diagramKlas.png>] [41]
+Overfull \hbox (1.0911pt too wide) in paragraph at lines 522--523
 []\OT4/cmr/bx/n/12 RxOptional \OT4/cmr/m/n/12 - roz-sze-rze-nie RxSwift dla obi
 ek-tów opcjo-nal-nych w Swift,
  []
 
-<moyaDiagram.png, id=211, 1210.5225pt x 877.2775pt>
+<moyaDiagram.png, id=215, 1210.5225pt x 877.2775pt>
 File: moyaDiagram.png Graphic file (type png)
  <use moyaDiagram.png>
-Package pdftex.def Info: moyaDiagram.png used on input line 512.
+Package pdftex.def Info: moyaDiagram.png used on input line 526.
 (pdftex.def)             Requested size: 369.88582pt x 268.05785pt.
 
-Overfull \hbox (36.20773pt too wide) in paragraph at lines 509--517
+Overfull \hbox (36.20773pt too wide) in paragraph at lines 523--531
 []\OT4/cmr/bx/n/12 Moya \OT4/cmr/m/n/12 - bi-blio-te-ka sta-no-wi¡-ca na-kªad-k
 ¦ re-ak-tyw-n¡ na fra-me-work Alamofire[[]]
  []
 
-[41] <MVC.jpg, id=215, 1027.84pt x 770.88pt>
+[42] [43 <./moyaDiagram.png>] <MVC.jpg, id=224, 1027.84pt x 770.88pt>
 File: MVC.jpg Graphic file (type jpg)
- <use MVC.jpg>
-Package pdftex.def Info: MVC.jpg used on input line 526.
+
+<use MVC.jpg>
+Package pdftex.def Info: MVC.jpg used on input line 540.
 (pdftex.def)             Requested size: 369.88582pt x 277.41072pt.
 
-Underfull \hbox (badness 3815) in paragraph at lines 528--528
-[]\OT4/cmr/m/n/12 Rysunek 4.4: ar-chi-tek-tu-ra MVC \OT4/cmr/m/it/12 ¹ródªo:htt
+Underfull \hbox (badness 3815) in paragraph at lines 542--542
+[]\OT4/cmr/m/n/12 Rysunek 4.5: ar-chi-tek-tu-ra MVC \OT4/cmr/m/it/12 ¹ródªo:htt
 ps://cocoacasts.com/what-is-
  []
 
-[42 <./moyaDiagram.png>] <rxMVVM.png, id=221, 634.37pt x 118.4425pt>
+[44 <./MVC.jpg>] <rxMVVM.png, id=228, 634.37pt x 118.4425pt>
 File: rxMVVM.png Graphic file (type png)
-
-<use rxMVVM.png>
-Package pdftex.def Info: rxMVVM.png used on input line 535.
+ <use rxMVVM.png>
+Package pdftex.def Info: rxMVVM.png used on input line 549.
 (pdftex.def)             Requested size: 369.88582pt x 69.06357pt.
 
-Overfull \hbox (58.55086pt too wide) in paragraph at lines 537--537
-[]\OT4/cmr/m/n/12 Rysunek 4.5: ar-chi-tek-tu-ra MVVM \OT4/cmr/m/it/12 ¹ródªo:ht
+Overfull \hbox (58.55086pt too wide) in paragraph at lines 551--551
+[]\OT4/cmr/m/n/12 Rysunek 4.6: ar-chi-tek-tu-ra MVVM \OT4/cmr/m/it/12 ¹ródªo:ht
 tps://medium.cobeisfresh.com/implementing-
  []
 
-[43 <./MVC.jpg> <./rxMVVM.png (PNG copy)>] [44]
-Underfull \hbox (badness 1221) in paragraph at lines 545--547
+[45 <./rxMVVM.png (PNG copy)>]
+Underfull \hbox (badness 1221) in paragraph at lines 559--561
 []\OT4/cmr/m/n/12 https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).a
 spx \OT4/cmr/m/it/12 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 554--556
+Underfull \hbox (badness 10000) in paragraph at lines 568--570
 []\OT4/cmr/m/n/12 https://redwerk.com/blog/10-differences-objective-c-swift \OT
 4/cmr/m/it/12 - Ró»-ni-ce
  []
 
 
-Overfull \hbox (619.16284pt too wide) in paragraph at lines 562--564
+Overfull \hbox (619.16284pt too wide) in paragraph at lines 576--578
 []\OT4/cmr/m/n/12 https://developer.apple.com/library/content/documentation/Mac
 OSX/Conceptual/OSX[]Technology[]Overview/SystemTechnology/SystemTechnology.html
 #//apple[]ref/doc/uid/TP40001067-
  []
 
 
-Overfull \hbox (185.61346pt too wide) in paragraph at lines 565--567
+Overfull \hbox (185.61346pt too wide) in paragraph at lines 579--581
 []\OT4/cmr/m/n/12 https://web.archive.org/web/20071006005308/http://www.apple.c
 om/iphone/features/index.html#macosx
  []
 
 
-Overfull \hbox (39.32748pt too wide) in paragraph at lines 568--570
+Overfull \hbox (39.32748pt too wide) in paragraph at lines 582--584
 []\OT4/cmr/m/n/12 https://web.archive.org/web/20071020040652/http://www.apple.c
 om/hotnews
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--573
+Underfull \hbox (badness 10000) in paragraph at lines 585--587
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sale-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 574--576
+Underfull \hbox (badness 10000) in paragraph at lines 588--590
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2009/06/08Apple-Announces-the
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--579
+Underfull \hbox (badness 10000) in paragraph at lines 591--593
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2010/04/08Apple-Previews-iPho
 ne-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 580--582
+Underfull \hbox (badness 10000) in paragraph at lines 594--596
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2011/10/04Apple-Launches-iPho
 ne-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--585
+Underfull \hbox (badness 10000) in paragraph at lines 597--599
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2012/06/11Apple-Previews-iOS-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 583--585
+Underfull \hbox (badness 10000) in paragraph at lines 597--599
 \OT4/cmr/m/n/12 6-With-All-New-Maps-Siri-Features-Facebook-Integration-Shared-
  []
 
-[45
+[46
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 586--588
+Underfull \hbox (badness 10000) in paragraph at lines 600--602
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iOS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 589--591
+Underfull \hbox (badness 10000) in paragraph at lines 603--605
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2014/06/02Apple-Releases-iOS-
 8-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--594
+Underfull \hbox (badness 10000) in paragraph at lines 606--608
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2015/06/08Apple-Previews-iOS-
 
  []
 
 
-Overfull \hbox (3.29453pt too wide) in paragraph at lines 595--597
+Overfull \hbox (3.29453pt too wide) in paragraph at lines 609--611
 []\OT4/cmr/m/n/12 https://github.com/apple/swift-evolution/blob/master/proposal
 s/0005-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 598--600
+Underfull \hbox (badness 10000) in paragraph at lines 612--614
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2016/06/13Apple-Previews-iOS-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 604--606
+Underfull \hbox (badness 10000) in paragraph at lines 618--620
 []\OT4/cmr/m/n/12 http://www.introtorx.com/content/v1.0.10621.0/00foreword.html
   \OT4/cmr/m/it/12 -
  []
 
 
-Overfull \hbox (40.78166pt too wide) in paragraph at lines 610--612
+Overfull \hbox (40.78166pt too wide) in paragraph at lines 624--626
 []\OT4/cmr/m/n/12 https://github.com/ReactiveX/RxSwift/blob/master/Documentatio
 n/Why.md
  []
 
 
-Overfull \hbox (4.13007pt too wide) in paragraph at lines 613--615
+Overfull \hbox (4.13007pt too wide) in paragraph at lines 627--629
 []\OT4/cmr/m/n/12 http://zasoby.open.agh.edu.pl/[]10sdczerner/page/model[]kaska
 dowy.html
  []
 
 
-Overfull \hbox (113.75452pt too wide) in paragraph at lines 622--624
+Overfull \hbox (113.75452pt too wide) in paragraph at lines 636--638
 []\OT4/cmr/m/n/12 https://developer.apple.com/library/content/documentation/Gen
 eral/Conceptual/DevPedia-
  []
 
-[46] [47]
+[47] [48]
 Rozdzia\PlPrIeC {\l } 5.
-[48
+[49
 
 ] (./template_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 2393 strings out of 493014
- 32979 string characters out of 6133350
- 90672 words of memory out of 5000000
- 5852 multiletter control sequences out of 15000+600000
+ 2399 strings out of 493014
+ 33086 string characters out of 6133350
+ 90683 words of memory out of 5000000
+ 5857 multiletter control sequences out of 15000+600000
  16531 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  37i,8n,24p,1028b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1286,10 +1297,10 @@ texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2016/texmf-dist/
 fonts/type1/public/pl/plr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
 /public/pl/plr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/p
 lr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plti12.pfb>
-Output written on template_Report.pdf (49 pages, 3610575 bytes).
+Output written on template_Report.pdf (50 pages, 3867986 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 138 compressed objects within 2 object streams
+ 277 PDF objects out of 1000 (max. 8388607)
+ 140 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 191 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 196 words of extra memory for PDF output out of 10000 (max. 10000000)
 

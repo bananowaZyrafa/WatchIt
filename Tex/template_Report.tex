@@ -486,10 +486,24 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 	\item \textbf{userRating} - ocena pozycji, wystawiona przez użytkownika aplikacji 
 \end{itemize}
 \subsection{Diagram wybranych klas}
+	\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=17cm]{diagramKlas}
+	\caption{diagram klas
+		\textit{źródło:własne}}
+	\label{diagramKlas}
+\end{figure}
 \subsection{Opis wybranych klas}
 \begin{itemize}
 	\item Klasa \textbf{AppDelegate} - główna klasa programu, tworzona automatycznie. Implementuje metody interfejsu UIApplicationDelegate, który jest odpowiedzialny za obsługe metod wywoływanych przez singleton UIApplication w odpowiedzi na ważne zdarzenia w cyklu życia aplikacji. Te ważne zdarzenia to m. in. zmiany stanu aplikacji takie jak przejście aplikacji w background, przejście w foreground, obsługa notyfikacji, interakcja z innymi aplikacjami w systemie czy interakcja z samym systemem iOS.
-	\item Klasa \textbf{text}
+	\item Klasa \textbf{CoreDataStack} -  reprezentuje menedżera bazy danych CoreData. Jej metody pozwalają na pobranie bieżącego kontekstu, czyli stanu danych i relacji w bazie danych oraz zapisanie tego kontekstu.
+	\item Klasa \textbf{WatchableEntity} - reprezentuje model encji bazodanowej. Jej metoda pozwala na wykonanie zapytania bazodanowego a jej pola reprezentują poszczególne atrybuty encji.
+	\item Klasa \textbf{SearchForMovieViewController} - kontroler widoku wyszukiwania produkcji. Jej atrybutami są elementy interfejsu użytkownika t.j. tabela czy pasek wyszukiwania, który jest tutaj obsługiwany reaktywnie. Ponadto korzysta z modelu wyszukiwania produkcji w celu wyświetlenia znalezionych wyników. Nie posiada informacji o tym w jaki sposób przebiega proces wyszukiwania. 
+	\item Klasa \textbf{MovieDetailsController} - kontroler widoku szczegółów na temat znalezionej produkcji. Odpowiedzialny jest za operacje interfejsu użytkownika takie jak pobranie obrazka czy wyświetlenie oceny znalezionego filmu lub serialu. Komunikuje się tylko z modelem MovieDetailsViewModel za pośrednictwem interfejsu MovieDetailsViewModelType, aby otrzymywać informacje na temat danych do wyświetlenia.
+	\item Klasa \textbf{MovieDetailsViewModel} - stanowi model widoku dla klasy kontrolera poprzednio opisanego. Implementuje metody i pola interfejsu MovieDetailsViewModelType. Odpowiedzialna jest za reaktywne zmiany modelu widoku takie jak blokowanie/odblokowywanie możliwości kliknięcia przycisków, podawanie do kontrolera danych do wyświetlenia ze znalezionej produkcji, przygotowanie modelu widoku oceny filmu czy zapisanie pozycji w bazie danych. 
+	\item Enumerator \textbf{OMDB} - implementuje metody i pola wymagane przez interfejs Mappable, potrzebny do działania modułu Moya odpowiedzialnego za zapytania sieciowe w sposób reaktywny. Enumerator ten odpowiedzialny jest za dostarczenie adresów URL wszystkich używanych endpointów API, metod odpytania, sposobu kodowania odpowiedzi oraz przykładowy model zwracanych przez API danych.   
+	\item Klasa \textbf{WatchableFinderModel} - model wyszukiwania filmów i seriali. Izoluje logikę i sposób odpytywania API od reszty klas. Korzysta z dostarczanego przez framework Moya providera zależnego od uprzednio opisanego enumeratora dostarczającego wszystkich potrzebnych danych. Jego metody generują sygnały będące wynikiem odpytywania API o zadany tytuł. 
+	\item Klasa \textbf{Watchable} - model danych reprezentujących znaleziony przez API film lub serial. Implementuje interferjs Mappable, który odpowiedzialny jest za przeprowadzenie próby zmapowania otrzymanego w odpowiedzi (od API) obiektu typu JSON na obiekt typu Mappable.
 \end{itemize}
 \subsection{Opis użytych bibliotek i frameworków}
 \paragraph{}Stworzenie projektu aplikacji mobilnej wymagało zastosowania niezbędnych bibliotek. Zgodnie z tematem pracy, aplikacja powinna opierać się o paradygmat reaktywny, który został zaimplementowany dzięki stworzonym do tego, zewnętrznym modułom i bibliotekom. \\
