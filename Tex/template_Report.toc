@@ -123,13 +123,17 @@
 \contentsline {subparagraph}{}{39}
 \contentsline {subsection}{\numberline {4.2.5}Diagram wybranych klas}{40}
 \contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{40}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{41}
-\contentsline {paragraph}{}{41}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{42}
+\contentsline {paragraph}{}{42}
 \contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{44}
 \contentsline {paragraph}{}{44}
 \contentsline {paragraph}{MVC}{44}
-\contentsline {paragraph}{}{45}
+\contentsline {paragraph}{}{44}
 \contentsline {subparagraph}{}{45}
 \contentsline {subparagraph}{}{45}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{45}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{49}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{46}
+\contentsline {paragraph}{}{46}
+\contentsline {subparagraph}{}{46}
+\contentsline {subparagraph}{}{47}
+\contentsline {subparagraph}{}{48}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{52}

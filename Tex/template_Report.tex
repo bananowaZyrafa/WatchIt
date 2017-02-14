@@ -3,6 +3,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{wrapfig}
+\usepackage{subfig}
 %jabrew pod maca poszukac albo innego menedzera bibliografii
 % Title Page
 \title{Użycie języka Swift i elementów paradygmatu reaktywnego na przykładzie aplikacji mobilnej do polecania filmów i seriali}
@@ -505,6 +506,7 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 	\item Klasa \textbf{WatchableFinderModel} - model wyszukiwania filmów i seriali. Izoluje logikę i sposób odpytywania API od reszty klas. Korzysta z dostarczanego przez framework Moya providera zależnego od uprzednio opisanego enumeratora dostarczającego wszystkich potrzebnych danych. Jego metody generują sygnały będące wynikiem odpytywania API o zadany tytuł. 
 	\item Klasa \textbf{Watchable} - model danych reprezentujących znaleziony przez API film lub serial. Implementuje interferjs Mappable, który odpowiedzialny jest za przeprowadzenie próby zmapowania otrzymanego w odpowiedzi (od API) obiektu typu JSON na obiekt typu Mappable.
 \end{itemize}
+\pagebreak
 \subsection{Opis użytych bibliotek i frameworków}
 \paragraph{}Stworzenie projektu aplikacji mobilnej wymagało zastosowania niezbędnych bibliotek. Zgodnie z tematem pracy, aplikacja powinna opierać się o paradygmat reaktywny, który został zaimplementowany dzięki stworzonym do tego, zewnętrznym modułom i bibliotekom. \\
 Poniżej, zostały przedstawione użyte moduły i ich krótka charakterystyka:
@@ -528,9 +530,9 @@ Poniżej, zostały przedstawione użyte moduły i ich krótka charakterystyka:
 			\textit{źródło:https://github.com/Moya/Moya/blob/master/web/diagram.png}}
 		\label{moyaDiagram}
 	\end{figure}
-	\newpage
 	\item  \textbf{Moya\_ModelMapper} - biblioteka stanowiąca nakładkę dla frameworku Mapper\cite{mapper} ułatwiającego konwersję JSON do silnie typowanych obiektów Swift. Moya\_ModelMapper dostarcza potrzebnych bindingów do biblioteki Moya do łatwiejszej serializacji obiektów JSON przy użyciu RxSwift.
 \end{itemize}
+\pagebreak
 \subsection{Zastosowana architektura}
 \paragraph{}Wybranie właściwej architektury w projekcie było niezbędne, aby w pełni ukazać co oferuje programowanie reaktywne w języku Swift. 
 \paragraph{MVC}czyli Model View Controller jest najczęściej stosowanym podejściem jeśli chodzi o aplikacje na iOS lecz nie zawsze jest to podejście właściwe. \\
@@ -554,7 +556,44 @@ Niestety, role poszczególnych komponentów w tej architekturze nie zawsze są j
 \subparagraph{}W powyższej architekturze ViewModel stoi pomiędzy modelem a kontrolerem i dostarcza danych kontrolerowi, które powinien wyświetlić w widoku. Dzięki temu ViewController nie ma już bezpośredniego dostępu do modelu. Poprzednio rozpatrywane, typowe zadanie formatowania daty zostanie zlecone właśnie do ViewModelu, który przygotuje odpowiednio dane i już sformatowane, poda dalej do kontrolera.
 \\Nie należy jednak oczekiwać od ViewModelu, aby wiedział w jaki sposób dane są wyświetlane przez ViewController. 
 \subparagraph{}Z racji, że w powyżej przedstawionej architekturze, ViewModel "nie wie" nic o kontrolerze, komunikacja między tymi komponentami odbywa się na zasadzie nasłuchiwania. Kontroler przy pomocy reaktywnych bindingów obserwuje zmiany w ViewModelu i na tej podstawie reaguje, wyświetlając odpowiednie elementy interfejsu użytkownika, wykorzystując w ten sposób potencjał programowania reaktywnego. 
+\pagebreak
 \subsection{Prezentacja aplikacji}
+\paragraph{}Główne funkcje aplikacji prezentowane są w widokach wybieranych spośród trzech zakładek paska dolnego.
+\subparagraph{}\textbf{Widok wyszukiwania filmu/serialu}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[width=6cm]{SearchVC}
+	\caption{Widok wyszukiwania
+		\textit{źródło:własne}}
+	\label{SearchVC}
+\end{figure}\\
+W tym widoku, możliwe jest kliknięcie paska wyszukiwania i wpisywanie tytułu. Wprowadzany z klawiatury ciąg znaków przetwarzany jest w sposób reaktywny z użyciem operatora \textbf{debounce}. Ma to duże znaczenie, ponieważ użytkownik nie musi potwierdzać chęci wyszukiwania w żaden sposób. odbywa się to automatycznie. Należy jednak zwrócić uwagę, że zapytania sieciowe kierowane do API nie są wysyłane z każdą wprowazoną literą. Dzięki operatorowi debounce, możliwe jest spokojne wpisanie całości tytułu a po upłynięciu zadanego interwału czasowego (tutaj kilkadziesiąt milisekund), rozpocznie się proces wysyłania zapytania do API.\\
+Odnaleziona pozycja wyświetlana jest natychmiastowo w chwili znalezienia.
+\subparagraph{}\textbf{Widok szczegółów filmu/serialu}
+\begin{figure}[ht!]
+	\centering
+	\subfloat[]{}
+	\includegraphics[width=5cm]{addToMyBaseEnabled}
+	\quad
+	\subfloat[]{}
+	\includegraphics[width=5cm]{alreadyInBase}
+	\caption{Widok szczegółów  filmu/serialu}
+	\label{watchableDetails}
+\end{figure}\\
+Na powyższym widoku, prezentowane są szczegóły dotyczące znalezionej pozycji. Widoczny jest plakat danej produkcji oraz jej ocena wystawiona przez użytkowników serwisu IMDB. Ponadto użytkownik ma możliwość dodania filmu/serialu do swojej bazy jeżeli jeszcze tego nie zrobił. Lokalna baza danych przeszukiwana jest w celu odnalezienia bieżącej produkcji i na tej podstawie decyduje się o sposobie wyświetlenia przycsisku.
+\pagebreak
+\subparagraph{}\textbf{Widok propozycji}
+\begin{figure}[ht!]
+	\centering
+	\subfloat[]{}
+	\includegraphics[width=5cm]{giveMeProposition}
+	\quad
+	\subfloat[]{}
+	\includegraphics[width=5cm]{propositions}
+	\caption{Widok proponowania pozycji do obejrzenia}
+	\label{proposition}
+\end{figure}\\
+Powyższy widok prezentuje ekran propozycji. Użytkownik wybiera jedną z czterech opcji czasowych. Po zaznaczeniu opcji, kliknięcie przycisku spowoduje przeszukanie bazy zapisanych pozycji pod kątem filmów lub seriali spełniających wymóg czasowy, to znaczy, że czas ich trwania nie będzie dłuższy od czasu wybranego przez użytkownika. Ponadto przez filtr nie przejdą filmy i seriale już obejrzane (a przez to ocenione). 
 \begin{thebibliography}{50}
 \bibitem{MicrosoftRx} https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).aspx
 \emph{- informacje na temat Reactive Extensions od Microsoft}

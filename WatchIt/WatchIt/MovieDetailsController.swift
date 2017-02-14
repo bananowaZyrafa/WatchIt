@@ -40,6 +40,7 @@ class MovieDetailsController: UIViewController {
                 } else {
                     safeSelf.addButton.isEnabled = enabled
                     safeSelf.addButton.backgroundColor = UIColor.gray
+                    safeSelf.addButton.titleLabel!.text = "ALREADY IN BASE"
                 }
                 }, onCompleted: { [weak self] in
                     guard let safeSelf = self else {return}
