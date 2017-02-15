@@ -18,6 +18,10 @@
 		C62F32C21E4A270500B9BFF1 /* ProposedPositionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F32C11E4A270500B9BFF1 /* ProposedPositionsTableViewController.swift */; };
 		C62F32C51E4A2F3F00B9BFF1 /* PropositionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F32C31E4A2F3F00B9BFF1 /* PropositionTableViewCell.swift */; };
 		C62F32C61E4A2F3F00B9BFF1 /* PropositionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C62F32C41E4A2F3F00B9BFF1 /* PropositionTableViewCell.xib */; };
+		C631D1B51E54CA210073D5FB /* RatePositionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C631D1B41E54CA210073D5FB /* RatePositionViewController.swift */; };
+		C631D1B71E54CD310073D5FB /* SavedPositionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C631D1B61E54CD310073D5FB /* SavedPositionsTableViewController.swift */; };
+		C631D1BA1E54CE080073D5FB /* SavedPropositionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C631D1B81E54CE080073D5FB /* SavedPropositionTableViewCell.swift */; };
+		C631D1BB1E54CE080073D5FB /* SavedPropositionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C631D1B91E54CE080073D5FB /* SavedPropositionTableViewCell.xib */; };
 		C645B3CD1DF89AC900007CBA /* RxOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = C645B3CC1DF89AC900007CBA /* RxOperators.swift */; };
 		C65AEE041DCE4B6800D10FC3 /* OMDBEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65AEE031DCE4B6800D10FC3 /* OMDBEndpoint.swift */; };
 		C66495C01DEF082F00C7D888 /* MovieDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C66495BF1DEF082F00C7D888 /* MovieDetailsController.swift */; };
@@ -47,6 +51,10 @@
 		C62F32C11E4A270500B9BFF1 /* ProposedPositionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProposedPositionsTableViewController.swift; sourceTree = "<group>"; };
 		C62F32C31E4A2F3F00B9BFF1 /* PropositionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropositionTableViewCell.swift; sourceTree = "<group>"; };
 		C62F32C41E4A2F3F00B9BFF1 /* PropositionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropositionTableViewCell.xib; sourceTree = "<group>"; };
+		C631D1B41E54CA210073D5FB /* RatePositionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatePositionViewController.swift; sourceTree = "<group>"; };
+		C631D1B61E54CD310073D5FB /* SavedPositionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedPositionsTableViewController.swift; sourceTree = "<group>"; };
+		C631D1B81E54CE080073D5FB /* SavedPropositionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedPropositionTableViewCell.swift; sourceTree = "<group>"; };
+		C631D1B91E54CE080073D5FB /* SavedPropositionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SavedPropositionTableViewCell.xib; sourceTree = "<group>"; };
 		C645B3CC1DF89AC900007CBA /* RxOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOperators.swift; sourceTree = "<group>"; };
 		C65AEE031DCE4B6800D10FC3 /* OMDBEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDBEndpoint.swift; sourceTree = "<group>"; };
 		C66495BF1DEF082F00C7D888 /* MovieDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsController.swift; sourceTree = "<group>"; };
@@ -114,6 +122,8 @@
 				C61E09051DF067580011451C /* RateMovieViewModel.swift */,
 				C62F32BF1E4A225700B9BFF1 /* PropositionViewController.swift */,
 				C62F32C11E4A270500B9BFF1 /* ProposedPositionsTableViewController.swift */,
+				C631D1B41E54CA210073D5FB /* RatePositionViewController.swift */,
+				C631D1B61E54CD310073D5FB /* SavedPositionsTableViewController.swift */,
 			);
 			name = ViewConrollers;
 			sourceTree = "<group>";
@@ -192,6 +202,8 @@
 				C62F32BC1E4A122000B9BFF1 /* NotFoundResultCell.xib */,
 				C62F32C31E4A2F3F00B9BFF1 /* PropositionTableViewCell.swift */,
 				C62F32C41E4A2F3F00B9BFF1 /* PropositionTableViewCell.xib */,
+				C631D1B81E54CE080073D5FB /* SavedPropositionTableViewCell.swift */,
+				C631D1B91E54CE080073D5FB /* SavedPropositionTableViewCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -260,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C68EBBD81DB11744008E882F /* LaunchScreen.storyboard in Resources */,
+				C631D1BB1E54CE080073D5FB /* SavedPropositionTableViewCell.xib in Resources */,
 				C68EBBD51DB11744008E882F /* Assets.xcassets in Resources */,
 				C62F32C61E4A2F3F00B9BFF1 /* PropositionTableViewCell.xib in Resources */,
 				C6935CEB1DEC493C00CE9DEF /* SearchResultCell.xib in Resources */,
@@ -328,8 +341,10 @@
 				C6935CED1DEC4AD800CE9DEF /* SearchResultCell.swift in Sources */,
 				C65AEE041DCE4B6800D10FC3 /* OMDBEndpoint.swift in Sources */,
 				C66495C01DEF082F00C7D888 /* MovieDetailsController.swift in Sources */,
+				C631D1B51E54CA210073D5FB /* RatePositionViewController.swift in Sources */,
 				C62D3CD51DD3A8C00035C8D8 /* WatchableFinderModel.swift in Sources */,
 				C62D3CD31DD3A6290035C8D8 /* Watchable.swift in Sources */,
+				C631D1BA1E54CE080073D5FB /* SavedPropositionTableViewCell.swift in Sources */,
 				C62F32C01E4A225700B9BFF1 /* PropositionViewController.swift in Sources */,
 				C668E8CF1E0036A700334204 /* CoreDataStack.swift in Sources */,
 				C6935CEF1DEC4D2600CE9DEF /* UIIMageView+DownloadImage.swift in Sources */,
@@ -337,6 +352,7 @@
 				C62F32C51E4A2F3F00B9BFF1 /* PropositionTableViewCell.swift in Sources */,
 				C68EBBD31DB11744008E882F /* WatchIt.xcdatamodeld in Sources */,
 				C68EBBCD1DB11744008E882F /* SearchForMovieViewController.swift in Sources */,
+				C631D1B71E54CD310073D5FB /* SavedPositionsTableViewController.swift in Sources */,
 				C668E8D61E01A1B700334204 /* WatchableEntity+CoreDataClass.swift in Sources */,
 				C645B3CD1DF89AC900007CBA /* RxOperators.swift in Sources */,
 				C61E09061DF067580011451C /* RateMovieViewModel.swift in Sources */,
