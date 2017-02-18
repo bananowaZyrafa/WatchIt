@@ -46,7 +46,7 @@
 \contentsline {subparagraph}{AsyncSubject -}{13}
 \contentsline {subparagraph}{BehaviorSubject -}{13}
 \contentsline {subparagraph}{PublishSubject -}{14}
-\contentsline {subparagraph}{ReplaySubject -}{15}
+\contentsline {subparagraph}{ReplaySubject -}{16}
 \contentsline {subsection}{\numberline {3.3.2}Operatory reaktywne}{17}
 \contentsline {paragraph}{}{17}
 \contentsline {paragraph}{Operatory tworzenia sygna\IeC {\l }\IeC {\'o}w}{17}
@@ -60,81 +60,81 @@
 \contentsline {paragraph}{Operatory filtrowania sygna\IeC {\l }\IeC {\'o}w}{20}
 \contentsline {subparagraph}{Debounce -}{20}
 \contentsline {subparagraph}{Distinct -}{20}
-\contentsline {subparagraph}{Filter -}{20}
+\contentsline {subparagraph}{Filter -}{21}
 \contentsline {subparagraph}{Skip -}{21}
 \contentsline {subparagraph}{Take -}{21}
 \contentsline {paragraph}{Operatory \IeC {\l }\IeC {\k a}czenia}{22}
 \contentsline {subparagraph}{CombineLatest -}{22}
 \contentsline {subparagraph}{Merge -}{22}
 \contentsline {subparagraph}{Zip -}{22}
-\contentsline {paragraph}{Operatory obs\IeC {\l }ugi b\IeC {\l }\IeC {\k e}d\IeC {\'o}w}{23}
+\contentsline {paragraph}{Operatory obs\IeC {\l }ugi b\IeC {\l }\IeC {\k e}d\IeC {\'o}w}{22}
 \contentsline {subparagraph}{Catch -}{23}
-\contentsline {subparagraph}{Retry -}{23}
+\contentsline {subparagraph}{Retry -}{24}
 \contentsline {paragraph}{Operatory dzia\IeC {\l }a\IeC {\'n} na obiektach Observable}{24}
 \contentsline {subparagraph}{Materialize -}{24}
 \contentsline {subparagraph}{ObserveOn -}{24}
-\contentsline {subparagraph}{SubscribeOn -}{24}
+\contentsline {subparagraph}{SubscribeOn -}{25}
 \contentsline {subparagraph}{Serialize -}{25}
 \contentsline {subsection}{\numberline {3.3.3}Wsp\IeC {\'o}\IeC {\l }bie\IeC {\.z}no\IeC {\'s}\IeC {\'c}}{26}
 \contentsline {paragraph}{}{26}
 \contentsline {paragraph}{Plani\IeC {\'s}ci (Schedulers)}{26}
 \contentsline {paragraph}{Rodzaje planist\IeC {\'o}w w implementacji RxSwift}{28}
 \contentsline {subparagraph}{CurrentThreadScheduler (Serial scheduler)}{28}
-\contentsline {subparagraph}{MainScheduler (Serial scheduler)}{28}
-\contentsline {subparagraph}{SerialDispatchQueueScheduler (Serial scheduler)}{28}
-\contentsline {subparagraph}{ConcurrentDispatchQueueScheduler (Concurrent scheduler)}{28}
-\contentsline {subparagraph}{OperationQueueScheduler (Concurrent scheduler)}{28}
+\contentsline {subparagraph}{MainScheduler (Serial scheduler)}{29}
+\contentsline {subparagraph}{SerialDispatchQueueScheduler (Serial scheduler)}{29}
+\contentsline {subparagraph}{ConcurrentDispatchQueueScheduler (Concurrent scheduler)}{29}
+\contentsline {subparagraph}{OperationQueueScheduler (Concurrent scheduler)}{29}
 \contentsline {subsection}{\numberline {3.3.4}Zalety i wady podej\IeC {\'s}cia reaktywnego}{29}
-\contentsline {paragraph}{Korzy\IeC {\'s}ci z u\IeC {\.z}ycia RxSwift (iOS)}{29}
-\contentsline {subparagraph}{Bindowanie }{29}
-\contentsline {subparagraph}{Powt\IeC {\'o}rzenia }{29}
-\contentsline {subparagraph}{Delegaty }{29}
-\contentsline {subparagraph}{Anulowanie }{29}
+\contentsline {paragraph}{Korzy\IeC {\'s}ci z u\IeC {\.z}ycia RxSwift (iOS)}{30}
+\contentsline {subparagraph}{Bindowanie }{30}
+\contentsline {subparagraph}{Powt\IeC {\'o}rzenia }{30}
+\contentsline {subparagraph}{Delegaty }{30}
+\contentsline {subparagraph}{Anulowanie }{30}
 \contentsline {subparagraph}{Agregowanie zapyta\IeC {\'n} sieciowych }{30}
-\contentsline {paragraph}{Wady podej\IeC {\'s}cia reaktywnego}{30}
-\contentsline {subparagraph}{Wysoki pr\IeC {\'o}g wej\IeC {\'s}cia }{30}
-\contentsline {subparagraph}{Zarz\IeC {\k a}dzanie pami\IeC {\k e}ci\IeC {\k a} }{30}
-\contentsline {subparagraph}{Debugowanie }{30}
+\contentsline {paragraph}{Wady podej\IeC {\'s}cia reaktywnego}{31}
+\contentsline {subparagraph}{Wysoki pr\IeC {\'o}g wej\IeC {\'s}cia }{31}
+\contentsline {subparagraph}{Zarz\IeC {\k a}dzanie pami\IeC {\k e}ci\IeC {\k a} }{31}
+\contentsline {subparagraph}{Debugowanie }{31}
 \contentsline {subsection}{\numberline {3.3.5}Podej\IeC {\'s}cie praktyczne w implementacji na platformie iOS}{31}
 \contentsline {paragraph}{}{31}
 \contentsline {paragraph}{Przyk\IeC {\l }ad 1 - stan przej\IeC {\'s}ciowy}{31}
 \contentsline {subparagraph}{}{31}
-\contentsline {paragraph}{Przyk\IeC {\l }ad 2 - cz\IeC {\k e}\IeC {\'s}ciowe anulowanie}{32}
-\contentsline {subparagraph}{}{32}
+\contentsline {paragraph}{Przyk\IeC {\l }ad 2 - cz\IeC {\k e}\IeC {\'s}ciowe anulowanie}{33}
+\contentsline {subparagraph}{}{33}
 \contentsline {paragraph}{Przyk\IeC {\l }ad 3 - agregowanie zapyta\IeC {\'n} sieciowych}{34}
 \contentsline {subparagraph}{}{34}
-\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{35}
-\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{35}
-\contentsline {paragraph}{}{35}
-\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{35}
-\contentsline {paragraph}{}{35}
-\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{35}
-\contentsline {paragraph}{}{35}
-\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{36}
+\contentsline {chapter}{\numberline {4}PRACA W\IeC {\L }ASNA}{36}
+\contentsline {section}{\numberline {4.1}Czynno\IeC {\'s}ci przygotowawcze}{36}
 \contentsline {paragraph}{}{36}
-\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{37}
+\contentsline {subsection}{\numberline {4.1.1}Instalacja narz\IeC {\k e}dzi}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {subsection}{\numberline {4.1.2}Wst\IeC {\k e}pna konfiguracja projektu}{36}
+\contentsline {paragraph}{}{36}
+\contentsline {subsection}{\numberline {4.1.3}Stworzenie repozytorium}{37}
 \contentsline {paragraph}{}{37}
-\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{37}
-\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{37}
-\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{38}
-\contentsline {subparagraph}{}{38}
-\contentsline {subsection}{\numberline {4.2.4}Baza danych}{39}
-\contentsline {paragraph}{}{39}
+\contentsline {section}{\numberline {4.2}Budowa aplikacji w\IeC {\l }a\IeC {\'s}ciwej}{38}
+\contentsline {paragraph}{}{38}
+\contentsline {subsection}{\numberline {4.2.1}Wymagania funkcjonalne}{38}
+\contentsline {subsection}{\numberline {4.2.2}Wymagania niefunkcjonalne}{38}
+\contentsline {subsection}{\numberline {4.2.3}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia aplikacji}{39}
 \contentsline {subparagraph}{}{39}
-\contentsline {subsection}{\numberline {4.2.5}Diagram wybranych klas}{40}
-\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{40}
-\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{42}
-\contentsline {paragraph}{}{42}
-\contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{44}
-\contentsline {paragraph}{}{44}
-\contentsline {paragraph}{MVC}{44}
-\contentsline {paragraph}{}{44}
-\contentsline {subparagraph}{}{45}
-\contentsline {subparagraph}{}{45}
-\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{46}
-\contentsline {paragraph}{}{46}
-\contentsline {subparagraph}{}{46}
-\contentsline {subparagraph}{}{47}
+\contentsline {subsection}{\numberline {4.2.4}Baza danych}{40}
+\contentsline {paragraph}{}{40}
+\contentsline {subparagraph}{}{40}
+\contentsline {subsection}{\numberline {4.2.5}Diagram wybranych klas}{42}
+\contentsline {subsection}{\numberline {4.2.6}Opis wybranych klas}{43}
+\contentsline {subsection}{\numberline {4.2.7}Opis u\IeC {\.z}ytych bibliotek i framework\IeC {\'o}w}{45}
+\contentsline {paragraph}{}{45}
+\contentsline {subsection}{\numberline {4.2.8}Zastosowana architektura}{47}
+\contentsline {paragraph}{}{47}
+\contentsline {paragraph}{MVC}{47}
+\contentsline {paragraph}{}{47}
 \contentsline {subparagraph}{}{48}
+\contentsline {subparagraph}{}{48}
+\contentsline {subsection}{\numberline {4.2.9}Prezentacja aplikacji}{49}
+\contentsline {paragraph}{}{49}
 \contentsline {subparagraph}{}{49}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{53}
+\contentsline {subparagraph}{}{50}
+\contentsline {subparagraph}{}{51}
+\contentsline {subparagraph}{}{52}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{56}
