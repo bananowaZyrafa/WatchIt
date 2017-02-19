@@ -635,6 +635,15 @@ Widok \ref{proposition} prezentuje ekran propozycji. Użytkownik wybiera jedną 
 	\label{rating}
 \end{figure}\\
 W widoku \ref{rating} zaprezentowany jest ekran oceniania zapisanych filmów i seriali. Użytkownik ma możliwośc przeglądnięcia jakie filmy i seriale zapisał do swojej bazy. Przy tych, które zostały ocenione, wyświetlana jest wartość liczbowa reprezentująca jego ocenę. Kliknięcie w dowolną zapisaną w bazie produkcje, przenosi użytkownika do ekranu wystawienia oceny. Wartość wybierana jest przez przesuwanie paska. Przyciśnięcie przycisku powoduje zapisanie oceny do bazy. 
+\chapter{PODSUMOWANIE}
+\paragraph{}Celem niniejszej pracy było zgłębienie tematu programowania reaktywnego oraz zaprojektowanie i zbudowanie aplikacji mobilnej na system iOS w oparciu o omawiane zagadnienia.\\
+Istnieje wiele implementacji tego podejścia, na różne języki programowania w tym kilka dla omawianego w tej pracy Swifta. Są to m.in.:RxSwift, Reactive Cocoa czy Reactive Swift. Jednakże wszystkie implementacje podejścia reaktywnego bazują na tej samej idei. Dzięki temu nie ma większego znaczenia ani to w jakim języku się tworzy ani to, przy użyciu której biblioteki programowania reaktywnego.
+\subparagraph{}W części teoretycznej, została zawarta duża liczba rysunków i schematów. Zostało to podyktowane specyfiką omawianego tematu. Próg zrozumienia idei programowania reaktywnego, postawiony został dość wysoko. Z tego powodu, dla lepszego przyswojenia poruszanych zagadanień, załączono dużo grafik mających na celu ułatwienie i zobrazowanie mechanizmów reaktywnych.\\
+Pomimo iż programowanie reaktywne nie jest tematem kompletnie nowym, to udokumentowanie go dla języka Swift pozostawia wiele do życzenia. Z tego powodu, w niniejszej pracy posiłkowano się dokumentacją do takich platform jak .NET Microsoftu, jak również Java czy JavaScript. 
+\subparagraph{}Część praktyczna również stanowiła duże wyzwanie. Za cel, postawiono stworzenie aplikacji mobilnej w oparciu o architekturę MVVM. Po połączeniu z podejściem reaktywnym, wynikiem stało się zadanie o dużym stopniu trudności od strony programistycznej (wysoki poziom abstrakcji i kompletnie inny sposób myślenia) jak i od strony dostępności wiedzy (mała dokumentacja).
+Należy również zaznaczyć, że projekt aplikacji stworzony został przy użyciu najnowszej implementacji języka Swift (iteracja 3.0) wprowadzającej szereg zmian w API. W czasie powstawania aplikacji, wykorzystywane biblioteki do programowania reaktywnego, uległy zmianie i aktualizacji do najnowszych implementacji.\\
+Pomimo powyższych trudności, udało się stworzyć aplikację mobilną, opartą o architekturę MVVM i implementującą podejście reaktywne.
+\subparagraph{}Podsumowując: programowanie reaktywne wraz z architekturą MVVM na platformy mobilne stanowi nielada wyzwanie. Jednakże jest to podejście wykorzystujące cały potencjał urządzeń mobilnych i zdecydowanie warte podjęcia próby wdrożenia w projektach komercyjnych. Jest polecane przez doświadczonych i znanych w branży programistów i coraz więcej firm decyduje się na zastosowanie tego właśnie podejścia\cite{reactivexio}.
 \begin{thebibliography}{50}
 \bibitem{MicrosoftRx} https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).aspx
 \emph{- informacje na temat Reactive Extensions od Microsoft}
@@ -732,7 +741,10 @@ W widoku \ref{rating} zaprezentowany jest ekran oceniania zapisanych filmów i s
 
 \bibitem{mapper}https://github.com/lyft/mapper
 \emph{ - dokumentacja i repozytorium frameworku Mapper}
+
+\bibitem{reactivexio}http://reactivex.io/
+\emph{ - na dole strony, przedstawiono firmy, komercyjnie wdrażające podejście reaktywne w swoich projektach}
 \end{thebibliography}
-\chapter{PODSUMOWANIE}
+
 
 \end{document}          

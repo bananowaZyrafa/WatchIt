@@ -137,4 +137,8 @@
 \contentsline {subparagraph}{}{50}
 \contentsline {subparagraph}{}{51}
 \contentsline {subparagraph}{}{52}
-\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{56}
+\contentsline {chapter}{\numberline {5}PODSUMOWANIE}{53}
+\contentsline {paragraph}{}{53}
+\contentsline {subparagraph}{}{53}
+\contentsline {subparagraph}{}{53}
+\contentsline {subparagraph}{}{54}

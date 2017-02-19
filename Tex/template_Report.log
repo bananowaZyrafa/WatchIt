@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  18 FEB 2017 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  19 FEB 2017 17:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1179,151 +1179,151 @@ File: ratingVC.png Graphic file (type png)
 Package pdftex.def Info: ratingVC.png used on input line 633.
 (pdftex.def)             Requested size: 142.26378pt x 260.89262pt.
  [52 <./savedProductions.png> <./ratingVC.png>]
-Underfull \hbox (badness 1221) in paragraph at lines 639--641
+Rozdzia\PlPrIeC {\l } 5.
+[53
+
+] [54]
+Underfull \hbox (badness 1221) in paragraph at lines 648--650
 []\OT4/cmr/m/n/12 https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).a
 spx \OT4/cmr/m/it/12 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 648--650
+Underfull \hbox (badness 10000) in paragraph at lines 657--659
 []\OT4/cmr/m/n/12 https://redwerk.com/blog/10-differences-objective-c-swift \OT
 4/cmr/m/it/12 - Ró»-ni-ce
  []
 
 
-Overfull \hbox (40.78166pt too wide) in paragraph at lines 661--662
+Overfull \hbox (40.78166pt too wide) in paragraph at lines 670--671
 []\OT4/cmr/m/n/12 https://github.com/ReactiveX/RxSwift/blob/master/Documentatio
 n/Why.md 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 664--665
+Underfull \hbox (badness 10000) in paragraph at lines 673--674
 []\OT4/cmr/m/n/12 https://medium.cobeisfresh.com/implementing-mvvm-in-ios-with-
 
  []
 
 
-Overfull \hbox (619.16284pt too wide) in paragraph at lines 667--669
+Overfull \hbox (619.16284pt too wide) in paragraph at lines 676--678
 []\OT4/cmr/m/n/12 https://developer.apple.com/library/content/documentation/Mac
 OSX/Conceptual/OSX[]Technology[]Overview/SystemTechnology/SystemTechnology.html
 #//apple[]ref/doc/uid/TP40001067-
  []
 
 
-Overfull \hbox (185.61346pt too wide) in paragraph at lines 670--672
+Overfull \hbox (185.61346pt too wide) in paragraph at lines 679--681
 []\OT4/cmr/m/n/12 https://web.archive.org/web/20071006005308/http://www.apple.c
 om/iphone/features/index.html#macosx
  []
 
-[53
+[55
 
 ]
-Overfull \hbox (39.32748pt too wide) in paragraph at lines 673--675
+Overfull \hbox (39.32748pt too wide) in paragraph at lines 682--684
 []\OT4/cmr/m/n/12 https://web.archive.org/web/20071020040652/http://www.apple.c
 om/hotnews
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 676--678
+Underfull \hbox (badness 10000) in paragraph at lines 685--687
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sale-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 679--681
+Underfull \hbox (badness 10000) in paragraph at lines 688--690
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2009/06/08Apple-Announces-the
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 682--684
+Underfull \hbox (badness 10000) in paragraph at lines 691--693
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2010/04/08Apple-Previews-iPho
 ne-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--687
+Underfull \hbox (badness 10000) in paragraph at lines 694--696
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2011/10/04Apple-Launches-iPho
 ne-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--690
+Underfull \hbox (badness 10000) in paragraph at lines 697--699
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2012/06/11Apple-Previews-iOS-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 688--690
+Underfull \hbox (badness 10000) in paragraph at lines 697--699
 \OT4/cmr/m/n/12 6-With-All-New-Maps-Siri-Features-Facebook-Integration-Shared-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 691--693
+Underfull \hbox (badness 10000) in paragraph at lines 700--702
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iOS-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--696
+Underfull \hbox (badness 10000) in paragraph at lines 703--705
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2014/06/02Apple-Releases-iOS-
 8-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 697--699
+Underfull \hbox (badness 10000) in paragraph at lines 706--708
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2015/06/08Apple-Previews-iOS-
 
  []
 
 
-Overfull \hbox (3.29453pt too wide) in paragraph at lines 700--702
+Overfull \hbox (3.29453pt too wide) in paragraph at lines 709--711
 []\OT4/cmr/m/n/12 https://github.com/apple/swift-evolution/blob/master/proposal
 s/0005-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--705
+Underfull \hbox (badness 10000) in paragraph at lines 712--714
 []\OT4/cmr/m/n/12 http://www.apple.com/pr/library/2016/06/13Apple-Previews-iOS-
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 709--711
+Underfull \hbox (badness 10000) in paragraph at lines 718--720
 []\OT4/cmr/m/n/12 http://www.introtorx.com/content/v1.0.10621.0/00foreword.html
   \OT4/cmr/m/it/12 -
  []
 
-[54]
-Overfull \hbox (40.78166pt too wide) in paragraph at lines 715--717
+[56]
+Overfull \hbox (40.78166pt too wide) in paragraph at lines 724--726
 []\OT4/cmr/m/n/12 https://github.com/ReactiveX/RxSwift/blob/master/Documentatio
 n/Why.md
  []
 
 
-Overfull \hbox (4.13007pt too wide) in paragraph at lines 718--720
+Overfull \hbox (4.13007pt too wide) in paragraph at lines 727--729
 []\OT4/cmr/m/n/12 http://zasoby.open.agh.edu.pl/[]10sdczerner/page/model[]kaska
 dowy.html
  []
 
 
-Overfull \hbox (113.75452pt too wide) in paragraph at lines 727--729
+Overfull \hbox (113.75452pt too wide) in paragraph at lines 736--738
 []\OT4/cmr/m/n/12 https://developer.apple.com/library/content/documentation/Gen
 eral/Conceptual/DevPedia-
  []
 
-[55]
-Rozdzia\PlPrIeC {\l } 5.
-[56
-
-] (./template_Report.aux)
+[57] (./template_Report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 3668 strings out of 493014
- 55881 string characters out of 6133350
- 115692 words of memory out of 5000000
- 7106 multiletter control sequences out of 15000+600000
+ 3669 strings out of 493014
+ 55894 string characters out of 6133350
+ 115696 words of memory out of 5000000
+ 7107 multiletter control sequences out of 15000+600000
  16531 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,10n,49p,1028b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1336,10 +1336,10 @@ blic/pl/plr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr
 17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr
 /local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/pl/plti12.pfb>
-Output written on template_Report.pdf (57 pages, 4965513 bytes).
+Output written on template_Report.pdf (58 pages, 4968368 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 155 compressed objects within 2 object streams
+ 316 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  231 words of extra memory for PDF output out of 10000 (max. 10000000)
 
