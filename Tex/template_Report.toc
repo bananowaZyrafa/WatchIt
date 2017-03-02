@@ -39,14 +39,10 @@
 \contentsline {paragraph}{}{10}
 \contentsline {subsection}{\numberline {3.3.1}Idea programowania reaktywnego}{11}
 \contentsline {paragraph}{}{11}
-\contentsline {subparagraph}{Sygna\IeC {\l } gor\IeC {\k a}cy}{11}
-\contentsline {subparagraph}{Sygna\IeC {\l } zimny}{11}
+\contentsline {subparagraph}{Sygna\IeC {\l } gor\IeC {\k a}cy -}{11}
+\contentsline {subparagraph}{Sygna\IeC {\l } zimny -}{11}
 \contentsline {subparagraph}{Subskrybcja -}{12}
-\contentsline {subparagraph}{Obiekty Subject -}{12}
-\contentsline {subparagraph}{AsyncSubject -}{13}
-\contentsline {subparagraph}{BehaviorSubject -}{13}
-\contentsline {subparagraph}{PublishSubject -}{14}
-\contentsline {subparagraph}{ReplaySubject -}{16}
+\contentsline {paragraph}{Obiekty Subject -}{13}
 \contentsline {subsection}{\numberline {3.3.2}Operatory reaktywne}{17}
 \contentsline {paragraph}{}{17}
 \contentsline {paragraph}{Operatory tworzenia sygna\IeC {\l }\IeC {\'o}w}{17}
