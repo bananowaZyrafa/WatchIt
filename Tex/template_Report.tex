@@ -5,13 +5,99 @@
 \usepackage{wrapfig}
 \usepackage{subfig}
 \usepackage{lscape}
-%jabrew pod maca poszukac albo innego menedzera bibliografii
-% Title Page
-\title{Użycie języka Swift i elementów paradygmatu reaktywnego na przykładzie aplikacji mobilnej do polecania filmów i seriali}
-\author{Bartosz Woliński}
+\usepackage{textcomp}
 
+\textwidth\paperwidth
+\advance\textwidth -55mm
+\oddsidemargin-1in
+\advance\oddsidemargin 30mm
+\evensidemargin-1in
+\advance\evensidemargin 25mm
+\topmargin -1in
+\advance\topmargin 2cm
+\setlength\textheight{48\baselineskip}
+\addtolength\textheight{\topskip}
+\marginparwidth15mm
+%
+% definicja strony tytułowej-PROSZĘ NIE EDYTOWAĆ
+%LOGO PK i WFMI umieszczamy w tym samym katalogu co dokument
+%
+\renewcommand\maketitle{%
+	\begin{titlepage}%
+		\noindent
+		\begin{minipage}[b]{0.9in}%
+			\includegraphics[scale=0.9]{PK-logo.png}
+		\end{minipage}
+		\begin{minipage}[b]{4.5in}%
+			\begin{center}%
+				{\LARGE\textbf{Politechnika Krakowska \\ im. Tadeusza Ko\'sciuszki}\\
+					\vspace{0.2cm}
+					Wydzia\l{} Fizyki, Matematyki i Informatyki\par}
+			\end{center}
+		\end{minipage}
+		\begin{minipage}[b]{1in}%
+			\includegraphics[scale=1]{WFMI-logo.png}
+		\end{minipage}
+		
+		\vspace{1cm plus 1fill} 
+		
+		\begin{center}%
+			\vspace{0.2cm}
+			{\Large\bf\autor\par}
+			{\large Nr albumu: \nralbumu\par}                                           
+			\vspace{8mm plus .1fill}
+			{\LARGE\textbf{\tytulpl}\par}
+			\vspace{2mm}
+			{\LARGE\textbf{\tytulang}\par}
+			\vspace{8mm plus .1fill}
+			{\large\bf Praca \rodzajpracy\\[3pt]
+				na kierunku \MakeUppercase{\kierunek}
+			}
+			\vspace{2cm plus 1.5fill}
+			\begin{flushright}\large
+				\begin{tabular}{l}
+					Praca wykonana pod kierunkiem\\
+					\bfseries \opiekun\\ \\
+					\bfseries Uzgodniona ocena:\dotfill \\[10mm]
+					\dotfill\\
+					podpisy promotora i recenzenta
+				\end{tabular}
+			\end{flushright}
+			\vspace{1cm plus 1fill}
+			{\large \textbf{\miasto\ \rok}\par}
+		\end{center}
+	\end{titlepage}
+}
+% KONIEC DEFINICJI STRONY TYTUŁOWEJ
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%DANE DO PRACY: proszę ZMIENIĆ przykładowe dane na odpowiadające KONKRETNEJ pracy dyplomowej
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%AUTOR PRACY
+\def\autor{Bartosz Woliński}
+%NUMER ALBUMU
+\def\nralbumu{108737}
+%TYTUŁ PO POLSKU
+\def\tytulpl{Użycie języka Swift i elementów paradygmatu reaktywnego na przykładzie aplikacji mobilnej do polecania filmów i seriali.}
+%TYTUŁ PO ANGIELSKU
+\def\tytulang{TYTUŁ PO ANG}
+%RODZAJ PRACY (licencjacka lub magisterska lub inżynierska)
+\def\rodzajpracy{inżynierska}
+%KIERUNEK
+\def\kierunek{informatyka}
+%OPIEKUN czyli PROMOTOR\\INSTYTUT\\WYDZIAŁ I UCZELNIA jeżeli inne niż WFMI PK
+\def\opiekun{dra hab. Jana Kucwaja\\
+	Instytut Informatyki }
+%MIASTO gdzie odbywa się obrona
+\def\miasto{Kraków}
+%ROK złożenia pracy
+\def\rok{2017}
+%% KONIEC DANYCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 \begin{document}
 \maketitle
+\newpage
 \tableofcontents
 \chapter{WSTĘP}
 
@@ -273,141 +359,134 @@ Rysunek \ref{skip} przedstawia działanie operatora Skip.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{merge}
-	\caption{Schemat działania operatora Merge \cite{marbles}.}
+	\caption{Schemat działania operatora merge \cite{marbles}.}
 	\label{merge}
 \end{figure}\\
 \subparagraph{Zip -}łączy zdarzenia emitowane z dwóch lub więcej sygnałów w pojedyncze zdarzenia reprezentowane krotką. 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{zip}
-	\caption{Schemat działania operatora Zip\cite{zip}}
+	\caption{Schemat działania operatora zip \cite{zip}.}
 	\label{zip}
 \end{figure}\\
-Rysunek \ref{zip} przedstawia działanie operatora Zip.
 \paragraph{Operatory obsługi błędów}
-\subparagraph{Catch -}operator ten przechwytuje zdarzenie onError od obiektu Observable i zamiast propagować błąd do obserwujących, podmienia zdarzenie na inne dane lub inny zestaw danych, co pozwala zakończyć się wynikowemu obiektowi Observable w normalny sposób (onCompleted) lub nie zakończyć się w cale.
+\subparagraph{Catch -}operator ten przechwytuje zdarzenie onError od obiektu Observable i zamiast propagować błąd do obserwujących, podmienia zdarzenie na inne dane lub inny zestaw danych, co pozwala zakończyć się wynikowemu obiektowi Observable w normalny sposób (onCompleted) lub nie zakończyć się wcale (Rys. \ref{catch}).
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{catch}
-	\caption{Schemat działania operatora Catch\cite{operators}}
+	\caption{Schemat działania operatora catch \cite{operators}.}
 	\label{catch}
 \end{figure}\\
-Rysunek \ref{catch} przedstawia działanie operatora Catch.
-\subparagraph{Retry -}w przypadku odebrania od obiektu Observable zdarzenia onError, operator Retry nie propaguje błędu do obiektów obserwujących. Zamiast tego wykonywana jest resubskrybcja do źródłowego sygnału. Operator Retry zawsze przekazuje zdarzenie onNext do swoich obserwatorów, nawet z ciągów kończących się błędem. Może to powodować zduplikowanie wyemitowania zdarzenia.
+
+\subparagraph{Retry -}w przypadku odebrania od obiektu Observable zdarzenia onError, operator Retry nie propaguje błędu do obiektów obserwujących. Zamiast tego wykonywana jest resubskrybcja do źródłowego sygnału. Operator Retry zawsze przekazuje zdarzenie onNext do swoich obserwatorów, nawet z ciągów kończących się błędem (Rys. \ref{retry}). Może to powodować zduplikowanie wyemitowania zdarzenia.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{retry}
-	\caption{Schemat działania operatora Retry\cite{operators}}
+	\caption{Schemat działania operatora retry \cite{operators}.}
 	\label{retry}
 \end{figure}\\
-Rysunek \ref{retry} przedstawia działanie operatora Retry.
 \paragraph{Operatory działań na obiektach Observable}
-\subparagraph{Materialize -}konwertuje sekwencje emitowanych z obiektu Observable zdarzeń, na sekwencję zdarzeń reprezentowanych przez wywołania metod onNext i ostatecznie onCompleted lub onError.
+\subparagraph{Materialize -}konwertuje sekwencje emitowanych z obiektu Observable zdarzeń, na sekwencję zdarzeń reprezentowanych przez wywołania metod onNext i ostatecznie onCompleted lub onError (Rys. \ref{materialize}).
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{materialize}
-	\caption{Schemat działania operatora Materialize\cite{operators}}
+	\caption{Schemat działania operatora  materialize \cite{operators}.}
 	\label{materialize}
 \end{figure}\\
-Rysunek \ref{materialize} przedstawia działanie operatora Materialize.
 \subparagraph{ObserveOn -}w środowisku wielowątkowym, określa wątek, na którym obserwatorzy będą nasłuchiwali na generowane zdarzenia. 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{observeOn}
-	\caption{Schemat działania operatora ObserveOn\cite{operators}}
+	\caption{Schemat działania operatora observeOn \cite{operators}.}
 	\label{observeOn}
 \end{figure}\\
-Rysunek \ref{observeOn} przedstawia działanie operatora ObserveOn.
-Należy ponadto zauważyć, że ObserveOn prześle zdarzenie onError niezwłocznie, gdy je otrzyma. Oznacza to, że jeśli istnieje zasubskrybowany obserwator, wolniej przetwarzający otrzymywane zdarzenia, to możliwe jest, iż zdarzenie onError przeskoczy na miejsce przed zdarzeniami jeszcze nieprzetworzonymi przez ten obserwator. 
+Rysunek \ref{observeOn} przedstawia działanie operatora observeOn.
+Należy ponadto zauważyć, że observeOn prześle zdarzenie onError niezwłocznie, gdy je otrzyma. Oznacza to, że jeśli istnieje zasubskrybowany obserwator, wolniej przetwarzający otrzymywane zdarzenia, to możliwe jest, iż zdarzenie onError przeskoczy na miejsce przed zdarzeniami jeszcze nieprzetworzonymi przez tego obserwatora. Rysunek \ref{observeOnError} przedstawia działanie operatora observeOnError.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{observeOnError}
-	\caption{Schemat działania operatora ObserveOnError\cite{operators}}
+	\caption{Schemat działania operatora observeOnError \cite{operators}.}
 	\label{observeOnError}
 \end{figure}\\
-Rysunek \ref{observeOnError} przedstawia działanie operatora ObserveOnError.
-\subparagraph{SubscribeOn -}w środowisku wielowątkowym, określa wątek, na którym obiekt Observable będzie wykonywał pracę. Domyślnie obiekt Observable jak i ciąg zastosowanych operatorów reaktywnych, będą działały i powiadamiały obserwatorów o zdarzeniach, na tym samym wątku, na którym wywołano metodą Subscribe. Operator SubscribeOn zmienia to zachowanie, przez określenie wątku, na którym obiekt Observable będzie działał. 
+
+\subparagraph{SubscribeOn -}w środowisku wielowątkowym, określa wątek, na którym obiekt Observable będzie wykonywał pracę. Domyślnie obiekt Observable jak i ciąg zastosowanych operatorów reaktywnych, będą działały i powiadamiały obserwatorów o zdarzeniach, na tym samym wątku, na którym wywołano metodą Subscribe. Operator subscribeOn zmienia to zachowanie, przez określenie wątku, na którym obiekt Observable będzie działał (Rys. \ref{subscribeOn}). 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{subscribeOn}
-	\caption{Schemat działania operatora SubscribeOn\cite{operators}}
+	\caption{Schemat działania operatora subscribeOn \cite{operators}.}
 	\label{subscribeOn}
 \end{figure}\\
-Rysunek \ref{subscribeOn} przedstawia działanie operatora SubscribeOn.
-\subparagraph{Serialize -}z racji tego, że obiekt Observable może wywoływać swoje metody asynchronicznie, na różnych wątkach, możliwe jest, że będzie próbował przesłać zdarzenie onCompleted lub onError przed jakimś innym zdarzeniem onNext lub nawet przesłać kilka różnych zdarzeń onNext z różnych wątków, współbieżnie. Takie zachowania narusza wspomniane wcześniej zalecenia odnośnie projektowania zadań w paradygmacie reaktywnym. Operator Serialize zmusza obiekt Observable do emitowania zdarzeń w sposób synchroniczny.
+
+\subparagraph{Serialize -}z racji tego, że obiekt Observable może wywoływać swoje metody asynchronicznie, na różnych wątkach, możliwe jest, że będzie próbował przesłać zdarzenie onCompleted lub onError przed jakimś innym zdarzeniem onNext lub nawet przesłać kilka różnych zdarzeń onNext z różnych wątków, współbieżnie. Takie zachowanie narusza wspomniane wcześniej zalecenia odnośnie projektowania zadań w paradygmacie reaktywnym. Operator serialize zmusza obiekt Observable do emitowania zdarzeń w sposób synchroniczny. Rysunek \ref{serialize} przedstawia działanie operatora serialize.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{serialize}
-	\caption{Schemat działania operatora Serialize\cite{operators}}
+	\caption{Schemat działania operatora serialize \cite{operators}.}
 	\label{serialize}
 \end{figure}\\
-Rysunek \ref{serialize} przedstawia działanie operatora Serialize.
+
 \subsection{Współbieżność}
 \paragraph{}Podstawowym założeniem podejścia reaktywnego jest przetwarzanie danych w sposób asynchroniczny. Aby zapewnić efektywny poziom asynchroniczności wykonywanych działań, wymagany jest pewien poziom współbieżności, czyli przetwarzania danych w oparciu o współistnienie wielu wątków lub procesów.
-\paragraph{Planiści (Schedulers)}
+\paragraph{}
 Narzędziem do zaimplementowania wielowątkowości podczas tworzenia łańcuchów sygnałów połączonych operatorami reaktywnymi, są tzw. planiści (ang. schedulers).\\
 Niektóre operatory reaktywne, jako parametr przyjmują planistę, obiekt Scheduler, reprezentujący wątek, na którym ma być wykonywana praca.\\
-Domyślnie, obiekt Observable i zastosowany do niego łańcuch operatorów, wykonują pracę i informują obserwatorów na tym samym wątku, na którym wywołano subskrybcję (metoda Subscribe).\\
-Jak opisano wcześniej, operator SubscribeOn zmienia to zachowanie, przez określenie innego planisty (schedulera), na którym ma operować obiekt Observable. Operator ObserveOn zaś, określa planistę (scheduler), którego obiekt Observable ma użyć do wysyłania zdarzeń do swoich obserwatorów.\\
-Jak pokazano na poniższej ilustracji, operator SubscribeOn określa wątek, na którym obiekt Observable rozpocznie swoje działanie, bez względu na to, w którym miejscu łańcucha operatorów zostanie on wywołany. Z drugiej zaś strony, operator ObserveOn, określa wątek, na którym ma działać obiekt Observable od momentu wywołania tego operatora. Z tego powodu, operator ObserveOn można wywoływać wielokrotnie i w różnych miejscach łańcucha, aby sterować używanymi przez Observable wątkami. 
+Domyślnie, obiekt Observable i zastosowany do niego łańcuch operatorów, wykonują pracę i informują obserwatorów na tym samym wątku, na którym wywołano subskrybcję (metoda subscribe).\\
+Jak opisano wcześniej, operator subscribeOn zmienia to zachowanie, przez określenie innego planisty (schedulera), na którym ma operować obiekt Observable. Operator sbserveOn zaś, określa planistę (scheduler), którego obiekt Observable ma użyć do wysyłania zdarzeń do swoich obserwatorów.\\
+Jak pokazano na rysunku \ref{schedulers}, operator subscribeOn określa wątek, na którym obiekt Observable rozpocznie swoje działanie, bez względu na to, w którym miejscu łańcucha operatorów zostanie on wywołany. Z drugiej zaś strony, operator observeOn, określa wątek, na którym ma działać obiekt Observable od momentu wywołania tego operatora. Z tego powodu, operator observeOn można wywoływać wielokrotnie i w różnych miejscach łańcucha, aby sterować używanymi przez Observable wątkami. 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=10cm]{schedulers}
-	\caption{Schemat ukazujący sposób przełączania między wątkami w środowisku reaktywnym\cite{scheduler}}
+	\caption{Schemat ukazujący sposób przełączania między wątkami w środowisku reaktywnym \cite{scheduler}.}
 	\label{schedulers}
 \end{figure}
-Rysunek \ref{scheduler} przedstawia działanie przełączania między wątkami.
+
 \pagebreak
 \paragraph{Rodzaje planistów w implementacji RxSwift}
-\subparagraph{CurrentThreadScheduler (Serial scheduler)}
-Jednostka zadania, zaplanowywana jest do wykonania na bieżącym wątku. Czasami nazywany planistą trampolinowym. \\
+\subparagraph{CurrentThreadScheduler (Serial scheduler) -}jednostka zadania, zaplanowywana jest do wykonania na bieżącym wątku. Czasami nazywany planistą trampolinowym. \\
 Jeśli metoda CurrentThreadScheduler.instance.schedule(state) \{ \} jest wywoływana po raz pierwszy na jakimś wątku, to planowane zadanie zostanie wykonane natychmiastowo i zostanie utworzona ukryta kolejka, w której wszystkie rekursywnie zaplanowane zadania zostaną tymczasowo umieszczone.
-\subparagraph{MainScheduler (Serial scheduler)}
-Odsyła pracę do wykonania na główny wątek (MainThread). W przypadku, gdy metody zaplanowujące, wywoływane są już na głównym wątku to zadanie zostane wykonane natychmiastowo, bez planowania.\\
+\subparagraph{MainScheduler (Serial scheduler) -}odsyła pracę do wykonania na główny wątek (MainThread). W przypadku, gdy metody zaplanowujące wywoływane są już na głównym wątku, to zadanie zostanie wykonane natychmiastowo, bez planowania.\\
 Najczęściej ten planista używany jest do wykonywania pracy związanej z interfejsem użytkownika (UI).
-\subparagraph{SerialDispatchQueueScheduler (Serial scheduler)}
-Odsyła pracę, która ma być wykonana z użyciem konkretnej szeregowej kolejki zadań typu dispatch\_queue\_t. Zapewnia, że nawet jeżeli w argumencie zostanie przesłana kolejka współbieżnych zadań to zostanie ona przekształcona do szeregowej kolejki zadań.\\
+\subparagraph{SerialDispatchQueueScheduler (Serial scheduler) -}
+odsyła pracę, która ma być wykonana z użyciem konkretnej szeregowej kolejki zadań typu dispatch\_queue\_t. Zapewnia, że nawet jeżeli w argumencie zostanie przesłana kolejka współbieżnych zadań, to zostanie ona przekształcona do szeregowej kolejki zadań.\\
 Planiści kolejkowi stosują pewne optymalizacje do metody observeOn.\\
 Planista główny (Main Scheduler) jest instancją typu SerialDispatchQueueScheduler.
-\subparagraph{ConcurrentDispatchQueueScheduler (Concurrent scheduler)}
-Odsyłą pracę, która ma być wykonana z użyciem konkretnej współbieżnej kolejki  typu dispatch\_queue\_t. Można w argumencie przesłać również kolejkę typu szeregowego i nie powinno stanowić to problemu.\\
+\subparagraph{ConcurrentDispatchQueueScheduler (Concurrent scheduler) -}odsyła pracę, która ma być wykonana z użyciem konkretnej współbieżnej kolejki  typu dispatch\_queue\_t. Można w argumencie przesłać również kolejkę typu szeregowego i nie powinno stanowić to problemu.\\
 Ten planista jest odpowiedni, gdy jakaś praca powinna być wykonana w tle.
-\subparagraph{OperationQueueScheduler (Concurrent scheduler)}
-Odsyła pracę która ma być wykonana z użyciem konkretnej kolejki typu NSOperationQueue.\\
-Ten planista jest odpowiedni do przypadków, gdzie musi zostać wykonana większa, bardziej wymagająca praca, w tle a użytkownik chce dostroić przebieg współbieżnych procesów używając do tego stałej maxConcurrentOperationCount.
+\subparagraph{OperationQueueScheduler (Concurrent scheduler) -}odsyła pracę która ma być wykonana z użyciem konkretnej kolejki typu NSOperationQueue.\\
+Ten planista jest odpowiedni do przypadków, gdzie musi zostać wykonana większa, bardziej wymagająca praca w tle, a użytkownik chce dostroić przebieg współbieżnych procesów używając do tego stałej maxConcurrentOperationCount.
 
 \subsection{Zalety i wady podejścia reaktywnego} 
 Programowanie reaktywne znacząco podnosi poziom abstrakcji kodu, dzięki czemu można skupić się na wzajemnych zależnościach między zdarzeniami, tak aby zdefiniować logikę biznesową, zamiast na zawiłościach i szczegółach implementacyjnych.\\
-Korzyść ta jest szczególnie widoczna w przypadku nowoczesnych aplikacji webowych i mobilnych, które oferują bardzo dużą interakcję z użytkownikiem. Owa interakcja ma bezpośredni wpływ na dane i decyzje podejmowane w systemie. Na początku XXI wieku, interakcja z aplikacjami webowymi sprowadzała się najczęściej do zatwierdzenia długiego formularza, przesłania go do aplikacji serwerowej (backend) i po prostym przetwarzaniu, wysłania odpowiedzi spowrotem do klienta (frontend). Od tamtego czasu aplikacje wyewoluowały do działania bardziej w czasie rzeczywistym: zmodyfikowanie pola formularza może automatycznie spowodować zapis w aplikacji serwerowej; reakcje użytkowników serwisów społecznościowych (np. "like'i") na treści zamieszczane przez innych użytkowników są ze sobą połączone i również prezentowane w czasie rzeczywistym. 
+Korzyść ta jest szczególnie widoczna w przypadku nowoczesnych aplikacji webowych i mobilnych, które oferują bardzo dużą interakcję z użytkownikiem. Owa interakcja ma bezpośredni wpływ na dane i decyzje podejmowane w systemie. Na początku XXI wieku, interakcja z aplikacjami webowymi sprowadzała się najczęściej do zatwierdzenia długiego formularza, przesłania go do aplikacji serwerowej (backend) i po prostym przetwarzaniu, wysłania odpowiedzi z powrotem do klienta (frontend). Od tamtego czasu aplikacje wyewoluowały do działania bardziej w czasie rzeczywistym: zmodyfikowanie pola formularza może automatycznie spowodować zapis w aplikacji serwerowej; reakcje użytkowników serwisów społecznościowych (np. "like'i") na treści zamieszczane przez innych użytkowników są ze sobą połączone i również prezentowane w czasie rzeczywistym. 
 
 \paragraph{Korzyści z użycia RxSwift (iOS)}
-\subparagraph{Bindowanie } Za pomocą mechanizmu bindowania w RxSwift, możliwe jest połączenie zachowania elementów UI z emitowanymi sygnałami. Mechanizm ten doskonale uzupełnia podejście w architekturze MVVM. 
-\subparagraph{Powtórzenia } Narzędzie szczególnie przydatne przy zapytaniach sieciowych do API. Niestabilne lub wolne połączenie z Internetem może być przyczyną wielu błędów. Dzięki operatorowi retry (opisanego w sekcji "Operatory reaktywne"), możliwe jest powtórzenie wykonania zapytania sieciowego, bez implementowania skomplikowanej logiki i przetrzymywania stanów połączenia.
-\subparagraph{Delegaty } Możliwe jest wykluczenie używania wbudowanych mechanizmów delegatów na rzecz bindingu reaktywnego. Daje to dużą przejrzystość kodu. 
-\subparagraph{Anulowanie } Czasami logika biznesowa wymaga, aby kosztowne operacje (zapytania sieciowe, przetwarzanie grafiki) mogły być anulowane w trakcie ich trwania. Przykładem może być tutaj pobranie tablicy zdjęć i nałożenie na nich filtra a następnie załadowanie do obiektu TableView. Z punktu widzenia User Experience, nie ma sensu załadowywanie wszystkich zdjęć jeśli tylko część z nich jest widoczna w danym momencie, albo gdy użytkownik przewija tabelę zbyt szybko. Z pomocą przychodzi tutaj dobra obsługa wielowątkowości i mechanizm anulowania i dealokowania sygnałów w RxSwift.
-\subparagraph{Agregowanie zapytań sieciowych } Gdy istnieje potrzeba odpytania wielu serwisów webowych i zagregowania ich odpowiedzi, podejście reaktywne zdaje się być odpowiednim narzędziem. Bez względu na to czy odpytania te powinny odbywać się współbieżnie czy może od odpowiedzi jednego będzie zależało uruchomienie następnego. Dzięki wcześniej opisanym operatorom możliwe jest zaimplementowanie wielu zapytań sieciowych w dowolnej kombinacji i zależności. 
+\subparagraph{Bindowanie -}za pomocą tego mechanizmu w RxSwift, możliwe jest połączenie zachowania elementów UI z emitowanymi sygnałami. Mechanizm ten doskonale uzupełnia podejście w architekturze MVVM. 
+\subparagraph{Powtórzenia -}narzędzie szczególnie przydatne przy zapytaniach sieciowych do API. Niestabilne lub wolne połączenie z Internetem może być przyczyną wielu błędów. Dzięki operatorowi retry (opisane w sekcji "Operatory reaktywne"), możliwe jest powtórzenie wykonania zapytania sieciowego, bez implementowania skomplikowanej logiki i przetrzymywania stanów połączenia.
+\subparagraph{Delegaty -}możliwe jest wykluczenie używania wbudowanych mechanizmów delegatów na rzecz bindingu reaktywnego. Daje to dużą przejrzystość kodu. 
+\subparagraph{Anulowanie -}czasami logika biznesowa wymaga, aby kosztowne operacje (zapytania sieciowe, przetwarzanie grafiki) mogły być anulowane w trakcie ich trwania. Przykładem może być tutaj pobranie tablicy zdjęć i nałożenie na nich filtra, a następnie załadowanie do obiektu TableView. Z punktu widzenia User Experience, nie ma sensu załadowywanie wszystkich zdjęć jeśli tylko część z nich jest widoczna w danym momencie, albo gdy użytkownik przewija tabelę zbyt szybko. Z pomocą przychodzi tutaj dobra obsługa wielowątkowości i mechanizm anulowania i dealokowania sygnałów w RxSwift.
+\subparagraph{Agregowanie zapytań sieciowych -}gdy istnieje potrzeba odpytania wielu serwisów webowych i zagregowania ich odpowiedzi, podejście reaktywne zdaje się być odpowiednim narzędziem. Bez względu na to czy odpytania te powinny odbywać się współbieżnie, czy może od odpowiedzi jednego będzie zależało uruchomienie następnego. Dzięki wcześniej opisanym operatorom możliwe jest zaimplementowanie wielu zapytań sieciowych w dowolnej kombinacji i zależności. 
 \paragraph{Wady podejścia reaktywnego}
-\subparagraph{Wysoki próg wejścia } Idea paradygmatu reaktywnego nie jest trywialna. Osoba rozpoczynająca naukę tego podejścia, zmuszona jest przestawić myślenie na takie postrzegające każdy obiekt jako sygnał. Nieistotne są stany lecz przepływ danych i efekty uboczne. 
-\subparagraph{Zarządzanie pamięcią } Większość implementacji paradygmatu reaktywne oferuje automatyczne mechanizmy zarządzania pamięcią. Niekiedy jednak użytkownik sam musi zadbać o taki aspekt jak dealokowanie obiektu Observable. W przypadku implementacji na platformie iOS przykładem może być obiekt TabBarController, który trzyma referencje do wszystkich kontrolerów reprezentujących zakładki. W związku z tym nie zostaną one zdealokowane nigdy w czasie działania programu. Należy zatem zadbać o to, by sygnały używane w projekcie nie zajmowały niepotrzebnie zasobów jeśli zdarzenia od nich nie są w danym momencie przetwarzane.
-\subparagraph{Debugowanie } Działanie wielu sygnałów na różnych wątkach może utrudniać debugowanie w razie błędów. W przypadku wycieków pamięci niezbędne jest szczegółowe zbadanie podejrzanego sygnału i jego pracy na każdym z używanych wątków.
+\subparagraph{Wysoki próg wejścia -}idea paradygmatu reaktywnego nie jest trywialna. Osoba rozpoczynająca naukę tego podejścia, zmuszona jest przestawić myślenie na takie postrzegające każdy obiekt jako sygnał. Nieistotne są stany lecz przepływ danych i efekty uboczne. 
+\subparagraph{Zarządzanie pamięcią -}większość implementacji paradygmatu reaktywne oferuje automatyczne mechanizmy zarządzania pamięcią. Niekiedy jednak użytkownik sam musi zadbać o taki aspekt jak dealokowanie obiektu Observable. W przypadku implementacji na platformie iOS przykładem może być obiekt TabBarController, który trzyma referencje do wszystkich kontrolerów reprezentujących zakładki. W związku z tym nie zostaną one zdealokowane nigdy w czasie działania programu. Należy zatem zadbać o to, by sygnały używane w projekcie nie zajmowały niepotrzebnie zasobów jeśli zdarzenia od nich nie są w danym momencie przetwarzane.
+\subparagraph{Debugowanie -}działanie wielu sygnałów na różnych wątkach może utrudniać debugowanie w razie błędów. W przypadku wycieków pamięci niezbędne jest szczegółowe zbadanie podejrzanego sygnału i jego pracy na każdym z używanych wątków.
 \subsection{Podejście praktyczne w implementacji na platformie iOS}
-\paragraph{}Na podstawie przykładów\cite{examples} w tym paragrafie, ukazane zostało praktyczne podejście do tematu programowania reaktywnego, poprzez ich realizację w implementacji RxSwift.
+\paragraph{}Na podstawie przykładów w tym paragrafie, ukazane zostało praktyczne podejście do tematu programowania reaktywnego, poprzez ich realizację w implementacji RxSwift \cite{examples}.
 \paragraph{Przykład 1 - stan przejściowy}
 \subparagraph{}W czasie tworzenia programów działających asynchronicznie, można napotkać wiele problemów z przejściowymi stanami. Typowym przykładem jest tutaj pole wyszukiwania z autouzupełnianiem.\\
 Chcąc stworzyć obiekt pola wyszukiwania z autouzupełnianiem, pierwszym problemem jaki zostanie napotkany to sytuacja, gdy użytkownik chcący wyszukać wyniki dla frazy "abc", wpisze literę "c" w polu wyszukiwania, podczas gdy zapytanie sieciowe dla treści "ab" jest już oczekujące i musi zostać anulowane. Co prawda bez użycia podejścia reaktywnego, problem nie jest trudny do rozwiązania. Wystarczy stworzyć dodatkową zmienną utrzymującą referencję do oczekującego zapytania sieciowego.\\
 Kolejną sytuacją, którą trzeba obsłużyć to potencjalny błąd w procesie zapytania sieciowego. Należy wówczas zastosować często zagmatwaną logikę do powtórzenia całego procesu.\\
-Ponadto idealną sytuacją byłoby, gdyby program zaczekał pewien czas zanim zapytanie sieciowe byłoby rzeczywiście realizowane. W końcu, nie jest porządanym, aby serwer był odpytywany za każdym razem, gdy użytkownik wpisze znak w polu wyszukiwania. Można próbować w tej sytuacji zastosować dodatkowy licznik czasu weryfikujący liczbę zapytań w czasie, tak aby nie przeciążyć serwera.\\
+Ponadto idealną sytuacją byłoby, gdyby program zaczekał pewien czas zanim zapytanie sieciowe byłoby rzeczywiście realizowane. W końcu, nie jest pożądanym, aby serwer był odpytywany za każdym razem, gdy użytkownik wpisze znak w polu wyszukiwania. Można próbować w tej sytuacji zastosować dodatkowy licznik czasu weryfikujący liczbę zapytań w czasie, tak aby nie przeciążyć serwera.\\
 Pozostaje jeszcze kwestia, co powinno być wyświetlane w czasie wykonywania zapytania oraz co powinno być wyświetlone w przypadku błędu i to pomimo kilku prób.\\
 Zaprogramowanie powyższego przykładu jest oczywiście możliwe bez podejścia reaktywnego, ale może wprowadzać niepotrzebne zawiłości.
 O to jak powyższa logika może zostać zrealizowana przy użyciu RxSwift:
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=15cm]{transientState}
-	\caption{Przykładowy program realizujący powyższy przykład 1.\cite{transientState}}
+	\caption{Przykładowy program rozwiązujący problem stanu przejściowego (opis w tekście) \cite{transientState}.}
 	\label{transientState}
 \end{figure}
 \\\\\\\\\\\\\\
-Jak widać na listingu \ref{transientState}, niepotrzebne są żadne dodatkowe flagi ani stany.
+Jak widać na rysunku \ref{transientState}, niepotrzebne są żadne dodatkowe flagi ani stany.
 \paragraph{Przykład 2 - częściowe anulowanie}
 \subparagraph{}Scenariuszem tego przykładu będzie następujący ciąg działań: ma nastąpić pobranie zestawu zdjęć z zewnętrznego adresu URL, następnie zdjęcia mają zostać zdekodowane i obłożone filtrem rozmywającym. Na koniec wyświetlane są w komórkach tabeli TableView.\\
 Założenia: 
@@ -416,14 +495,15 @@ Założenia:
 	\item Całość procesu nie powinna się rozpoczynać bezpośrednio w chwili, gdy komórka wejdzie obszar widoczności. Użytkownik może przewijać widok tabeli bardzo szybko, co powodowałoby uruchamianie wielu zapytań sieciowych, które natychmiastowo musiałyby zostać anulowane.
 	\item Dobrą praktyką byłoby ograniczenie liczby współbieżnych operacji nakładania filtru na zdjęcia, bo jest to operacja kosztowna.
 \end{itemize}
-Oto w jaki sposób można zrealizować powyższą logikę z użyciem podejścia reaktynwego w RxSwift: 
+Sposób realizacji powyższego scenariusza przedstawia rysunek \ref{transientState}.
+Oto w jaki sposób można zrealizować powyższą logikę z użyciem podejścia reaktywnego w RxSwift: 
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=12cm]{compositionalDisposal}
-	\caption{Przykładowy program realizujący przykład 2.\cite{transientState}}
+	\caption{Przykładowy program rozwiązujący problem częściowego anulowania (opis w tekście) \cite{transientState}.}
 	\label{compositionalDisposal}
 \end{figure}\\
-Listing \ref{compositionalDisposal} ukazuje kod, który zrealizuje założenia oraz gdy obiekt imageSubscription zostanie zdealokowany, zapewni że wszystkie zależne od niego asynchroniczne operacje zostaną anulowane, i że żadne błędne obrazy nie będą połączone z interfejsem użytkownika.
+Ukazuje on kod, który zrealizuje założenia oraz, gdy obiekt imageSubscription zostanie zdealokowany, zapewni że wszystkie zależne od niego asynchroniczne operacje zostaną anulowane, i że żadne błędne obrazy nie będą połączone z interfejsem użytkownika.
 \pagebreak
 \paragraph{Przykład 3 - agregowanie zapytań sieciowych}
 \subparagraph{}W tym przykładzie zostanie pokazana sytuacja, w której potrzebne jest zrealizowanie dwóch niezależnych zapytań sieciowych i zagregowanie ich wyników, gdy oba się zakończą. W tym celu, użyty zostanie operator \textbf{zip}.\\
@@ -431,10 +511,10 @@ W poniższym listingu można dostrzeć, że obsłużona została częsta sytuacj
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=14cm]{aggregatingNetworkRequests}
-	\caption{Przykładowy program realizujący przykład 3.\cite{transientState}}
+	\caption{Przykładowy program rozwiązujący problem agregacji zapytań sieciowych (opis w tekście ) \cite{transientState}.}
 	\label{aggregatingNetworkRequests}
 \end{figure}
-Powyższy obrazek \ref{aggregatingNetworkRequests} przestawia sposób implementacji przykładu.
+Obrazek \ref{aggregatingNetworkRequests} przestawia sposób implementacji przykładu.
 \chapter{PRACA WŁASNA}
 \section{Czynności przygotowawcze}		
 \paragraph{}Stworzenie aplikacji mobilnej było możliwe dzięki wykonaniu uprzednio czynności przygotowawczych. Do czynności tych należało: wybór środowiska programistycznego, instalacja bibliotek i frameworków, wstępna konfiguracja projektu oraz stworzenie repozytorium.
@@ -444,10 +524,10 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 \subsection{Wstępna konfiguracja projektu}
 \paragraph{}Podczas konfigurowania projektu w środowisku XCode istotne jest abyśmy stworzyli go z użyciem CoreData. Jest to baza danych środowiska iOS i może stanowić integralną część aplikacji.   
 \subsection{Stworzenie repozytorium}
-\paragraph{}Dostępnych jest wiele systemów kontroli wersji, ale najpopularniejszym z nich jest GIT. Zdecydowałem się na jego wykorzystanie, ponieważ jest dosyć prosty w użyciu a większość serwerów GITa jest darmowa. Użycie systemu typu GIT pozwoli mi na kontrolę postępów mojej pracy jak i na dokumentowanie jej. Oprócz tego użycia GITa powoduje, że błąd popełniony przeze mnie na dalszym etapie mogę odwrócić przywracając poprzedni stan projektu.
+\paragraph{}Dostępnych jest wiele systemów kontroli wersji, ale najpopularniejszym z nich jest GIT. Zdecydowałem się na jego wykorzystanie, ponieważ jest dosyć prosty w użyciu, a większość serwerów GITa jest darmowa. Użycie systemu typu GIT pozwoliło na kontrolę postępów pracy jak i na dokumentowanie jej. Oprócz tego użycie GITa pozwala na przywrócenie poprzedniego stanu projektu w przypadku popełnienia jakiegoś błędu.
 \pagebreak
 \section{Budowa aplikacji właściwej}
-\paragraph{}Ninejszy projekt powstawał w oparciu o niektóre elementy modelu kaskadowego\cite{modelKaskadowy} cyklu życia oprogramowania. Model ten stosowany jest często w praktyce do projektów o niewielkiej złożoności. Obejmuje następujące etapy:
+\paragraph{}Ninejszy projekt powstawał w oparciu o niektóre elementy modelu kaskadowego cyklu życia oprogramowania \cite{modelKaskadowy}. Model ten stosowany jest często w praktyce do projektów o niewielkiej złożoności. Obejmuje następujące etapy:
 \begin{itemize}
 	\item Określenie wymagań
 	\item Projektowanie systemu
@@ -479,7 +559,7 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 	\centering
 	\includegraphics[width=17cm]{useCase'y}
 	\caption{Schemat przypadków użycia 
-		\textit{źródło:własne }}
+		\textit{[opracowanie:własne ]}}
 	\label{useCase'y}
 \end{figure}
 \subparagraph{}Schemat \ref{useCase'y} przedstawia ogólne przypadki użycia aplikacji mobilnej. Użytkownik może wykonywać nastepujące czynności:
@@ -495,15 +575,15 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 	\item Ocenić zapisane pozycje
 \end{itemize}
 \subsection{Baza danych}
-\paragraph{}W bazie danych przetrzymywane są informacje o zapisanych przez użytkownika pozycjach reprezentujących film lub serial, które użytkownik chciałby obejrzeć. Baza ta nie jest skomplikowana i nie w wymaga więcej niż modelu jednej encji. Encja ta wystarcza do przechowywania żądanych informacji i nie istnieją relacje z innymi encjami.
+\paragraph{}W bazie danych przetrzymywane są informacje o zapisanych przez użytkownika pozycjach reprezentujących film lub serial, które użytkownik chciałby obejrzeć. Baza ta nie jest skomplikowana i nie w wymaga więcej niż modelu jednej encji. Encja ta wystarcza do przechowywania żądanych informacji i w związku z tym nie wymaga relacji z innymi encjami.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=7cm]{watchableEntity}
 	\caption{Diagram bazy danych 
-		\textit{źródło:własne }}
+		\textit{[opracowanie:własne]}}
 	\label{watchableEntity}
 \end{figure}
-\subparagraph{}Na diagramie \ref{watchableEntity}, można zobaczyć encję posiadającą następujące atrybuty:
+\subparagraph{}Na rysunku \ref{watchableEntity}, można zobaczyć encję posiadającą następujące atrybuty:
 \begin{itemize}
 	\item \textbf{imdbRating} - reprezentuje ocenę użytkowników serwisu IMDB
 	\item \textbf{isSeen} - binarna wartość typu Bool, określająca czy użytkownik obejrzał już daną pozycję  
@@ -520,18 +600,18 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 		\centering
 		\includegraphics[width=26cm]{diagramKlas}
 		\caption{Diagram klas
-			\textit{źródło:własne}}
+			\textit{[opracowanie:własne]}}
 		\label{diagramKlas}
 	\end{figure}
 \end{landscape}
 \subsection{Opis wybranych klas}
 \begin{itemize}
-	\item Klasa \textbf{AppDelegate} - główna klasa programu, tworzona automatycznie. Implementuje metody interfejsu UIApplicationDelegate, który jest odpowiedzialny za obsługe metod wywoływanych przez singleton UIApplication w odpowiedzi na ważne zdarzenia w cyklu życia aplikacji. Te ważne zdarzenia to m. in. zmiany stanu aplikacji takie jak przejście aplikacji w background, przejście w foreground, obsługa notyfikacji, interakcja z innymi aplikacjami w systemie czy interakcja z samym systemem iOS.
+	\item Klasa \textbf{AppDelegate} - główna klasa programu, tworzona automatycznie. Implementuje metody interfejsu UIApplicationDelegate, który jest odpowiedzialny za obsługę metod wywoływanych przez singleton UIApplication w odpowiedzi na ważne zdarzenia w cyklu życia aplikacji. Te ważne zdarzenia to m. in. zmiany stanu aplikacji takie jak przejście aplikacji w background, przejście w foreground, obsługa notyfikacji, interakcja z innymi aplikacjami w systemie czy interakcja z samym systemem iOS.
 	\item Klasa \textbf{CoreDataStack} -  reprezentuje menedżera bazy danych CoreData. Jej metody pozwalają na pobranie bieżącego kontekstu, czyli stanu danych i relacji w bazie danych oraz zapisanie tego kontekstu.
-	\item Klasa \textbf{WatchableEntity} - reprezentuje model encji bazodanowej. Jej metoda pozwala na wykonanie zapytania bazodanowego a jej pola reprezentują poszczególne atrybuty encji.
+	\item Klasa \textbf{WatchableEntity} - reprezentuje model encji bazodanowej. Jej metoda pozwala na wykonanie zapytania bazodanowego, a jej pola reprezentują poszczególne atrybuty encji.
 	\item Klasa \textbf{SearchForMovieViewController} - kontroler widoku wyszukiwania produkcji. Jej atrybutami są elementy interfejsu użytkownika t.j. tabela czy pasek wyszukiwania, który jest tutaj obsługiwany reaktywnie. Ponadto korzysta z modelu wyszukiwania produkcji w celu wyświetlenia znalezionych wyników. Nie posiada informacji o tym w jaki sposób przebiega proces wyszukiwania. 
 	\item Klasa \textbf{MovieDetailsController} - kontroler widoku szczegółów na temat znalezionej produkcji. Odpowiedzialny jest za operacje interfejsu użytkownika takie jak pobranie obrazka czy wyświetlenie oceny znalezionego filmu lub serialu. Komunikuje się tylko z modelem MovieDetailsViewModel za pośrednictwem interfejsu MovieDetailsViewModelType, aby otrzymywać informacje na temat danych do wyświetlenia.
-	\item Klasa \textbf{MovieDetailsViewModel} - stanowi model widoku dla klasy kontrolera poprzednio opisanego. Implementuje metody i pola interfejsu MovieDetailsViewModelType. Odpowiedzialna jest za reaktywne zmiany modelu widoku takie jak blokowanie/odblokowywanie możliwości kliknięcia przycisków, podawanie do kontrolera danych do wyświetlenia ze znalezionej produkcji, przygotowanie modelu widoku oceny filmu czy zapisanie pozycji w bazie danych. 
+	\item Klasa \textbf{MovieDetailsViewModel} - stanowi model widoku dla klasy kontrolera poprzednio opisanego. Implementuje metody i pola interfejsu MovieDetailsViewModelType. Odpowiedzialna jest za reaktywne zmiany modelu, widoku takie jak: blokowanie/odblokowywanie możliwości kliknięcia przycisków, podawanie do kontrolera danych do wyświetlenia ze znalezionej produkcji, przygotowanie modelu widoku oceny filmu czy zapisanie pozycji w bazie danych. 
 	\item Enumerator \textbf{OMDB} - implementuje metody i pola wymagane przez interfejs Mappable, potrzebny do działania modułu Moya odpowiedzialnego za zapytania sieciowe w sposób reaktywny. Enumerator ten odpowiedzialny jest za dostarczenie adresów URL wszystkich używanych endpointów API, metod odpytania, sposobu kodowania odpowiedzi oraz przykładowy model zwracanych przez API danych.   
 	\item Klasa \textbf{WatchableFinderModel} - model wyszukiwania filmów i seriali. Izoluje logikę i sposób odpytywania API od reszty klas. Korzysta z dostarczanego przez framework Moya providera zależnego od uprzednio opisanego enumeratora dostarczającego wszystkich potrzebnych danych. Jego metody generują sygnały będące wynikiem odpytywania API o zadany tytuł. 
 	\item Klasa \textbf{Watchable} - model danych reprezentujących znaleziony przez API film lub serial. Implementuje interferjs Mappable, który odpowiedzialny jest za przeprowadzenie próby zmapowania otrzymanego w odpowiedzi (od API) obiektu typu JSON na obiekt typu Mappable.
@@ -541,49 +621,54 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 \paragraph{}Stworzenie projektu aplikacji mobilnej wymagało zastosowania niezbędnych bibliotek. Zgodnie z tematem pracy, aplikacja powinna opierać się o paradygmat reaktywny, który został zaimplementowany dzięki stworzonym do tego, zewnętrznym modułom i bibliotekom. \\
 Poniżej, zostały przedstawione użyte moduły i ich krótka charakterystyka:
 \begin{itemize}
-	\item  \textbf{CocoaPods} - menedżer zależności w projektach XCode. Dzięki niemu, możliwe jest określenie zależności w projekcie dzięki prostemu plikowi textowemu \textbf{Podfile}. CocoaPods rekursywnie rozwiązuje zależności pomiędzy użytymi bibliotekami, wyszukuje kod źródłowy dla wszystkich zależności oraz tworzy i utrzymuje obszar roboczy w celu budowania projektu XCode (plik .xcworkspace).\cite{cocoaPods}
-	\item  \textbf{UIKit} - dostarcza niezbędnej infrastruktury potrzebnej do skonstruowania i zarządzania aplikacją na platformie iOS i tvOS. Jest to framework zapewniający architekturę okna i widoku do zarządzania interfejsem użytkownika w aplikacji. Ponadto służy do obsługi zdarzeń potrzebnych do odpowiedzi na reakcje użytkownika oraz dostarcza modelu aplikacji odpowiedzialnego za działanie pętli głównej programu i interakcji z systemem.\cite{UIKit}
-	\item  \textbf{CoreData} - graf obiektów\cite{objectGraph} i framework warstwy modelu zapewniający trwałość tych obiektów.
+
+	\item  \textbf{CocoaPods} - menedżer zależności w projektach XCode. Dzięki niemu, możliwe jest określenie zależności w projekcie dzięki prostemu plikowi textowemu \textbf{Podfile}. CocoaPods rekursywnie rozwiązuje zależności pomiędzy użytymi bibliotekami, wyszukuje kod źródłowy dla wszystkich zależności oraz tworzy i utrzymuje obszar roboczy w celu budowania projektu XCode (plik .xcworkspace) \cite{cocoaPods}.
+	
+	\item  \textbf{UIKit} - dostarcza niezbędnej infrastruktury potrzebnej do skonstruowania i zarządzania aplikacją na platformie iOS i tvOS. Jest to framework zapewniający architekturę okna i widoku do zarządzania interfejsem użytkownika w aplikacji. Ponadto służy do obsługi zdarzeń potrzebnych do odpowiedzi na reakcje użytkownika oraz dostarcza modelu aplikacji odpowiedzialnego za działanie pętli głównej programu i interakcji z systemem \cite{UIKit}.
+	
+	\item  \textbf{CoreData} - graf obiektów \cite{objectGraph} i framework warstwy modelu zapewniający trwałość tych obiektów.
 	Pozwala, aby dane zorganizowane w model relacyjny encja-atrybut, były serializowane do postaci XML, binarnej lub zasobów SQLite.
 	Danymi można zarządzać używając wysokopoziomowych obiektów reprezentujących encje i ich relacje. CoreData zarządza wersjami zserializowanymi, zapewniając cykl życia obiektu i możliwość zarządzania grafem obiektów włączając w to trwałość tych obiektów.\\
 	CoreData jest bezpośrednim interfejsem SQLite izolującym programistę od działającego "pod spodem" języka SQL.
 	
-	\item  \textbf{RxSwift} - implementacja biblioteki .NET Reactive Extensions w języku Swift na platformę iOS/macOS. Jest to próba przeportowania tak wielu konceptów z oryginalnej biblioteki Rx jak to tylko możliwe. Głównym zamierzeniem RxSwift jest umożliwienie łatwej kompozycji asynchronicznych operacji i strumieni zdarzenie/dane.
+	\item  \textbf{RxSwift} - implementacja biblioteki .NET Reactive Extensions w języku Swift na platformę iOS/macOS. Jest to próba przeportowania tak wielu jak to tylko możliwe konceptów z oryginalnej biblioteki Rx. Głównym zamierzeniem RxSwift jest umożliwienie łatwej kompozycji asynchronicznych operacji i strumieni zdarzenie/dane.
 	
-	\item  \textbf{RxCocoa} - nakładka na frameworki Cocoa i Cocoa Touch, rozszerzająca możliwości dostarczane przez nie (obiekty UI i ich obłsuga) o reaktywne zachowanie w oparciu o framework RxSwift.  
+	\item  \textbf{RxCocoa} - nakładka na frameworki Cocoa i Cocoa Touch, rozszerzająca możliwości dostarczane przez nie (obiekty UI i ich obsługa) o reaktywne zachowanie w oparciu o framework RxSwift.  
+	
 	\item  \textbf{RxOptional} - rozszerzenie RxSwift dla obiektów opcjonalnych w Swift, pozwalające na ich reprezentację w podejściu reaktywnym.
-	\item  \textbf{Moya} - biblioteka stanowiąca nakładkę reaktywną na framework Alamofire\cite{alamofire} umożliwiający izolację logiki odpowiedzialnej za wszelkie operacje sieciowe. Dzięki jej użyciu możliwe jest przekształcenie architektury obsługi operacji sieciowych zgodnie z poniższym schematem:
+	
+	\item  \textbf{Moya} - biblioteka stanowiąca nakładkę reaktywną na framework Alamofire \cite{alamofire} umożliwiający izolację logiki odpowiedzialnej za wszelkie operacje sieciowe. Dzięki jej użyciu możliwe jest przekształcenie architektury obsługi operacji sieciowych zgodnie ze schematem zaprezentowanym na rysunku \ref{moyaDiagram}.
 	\begin{figure}[ht!]
 		\centering
 		\includegraphics[width=13cm]{moyaDiagram}
 		\caption{Przekształcenie logiki zapytań sieciowych dzięki Moya\cite{moyaScheme}}
 		\label{moyaDiagram}
 	\end{figure}
-	Powyższy obrazek \ref{moyaDiagram} przedstawia architekturę aplikacji po zastosowaniu biblioteki Moya.
-	\item  \textbf{Moya\_ModelMapper} - biblioteka stanowiąca nakładkę dla frameworku Mapper\cite{mapper} ułatwiającego konwersję JSON do silnie typowanych obiektów Swift. Moya\_ModelMapper dostarcza potrzebnych bindingów do biblioteki Moya do łatwiejszej serializacji obiektów JSON przy użyciu RxSwift.
+
+	\item  \textbf{Moya\_ModelMapper} - biblioteka stanowiąca nakładkę dla frameworku Mapper \cite{mapper} ułatwiającego konwersję JSON do silnie typowanych obiektów Swift. Moya\_ModelMapper dostarcza potrzebnych bindingów do biblioteki Moya do łatwiejszej serializacji obiektów JSON przy użyciu RxSwift.
 \end{itemize}
 \pagebreak
 \subsection{Zastosowana architektura}
 \paragraph{}Wybranie właściwej architektury w projekcie było niezbędne, aby w pełni ukazać co oferuje programowanie reaktywne w języku Swift. 
-\paragraph{MVC}czyli Model View Controller jest najczęściej stosowanym podejściem jeśli chodzi o aplikacje na iOS lecz nie zawsze jest to podejście właściwe. \\
-Typowo, architektura ta powinna się sprowadzać do poniższego schematu:
+\paragraph{MVC -}czyli Model View Controller jest najczęściej stosowanym podejściem jeśli chodzi o aplikacje na iOS. Nie zawsze jednak jest to podejście właściwe. \\
+Typowo, architektura ta powinna się sprowadzać do schematu przedstawionego na rysunku \ref{MVC}.
 	\begin{figure}[ht!]
 	\centering
 	\includegraphics[width=13cm]{MVC}
-	\caption{architektura MVC\cite{MVC}}
+	\caption{architektura MVC \cite{MVC}.}
 	\label{MVC}
 \end{figure}\\
-Niestety, role poszczególnych komponentów w tej architekturze (rys. \ref{MVC}) nie zawsze są jasno określone i tak np. typowe zadanie formatowania daty nie pasuje jako rola widoku ani tym bardziej modelu, dlatego staje się wówczas odpowiedzialnością kontrolera. Wiele tego typu zadań zostaje rozwiązywane właśnie w obszarze kontrolera co powoduje poważne konsekwencje takie jak rozrost kontrolerów, trudności w testowaniu czy niemożność ich ponownego użycia w innych częściach aplikacji.
-\paragraph{}Z powyższych powodów, architekturą wybraną do zaprojektowania ninejszej aplikacji został \textbf{MVVM}, czyli \textbf{Model-View-ViewModel}, który w środowisku iOS można sprowadzić do poniższego schematu:
+Niestety, role poszczególnych komponentów w tej architekturze (Rys. \ref{MVC}) nie zawsze są jasno określone i tak np. typowe zadanie formatowania daty nie pasuje jako rola widoku ani tym bardziej modelu, dlatego staje się wówczas odpowiedzialnością kontrolera. Wiele tego typu zadań zostaje rozwiązywane właśnie w obszarze kontrolera co powoduje poważne konsekwencje takie jak rozrost kontrolerów, trudności w testowaniu czy niemożność ich ponownego użycia w innych częściach aplikacji.
+\paragraph{}Z powyższych powodów, architekturą wybraną do zaprojektowania ninejszej aplikacji został \textbf{MVVM}, czyli \textbf{Model-View-ViewModel}, który w środowisku iOS można sprowadzić do schematu przedstawionego na rysunku \ref{rxMVVM}.
   	\begin{figure}[ht!]
   	\centering
   	\includegraphics[width=13cm]{rxMVVM}
-  	\caption{architektura MVVM\cite{rxMVVM}}
+  	\caption{architektura MVVM \cite{rxMVVM}.}
   	\label{rxMVVM}
   \end{figure}
-\subparagraph{}W powyższej architekturze (rys.\ref{rxMVVM}) ViewModel stoi pomiędzy modelem a kontrolerem i dostarcza danych kontrolerowi, które powinien wyświetlić w widoku. Dzięki temu ViewController nie ma już bezpośredniego dostępu do modelu. Poprzednio rozpatrywane, typowe zadanie formatowania daty zostanie zlecone właśnie do ViewModelu, który przygotuje odpowiednio dane i już sformatowane, poda dalej do kontrolera.
+\subparagraph{}W architekturze ViewModel stoi pomiędzy modelem a kontrolerem i dostarcza danych kontrolerowi, które powinien wyświetlić w widoku. Dzięki temu ViewController nie ma już bezpośredniego dostępu do modelu. Poprzednio rozpatrywane, typowe zadanie formatowania daty zostanie zlecone właśnie do ViewModelu, który przygotuje odpowiednio dane i już sformatowane, poda dalej do kontrolera.
 \\Nie należy jednak oczekiwać od ViewModelu, aby wiedział w jaki sposób dane są wyświetlane przez ViewController. 
-\subparagraph{}Z racji, że w powyżej przedstawionej architekturze, ViewModel "nie wie" nic o kontrolerze, komunikacja między tymi komponentami odbywa się na zasadzie nasłuchiwania. Kontroler przy pomocy reaktywnych bindingów obserwuje zmiany w ViewModelu i na tej podstawie reaguje, wyświetlając odpowiednie elementy interfejsu użytkownika, wykorzystując w ten sposób potencjał programowania reaktywnego. 
+\subparagraph{}Z racji, że w przedstawionej architekturze, ViewModel "nie wie" nic o kontrolerze, komunikacja między tymi komponentami odbywa się na zasadzie nasłuchiwania. Kontroler przy pomocy reaktywnych bindingów obserwuje zmiany w ViewModelu i na tej podstawie reaguje, wyświetlając odpowiednie elementy interfejsu użytkownika, wykorzystując w ten sposób potencjał programowania reaktywnego. 
 \pagebreak
 \subsection{Prezentacja aplikacji}
 \paragraph{}Główne funkcje aplikacji prezentowane są w widokach wybieranych spośród trzech zakładek paska dolnego.
@@ -592,10 +677,10 @@ Niestety, role poszczególnych komponentów w tej architekturze (rys. \ref{MVC})
 	\centering
 	\includegraphics[width=6cm]{SearchVC}
 	\caption{Widok wyszukiwania
-		\textit{źródło:własne}}
+		\textit{[opracowanie:własne]}}
 	\label{SearchVC}
 \end{figure}\\
-W widoku \ref{SearchVC}, możliwe jest kliknięcie paska wyszukiwania i wpisywanie tytułu. Wprowadzany z klawiatury ciąg znaków przetwarzany jest w sposób reaktywny z użyciem operatora \textbf{debounce}. Ma to duże znaczenie, ponieważ użytkownik nie musi potwierdzać chęci wyszukiwania w żaden sposób. odbywa się to automatycznie. Należy jednak zwrócić uwagę, że zapytania sieciowe kierowane do API nie są wysyłane z każdą wprowazoną literą. Dzięki operatorowi debounce, możliwe jest spokojne wpisanie całości tytułu a po upłynięciu zadanego interwału czasowego (tutaj kilkadziesiąt milisekund), rozpocznie się proces wysyłania zapytania do API.\\
+W widoku przedstawionym na rysunku \ref{SearchVC}, możliwe jest kliknięcie paska wyszukiwania i wpisywanie tytułu. Wprowadzany z klawiatury ciąg znaków przetwarzany jest w sposób reaktywny z użyciem operatora \textbf{debounce}. Ma to duże znaczenie, ponieważ użytkownik nie musi potwierdzać chęci wyszukiwania w żaden sposób - odbywa się to automatycznie. Należy jednak zwrócić uwagę, że zapytania sieciowe kierowane do API nie są wysyłane z każdą wprowadzoną literą. Dzięki operatorowi debounce, możliwe jest spokojne wpisanie całości tytułu, a po upłynięciu zadanego interwału czasowego (tutaj kilkadziesiąt milisekund), rozpocznie się proces wysyłania zapytania do API.\\
 Odnaleziona pozycja wyświetlana jest natychmiastowo w chwili znalezienia.
 \subparagraph{}\textbf{Widok szczegółów filmu/serialu}
 \begin{figure}[ht!]
@@ -608,7 +693,7 @@ Odnaleziona pozycja wyświetlana jest natychmiastowo w chwili znalezienia.
 	\caption{Widok szczegółów  filmu/serialu}
 	\label{watchableDetails}
 \end{figure}\\
-Na widoku \ref{watchableDetails}, prezentowane są szczegóły dotyczące znalezionej pozycji. Widoczny jest plakat danej produkcji oraz jej ocena wystawiona przez użytkowników serwisu IMDB. Ponadto użytkownik ma możliwość dodania filmu/serialu do swojej bazy jeżeli jeszcze tego nie zrobił. Lokalna baza danych przeszukiwana jest w celu odnalezienia bieżącej produkcji i na tej podstawie decyduje się o sposobie wyświetlenia przycsisku.
+Na widoku przedstawionym na rysunku \ref{watchableDetails}, prezentowane są szczegóły dotyczące znalezionej pozycji. Widoczny jest plakat danej produkcji oraz jej ocena wystawiona przez użytkowników serwisu IMDB. Ponadto użytkownik ma możliwość dodania filmu/serialu do swojej bazy jeżeli jeszcze tego nie zrobił. Lokalna baza danych przeszukiwana jest w celu odnalezienia bieżącej produkcji i na tej podstawie decyduje się o sposobie wyświetlenia przycisku.
 \pagebreak
 \subparagraph{}\textbf{Widok propozycji}
 \begin{figure}[ht!]
@@ -621,7 +706,7 @@ Na widoku \ref{watchableDetails}, prezentowane są szczegóły dotyczące znalez
 	\caption{Widok proponowania pozycji do obejrzenia}
 	\label{proposition}
 \end{figure}\\
-Widok \ref{proposition} prezentuje ekran propozycji. Użytkownik wybiera jedną z czterech opcji czasowych. Po zaznaczeniu opcji, kliknięcie przycisku spowoduje przeszukanie bazy zapisanych pozycji pod kątem filmów lub seriali spełniających wymóg czasowy, to znaczy, że czas ich trwania nie będzie dłuższy od czasu wybranego przez użytkownika. Ponadto przez filtr nie przejdą filmy i seriale już obejrzane (a przez to ocenione). 
+Rysunek \ref{proposition} prezentuje ekran propozycji. Użytkownik wybiera jedną z czterech opcji czasowych. Po zaznaczeniu opcji, kliknięcie przycisku spowoduje przeszukanie bazy zapisanych pozycji pod kątem filmów lub seriali spełniających wymóg czasowy, to znaczy, że czas ich trwania nie będzie dłuższy od czasu wybranego przez użytkownika. Ponadto przez filtr nie przejdą filmy i seriale już obejrzane (a przez to ocenione). 
 \pagebreak
 \subparagraph{}\textbf{Widok oceniania}
 \begin{figure}[ht!]
@@ -634,117 +719,24 @@ Widok \ref{proposition} prezentuje ekran propozycji. Użytkownik wybiera jedną 
 	\caption{Widok oceniania zapisanych w bazie produkcji}
 	\label{rating}
 \end{figure}\\
-W widoku \ref{rating} zaprezentowany jest ekran oceniania zapisanych filmów i seriali. Użytkownik ma możliwośc przeglądnięcia jakie filmy i seriale zapisał do swojej bazy. Przy tych, które zostały ocenione, wyświetlana jest wartość liczbowa reprezentująca jego ocenę. Kliknięcie w dowolną zapisaną w bazie produkcje, przenosi użytkownika do ekranu wystawienia oceny. Wartość wybierana jest przez przesuwanie paska. Przyciśnięcie przycisku powoduje zapisanie oceny do bazy. 
+Na rysunku \ref{rating} zaprezentowany jest ekran oceniania zapisanych filmów i seriali. Użytkownik ma możliwość przeglądnięcia jakie filmy i seriale zapisał do swojej bazy. Przy tych, które zostały ocenione, wyświetlana jest wartość liczbowa reprezentująca jego ocenę. Kliknięcie w dowolną zapisaną w bazie produkcje, przenosi użytkownika do ekranu wystawienia oceny. Wartość wybierana jest przez przesuwanie paska. Przyciśnięcie przycisku powoduje zapisanie oceny do bazy. 
 \chapter{PODSUMOWANIE}
 \paragraph{}Celem niniejszej pracy było zgłębienie tematu programowania reaktywnego oraz zaprojektowanie i zbudowanie aplikacji mobilnej na system iOS w oparciu o omawiane zagadnienia.\\
-Istnieje wiele implementacji tego podejścia, na różne języki programowania w tym kilka dla omawianego w tej pracy Swifta. Są to m.in.:RxSwift, Reactive Cocoa czy Reactive Swift. Jednakże wszystkie implementacje podejścia reaktywnego bazują na tej samej idei. Dzięki temu nie ma większego znaczenia ani to w jakim języku się tworzy ani to, przy użyciu której biblioteki programowania reaktywnego.
+Istnieje wiele implementacji tego podejścia, na różne języki programowania w tym kilka dla omawianego w tej pracy Swifta. Są to m.in.: RxSwift, Reactive Cocoa czy Reactive Swift. Jednakże wszystkie implementacje podejścia reaktywnego bazują na tej samej idei. Dzięki temu nie ma większego znaczenia ani to w jakim języku się tworzy ani to, przy użyciu której biblioteki programowania reaktywnego.
 \subparagraph{}W części teoretycznej, została zawarta duża liczba rysunków i schematów. Zostało to podyktowane specyfiką omawianego tematu. Próg zrozumienia idei programowania reaktywnego, postawiony został dość wysoko. Z tego powodu, dla lepszego przyswojenia poruszanych zagadanień, załączono dużo grafik mających na celu ułatwienie i zobrazowanie mechanizmów reaktywnych.\\
 Pomimo iż programowanie reaktywne nie jest tematem kompletnie nowym, to udokumentowanie go dla języka Swift pozostawia wiele do życzenia. Z tego powodu, w niniejszej pracy posiłkowano się dokumentacją do takich platform jak .NET Microsoftu, jak również Java czy JavaScript. 
 \subparagraph{}Część praktyczna również stanowiła duże wyzwanie. Za cel, postawiono stworzenie aplikacji mobilnej w oparciu o architekturę MVVM. Po połączeniu z podejściem reaktywnym, wynikiem stało się zadanie o dużym stopniu trudności od strony programistycznej (wysoki poziom abstrakcji i kompletnie inny sposób myślenia) jak i od strony dostępności wiedzy (mała dokumentacja).
 Należy również zaznaczyć, że projekt aplikacji stworzony został przy użyciu najnowszej implementacji języka Swift (iteracja 3.0) wprowadzającej szereg zmian w API. W czasie powstawania aplikacji, wykorzystywane biblioteki do programowania reaktywnego, uległy zmianie i aktualizacji do najnowszych implementacji.\\
 Pomimo powyższych trudności, udało się stworzyć aplikację mobilną, opartą o architekturę MVVM i implementującą podejście reaktywne.
-\subparagraph{}Podsumowując: programowanie reaktywne wraz z architekturą MVVM na platformy mobilne stanowi nielada wyzwanie. Jednakże jest to podejście wykorzystujące cały potencjał urządzeń mobilnych i zdecydowanie warte podjęcia próby wdrożenia w projektach komercyjnych. Jest polecane przez doświadczonych i znanych w branży programistów i coraz więcej firm decyduje się na zastosowanie tego właśnie podejścia\cite{reactivexio}.
-\begin{thebibliography}{50}
-\bibitem{MicrosoftRx} https://msdn.microsoft.com/en-us/library/hh242985(v=vs.103).aspx
-\emph{- informacje na temat Reactive Extensions od Microsoft}
+\subparagraph{}Podsumowując: programowanie reaktywne wraz z architekturą MVVM na platformy mobilne stanowi nie lada wyzwanie. Jednakże jest to podejście wykorzystujące cały potencjał urządzeń mobilnych i zdecydowanie warte podjęcia próby wdrożenia w projektach komercyjnych. Jest polecane przez doświadczonych i znanych w branży programistów a coraz więcej firm decyduje się na zastosowanie tego właśnie podejścia \cite{reactivexio}.
 
-\bibitem{swiftHistory} https://developer.apple.com/swift/blog/?id=14
-\emph{- historia języka Swift}
+\bibliographystyle{unsrt}
+\addcontentsline{toc}{section}{Bibliografia}
+\begin{flushleft}
+\bibliography{Bibliografia}
+\end{flushleft}
 
-\bibitem{swiftOpensource} https://developer.apple.com/swift/blog/?id=34
-\emph{- Swift jako język opensource}
-
-\bibitem{swiftObjcDiff} https://redwerk.com/blog/10-differences-objective-c-swift
-\emph{- Różnice między Swiftem a Objective - C}
-
-\bibitem{pureDarwin} www.puredarwin.com 
-\emph{ - informacje o systemie Darwin}
-
-\bibitem{openGroup} www.opengroup.org \emph{ - informacje o systemach unixowych}
-
-\bibitem{introToRx} https://gist.github.com/staltz/868e7e9bc2a7b8c1f754
-\bibitem{subjects} http://reactivex.io/documentation/subject.html
-\bibitem{operators}http://reactivex.io/documentation/operators.html
-\bibitem{marbles}http://rxmarbles.com/
-\bibitem{scheduler}http://reactivex.io/documentation/scheduler.html
-\bibitem{transientState}https://github.com/ReactiveX/RxSwift/blob/master/Documentation/Why.md
-\bibitem{moyaScheme}https://github.com/Moya/Moya/blob/master/web/diagram.png
-\bibitem{MVC}https://cocoacasts.com/what-is-wrong-with-model-view-controller/
-\bibitem{rxMVVM}https://medium.cobeisfresh.com/implementing-mvvm-in-ios-with-rxswift-updated-for-swift-2-51cc3ef7edb3\#.47mux55lq
-
-
-\bibitem{XNUkernel} https://developer.apple.com/library/content/documentation/MacOSX/Conceptual/OSX\_Technology\_Overview/SystemTechnology/SystemTechnology.html\#//apple\_ref/doc/uid/TP40001067-CH207-BCICAIFJ
-\emph{ - opis jądra systemu MacOS i iOS}
-
-\bibitem{iphoneOSX} https://web.archive.org/web/20071006005308/http://www.apple.com/iphone/features/index.html\#macosx
-\emph{ - informacje o pierwszym systemie na iPhone}
-
-\bibitem{iphoneSDK} https://web.archive.org/web/20071020040652/http://www.apple.com/hotnews
-\emph{ - informacja o stworzeniu i udostępnieniu iPhone SDK}
-
-\bibitem{iphone3GappStore} http://www.apple.com/pr/library/2008/07/10iPhone-3G-on-Sale-Tomorrow.html
-\emph{ - informacje o iPhone 3G i powstaniu usługi App Store}
-
-\bibitem{iphoneOS3} http://www.apple.com/pr/library/2009/06/08Apple-Announces-the-New-iPhone-3GS-The-Fastest-Most-Powerful-iPhone-Yet.html
-\emph{ - system iPhone 3.0 i implementacja podstawowych funkcjonalności}
-
-\bibitem{ios4}http://www.apple.com/pr/library/2010/04/08Apple-Previews-iPhone-OS-4.html
-\emph{ - informacje o systemie iOS 4}
-
-\bibitem{ios5}http://www.apple.com/pr/library/2011/10/04Apple-Launches-iPhone-4S-iOS-5-iCloud.html
-\emph{ - informacje o systemie iOS 5}
-
-\bibitem{ios6}http://www.apple.com/pr/library/2012/06/11Apple-Previews-iOS-6-With-All-New-Maps-Siri-Features-Facebook-Integration-Shared-Photo-Streams-New-Passbook-App.html
-\emph{ - informacje o systemie iOS 6}
-
-\bibitem{ios7}http://www.apple.com/pr/library/2013/06/10Apple-Unveils-iOS-7.html
-\emph{ - informacje o systemie iOS 7}
-
-\bibitem{ios8}http://www.apple.com/pr/library/2014/06/02Apple-Releases-iOS-8-SDK-With-Over-4-000-New-APIs.html
-\emph{ - informacje o systemie iOS 8}
-
-\bibitem{ios9}http://www.apple.com/pr/library/2015/06/08Apple-Previews-iOS-9.html
-\emph{ - informacje o systemie iOS 9}
-
-\bibitem{compatibility}https://github.com/apple/swift-evolution/blob/master/proposals/0005-objective-c-name-translation.md
-\emph{ - informacje o poprawieniu kompatybilności Swift z Objective-C}
-
-\bibitem{ios10}http://www.apple.com/pr/library/2016/06/13Apple-Previews-iOS-10-The-Biggest-iOS-Release-Ever.html
-\emph{ - informacje o systemie iOS 10}
-
-\bibitem{beginningOfRx} Czaplicki, Evan (Apr 2012), Elm: Concurrent FRP for Functional GUIs (PDF) (thesis), Harvard
-\emph{ - pierwsze wzmianki o programowaniu reaktywnym}
-
-\bibitem{rxMicrosoftYear} http://www.introtorx.com/content/v1.0.10621.0/00foreword.html
-\emph{ - wypuszczenie biblioteki Reactive Extensions}
-
-\bibitem{rxDesignGuideline} https://go.microsoft.com/fwlink/?LinkID=205219
-\emph{ - wytyczne projektowe paradygmatu reaktywnego}
-
-\bibitem{examples}https://github.com/ReactiveX/RxSwift/blob/master/Documentation/Why.md
-\emph{ - przykłady użycia RxSwift}
-
-\bibitem{modelKaskadowy} http://zasoby.open.agh.edu.pl/\~10sdczerner/page/model\_kaskadowy.html
-\emph{ - model kaskadowy cyklu życia oprogramowania}
-
-\bibitem{cocoaPods} https://github.com/CocoaPods/CocoaPods
-\emph{ - opis menedżera zależności CocoaPods}
-
-\bibitem{UIKit}https://developer.apple.com/reference/uikit
-\emph{ - opis frameworku UIKit}
-
-\bibitem{objectGraph} https://developer.apple.com/library/content/documentation/General/Conceptual/DevPedia-CocoaCore/ObjectGraph.html
-\emph{ - definicja grafu obiektów}
-
-\bibitem{alamofire}https://github.com/Alamofire/Alamofire
-\emph{ - dokumentacja i repozytorium frameworku Alamofire}
-
-\bibitem{mapper}https://github.com/lyft/mapper
-\emph{ - dokumentacja i repozytorium frameworku Mapper}
-
-\bibitem{reactivexio}http://reactivex.io/
-\emph{ - na dole strony, przedstawiono firmy, komercyjnie wdrażające podejście reaktywne w swoich projektach}
-\end{thebibliography}
+	
 
 
 \end{document}          
