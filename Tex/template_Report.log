@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  3 MAR 2017 17:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  4 MAR 2017 16:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -775,15 +775,6 @@ Rozdzia\PlPrIeC {\l } 3.
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <5> on input line 129.
 
-LaTeX Warning: Citation `pureDarwin' on page 4 undefined on input line 131.
-
-
-LaTeX Warning: Citation `openGroup' on page 4 undefined on input line 131.
-
-
-LaTeX Warning: Citation `XNUkernel' on page 4 undefined on input line 132.
-
-
 LaTeX Warning: Citation `iphoneOSX' on page 4 undefined on input line 134.
 
 
@@ -824,14 +815,7 @@ LaTeX Warning: Citation `compatibility' on page 6 undefined on input line 144.
 
 LaTeX Warning: Citation `ios10' on page 6 undefined on input line 144.
 
-
-LaTeX Warning: Citation `swiftOpensource' on page 6 undefined on input line 148
-.
-
 [6]
-
-LaTeX Warning: Citation `swiftObjcDiff' on page 7 undefined on input line 158.
-
 
 LaTeX Warning: Citation `beginningOfRx' on page 7 undefined on input line 160.
 
@@ -850,13 +834,6 @@ File: sygnalRx.png Graphic file (type png)
 Package pdftex.def Info: sygnalRx.png used on input line 178.
 (pdftex.def)             Requested size: 284.52756pt x 145.04414pt.
 
-
-LaTeX Warning: Citation `introToRx' on page 8 undefined on input line 179.
-
-
-LaTeX Warning: Citation `introToRx' on page 8 undefined on input line 179.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 183--184
 
  []
@@ -867,12 +844,6 @@ File: asyncSubject.png Graphic file (type png)
 Package pdftex.def Info: asyncSubject.png used on input line 193.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
 
-
-LaTeX Warning: Citation `subjects' on page 9 undefined on input line 194.
-
-
-LaTeX Warning: Citation `subjects' on page 9 undefined on input line 194.
-
 <asyncSubjectFailed.png, id=45, 642.4pt x 396.48125pt>
 File: asyncSubjectFailed.png Graphic file (type png)
 
@@ -880,23 +851,11 @@ File: asyncSubjectFailed.png Graphic file (type png)
 Package pdftex.def Info: asyncSubjectFailed.png used on input line 202.
 (pdftex.def)             Requested size: 284.52756pt x 175.60779pt.
 
-
-LaTeX Warning: Citation `subjects' on page 9 undefined on input line 203.
-
-
-LaTeX Warning: Citation `subjects' on page 9 undefined on input line 203.
-
 <behaviorSubject.png, id=46, 642.4pt x 416.55624pt>
 File: behaviorSubject.png Graphic file (type png)
  <use behaviorSubject.png>
 Package pdftex.def Info: behaviorSubject.png used on input line 212.
 (pdftex.def)             Requested size: 284.52756pt x 184.49933pt.
-
-
-LaTeX Warning: Citation `subjects' on page 9 undefined on input line 213.
-
-
-LaTeX Warning: Citation `subjects' on page 9 undefined on input line 213.
 
 <behaviorSubjectFailed.png, id=47, 642.4pt x 406.51875pt>
 File: behaviorSubjectFailed.png Graphic file (type png)
@@ -904,13 +863,6 @@ File: behaviorSubjectFailed.png Graphic file (type png)
 <use behaviorSubjectFailed.png>
 Package pdftex.def Info: behaviorSubjectFailed.png used on input line 222.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
-
-
-LaTeX Warning: Citation `subjects' on page 9 undefined on input line 223.
-
-
-LaTeX Warning: Citation `subjects' on page 9 undefined on input line 223.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 209--226
 
@@ -928,25 +880,12 @@ File: publishSubject.png Graphic file (type png)
 Package pdftex.def Info: publishSubject.png used on input line 230.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
 
-
-LaTeX Warning: Citation `subjects' on page 10 undefined on input line 231.
-
-
-LaTeX Warning: Citation `subjects' on page 10 undefined on input line 231.
-
 <publishSubjectFailed.png, id=54, 642.4pt x 396.48125pt>
 File: publishSubjectFailed.png Graphic file (type png)
 
 <use publishSubjectFailed.png>
 Package pdftex.def Info: publishSubjectFailed.png used on input line 239.
 (pdftex.def)             Requested size: 284.52756pt x 175.60779pt.
-
-
-LaTeX Warning: Citation `subjects' on page 10 undefined on input line 240.
-
-
-LaTeX Warning: Citation `subjects' on page 10 undefined on input line 240.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 227--243
 
@@ -960,12 +899,6 @@ Package pdftex.def Info: replaySubject.png used on input line 247.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
 
 
-LaTeX Warning: Citation `subjects' on page 11 undefined on input line 248.
-
-
-LaTeX Warning: Citation `subjects' on page 11 undefined on input line 248.
-
-
 LaTeX Warning: Citation `rxDesignGuideline' on page 11 undefined on input line 
 253.
 
@@ -976,13 +909,6 @@ File: create.png Graphic file (type png)
 Package pdftex.def Info: create.png used on input line 266.
 (pdftex.def)             Requested size: 170.71652pt x 53.34859pt.
 
-
-LaTeX Warning: Citation `operators' on page 12 undefined on input line 267.
-
-
-LaTeX Warning: Citation `operators' on page 12 undefined on input line 267.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 263--270
 
  []
@@ -992,13 +918,6 @@ File: defer.png Graphic file (type png)
  <use defer.png>
 Package pdftex.def Info: defer.png used on input line 273.
 (pdftex.def)             Requested size: 170.71652pt x 90.6926pt.
-
-
-LaTeX Warning: Citation `operators' on page 12 undefined on input line 274.
-
-
-LaTeX Warning: Citation `operators' on page 12 undefined on input line 274.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 270--277
 
@@ -1036,13 +955,6 @@ File: buffer.png Graphic file (type png)
 Package pdftex.def Info: buffer.png used on input line 281.
 (pdftex.def)             Requested size: 170.71652pt x 85.35774pt.
 
-
-LaTeX Warning: Citation `operators' on page 13 undefined on input line 282.
-
-
-LaTeX Warning: Citation `operators' on page 13 undefined on input line 282.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 278--285
 
  []
@@ -1052,13 +964,6 @@ File: flatmap.png Graphic file (type png)
  <use flatmap.png>
 Package pdftex.def Info: flatmap.png used on input line 288.
 (pdftex.def)             Requested size: 170.71652pt x 82.6903pt.
-
-
-LaTeX Warning: Citation `operators' on page 13 undefined on input line 289.
-
-
-LaTeX Warning: Citation `operators' on page 13 undefined on input line 289.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 285--292
 
@@ -1101,13 +1006,6 @@ File: map.png Graphic file (type png)
 Package pdftex.def Info: map.png used on input line 296.
 (pdftex.def)             Requested size: 170.71652pt x 85.94612pt.
 
-
-LaTeX Warning: Citation `marbles' on page 14 undefined on input line 297.
-
-
-LaTeX Warning: Citation `marbles' on page 14 undefined on input line 297.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 293--300
 
  []
@@ -1117,26 +1015,13 @@ File: scan.png Graphic file (type png)
  <use scan.png>
 Package pdftex.def Info: scan.png used on input line 304.
 (pdftex.def)             Requested size: 170.71652pt x 85.94612pt.
-
-
-LaTeX Warning: Citation `marbles' on page 14 undefined on input line 305.
-
-
-LaTeX Warning: Citation `marbles' on page 14 undefined on input line 305.
-
-[14 <./flatmap.png> <./map.png> <./scan.png>]
-<debounce.png, id=90, 480.79625pt x 293.095pt>
+ [14 <./flatmap.png> <./map.png> <./scan.png>] <debounce.png, id=90, 480.79625p
+t x 293.095pt>
 File: debounce.png Graphic file (type png)
- <use debounce.png>
+
+<use debounce.png>
 Package pdftex.def Info: debounce.png used on input line 314.
 (pdftex.def)             Requested size: 170.71652pt x 104.06956pt.
-
-
-LaTeX Warning: Citation `marbles' on page 15 undefined on input line 315.
-
-
-LaTeX Warning: Citation `marbles' on page 15 undefined on input line 315.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 311--318
 
@@ -1148,13 +1033,6 @@ File: distinct.png Graphic file (type png)
 Package pdftex.def Info: distinct.png used on input line 321.
 (pdftex.def)             Requested size: 170.71652pt x 102.78348pt.
 
-
-LaTeX Warning: Citation `marbles' on page 15 undefined on input line 322.
-
-
-LaTeX Warning: Citation `marbles' on page 15 undefined on input line 322.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 318--325
 
  []
@@ -1164,13 +1042,6 @@ File: filter.png Graphic file (type png)
  <use filter.png>
 Package pdftex.def Info: filter.png used on input line 328.
 (pdftex.def)             Requested size: 170.71652pt x 103.00037pt.
-
-
-LaTeX Warning: Citation `marbles' on page 15 undefined on input line 329.
-
-
-LaTeX Warning: Citation `marbles' on page 15 undefined on input line 329.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 325--333
 
@@ -1223,37 +1094,18 @@ File: skip.png Graphic file (type png)
 Package pdftex.def Info: skip.png used on input line 336.
 (pdftex.def)             Requested size: 170.71652pt x 103.28084pt.
 
-
-LaTeX Warning: Citation `marbles' on page 16 undefined on input line 337.
-
-
-LaTeX Warning: Citation `marbles' on page 16 undefined on input line 337.
-
 <take.png, id=100, 484.81125pt x 293.095pt>
 File: take.png Graphic file (type png)
  <use take.png>
 Package pdftex.def Info: take.png used on input line 344.
 (pdftex.def)             Requested size: 170.71652pt x 103.20642pt.
-
-
-LaTeX Warning: Citation `marbles' on page 16 undefined on input line 345.
-
-
-LaTeX Warning: Citation `marbles' on page 16 undefined on input line 345.
-
-[16 <./skip.png> <./take.png>]
-<combinelatest.png, id=106, 659.46375pt x 378.41376pt>
+ [16 <./skip.png> <./take.png>] <combinelatest.png, id=106, 659.46375pt x 378.4
+1376pt>
 File: combinelatest.png Graphic file (type png)
- <use combinelatest.png>
+
+<use combinelatest.png>
 Package pdftex.def Info: combinelatest.png used on input line 354.
 (pdftex.def)             Requested size: 227.62204pt x 130.61063pt.
-
-
-LaTeX Warning: Citation `marbles' on page 17 undefined on input line 355.
-
-
-LaTeX Warning: Citation `marbles' on page 17 undefined on input line 355.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 351--358
 
@@ -1264,13 +1116,6 @@ File: merge.png Graphic file (type png)
  <use merge.png>
 Package pdftex.def Info: merge.png used on input line 361.
 (pdftex.def)             Requested size: 227.62204pt x 135.87408pt.
-
-
-LaTeX Warning: Citation `marbles' on page 17 undefined on input line 362.
-
-
-LaTeX Warning: Citation `marbles' on page 17 undefined on input line 362.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 358--365
 
@@ -1299,13 +1144,6 @@ File: catch.png Graphic file (type png)
 Package pdftex.def Info: catch.png used on input line 376.
 (pdftex.def)             Requested size: 227.62204pt x 110.25217pt.
 
-
-LaTeX Warning: Citation `operators' on page 17 undefined on input line 377.
-
-
-LaTeX Warning: Citation `operators' on page 17 undefined on input line 377.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 373--380
 
  []
@@ -1315,13 +1153,6 @@ File: retry.png Graphic file (type png)
  <use retry.png>
 Package pdftex.def Info: retry.png used on input line 384.
 (pdftex.def)             Requested size: 227.62204pt x 112.03043pt.
-
-
-LaTeX Warning: Citation `operators' on page 17 undefined on input line 385.
-
-
-LaTeX Warning: Citation `operators' on page 17 undefined on input line 385.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 381--388
 
@@ -1334,13 +1165,6 @@ File: materialize.png Graphic file (type png)
 Package pdftex.def Info: materialize.png used on input line 392.
 (pdftex.def)             Requested size: 227.62204pt x 112.03043pt.
 
-
-LaTeX Warning: Citation `operators' on page 18 undefined on input line 393.
-
-
-LaTeX Warning: Citation `operators' on page 18 undefined on input line 393.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 389--396
 
  []
@@ -1351,24 +1175,11 @@ File: observeOn.png Graphic file (type png)
 Package pdftex.def Info: observeOn.png used on input line 399.
 (pdftex.def)             Requested size: 227.62204pt x 109.54086pt.
 
-
-LaTeX Warning: Citation `operators' on page 18 undefined on input line 400.
-
-
-LaTeX Warning: Citation `operators' on page 18 undefined on input line 400.
-
 <observeOnError.png, id=118, 642.4pt x 309.155pt>
 File: observeOnError.png Graphic file (type png)
  <use observeOnError.png>
 Package pdftex.def Info: observeOnError.png used on input line 407.
 (pdftex.def)             Requested size: 227.62204pt x 109.54086pt.
-
-
-LaTeX Warning: Citation `operators' on page 18 undefined on input line 408.
-
-
-LaTeX Warning: Citation `operators' on page 18 undefined on input line 408.
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 396--411
 
@@ -1381,13 +1192,6 @@ File: subscribeOn.png Graphic file (type png)
 Package pdftex.def Info: subscribeOn.png used on input line 415.
 (pdftex.def)             Requested size: 227.62204pt x 108.4739pt.
 
-
-LaTeX Warning: Citation `operators' on page 19 undefined on input line 416.
-
-
-LaTeX Warning: Citation `operators' on page 19 undefined on input line 416.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 412--419
 
  []
@@ -1399,13 +1203,6 @@ File: serialize.png Graphic file (type png)
 Package pdftex.def Info: serialize.png used on input line 423.
 (pdftex.def)             Requested size: 227.62204pt x 142.26086pt.
 
-
-LaTeX Warning: Citation `operators' on page 20 undefined on input line 424.
-
-
-LaTeX Warning: Citation `operators' on page 20 undefined on input line 424.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 420--427
 
  []
@@ -1415,14 +1212,7 @@ File: schedulers.png Graphic file (type png)
  <use schedulers.png>
 Package pdftex.def Info: schedulers.png used on input line 438.
 (pdftex.def)             Requested size: 284.52756pt x 355.66138pt.
-
-
-LaTeX Warning: Citation `scheduler' on page 20 undefined on input line 439.
-
-
-LaTeX Warning: Citation `scheduler' on page 20 undefined on input line 439.
-
-[20 <./subscribeOn.png> <./serialize.png>] [21 <./schedulers.png>]
+ [20 <./subscribeOn.png> <./serialize.png>] [21 <./schedulers.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 446.
 
 
@@ -1459,15 +1249,6 @@ File: transientState.png Graphic file (type png)
 Package pdftex.def Info: transientState.png used on input line 484.
 (pdftex.def)             Requested size: 426.79134pt x 216.71443pt.
 
-
-LaTeX Warning: Citation `transientState' on page 24 undefined on input line 485
-.
-
-
-LaTeX Warning: Citation `transientState' on page 24 undefined on input line 485
-.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 475--490
 
  []
@@ -1503,16 +1284,7 @@ File: compositionalDisposal.png Graphic file (type png)
 <use compositionalDisposal.png>
 Package pdftex.def Info: compositionalDisposal.png used on input line 502.
 (pdftex.def)             Requested size: 341.43306pt x 222.10014pt.
-
-
-LaTeX Warning: Citation `transientState' on page 25 undefined on input line 503
-.
-
-
-LaTeX Warning: Citation `transientState' on page 25 undefined on input line 503
-.
-
-[25 <./transientState.png>]
+ [25 <./transientState.png>]
 <aggregatingNetworkRequests.png, id=161, 488.82625pt x 212.795pt>
 File: aggregatingNetworkRequests.png Graphic file (type png)
 
@@ -1520,16 +1292,7 @@ File: aggregatingNetworkRequests.png Graphic file (type png)
 Package pdftex.def Info: aggregatingNetworkRequests.png used on input line 513.
 
 (pdftex.def)             Requested size: 398.33858pt x 173.40527pt.
-
-
-LaTeX Warning: Citation `transientState' on page 26 undefined on input line 514
-.
-
-
-LaTeX Warning: Citation `transientState' on page 26 undefined on input line 514
-.
-
-[26 <./compositionalDisposal.png> <./aggregatingNetworkRequests.png>]
+ [26 <./compositionalDisposal.png> <./aggregatingNetworkRequests.png>]
 Rozdzia\PlPrIeC {\l } 4.
 [27
 
@@ -1589,12 +1352,6 @@ Package pdftex.def Info: moyaDiagram.png used on input line 643.
 (pdftex.def)             Requested size: 369.88582pt x 268.05785pt.
 
 
-LaTeX Warning: Citation `moyaScheme' on page 34 undefined on input line 644.
-
-
-LaTeX Warning: Citation `moyaScheme' on page 34 undefined on input line 644.
-
-
 LaTeX Warning: Citation `mapper' on page 34 undefined on input line 648.
 
 [34] <MVC.jpg, id=199, 1027.84pt x 770.88pt>
@@ -1603,25 +1360,12 @@ File: MVC.jpg Graphic file (type jpg)
 Package pdftex.def Info: MVC.jpg used on input line 657.
 (pdftex.def)             Requested size: 369.88582pt x 277.41072pt.
 
-
-LaTeX Warning: Citation `MVC' on page 35 undefined on input line 658.
-
-
-LaTeX Warning: Citation `MVC' on page 35 undefined on input line 658.
-
 <rxMVVM.png, id=200, 634.37pt x 118.4425pt>
 File: rxMVVM.png Graphic file (type png)
  <use rxMVVM.png>
 Package pdftex.def Info: rxMVVM.png used on input line 665.
 (pdftex.def)             Requested size: 369.88582pt x 69.06357pt.
-
-
-LaTeX Warning: Citation `rxMVVM' on page 35 undefined on input line 666.
-
-
-LaTeX Warning: Citation `rxMVVM' on page 35 undefined on input line 666.
-
-[35 <./moyaDiagram.png>] [36 <./MVC.jpg> <./rxMVVM.png (PNG copy)>]
+ [35 <./moyaDiagram.png>] [36 <./MVC.jpg> <./rxMVVM.png (PNG copy)>]
 <SearchVC.png, id=209, 313.17pt x 574.145pt>
 File: SearchVC.png Graphic file (type png)
  <use SearchVC.png>
@@ -1700,21 +1444,28 @@ LaTeX Warning: Citation `reactivexio' on page 41 undefined on input line 731.
 
 [41
 
-] (./template_Report.bbl [42]) [43
+] (./template_Report.bbl [42]
+Overfull \hbox (526.15387pt too wide) in paragraph at lines 17--21
+\OT4/cmr/m/n/12 https://developer.apple.com/library/content/documentation/macos
+x/conceptual/osx[]technology[]overview/systemtechnology/systemtechnology.html#/
+/apple[]ref/doc/uid/tp40001067- 
+ []
 
-] (./template_Report.aux)
+[43
+
+]) [44] (./template_Report.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4209 strings out of 493014
- 63695 string characters out of 6133350
- 119050 words of memory out of 5000000
- 7630 multiletter control sequences out of 15000+600000
+ 4210 strings out of 493014
+ 63703 string characters out of 6133350
+ 119099 words of memory out of 5000000
+ 7631 multiletter control sequences out of 15000+600000
  17372 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,10n,49p,1037b,372s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,10n,49p,1037b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/local/t
 exlive/2016/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/local/texlive/2016/tex
 mf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2016/texm
@@ -1726,10 +1477,10 @@ lic/pl/plr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr1
 local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on template_Report.pdf (44 pages, 4998921 bytes).
+Output written on template_Report.pdf (45 pages, 5004148 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 131 compressed objects within 2 object streams
+ 284 PDF objects out of 1000 (max. 8388607)
+ 133 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 
