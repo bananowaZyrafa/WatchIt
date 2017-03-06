@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  4 MAR 2017 16:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.14)  6 MAR 2017 13:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -749,7 +749,7 @@ LaTeX Font Info:    External font `plex10' loaded for size
  [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./PK-lo
-go.png> <./WFMI-logo.png>] (./template_Report.toc
+go.png> <./WFMI-logo.png>] [1] (./template_Report.toc
 LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <12> on input line 9.
 LaTeX Font Info:    External font `plex10' loaded for size
@@ -760,663 +760,602 @@ LaTeX Font Info:    External font `plex10' loaded for size
 \tf@toc=\write3
 \openout3 = `template_Report.toc'.
 
- [1
+ [2
 
 ]
 Rozdzia\PlPrIeC {\l } 1.
-[2
+[3
 
 ]
 Rozdzia\PlPrIeC {\l } 2.
-[3
+[4
 
 ]
 Rozdzia\PlPrIeC {\l } 3.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 129.
+(Font)              <5> on input line 130.
+[5
 
-LaTeX Warning: Citation `iphoneOSX' on page 4 undefined on input line 134.
-
-
-LaTeX Warning: Citation `iphoneSDK' on page 4 undefined on input line 135.
-
-
-LaTeX Warning: Citation `iphone3GappStore' on page 4 undefined on input line 13
-6.
-
-
-LaTeX Warning: Citation `iphoneOS3' on page 4 undefined on input line 137.
-
-
-LaTeX Warning: Citation `ios4' on page 4 undefined on input line 138.
-
-[4
-
-]
-
-LaTeX Warning: Citation `ios5' on page 5 undefined on input line 139.
-
-
-LaTeX Warning: Citation `ios6' on page 5 undefined on input line 140.
-
-
-LaTeX Warning: Citation `ios7' on page 5 undefined on input line 141.
-
-
-LaTeX Warning: Citation `ios8' on page 5 undefined on input line 142.
-
-
-LaTeX Warning: Citation `ios9' on page 5 undefined on input line 143.
-
-[5]
-
-LaTeX Warning: Citation `compatibility' on page 6 undefined on input line 144.
-
-
-LaTeX Warning: Citation `ios10' on page 6 undefined on input line 144.
-
-[6]
-
-LaTeX Warning: Citation `beginningOfRx' on page 7 undefined on input line 160.
-
-
-LaTeX Warning: Citation `rxMicrosoftYear' on page 7 undefined on input line 160
-.
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
+] [6] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
 
  []
 
-<sygnalRx.png, id=40, 513.92pt x 261.97874pt>
+<sygnalRx.png, id=43, 513.92pt x 261.97874pt>
 File: sygnalRx.png Graphic file (type png)
  <use sygnalRx.png>
-Package pdftex.def Info: sygnalRx.png used on input line 178.
+Package pdftex.def Info: sygnalRx.png used on input line 179.
 (pdftex.def)             Requested size: 284.52756pt x 145.04414pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--184
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
  []
 
-[8] <asyncSubject.png, id=44, 642.4pt x 406.51875pt>
+[9] <asyncSubject.png, id=47, 642.4pt x 406.51875pt>
 File: asyncSubject.png Graphic file (type png)
  <use asyncSubject.png>
-Package pdftex.def Info: asyncSubject.png used on input line 193.
+Package pdftex.def Info: asyncSubject.png used on input line 194.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
 
-<asyncSubjectFailed.png, id=45, 642.4pt x 396.48125pt>
+<asyncSubjectFailed.png, id=48, 642.4pt x 396.48125pt>
 File: asyncSubjectFailed.png Graphic file (type png)
 
 <use asyncSubjectFailed.png>
-Package pdftex.def Info: asyncSubjectFailed.png used on input line 202.
+Package pdftex.def Info: asyncSubjectFailed.png used on input line 203.
 (pdftex.def)             Requested size: 284.52756pt x 175.60779pt.
 
-<behaviorSubject.png, id=46, 642.4pt x 416.55624pt>
+<behaviorSubject.png, id=49, 642.4pt x 416.55624pt>
 File: behaviorSubject.png Graphic file (type png)
  <use behaviorSubject.png>
-Package pdftex.def Info: behaviorSubject.png used on input line 212.
+Package pdftex.def Info: behaviorSubject.png used on input line 213.
 (pdftex.def)             Requested size: 284.52756pt x 184.49933pt.
 
-<behaviorSubjectFailed.png, id=47, 642.4pt x 406.51875pt>
+<behaviorSubjectFailed.png, id=50, 642.4pt x 406.51875pt>
 File: behaviorSubjectFailed.png Graphic file (type png)
 
 <use behaviorSubjectFailed.png>
-Package pdftex.def Info: behaviorSubjectFailed.png used on input line 222.
+Package pdftex.def Info: behaviorSubjectFailed.png used on input line 223.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--226
+Underfull \hbox (badness 10000) in paragraph at lines 210--227
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--226
+Underfull \hbox (badness 10000) in paragraph at lines 210--227
 
  []
 
-[9 <./sygnalRx.png> <./asyncSubject.png>]
-<publishSubject.png, id=53, 642.4pt x 406.51875pt>
+[10 <./sygnalRx.png> <./asyncSubject.png>]
+<publishSubject.png, id=56, 642.4pt x 406.51875pt>
 File: publishSubject.png Graphic file (type png)
  <use publishSubject.png>
-Package pdftex.def Info: publishSubject.png used on input line 230.
+Package pdftex.def Info: publishSubject.png used on input line 231.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
 
-<publishSubjectFailed.png, id=54, 642.4pt x 396.48125pt>
+<publishSubjectFailed.png, id=57, 642.4pt x 396.48125pt>
 File: publishSubjectFailed.png Graphic file (type png)
 
 <use publishSubjectFailed.png>
-Package pdftex.def Info: publishSubjectFailed.png used on input line 239.
+Package pdftex.def Info: publishSubjectFailed.png used on input line 240.
 (pdftex.def)             Requested size: 284.52756pt x 175.60779pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--243
+Underfull \hbox (badness 10000) in paragraph at lines 228--244
 
  []
 
-[10 <./asyncSubjectFailed.png> <./behaviorSubject.png>]
-<replaySubject.png, id=60, 642.4pt x 406.51875pt>
+[11 <./asyncSubjectFailed.png> <./behaviorSubject.png>]
+<replaySubject.png, id=63, 642.4pt x 406.51875pt>
 File: replaySubject.png Graphic file (type png)
  <use replaySubject.png>
-Package pdftex.def Info: replaySubject.png used on input line 247.
+Package pdftex.def Info: replaySubject.png used on input line 248.
 (pdftex.def)             Requested size: 284.52756pt x 180.05356pt.
 
-
-LaTeX Warning: Citation `rxDesignGuideline' on page 11 undefined on input line 
-253.
-
-[11 <./behaviorSubjectFailed.png> <./publishSubject.png> <./publishSubjectFaile
-d.png>] <create.png, id=67, 642.4pt x 200.75pt>
+[12 <./behaviorSubjectFailed.png> <./publishSubject.png> <./publishSubjectFaile
+d.png>] <create.png, id=71, 642.4pt x 200.75pt>
 File: create.png Graphic file (type png)
  <use create.png>
-Package pdftex.def Info: create.png used on input line 266.
+Package pdftex.def Info: create.png used on input line 267.
 (pdftex.def)             Requested size: 170.71652pt x 53.34859pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--270
+Underfull \hbox (badness 10000) in paragraph at lines 264--271
 
  []
 
-<defer.png, id=68, 642.4pt x 341.275pt>
+<defer.png, id=72, 642.4pt x 341.275pt>
 File: defer.png Graphic file (type png)
  <use defer.png>
-Package pdftex.def Info: defer.png used on input line 273.
+Package pdftex.def Info: defer.png used on input line 274.
 (pdftex.def)             Requested size: 170.71652pt x 90.6926pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 270--277
+Underfull \hbox (badness 10000) in paragraph at lines 271--278
 
  []
 
-[12 <./replaySubject.png>] <buffer.png, id=74, 642.4pt x 321.2pt>
+[13 <./replaySubject.png>] <buffer.png, id=77, 642.4pt x 321.2pt>
 File: buffer.png Graphic file (type png)
 
 <use buffer.png>
-Package pdftex.def Info: buffer.png used on input line 281.
+Package pdftex.def Info: buffer.png used on input line 282.
 (pdftex.def)             Requested size: 170.71652pt x 85.35774pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--285
+Underfull \hbox (badness 10000) in paragraph at lines 279--286
 
  []
 
-<flatmap.png, id=75, 642.4pt x 311.1625pt>
+<flatmap.png, id=78, 642.4pt x 311.1625pt>
 File: flatmap.png Graphic file (type png)
  <use flatmap.png>
-Package pdftex.def Info: flatmap.png used on input line 288.
+Package pdftex.def Info: flatmap.png used on input line 289.
 (pdftex.def)             Requested size: 170.71652pt x 82.6903pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--292
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--292
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--292
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--292
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--292
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--292
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 285--292
+Underfull \hbox (badness 10000) in paragraph at lines 286--293
 
  []
 
-[13 <./create.png> <./defer.png> <./buffer.png>]
-<map.png, id=82, 584.1825pt x 294.09875pt>
+[14 <./create.png> <./defer.png> <./buffer.png>]
+<map.png, id=85, 584.1825pt x 294.09875pt>
 File: map.png Graphic file (type png)
  <use map.png>
-Package pdftex.def Info: map.png used on input line 296.
+Package pdftex.def Info: map.png used on input line 297.
 (pdftex.def)             Requested size: 170.71652pt x 85.94612pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--300
+Underfull \hbox (badness 10000) in paragraph at lines 294--301
 
  []
 
-<scan.png, id=83, 584.1825pt x 294.09875pt>
+<scan.png, id=86, 584.1825pt x 294.09875pt>
 File: scan.png Graphic file (type png)
  <use scan.png>
-Package pdftex.def Info: scan.png used on input line 304.
+Package pdftex.def Info: scan.png used on input line 305.
 (pdftex.def)             Requested size: 170.71652pt x 85.94612pt.
- [14 <./flatmap.png> <./map.png> <./scan.png>] <debounce.png, id=90, 480.79625p
+ [15 <./flatmap.png> <./map.png> <./scan.png>] <debounce.png, id=93, 480.79625p
 t x 293.095pt>
 File: debounce.png Graphic file (type png)
 
 <use debounce.png>
-Package pdftex.def Info: debounce.png used on input line 314.
+Package pdftex.def Info: debounce.png used on input line 315.
 (pdftex.def)             Requested size: 170.71652pt x 104.06956pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--318
+Underfull \hbox (badness 10000) in paragraph at lines 312--319
 
  []
 
-<distinct.png, id=91, 481.8pt x 290.08376pt>
+<distinct.png, id=94, 481.8pt x 290.08376pt>
 File: distinct.png Graphic file (type png)
  <use distinct.png>
-Package pdftex.def Info: distinct.png used on input line 321.
+Package pdftex.def Info: distinct.png used on input line 322.
 (pdftex.def)             Requested size: 170.71652pt x 102.78348pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 318--325
+Underfull \hbox (badness 10000) in paragraph at lines 319--326
 
  []
 
-<filter.png, id=92, 480.79625pt x 290.08376pt>
+<filter.png, id=95, 480.79625pt x 290.08376pt>
 File: filter.png Graphic file (type png)
  <use filter.png>
-Package pdftex.def Info: filter.png used on input line 328.
+Package pdftex.def Info: filter.png used on input line 329.
 (pdftex.def)             Requested size: 170.71652pt x 103.00037pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--333
+Underfull \hbox (badness 10000) in paragraph at lines 326--334
 
  []
 
-[15 <./debounce.png> <./distinct.png> <./filter.png>]
-<skip.png, id=99, 482.80376pt x 292.09125pt>
+[16 <./debounce.png> <./distinct.png> <./filter.png>]
+<skip.png, id=102, 482.80376pt x 292.09125pt>
 File: skip.png Graphic file (type png)
  <use skip.png>
-Package pdftex.def Info: skip.png used on input line 336.
+Package pdftex.def Info: skip.png used on input line 337.
 (pdftex.def)             Requested size: 170.71652pt x 103.28084pt.
 
-<take.png, id=100, 484.81125pt x 293.095pt>
+<take.png, id=103, 484.81125pt x 293.095pt>
 File: take.png Graphic file (type png)
  <use take.png>
-Package pdftex.def Info: take.png used on input line 344.
+Package pdftex.def Info: take.png used on input line 345.
 (pdftex.def)             Requested size: 170.71652pt x 103.20642pt.
- [16 <./skip.png> <./take.png>] <combinelatest.png, id=106, 659.46375pt x 378.4
+ [17 <./skip.png> <./take.png>] <combinelatest.png, id=109, 659.46375pt x 378.4
 1376pt>
 File: combinelatest.png Graphic file (type png)
 
 <use combinelatest.png>
-Package pdftex.def Info: combinelatest.png used on input line 354.
+Package pdftex.def Info: combinelatest.png used on input line 355.
 (pdftex.def)             Requested size: 227.62204pt x 130.61063pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 351--358
+Underfull \hbox (badness 10000) in paragraph at lines 352--359
 
  []
 
-<merge.png, id=107, 657.45625pt x 392.46625pt>
+<merge.png, id=110, 657.45625pt x 392.46625pt>
 File: merge.png Graphic file (type png)
  <use merge.png>
-Package pdftex.def Info: merge.png used on input line 361.
+Package pdftex.def Info: merge.png used on input line 362.
 (pdftex.def)             Requested size: 227.62204pt x 135.87408pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 358--365
+Underfull \hbox (badness 10000) in paragraph at lines 359--366
 
  []
 
-<zip.png, id=108, 659.46375pt x 390.45876pt>
+<zip.png, id=111, 659.46375pt x 390.45876pt>
 File: zip.png Graphic file (type png)
  <use zip.png>
-Package pdftex.def Info: zip.png used on input line 368.
+Package pdftex.def Info: zip.png used on input line 369.
 (pdftex.def)             Requested size: 227.62204pt x 134.76799pt.
 
-
-LaTeX Warning: Citation `zip' on page 17 undefined on input line 369.
-
-
-LaTeX Warning: Citation `zip' on page 17 undefined on input line 369.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 365--372
+Underfull \hbox (badness 10000) in paragraph at lines 366--373
 
  []
 
-<catch.png, id=109, 642.4pt x 311.1625pt>
+<catch.png, id=112, 642.4pt x 311.1625pt>
 File: catch.png Graphic file (type png)
  <use catch.png>
-Package pdftex.def Info: catch.png used on input line 376.
+Package pdftex.def Info: catch.png used on input line 377.
 (pdftex.def)             Requested size: 227.62204pt x 110.25217pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--380
+Underfull \hbox (badness 10000) in paragraph at lines 374--381
 
  []
 
-<retry.png, id=110, 642.4pt x 316.18124pt>
+<retry.png, id=113, 642.4pt x 316.18124pt>
 File: retry.png Graphic file (type png)
  <use retry.png>
-Package pdftex.def Info: retry.png used on input line 384.
+Package pdftex.def Info: retry.png used on input line 385.
 (pdftex.def)             Requested size: 227.62204pt x 112.03043pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 381--388
+Underfull \hbox (badness 10000) in paragraph at lines 382--389
 
  []
 
-[17 <./combinelatest.png> <./merge.png>]
-<materialize.png, id=116, 642.4pt x 316.18124pt>
+[18 <./combinelatest.png> <./merge.png>]
+<materialize.png, id=120, 642.4pt x 316.18124pt>
 File: materialize.png Graphic file (type png)
  <use materialize.png>
-Package pdftex.def Info: materialize.png used on input line 392.
+Package pdftex.def Info: materialize.png used on input line 393.
 (pdftex.def)             Requested size: 227.62204pt x 112.03043pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 389--396
+Underfull \hbox (badness 10000) in paragraph at lines 390--397
 
  []
 
-<observeOn.png, id=117, 642.4pt x 309.155pt>
+<observeOn.png, id=121, 642.4pt x 309.155pt>
 File: observeOn.png Graphic file (type png)
  <use observeOn.png>
-Package pdftex.def Info: observeOn.png used on input line 399.
+Package pdftex.def Info: observeOn.png used on input line 400.
 (pdftex.def)             Requested size: 227.62204pt x 109.54086pt.
 
-<observeOnError.png, id=118, 642.4pt x 309.155pt>
+<observeOnError.png, id=122, 642.4pt x 309.155pt>
 File: observeOnError.png Graphic file (type png)
  <use observeOnError.png>
-Package pdftex.def Info: observeOnError.png used on input line 407.
+Package pdftex.def Info: observeOnError.png used on input line 408.
 (pdftex.def)             Requested size: 227.62204pt x 109.54086pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 396--411
+Underfull \hbox (badness 10000) in paragraph at lines 397--412
 
  []
 
-[18 <./zip.png> <./catch.png> <./retry.png>]
-<subscribeOn.png, id=126, 642.4pt x 306.14375pt>
+[19 <./zip.png> <./catch.png> <./retry.png>]
+<subscribeOn.png, id=129, 642.4pt x 306.14375pt>
 File: subscribeOn.png Graphic file (type png)
  <use subscribeOn.png>
-Package pdftex.def Info: subscribeOn.png used on input line 415.
+Package pdftex.def Info: subscribeOn.png used on input line 416.
 (pdftex.def)             Requested size: 227.62204pt x 108.4739pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 412--419
+Underfull \hbox (badness 10000) in paragraph at lines 413--420
 
  []
 
-[19 <./materialize.png> <./observeOn.png> <./observeOnError.png>]
-<serialize.png, id=133, 642.4pt x 401.5pt>
+[20 <./materialize.png> <./observeOn.png> <./observeOnError.png>]
+<serialize.png, id=136, 642.4pt x 401.5pt>
 File: serialize.png Graphic file (type png)
  <use serialize.png>
-Package pdftex.def Info: serialize.png used on input line 423.
+Package pdftex.def Info: serialize.png used on input line 424.
 (pdftex.def)             Requested size: 227.62204pt x 142.26086pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--427
+Underfull \hbox (badness 10000) in paragraph at lines 421--428
 
  []
 
-<schedulers.png, id=134, 642.4pt x 803.0pt>
+<schedulers.png, id=137, 642.4pt x 803.0pt>
 File: schedulers.png Graphic file (type png)
  <use schedulers.png>
-Package pdftex.def Info: schedulers.png used on input line 438.
+Package pdftex.def Info: schedulers.png used on input line 439.
 (pdftex.def)             Requested size: 284.52756pt x 355.66138pt.
- [20 <./subscribeOn.png> <./serialize.png>] [21 <./schedulers.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 446.
+ [21 <./subscribeOn.png> <./serialize.png>] [22 <./schedulers.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 447.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 446.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 447.
 
-Overfull \hbox (4.9307pt too wide) in paragraph at lines 453--455
+Overfull \hbox (4.9307pt too wide) in paragraph at lines 454--456
  \OT4/cmr/bx/n/12 Con-cur-rent-Di-spat-chQu-eu-eSche-du-ler (Con-cur-rent sche-
 du-ler) -[] \OT4/cmr/m/n/12 od-sy-ªa pra-
  []
 
 
-Overfull \hbox (24.87144pt too wide) in paragraph at lines 453--455
+Overfull \hbox (24.87144pt too wide) in paragraph at lines 454--456
 \OT4/cmr/m/n/12 c¦, któ-ra ma by¢ wy-ko-na-na z u»y-ciem kon-kret-nej wspóª-bie
 »-nej ko-lej-ki ty-pu di-spatch[]queue[]t.
  []
 
-[22]
-Overfull \hbox (1.23254pt too wide) in paragraph at lines 467--468
+[23]
+Overfull \hbox (1.23254pt too wide) in paragraph at lines 468--469
 \OT4/cmr/m/n/12 po-wied-nim na-rz¦-dziem. Bez wzgl¦-du na to czy od-py-ta-nia t
 e po-win-ny od-by-wa¢ si¦ wspóª-
  []
 
-[23]
-
-LaTeX Warning: Citation `examples' on page 24 undefined on input line 473.
-
-<transientState.png, id=151, 517.935pt x 262.9825pt>
+[24] <transientState.png, id=155, 517.935pt x 262.9825pt>
 File: transientState.png Graphic file (type png)
- <use transientState.png>
-Package pdftex.def Info: transientState.png used on input line 484.
+
+<use transientState.png>
+Package pdftex.def Info: transientState.png used on input line 485.
 (pdftex.def)             Requested size: 426.79134pt x 216.71443pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--490
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--490
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--490
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--490
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--490
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--490
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
 
  []
 
-[24] <compositionalDisposal.png, id=156, 413.545pt x 269.005pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--491
+
+ []
+
+[25] <compositionalDisposal.png, id=159, 413.545pt x 269.005pt>
 File: compositionalDisposal.png Graphic file (type png)
 
 <use compositionalDisposal.png>
-Package pdftex.def Info: compositionalDisposal.png used on input line 502.
+Package pdftex.def Info: compositionalDisposal.png used on input line 503.
 (pdftex.def)             Requested size: 341.43306pt x 222.10014pt.
- [25 <./transientState.png>]
-<aggregatingNetworkRequests.png, id=161, 488.82625pt x 212.795pt>
+ [26 <./transientState.png>]
+<aggregatingNetworkRequests.png, id=164, 488.82625pt x 212.795pt>
 File: aggregatingNetworkRequests.png Graphic file (type png)
 
 <use aggregatingNetworkRequests.png>
-Package pdftex.def Info: aggregatingNetworkRequests.png used on input line 513.
+Package pdftex.def Info: aggregatingNetworkRequests.png used on input line 514.
 
 (pdftex.def)             Requested size: 398.33858pt x 173.40527pt.
- [26 <./compositionalDisposal.png> <./aggregatingNetworkRequests.png>]
+ [27 <./compositionalDisposal.png> <./aggregatingNetworkRequests.png>]
 Rozdzia\PlPrIeC {\l } 4.
-[27
+[28
 
-]
-
-LaTeX Warning: Citation `modelKaskadowy' on page 28 undefined on input line 530
-.
-
-<useCase'y.png, id=170, 2276.505pt x 1041.8925pt>
+] <useCase'y.png, id=173, 2276.505pt x 1041.8925pt>
 File: useCase'y.png Graphic file (type png)
  <use useCase'y.png>
-Package pdftex.def Info: useCase'y.png used on input line 560.
+Package pdftex.def Info: useCase'y.png used on input line 561.
 (pdftex.def)             Requested size: 483.69684pt x 221.36345pt.
 
-Overfull \hbox (42.67911pt too wide) in paragraph at lines 560--562
+Overfull \hbox (42.67911pt too wide) in paragraph at lines 561--563
  [][] 
  []
 
-[28] <watchableEntity.png, id=174, 168.63pt x 158.5925pt>
+[29] <watchableEntity.png, id=177, 168.63pt x 158.5925pt>
 File: watchableEntity.png Graphic file (type png)
 
 <use watchableEntity.png>
-Package pdftex.def Info: watchableEntity.png used on input line 581.
+Package pdftex.def Info: watchableEntity.png used on input line 582.
 (pdftex.def)             Requested size: 199.16928pt x 187.31898pt.
- [29 <./useCase'y.png>] [30 <./watchableEntity.png>]
-<diagramKlas.png, id=185, 1333.98375pt x 566.115pt>
+ [30 <./useCase'y.png>] [31 <./watchableEntity.png>]
+<diagramKlas.png, id=188, 1333.98375pt x 566.115pt>
 File: diagramKlas.png Graphic file (type png)
  <use diagramKlas.png>
-Package pdftex.def Info: diagramKlas.png used on input line 601.
+Package pdftex.def Info: diagramKlas.png used on input line 602.
 (pdftex.def)             Requested size: 739.77165pt x 313.94704pt.
 
-Overfull \hbox (31.77165pt too wide) in paragraph at lines 601--603
+Overfull \hbox (31.77165pt too wide) in paragraph at lines 602--604
  [][] 
  []
 
-[31
+[32
 
- <./diagramKlas.png>] [32
+ <./diagramKlas.png>] [33
 
-] [33]
-
-LaTeX Warning: Citation `cocoaPods' on page 34 undefined on input line 625.
-
-
-LaTeX Warning: Citation `UIKit' on page 34 undefined on input line 627.
-
-
-LaTeX Warning: Citation `objectGraph' on page 34 undefined on input line 629.
-
-
-LaTeX Warning: Citation `alamofire' on page 34 undefined on input line 640.
-
-<moyaDiagram.png, id=195, 1210.5225pt x 877.2775pt>
+] [34]
+<moyaDiagram.png, id=198, 1210.5225pt x 877.2775pt>
 File: moyaDiagram.png Graphic file (type png)
  <use moyaDiagram.png>
-Package pdftex.def Info: moyaDiagram.png used on input line 643.
+Package pdftex.def Info: moyaDiagram.png used on input line 644.
 (pdftex.def)             Requested size: 369.88582pt x 268.05785pt.
 
-
-LaTeX Warning: Citation `mapper' on page 34 undefined on input line 648.
-
-[34] <MVC.jpg, id=199, 1027.84pt x 770.88pt>
+[35] <MVC.jpg, id=202, 1027.84pt x 770.88pt>
 File: MVC.jpg Graphic file (type jpg)
  <use MVC.jpg>
-Package pdftex.def Info: MVC.jpg used on input line 657.
+Package pdftex.def Info: MVC.jpg used on input line 658.
 (pdftex.def)             Requested size: 369.88582pt x 277.41072pt.
 
-<rxMVVM.png, id=200, 634.37pt x 118.4425pt>
+<rxMVVM.png, id=203, 634.37pt x 118.4425pt>
 File: rxMVVM.png Graphic file (type png)
  <use rxMVVM.png>
-Package pdftex.def Info: rxMVVM.png used on input line 665.
+Package pdftex.def Info: rxMVVM.png used on input line 666.
 (pdftex.def)             Requested size: 369.88582pt x 69.06357pt.
- [35 <./moyaDiagram.png>] [36 <./MVC.jpg> <./rxMVVM.png (PNG copy)>]
-<SearchVC.png, id=209, 313.17pt x 574.145pt>
+ [36 <./moyaDiagram.png>] [37 <./MVC.jpg> <./rxMVVM.png (PNG copy)>]
+<SearchVC.png, id=212, 313.17pt x 574.145pt>
 File: SearchVC.png Graphic file (type png)
  <use SearchVC.png>
-Package pdftex.def Info: SearchVC.png used on input line 678.
+Package pdftex.def Info: SearchVC.png used on input line 679.
 (pdftex.def)             Requested size: 170.71652pt x 312.98605pt.
 
-Overfull \hbox (12.77782pt too wide) in paragraph at lines 688--688
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 689--689
 []\OT4/cmr/m/n/10 (a)|| 
  []
 
-<addToMyBaseEnabled.png, id=210, 313.17pt x 578.16pt>
+<addToMyBaseEnabled.png, id=213, 313.17pt x 578.16pt>
 File: addToMyBaseEnabled.png Graphic file (type png)
 
 <use addToMyBaseEnabled.png>
-Package pdftex.def Info: addToMyBaseEnabled.png used on input line 689.
+Package pdftex.def Info: addToMyBaseEnabled.png used on input line 690.
 (pdftex.def)             Requested size: 142.26378pt x 262.64857pt.
 
-Overfull \hbox (13.33337pt too wide) in paragraph at lines 691--691
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 692--692
 []\OT4/cmr/m/n/10 (b)|| 
  []
 
-<alreadyInBase.png, id=211, 312.16624pt x 576.1525pt>
+<alreadyInBase.png, id=214, 312.16624pt x 576.1525pt>
 File: alreadyInBase.png Graphic file (type png)
  <use alreadyInBase.png>
-Package pdftex.def Info: alreadyInBase.png used on input line 692.
+Package pdftex.def Info: alreadyInBase.png used on input line 693.
 (pdftex.def)             Requested size: 142.26378pt x 262.57178pt.
 
-[37 <./SearchVC.png>]
-Overfull \hbox (12.77782pt too wide) in paragraph at lines 701--701
+[38 <./SearchVC.png>]
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 702--702
 []\OT4/cmr/m/n/10 (a)|| 
  []
 
-<giveMeProposition.png, id=216, 312.16624pt x 577.15625pt>
+<giveMeProposition.png, id=219, 312.16624pt x 577.15625pt>
 File: giveMeProposition.png Graphic file (type png)
 
 <use giveMeProposition.png>
-Package pdftex.def Info: giveMeProposition.png used on input line 702.
+Package pdftex.def Info: giveMeProposition.png used on input line 703.
 (pdftex.def)             Requested size: 142.26378pt x 263.02922pt.
 
-Overfull \hbox (13.33337pt too wide) in paragraph at lines 704--704
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 705--705
 []\OT4/cmr/m/n/10 (b)|| 
  []
 
-<propositions.png, id=217, 315.1775pt x 578.16pt>
+<propositions.png, id=220, 315.1775pt x 578.16pt>
 File: propositions.png Graphic file (type png)
  <use propositions.png>
-Package pdftex.def Info: propositions.png used on input line 705.
+Package pdftex.def Info: propositions.png used on input line 706.
 (pdftex.def)             Requested size: 142.26378pt x 260.96358pt.
 
-[38 <./addToMyBaseEnabled.png> <./alreadyInBase.png> <./giveMeProposition.png> 
-<./propositions.png>] [39]
+[39 <./addToMyBaseEnabled.png> <./alreadyInBase.png> <./giveMeProposition.png> 
+<./propositions.png>]
 Overfull \hbox (12.77782pt too wide) in paragraph at lines 714--714
 []\OT4/cmr/m/n/10 (a)|| 
  []
@@ -1439,9 +1378,6 @@ Package pdftex.def Info: ratingVC.png used on input line 718.
 (pdftex.def)             Requested size: 142.26378pt x 260.89262pt.
  [40 <./savedProductions.png> <./ratingVC.png>]
 Rozdzia\PlPrIeC {\l } 5.
-
-LaTeX Warning: Citation `reactivexio' on page 41 undefined on input line 731.
-
 [41
 
 ] (./template_Report.bbl [42]
@@ -1451,36 +1387,45 @@ x/conceptual/osx[]technology[]overview/systemtechnology/systemtechnology.html#/
 /apple[]ref/doc/uid/tp40001067- 
  []
 
+
+Overfull \hbox (134.59573pt too wide) in paragraph at lines 23--27
+\OT4/cmr/m/n/12 https://web.archive.org/web/20071006005308/http://www.apple.com
+/iphone/features/index.html#macosx 
+ []
+
 [43
 
-]) [44] (./template_Report.aux)
+] [44]
+Overfull \hbox (52.8688pt too wide) in paragraph at lines 166--170
+\OT4/cmr/m/n/12 https://developer.apple.com/library/content/documentation/gener
+al/conceptual/devpedia- 
+ []
 
-LaTeX Warning: There were undefined references.
-
- ) 
+) [45] (./template_Report.aux) ) 
 Here is how much of TeX's memory you used:
- 4210 strings out of 493014
- 63703 string characters out of 6133350
- 119099 words of memory out of 5000000
- 7631 multiletter control sequences out of 15000+600000
+ 4209 strings out of 493014
+ 63698 string characters out of 6133350
+ 119193 words of memory out of 5000000
+ 7630 multiletter control sequences out of 15000+600000
  17372 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,10n,49p,1037b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/pl/plit.enc}{/usr/local/t
-exlive/2016/texmf-dist/fonts/enc/dvips/pl/plrm.enc}{/usr/local/texlive/2016/tex
-mf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf
--dist/fonts/type1/public/pl/plbx12.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/pl/plr10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pub
-lic/pl/plr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr1
-7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr7.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/pl/plti12.pfb></usr/local/texlive/2016/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on template_Report.pdf (45 pages, 5004148 bytes).
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/d
+vips/pl/plit.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/pl/plrm.en
+c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plbx12.pfb></usr/loca
+l/texlive/2016/texmf-dist/fonts/type1/public/pl/plr10.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/pl/plr12.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/pl/plr17.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/pl/plr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+pl/plr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/pl/plti12.pf
+b></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
+
+Output written on template_Report.pdf (46 pages, 5011959 bytes).
 PDF statistics:
- 284 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
+ 287 PDF objects out of 1000 (max. 8388607)
+ 135 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  241 words of extra memory for PDF output out of 10000 (max. 10000000)
 

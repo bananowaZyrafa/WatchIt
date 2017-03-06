@@ -97,7 +97,8 @@
 \newpage
 \begin{document}
 \maketitle
-\newpage
+\newpage\null\thispagestyle{empty}\newpage
+
 \tableofcontents
 \chapter{WSTĘP}
 
@@ -366,7 +367,7 @@ Rysunek \ref{skip} przedstawia działanie operatora Skip.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=8cm]{zip}
-	\caption{Schemat działania operatora zip \cite{zip}.}
+	\caption{Schemat działania operatora zip \cite{marbles}.}
 	\label{zip}
 \end{figure}\\
 \paragraph{Operatory obsługi błędów}
@@ -485,7 +486,7 @@ O to jak powyższa logika może zostać zrealizowana przy użyciu RxSwift:
 	\caption{Przykładowy program rozwiązujący problem stanu przejściowego (opis w tekście) \cite{transientState}.}
 	\label{transientState}
 \end{figure}
-\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\
 Jak widać na rysunku \ref{transientState}, niepotrzebne są żadne dodatkowe flagi ani stany.
 \paragraph{Przykład 2 - częściowe anulowanie}
 \subparagraph{}Scenariuszem tego przykładu będzie następujący ciąg działań: ma nastąpić pobranie zestawu zdjęć z zewnętrznego adresu URL, następnie zdjęcia mają zostać zdekodowane i obłożone filtrem rozmywającym. Na koniec wyświetlane są w komórkach tabeli TableView.\\
@@ -507,14 +508,14 @@ Ukazuje on kod, który zrealizuje założenia oraz, gdy obiekt imageSubscription
 \pagebreak
 \paragraph{Przykład 3 - agregowanie zapytań sieciowych}
 \subparagraph{}W tym przykładzie zostanie pokazana sytuacja, w której potrzebne jest zrealizowanie dwóch niezależnych zapytań sieciowych i zagregowanie ich wyników, gdy oba się zakończą. W tym celu, użyty zostanie operator \textbf{zip}.\\
-W poniższym listingu można dostrzeć, że obsłużona została częsta sytuacja, w której odpowiedzi od API obsługiwane są na wątku w tle a binding tych odpowiedzi do interfejsu użytkownika powininen odbyć się na wątku głównym. Ten problem, rozwiązany został przy użyciu operatora \textbf{observeOn}.
+Na rysunku \ref{aggregatingNetworkRequests} można dostrzeć, że obsłużona została częsta sytuacja, w której odpowiedzi od API obsługiwane są na wątku w tle a binding tych odpowiedzi do interfejsu użytkownika powininen odbyć się na wątku głównym. Ten problem, rozwiązany został przy użyciu operatora \textbf{observeOn}.
 \begin{figure}[ht!]
 	\centering
 	\includegraphics[width=14cm]{aggregatingNetworkRequests}
 	\caption{Przykładowy program rozwiązujący problem agregacji zapytań sieciowych (opis w tekście ) \cite{transientState}.}
 	\label{aggregatingNetworkRequests}
 \end{figure}
-Obrazek \ref{aggregatingNetworkRequests} przestawia sposób implementacji przykładu.
+
 \chapter{PRACA WŁASNA}
 \section{Czynności przygotowawcze}		
 \paragraph{}Stworzenie aplikacji mobilnej było możliwe dzięki wykonaniu uprzednio czynności przygotowawczych. Do czynności tych należało: wybór środowiska programistycznego, instalacja bibliotek i frameworków, wstępna konfiguracja projektu oraz stworzenie repozytorium.
@@ -559,7 +560,7 @@ Ponadto użyto narzędzia do rozwiązywania zależności - CocoaPods. Jest ono b
 	\centering
 	\includegraphics[width=17cm]{useCase'y}
 	\caption{Schemat przypadków użycia 
-		\textit{[opracowanie:własne ]}}
+		\textit{[opracowanie:własne]}}
 	\label{useCase'y}
 \end{figure}
 \subparagraph{}Schemat \ref{useCase'y} przedstawia ogólne przypadki użycia aplikacji mobilnej. Użytkownik może wykonywać nastepujące czynności:
@@ -690,7 +691,7 @@ Odnaleziona pozycja wyświetlana jest natychmiastowo w chwili znalezienia.
 	\quad
 	\subfloat[]{}
 	\includegraphics[width=5cm]{alreadyInBase}
-	\caption{Widok szczegółów  filmu/serialu}
+	\caption{Widok szczegółów  filmu/serialu \textit{[opracowanie:własne]}}
 	\label{watchableDetails}
 \end{figure}\\
 Na widoku przedstawionym na rysunku \ref{watchableDetails}, prezentowane są szczegóły dotyczące znalezionej pozycji. Widoczny jest plakat danej produkcji oraz jej ocena wystawiona przez użytkowników serwisu IMDB. Ponadto użytkownik ma możliwość dodania filmu/serialu do swojej bazy jeżeli jeszcze tego nie zrobił. Lokalna baza danych przeszukiwana jest w celu odnalezienia bieżącej produkcji i na tej podstawie decyduje się o sposobie wyświetlenia przycisku.
@@ -703,11 +704,10 @@ Na widoku przedstawionym na rysunku \ref{watchableDetails}, prezentowane są szc
 	\quad
 	\subfloat[]{}
 	\includegraphics[width=5cm]{propositions}
-	\caption{Widok proponowania pozycji do obejrzenia}
+	\caption{Widok proponowania pozycji do obejrzenia \textit{[opracowanie:własne]}}
 	\label{proposition}
 \end{figure}\\
 Rysunek \ref{proposition} prezentuje ekran propozycji. Użytkownik wybiera jedną z czterech opcji czasowych. Po zaznaczeniu opcji, kliknięcie przycisku spowoduje przeszukanie bazy zapisanych pozycji pod kątem filmów lub seriali spełniających wymóg czasowy, to znaczy, że czas ich trwania nie będzie dłuższy od czasu wybranego przez użytkownika. Ponadto przez filtr nie przejdą filmy i seriale już obejrzane (a przez to ocenione). 
-\pagebreak
 \subparagraph{}\textbf{Widok oceniania}
 \begin{figure}[ht!]
 	\centering
@@ -716,7 +716,7 @@ Rysunek \ref{proposition} prezentuje ekran propozycji. Użytkownik wybiera jedn�
 	\quad
 	\subfloat[]{}
 	\includegraphics[width=5cm]{ratingVC}
-	\caption{Widok oceniania zapisanych w bazie produkcji}
+	\caption{Widok oceniania zapisanych w bazie produkcji \textit{[opracowanie:własne]}}
 	\label{rating}
 \end{figure}\\
 Na rysunku \ref{rating} zaprezentowany jest ekran oceniania zapisanych filmów i seriali. Użytkownik ma możliwość przeglądnięcia jakie filmy i seriale zapisał do swojej bazy. Przy tych, które zostały ocenione, wyświetlana jest wartość liczbowa reprezentująca jego ocenę. Kliknięcie w dowolną zapisaną w bazie produkcje, przenosi użytkownika do ekranu wystawienia oceny. Wartość wybierana jest przez przesuwanie paska. Przyciśnięcie przycisku powoduje zapisanie oceny do bazy. 
